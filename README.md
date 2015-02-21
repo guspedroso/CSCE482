@@ -1,6 +1,10 @@
-Beats2
+Beats2 modified for CSCE482 Senior Capstone
 ======
-
+Jeremy Cantu
+Elizabeth Chlipala
+Victoria McCloud
+Gustavo Pedroso
+------
 Intro
 ------
 **Beats2** is a cross-platform, multi-style rhythm game designed for **touch-screen devices**.
