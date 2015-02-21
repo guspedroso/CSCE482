@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PolicySet name="Beats2 Formatting">
+  <TextStylePolicy inheritsSet="VisualStudio" inheritsScope="text/plain" scope="text/x-csharp">
+    <TabsToSpaces>False</TabsToSpaces>
+  </TextStylePolicy>
+  <CSharpFormattingPolicy inheritsSet="Mono" inheritsScope="text/x-csharp" scope="text/x-csharp">
+    <IndentSwitchBody>True</IndentSwitchBody>
+    <AnonymousMethodBraceStyle>NextLine</AnonymousMethodBraceStyle>
+    <IfElseBraceForcement>AddBraces</IfElseBraceForcement>
+    <ForBraceForcement>AddBraces</ForBraceForcement>
+    <WhileBraceForcement>AddBraces</WhileBraceForcement>
+    <UsingBraceForcement>AddBraces</UsingBraceForcement>
+    <ElseIfNewLinePlacement>SameLine</ElseIfNewLinePlacement>
+    <ArrayInitializerBraceStyle>NextLine</ArrayInitializerBraceStyle>
+    <BeforeMethodDeclarationParentheses>False</BeforeMethodDeclarationParentheses>
+    <BeforeMethodCallParentheses>False</BeforeMethodCallParentheses>
+    <BeforeConstructorDeclarationParentheses>False</BeforeConstructorDeclarationParentheses>
+    <BeforeDelegateDeclarationParentheses>False</BeforeDelegateDeclarationParentheses>
+    <NewParentheses>False</NewParentheses>
+    <BlankLinesBeforeFirstDeclaration>1</BlankLinesBeforeFirstDeclaration>
+  </CSharpFormattingPolicy>
+  <TextStylePolicy inheritsSet="VisualStudio" inheritsScope="text/plain" scope="text/plain" />
+  <TextStylePolicy inheritsSet="VisualStudio" inheritsScope="text/plain" scope="application/xml" />
+  <XmlFormattingPolicy inheritsSet="Mono" inheritsScope="application/xml" scope="application/xml" />
+  <StandardHeader>
+    <Text>/*
+ * Copyright (C) 2014, Philip Peng (Keripo). All rights reserved.
+ * http://beats2.net
+ * The software in this package is published under the terms of the BSD-style license
+ * a copy of which has been included with this distribution in the LICENSE file.
+ */</Text>
+    <IncludeInNewFiles>True</IncludeInNewFiles>
+  </StandardHeader>
+</PolicySet>
