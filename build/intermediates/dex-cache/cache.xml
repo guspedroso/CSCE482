@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/gus/git/Beats/libs/UHL.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9f6e2207f6a895076409cb18b608e82ea2a3e99b">
+        <dex dex="/Users/gus/git/Beats/build/intermediates/pre-dexed/debug/UHL-833b513228db2f097d526ae427aec77dcf073531.jar" />
+    </item>
+    <item
+        jar="/Users/gus/git/CSCE482/libs/UHL.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9f6e2207f6a895076409cb18b608e82ea2a3e99b">
+        <dex dex="/Users/gus/git/CSCE482/build/intermediates/pre-dexed/debug/UHL-4addc07889c9a426736b73a5d2033be8d951c37f.jar" />
+    </item>
+
+</items>

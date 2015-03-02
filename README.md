@@ -1,41 +1,11 @@
-Beats2 modified for CSCE482
-======
-Jeremy Cantu,
-Elizabeth Chlipala,
-Victoria McCloud,
-and Gustavo Pedroso
+Beats, Advanced Rhythm Game
+=====
 
-Intro
-------
-**Beats2** is a cross-platform, multi-style rhythm game designed for **touch-screen devices**.
+Popular, open source rhythm game for Android.
+This is the latest snapshot of the SVN code base (r18), migrated to GitHub.
+This is the final release of Beats and the subsequent open sourcing of the code. The decision was made to not open source Beats until now due to the extremely messy and disorganized nature of the code (just about every feature since Beats 1.0a is an ugly hack). While Beats is now under a modified BSD license, please do NOT fork the original source code, for sanity reasons. The source code should be used for reference purposes only.
+See http://beatsportable.com for more info
 
-See http://beats2.net for current progress and updates. 
+All source code is available under Modified BSD license.
 
-Styles
-------
-- **Beats** - DJMAX/Beatmania IIDX style
-- **Technika** - DJMAX Technika style
-- **Square** - Jubeat style
-- **Taiko** - Taiko no Tatsujin style
-- **Mai** - MaiMai style
-
-Simfile Formats
-------
-- **BSM** - Beats2
-- **SM** - StepMania 3.9
-- **SSC** - StepMania 5
-
-Target Platforms
-------
-- **Windows 8 Desktop** - mouse, keyboard
-- **Windows 8 Store** - touchscreen, mouse, keyboard
-- **Android** - touchscreen phone/tablets
-- **iOS** - will depends on level of interest and hardware donations
-- **Windows Phone 8** - will depend on level of interest and hardware donations
-
-Code
-------
-- **/beats2** - currently active development branch
-- **/beats2n** - test demo made using NGUI library, for reference purposes only
-- **/beats2td** - test demo made using tk2d library, for reference purposes only
-
+~Keripo
