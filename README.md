@@ -1,11 +1,10 @@
-Beats, Advanced Rhythm Game
+Beats - Modified for CSCE 482
 =====
-
-Popular, open source rhythm game for Android.
-This is the latest snapshot of the SVN code base (r18), migrated to GitHub.
-This is the final release of Beats and the subsequent open sourcing of the code. The decision was made to not open source Beats until now due to the extremely messy and disorganized nature of the code (just about every feature since Beats 1.0a is an ugly hack). While Beats is now under a modified BSD license, please do NOT fork the original source code, for sanity reasons. The source code should be used for reference purposes only.
-See http://beatsportable.com for more info
-
-All source code is available under Modified BSD license.
-
-~Keripo
+Jeremy Cantu, Elizabeth Chlipala, Victoria McCloud, Gustavo Pedroso
+Steps for setting up your local environment
+-----
+1. Get Android Studio from here http://developer.android.com/sdk/index.html
+2. Clone repo to local
+3. Once you open Android Studio, select "Import project (Eclipse ADT, Gradle, etc.)
+4. Select the build.gradle file within the local copy of the repo
+5. Run the project to make sure it works -GP
