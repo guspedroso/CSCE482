@@ -80,7 +80,9 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="BioHarnessBT" level="project" />
     <orderEntry type="library" exported="" name="UHL" level="project" />
+    <orderEntry type="module" module-name="BioHarnessBT" exported="" />
   </component>
 </module>
 
