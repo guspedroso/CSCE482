@@ -122,33 +122,29 @@
 					/>
 
                     <Button
-                        android:text="Connect"
+                        android:text="@string/Menu_connect"
                         android:id="@+id/ButtonConnect"
                         android:layout_width="wrap_content"
-                        android:layout_below="@+id/Welcometext"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="New Text"
+                        android:text="@string/status"
                         android:id="@+id/labelStatusMsg"
                         android:layout_gravity="center_horizontal"
-                        android:layout_weight="0.43" />
-
-
+                        android:layout_weight="0.19" />
 
                     <EditText
                         android:id="@+id/labelRespRate"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="000"
-                        android:layout_below="@+id/labelHeartRate"
-                        android:layout_alignParentRight="true" />
-
+                        android:text="@string/initial0"
+                        android:layout_gravity="center_horizontal" />
 
                 </LinearLayout>
-			</LinearLayout>
+    </LinearLayout>
 		</RelativeLayout>
 	</LinearLayout>
-</RelativeLayout><!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/layout/main.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/layout/main.xml -->

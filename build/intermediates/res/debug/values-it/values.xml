@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-it/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values-it/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="accuracyLevel">
     <item>Troppo Facile</item>
@@ -76,7 +76,7 @@
     <item>Leggero</item>
     <item>Spento</item>
   </string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-it/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values-it/strings_trans.xml -->
     <eat-comment/>
     <string name="Accuracy_almost">"Quasi"</string>
     <string name="Accuracy_best_combo">"Miglior Sequenza"</string>
@@ -219,7 +219,7 @@
     <string name="Tools_unable_delete_file">"Errore: Impossibile cancellare il file:\n"</string>
     <string name="Tools_usb_error">"\nForse il telefono è in modalità disco USB\?"</string>
     <string name="Tools_window_error">"Window switching error - I haven\'t figured out how to fix this yet ; / (please email me details!)"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-it/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values-it/settings_trans.xml -->
     <eat-comment/>
     <string name="accuracyLevelDesc">"Rigore nella valutazione del punteggio"</string>
     <string name="accuracyLevelTitle">"Valutazione"</string>

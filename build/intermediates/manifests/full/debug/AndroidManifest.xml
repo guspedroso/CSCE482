@@ -25,7 +25,9 @@
         android:hardwareAccelerated="true"
         android:icon="@drawable/icon"
         android:label="@string/App_name" >
-        <activity android:name="com.beatsportable.beats.MenuHome" >
+        <activity
+            android:name="com.beatsportable.beats.MenuHome"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
