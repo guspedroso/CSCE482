@@ -100,9 +100,11 @@ public final class R {
         public static final int tapbox_standard_up=0x7f020028;
     }
     public static final class id {
+        public static final int ButtonConnect=0x7f090010;
+        public static final int Welcometext=0x7f090011;
         public static final int autoPlay=0x7f090005;
         public static final int bg=0x7f090003;
-        public static final int checkbox=0x7f090011;
+        public static final int checkbox=0x7f090016;
         public static final int difficulty=0x7f090004;
         public static final int download_songs=0x7f09000d;
         public static final int exit=0x7f09000f;
@@ -110,10 +112,13 @@ public final class R {
         public static final int gameModeNext=0x7f090008;
         public static final int gameModePrev=0x7f090006;
         public static final int iconview=0x7f090000;
+        public static final int labelHeartRate=0x7f090014;
+        public static final int labelRespRate=0x7f090013;
+        public static final int labelStatusMsg=0x7f090012;
         public static final int logo=0x7f090009;
         public static final int main=0x7f090002;
         public static final int menu_main_items_LinearLayout=0x7f09000a;
-        public static final int notes_text=0x7f090010;
+        public static final int notes_text=0x7f090015;
         public static final int select_song=0x7f09000c;
         public static final int settings=0x7f09000e;
         public static final int start=0x7f09000b;

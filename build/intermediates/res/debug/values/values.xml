@@ -668,7 +668,7 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/strings_trans.xml -->
     <eat-comment/>
     <string name="MenuHome_release_notes_title">"Beats Release Notes"</string>
-    <string name="MenuHome_titlebar">"Beats - Advanced Rhythm Game"</string>
+    <string name="MenuHome_titlebar">"PULSE"</string>
     <string name="MenuSettings_title">"Beats - Settings"</string>
     <string name="MenuStartGame_choose_new">"\n\nPlease choose a new song."</string>
     <string name="MenuStartGame_difficulty_closest">"\" but the closest difficulty is \""</string>

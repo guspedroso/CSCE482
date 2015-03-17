@@ -88,7 +88,8 @@
 					android:layout_width="fill_parent"
 					android:layout_height="fill_parent"
 					android:gravity="center_horizontal"
-					android:orientation="vertical">
+					android:orientation="vertical"
+                    android:weightSum="1">
 					<TextView
 						android:id="@+id/start"
 						android:layout_width="wrap_content"
@@ -119,7 +120,34 @@
 						android:layout_height="wrap_content"
 						android:text="@string/Menu_exit"
 					/>
-				</LinearLayout>
+
+                    <Button
+                        android:text="Connect"
+                        android:id="@+id/ButtonConnect"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@+id/Welcometext"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/labelStatusMsg"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.43" />
+
+
+
+                    <EditText
+                        android:id="@+id/labelRespRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="000"
+                        android:layout_below="@+id/labelHeartRate"
+                        android:layout_alignParentRight="true" />
+
+
+                </LinearLayout>
 			</LinearLayout>
 		</RelativeLayout>
 	</LinearLayout>

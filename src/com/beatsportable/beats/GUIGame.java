@@ -170,6 +170,9 @@ public class GUIGame extends Activity {
 		holds = Tools.getBooleanSetting(R.string.holds, R.string.holdsDefault);
 		autoPlay = Tools.getBooleanSetting(R.string.autoPlay, R.string.autoPlayDefault);
 		showFPS = Tools.getBooleanSetting(R.string.showFPS, R.string.showFPSDefault);
+
+// --------------------- ADDED -----------------------------------------
+        //showBPM = Tools.getBooleanSetting("showBPM", "1");
 		screenshotMode = Tools.getBooleanSetting(R.string.screenshotMode, R.string.screenshotModeDefault);
 		fullscreen = Tools.getBooleanSetting(R.string.fullscreen, R.string.fullscreenDefault);
 		debugTime = Tools.getBooleanSetting(R.string.debugTime, R.string.debugTimeDefault);
@@ -517,7 +520,10 @@ public class GUIGame extends Activity {
 			} else {
 				rightSettingsBottom = Tools.getString(R.string.GUIGame_standard);
 			}
-			
+
+
+// ----------------------------------- PUT BREATHS-PER-MINUTE TEXT HERE ------------------------------------------------
+
 			// BPM & Speed
 			rightSettingsTop =
 				String.format(

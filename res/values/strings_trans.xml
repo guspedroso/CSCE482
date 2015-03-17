@@ -34,7 +34,7 @@
   <string name="Accuracy_miss">"Miss"</string>
   <string name="Accuracy_ok">"OK"</string>
   <string name="Accuracy_no_good">"No Good"</string>
-  <string name="MenuHome_titlebar">"Beats - Advanced Rhythm Game"</string>
+  <string name="MenuHome_titlebar">"PULSE"</string>
   <string name="MenuHome_legacy_warning">"Your phone is currently running Android 1.5 (Cupcake) or 1.6 (Donut), which do not fully support multi-touch capabilities. It is highly recommended you upgrade to 2.1 (Eclair) or higher. Beats can still run with single-touch but many stepfiles will be very difficult to play."</string>
   <string name="MenuHome_background_sync_warning">"Your phone currently has \"Background data\" enabled. Turning off \"Background data\" helps prevent other apps from causing Beats gameplay to lag. Alternatively, you can increase \"Application Priority\" in \"Advanced Settings\".\n\nDo you wish to change your \"Background data\" setting\? (Recommended to reduce lag)"</string>
   <string name="MenuHome_background_sync_undo">"You previously disabled your \"Background data\" setting. Would you like to update the setting now\?"</string>
