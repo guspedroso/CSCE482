@@ -2,6 +2,8 @@ package com.beatsportable.beats;
 
 import java.io.File;
 import java.util.HashMap;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import android.app.Activity;
 import android.content.Context;
@@ -687,9 +689,26 @@ public class GUIGame extends Activity {
 		int musicStartTime = 0;
 		int syncAdjust = 0;
 		int travelOffset = 0;
+        //double tempFall = 0;
 		int mFrameNo = 0;
 		int countDown = -180; // 180 frames before the song begins, ~3s
 		int syncCounter = 0;
+
+        //****************
+        //interval used for dynamic speed debugging/testing
+        protected static final long TIME_DELAY = 10000;
+
+        //Java Timer class object declaration
+        Timer timer = new Timer();
+
+        //self-made function to set fallpix_per_ms speed variable within Update()
+        class SpeedTask extends TimerTask {
+            public void run() {
+                h.fallpix_per_ms = 3;
+            }
+        }
+        //****************
+
 		private void nextFrame() {
 			if (h != null) {
 				try {
@@ -708,6 +727,7 @@ public class GUIGame extends Activity {
 				}
 			}
 		}
+
 		public void update() {
 			// Initial "Ready" countdown"
 			if (countDown < 0) {
@@ -718,7 +738,11 @@ public class GUIGame extends Activity {
 			} else if (countDown == 0) {
 				mp.startPlaying();
 				travelOffset = h.travel_offset_ms();
-				musicCurrentPosition = mp.getCurrentPosition();
+
+                //modded speed value, called using TimerTask class (updates after 10 seconds)
+                timer.schedule(new SpeedTask(), TIME_DELAY);
+
+                musicCurrentPosition = mp.getCurrentPosition();
 				musicStartTime = musicCurrentPosition + manualOffset;
 				mStartTime = SystemClock.elapsedRealtime();
 				countDown++; // Countdown positive, no more countdown!
