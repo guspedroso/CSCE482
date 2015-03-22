@@ -18,6 +18,7 @@ public class NewConnectedListener extends ConnectListenerImpl
 	final int RtoR_MSG_ID = 0x24;
 	final int ACCEL_100mg_MSG_ID = 0x2A;
 	final int SUMMARY_MSG_ID = 0x2B;
+    public double respRateDoub;
 	
 	
 	private int GP_HANDLER_ID = 0x20;
@@ -87,6 +88,7 @@ public class NewConnectedListener extends ConnectListenerImpl
 
 					//***************Displaying the Respiration Rate********************************
 					double RespRate = GPInfo.GetRespirationRate(DataArray);
+                    respRateDoub = RespRate;
 					
 					text1 = _aNewHandler.obtainMessage(RESPIRATION_RATE);
 					b1.putString("RespirationRate", String.valueOf(RespRate));

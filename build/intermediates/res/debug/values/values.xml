@@ -668,7 +668,7 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/strings_trans.xml -->
     <eat-comment/>
     <string name="MenuHome_release_notes_title">"Beats Release Notes"</string>
-    <string name="MenuHome_titlebar">"Beats - Advanced Rhythm Game"</string>
+    <string name="MenuHome_titlebar">"PULSE"</string>
     <string name="MenuSettings_title">"Beats - Settings"</string>
     <string name="MenuStartGame_choose_new">"\n\nPlease choose a new song."</string>
     <string name="MenuStartGame_difficulty_closest">"\" but the closest difficulty is \""</string>
@@ -685,6 +685,7 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="MenuStartGame_osu_warning">"As of the moment, .osu support is still very experimental. Sliders, spinners, Taiko mode and many other features not yet implemented.\n\nIf you encounter any .osu beatmaps that Beats fails to load properly, please email them to me, thanks!\n\n~Keripo"</string>
     <string name="MenuStartGame_select_music">"Use \"SELECT SONG\" to choose an installed stepfile to play.\n\nIf you do not have any stepfiles installed, use \"DOWNLOAD SONGS\" to visit BeatsPortable.com and read the download/install instructions there."</string>
     <string name="Menu_auto">" auto "</string>
+    <string name="Menu_connect">" Connect "</string>
     <string name="Menu_download_songs">" download songs "</string>
     <string name="Menu_exit">" exit "</string>
     <string name="Menu_select_song">" select song "</string>
@@ -987,6 +988,9 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="infoCategoryTitle">"Info"</string>
     <string name="infoScreenDesc">"Links and info about Beats"</string>
     <string name="infoScreenTitle">"Info"</string>
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/strings_trans.xml -->
+    <eat-comment/>
+    <string name="initial0">" 000 "</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="installSamples">"installSamples"</string>
@@ -1122,6 +1126,9 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <eat-comment/>
     <string name="speedMultiplierDesc">"Falling speed of notes"</string>
     <string name="speedMultiplierTitle">"Speed"</string>
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/strings_trans.xml -->
+    <eat-comment/>
+    <string name="status">" Bluetooth Status "</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="stepfileFolderCheck">"stepfileFolderCheck"</string>

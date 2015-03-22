@@ -88,7 +88,8 @@
 					android:layout_width="fill_parent"
 					android:layout_height="fill_parent"
 					android:gravity="center_horizontal"
-					android:orientation="vertical">
+					android:orientation="vertical"
+                    android:weightSum="1">
 					<TextView
 						android:id="@+id/start"
 						android:layout_width="wrap_content"
@@ -119,8 +120,31 @@
 						android:layout_height="wrap_content"
 						android:text="@string/Menu_exit"
 					/>
-				</LinearLayout>
-			</LinearLayout>
+
+                    <Button
+                        android:text="@string/Menu_connect"
+                        android:id="@+id/ButtonConnect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/status"
+                        android:id="@+id/labelStatusMsg"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.19" />
+
+                    <TextView
+                        android:id="@+id/labelRespRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/initial0"
+                        android:layout_gravity="center_horizontal" />
+
+                </LinearLayout>
+    </LinearLayout>
 		</RelativeLayout>
 	</LinearLayout>
 </RelativeLayout><!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/layout/main.xml -->

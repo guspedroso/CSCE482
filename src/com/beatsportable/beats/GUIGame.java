@@ -2,6 +2,8 @@ package com.beatsportable.beats;
 
 import java.io.File;
 import java.util.HashMap;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,6 +17,24 @@ import android.util.Log;
 import android.util.SparseArray;
 import android.view.*;
 import android.os.Vibrator;
+
+import android.R.*;
+import android.app.Activity;
+import android.bluetooth.*;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.*;
+
+import zephyr.android.BioHarnessBT.*;
+
 
 public class GUIGame extends Activity {
 	
@@ -48,6 +68,10 @@ public class GUIGame extends Activity {
 	private int syncDuration;
 	private int manualOffset;
 	private int manualOGGOffset;
+    NewConnectedListener _NConnListener;
+    private final int RESPIRATION_RATE = 0x101;
+    public String respRate = "000";
+    String rightSettingsTop;
 	
 	private static final int ROTATABLE = 2;
 	
@@ -132,8 +156,9 @@ public class GUIGame extends Activity {
 			canvas.clipRect(0, ymin, Tools.screen_w, ymax, Op.REPLACE);
 		}
 	};
-	
-	@Override
+
+
+@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		Tools.setContext(this);
@@ -170,6 +195,9 @@ public class GUIGame extends Activity {
 		holds = Tools.getBooleanSetting(R.string.holds, R.string.holdsDefault);
 		autoPlay = Tools.getBooleanSetting(R.string.autoPlay, R.string.autoPlayDefault);
 		showFPS = Tools.getBooleanSetting(R.string.showFPS, R.string.showFPSDefault);
+
+// --------------------- ADDED -----------------------------------------
+        //showBPM = Tools.getBooleanSetting("showBPM", "1");
 		screenshotMode = Tools.getBooleanSetting(R.string.screenshotMode, R.string.screenshotModeDefault);
 		fullscreen = Tools.getBooleanSetting(R.string.fullscreen, R.string.fullscreenDefault);
 		debugTime = Tools.getBooleanSetting(R.string.debugTime, R.string.debugTimeDefault);
@@ -517,12 +545,16 @@ public class GUIGame extends Activity {
 			} else {
 				rightSettingsBottom = Tools.getString(R.string.GUIGame_standard);
 			}
-			
+
+
+// ----------------------------------- PUT BREATHS-PER-MINUTE TEXT HERE ------------------------------------------------
+
 			// BPM & Speed
 			rightSettingsTop =
 				String.format(
 						"%s BPM, %3.2fx",
-						dp.df.getBPMRange(dp.notesDataIndex),
+                        respRate,
+						//dp.df.getBPMRange(dp.notesDataIndex),
 						speed_multiplier
 						);
 			
@@ -623,7 +655,7 @@ public class GUIGame extends Activity {
 			if (showFPS && autoPlay) {
 				autoPlayPaint.draw(canvas, "AUTO FPS:" + (int)fps + "/" + (int)fpsTotal, margin * 2, margin * 2 + height * 3);
 			} else if (showFPS) {
-				autoPlayPaint.draw(canvas, "FPS:" + (int)fps + "/" + (int)fpsTotal, margin * 2, margin * 2 + height * 3);
+				autoPlayPaint.draw(canvas, "BPM:" + respRate, margin * 2, margin * 2 + height * 3);
 			} else if (autoPlay) {
 				autoPlayPaint.draw(canvas, "AUTO", margin * 2, margin + height * 3);
 			}
@@ -681,9 +713,32 @@ public class GUIGame extends Activity {
 		int musicStartTime = 0;
 		int syncAdjust = 0;
 		int travelOffset = 0;
+        //double tempFall = 0;
 		int mFrameNo = 0;
 		int countDown = -180; // 180 frames before the song begins, ~3s
 		int syncCounter = 0;
+
+        //****************
+        //interval used for dynamic speed debugging/testing
+        protected static final long TIME_DELAY = 0;
+
+        //Java Timer class object declaration
+        Timer timer = new Timer();
+
+        //self-made function to set fallpix_per_ms speed variable within Update()
+        class SpeedTask extends TimerTask {
+            public void run() {
+                //_NConnListener = new NewConnectedListener(Newhandler,Newhandler);
+                //MenuHome._bt.addConnectedEventListener(_NConnListener);
+                respRate = MenuHome.bpm;
+                //respRate = Double.toString(_NConnListener.respRateDoub);
+
+                h.fallpix_per_ms += 1;
+                // SWITCH STATEMENT HERE FOR SPEED
+            }
+        }
+        //****************
+
 		private void nextFrame() {
 			if (h != null) {
 				try {
@@ -702,6 +757,7 @@ public class GUIGame extends Activity {
 				}
 			}
 		}
+
 		public void update() {
 			// Initial "Ready" countdown"
 			if (countDown < 0) {
@@ -712,7 +768,11 @@ public class GUIGame extends Activity {
 			} else if (countDown == 0) {
 				mp.startPlaying();
 				travelOffset = h.travel_offset_ms();
-				musicCurrentPosition = mp.getCurrentPosition();
+
+                //modded speed value, called using TimerTask class (updates after 10 seconds)
+                timer.schedule(new SpeedTask(), TIME_DELAY, 500);
+
+                musicCurrentPosition = mp.getCurrentPosition();
 				musicStartTime = musicCurrentPosition + manualOffset;
 				mStartTime = SystemClock.elapsedRealtime();
 				countDown++; // Countdown positive, no more countdown!
