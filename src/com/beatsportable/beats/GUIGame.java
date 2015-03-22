@@ -704,7 +704,7 @@ public class GUIGame extends Activity {
         //self-made function to set fallpix_per_ms speed variable within Update()
         class SpeedTask extends TimerTask {
             public void run() {
-                h.fallpix_per_ms = 3;
+                h.fallpix_per_ms += 1;
             }
         }
         //****************
@@ -739,8 +739,8 @@ public class GUIGame extends Activity {
 				mp.startPlaying();
 				travelOffset = h.travel_offset_ms();
 
-                //modded speed value, called using TimerTask class (updates after 10 seconds)
-                timer.schedule(new SpeedTask(), TIME_DELAY);
+                //modded speed value, called using TimerTask class (updates after 10 seconds, polls every 5)
+                timer.schedule(new SpeedTask(), TIME_DELAY, 1*5000);
 
                 musicCurrentPosition = mp.getCurrentPosition();
 				musicStartTime = musicCurrentPosition + manualOffset;
