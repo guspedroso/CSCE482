@@ -2,18 +2,18 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Elizabeth\Documents\GitHub\CSCE482\CSCE482\libs\UHL.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="9f6e2207f6a895076409cb18b608e82ea2a3e99b">
-        <dex dex="C:\Users\Elizabeth\Documents\GitHub\CSCE482\CSCE482\build\intermediates\pre-dexed\debug\UHL-3f8c43dc183f721ccae17442cb73031e70e6a208.jar" />
-    </item>
-    <item
-        jar="C:\Users\Elizabeth\Documents\GitHub\CSCE482\CSCE482\BioHarnessBT\BioHarnessBT.jar"
+        jar="C:\Users\Elizabeth\Documents\GitHub\CSCE482\BioHarnessBT\BioHarnessBT.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="c6551fa37067ea1ea039f6f858bcf93b62be4cd6">
-        <dex dex="C:\Users\Elizabeth\Documents\GitHub\CSCE482\CSCE482\build\intermediates\pre-dexed\debug\BioHarnessBT-772b661e6194342f52b65b80a21a554ea7620133.jar" />
+        <dex dex="C:\Users\Elizabeth\Documents\GitHub\CSCE482\build\intermediates\pre-dexed\debug\BioHarnessBT-1b329fd8622d3cbd25148e78472934c2b9b54c42.jar" />
+    </item>
+    <item
+        jar="C:\Users\Elizabeth\Documents\GitHub\CSCE482\libs\UHL.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9f6e2207f6a895076409cb18b608e82ea2a3e99b">
+        <dex dex="C:\Users\Elizabeth\Documents\GitHub\CSCE482\build\intermediates\pre-dexed\debug\UHL-98e0f3dc28181687c77df681614706eb5e3809e7.jar" />
     </item>
 
 </items>

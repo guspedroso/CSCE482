@@ -18,6 +18,24 @@ import android.util.SparseArray;
 import android.view.*;
 import android.os.Vibrator;
 
+import android.R.*;
+import android.app.Activity;
+import android.bluetooth.*;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.*;
+
+import zephyr.android.BioHarnessBT.*;
+
+
 public class GUIGame extends Activity {
 	
 	// TODO - MAJOR CLEANUP!!!
@@ -50,6 +68,10 @@ public class GUIGame extends Activity {
 	private int syncDuration;
 	private int manualOffset;
 	private int manualOGGOffset;
+    NewConnectedListener _NConnListener;
+    private final int RESPIRATION_RATE = 0x101;
+    public String respRate = "000";
+    String rightSettingsTop;
 	
 	private static final int ROTATABLE = 2;
 	
@@ -134,8 +156,9 @@ public class GUIGame extends Activity {
 			canvas.clipRect(0, ymin, Tools.screen_w, ymax, Op.REPLACE);
 		}
 	};
-	
-	@Override
+
+
+@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		Tools.setContext(this);
@@ -530,7 +553,8 @@ public class GUIGame extends Activity {
 			rightSettingsTop =
 				String.format(
 						"%s BPM, %3.2fx",
-						dp.df.getBPMRange(dp.notesDataIndex),
+                        respRate,
+						//dp.df.getBPMRange(dp.notesDataIndex),
 						speed_multiplier
 						);
 			
@@ -631,7 +655,7 @@ public class GUIGame extends Activity {
 			if (showFPS && autoPlay) {
 				autoPlayPaint.draw(canvas, "AUTO FPS:" + (int)fps + "/" + (int)fpsTotal, margin * 2, margin * 2 + height * 3);
 			} else if (showFPS) {
-				autoPlayPaint.draw(canvas, "FPS:" + (int)fps + "/" + (int)fpsTotal, margin * 2, margin * 2 + height * 3);
+				autoPlayPaint.draw(canvas, "BPM:" + respRate, margin * 2, margin * 2 + height * 3);
 			} else if (autoPlay) {
 				autoPlayPaint.draw(canvas, "AUTO", margin * 2, margin + height * 3);
 			}
@@ -696,7 +720,7 @@ public class GUIGame extends Activity {
 
         //****************
         //interval used for dynamic speed debugging/testing
-        protected static final long TIME_DELAY = 10000;
+        protected static final long TIME_DELAY = 0;
 
         //Java Timer class object declaration
         Timer timer = new Timer();
@@ -704,7 +728,13 @@ public class GUIGame extends Activity {
         //self-made function to set fallpix_per_ms speed variable within Update()
         class SpeedTask extends TimerTask {
             public void run() {
-                h.fallpix_per_ms = 3;
+                //_NConnListener = new NewConnectedListener(Newhandler,Newhandler);
+                //MenuHome._bt.addConnectedEventListener(_NConnListener);
+                respRate = MenuHome.bpm;
+                //respRate = Double.toString(_NConnListener.respRateDoub);
+
+                h.fallpix_per_ms += 1;
+                // SWITCH STATEMENT HERE FOR SPEED
             }
         }
         //****************
@@ -740,7 +770,7 @@ public class GUIGame extends Activity {
 				travelOffset = h.travel_offset_ms();
 
                 //modded speed value, called using TimerTask class (updates after 10 seconds)
-                timer.schedule(new SpeedTask(), TIME_DELAY);
+                timer.schedule(new SpeedTask(), TIME_DELAY, 500);
 
                 musicCurrentPosition = mp.getCurrentPosition();
 				musicStartTime = musicCurrentPosition + manualOffset;

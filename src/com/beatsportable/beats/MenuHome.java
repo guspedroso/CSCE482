@@ -52,11 +52,12 @@ public class MenuHome extends Activity {
 
     // ---------------------------------- BioHarness variables ---------------------------------
     BluetoothAdapter adapter = null;
-    BTClient _bt;
+    static BTClient _bt;
     ZephyrProtocol _protocol;
     NewConnectedListener _NConnListener;
     //private final int HEART_RATE = 0x100;
     private final int RESPIRATION_RATE = 0x101;
+    public static String bpm;
 
 
 
@@ -434,8 +435,9 @@ public class MenuHome extends Activity {
             {
                 case RESPIRATION_RATE:
                     String RespirationRatetext = msg.getData().getString("RespirationRate");
-                    tv = (EditText)findViewById(R.id.labelRespRate);
+                    tv = (TextView)findViewById(R.id.labelRespRate);
                     if (tv != null)tv.setText(RespirationRatetext);
+                    bpm = RespirationRatetext;
 
                     break;
             }
@@ -636,7 +638,7 @@ public class MenuHome extends Activity {
                     _NConnListener = new NewConnectedListener(Newhandler,Newhandler);
                     _bt.addConnectedEventListener(_NConnListener);
 
-                    TextView tv1 = (EditText)findViewById(R.id.labelRespRate);
+                    TextView tv1 = (TextView)findViewById(R.id.labelRespRate);
                     tv1.setText("0.0");
 
                     if(_bt.IsConnected())

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="accuracyLevel">
     <item>Too Easy</item>
@@ -10,7 +10,7 @@
     <item>Very Hard</item>
     <item>Impossible</item>
   </string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_const.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_const.xml -->
     <eat-comment/>
     <string-array name="accuracyLevelValues">
 		<item>75</item>
@@ -20,7 +20,7 @@
 		<item>15</item>
 		<item>1</item>
 	</string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="appPriority">
     <item>Normal</item>
@@ -28,7 +28,7 @@
     <item>Very High</item>
     <item>Highest (Unstable)</item>
   </string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_const.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_const.xml -->
     <eat-comment/>
     <string-array name="appPriorityValues">
 		<item>0</item>
@@ -50,21 +50,21 @@
 		<item>25</item>
 		<item>10</item>
 	</string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="backgroundImage">
     <item>Blue</item>
     <item>Red</item>
     <item>White</item>
   </string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_const.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_const.xml -->
     <eat-comment/>
     <string-array name="backgroundImageValues">
 		<item>blue</item>
 		<item>red</item>
 		<item>white</item>
 	</string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="difficultyLevel">
     <item>Beginner</item>
@@ -73,7 +73,7 @@
     <item>Hard</item>
     <item>Challenge</item>
   </string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_const.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_const.xml -->
     <eat-comment/>
     <string-array name="difficultyLevelValues">
 		<item>0</item>
@@ -82,7 +82,7 @@
 		<item>3</item>
 		<item>4</item>
 	</string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="gameMode">
     <item>Reverse/Down</item>
@@ -90,7 +90,7 @@
     <item>osu! Mod</item>
     <item>osu! Mod Rand</item>
   </string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_const.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_const.xml -->
     <eat-comment/>
     <string-array name="gameModeValues">
 		<item>0</item>
@@ -298,7 +298,7 @@
 		<item>387</item>
 		<item>400</item>
 	</string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="noteAppearance">
     <item>Visible</item>
@@ -306,7 +306,7 @@
     <item>Sudden</item>
     <item>Invisible</item>
   </string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_const.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_const.xml -->
     <eat-comment/>
     <string-array name="noteAppearanceValues">
 		<item>0</item>
@@ -314,42 +314,42 @@
 		<item>2</item>
 		<item>3</item>
 	</string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="noteskin">
     <item>Default</item>
     <item>Original</item>
     <item>Custom</item>
   </string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_const.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_const.xml -->
     <eat-comment/>
     <string-array name="noteskinValues">
 		<item>default</item>
 		<item>original</item>
 		<item>custom</item>
 	</string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="orientation">
     <item>Landscape</item>
     <item>Portrait</item>
     <item>Rotatable</item>
   </string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_const.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_const.xml -->
     <eat-comment/>
     <string-array name="orientationValues">
 		<item>0</item>
 		<item>1</item>
 		<item>2</item>
 	</string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="randomize">
     <item>Off</item>
     <item>Static</item>
     <item>Dynamic</item>
   </string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_const.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_const.xml -->
     <eat-comment/>
     <string-array name="randomizeValues">
 		<item>0</item>
@@ -406,7 +406,7 @@
 		<item>768</item>
 		<item>1024</item>
 	</string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="tapboxLayout">
     <item>D-Pad</item>
@@ -415,7 +415,7 @@
     <item>Standard</item>
     <item>Fullscreen</item>
   </string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_const.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_const.xml -->
     <eat-comment/>
     <string-array name="tapboxLayoutValues">
 		<item>d-pad</item>
@@ -472,7 +472,7 @@
 		<item>-60</item>
 		<item>-70</item>
 	</string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="toggle">
     <item>Off</item>
@@ -483,7 +483,7 @@
     <item>Off</item>
     <item>On</item>
   </string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_const.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_const.xml -->
     <eat-comment/>
     <string-array name="toggleDefaultValues">
 		<item>-1</item>
@@ -494,21 +494,21 @@
 		<item>0</item>
 		<item>1</item>
 	</string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="vibrateMiss">
     <item>Heavy</item>
     <item>Light</item>
     <item>Off</item>
   </string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/arrays_const.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_const.xml -->
     <eat-comment/>
     <string-array name="vibrateMissValues">
 		<item>2</item>
 		<item>1</item>
 		<item>0</item>
 	</string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/strings_trans.xml -->
     <eat-comment/>
     <string name="Accuracy_almost">"Almost"</string>
     <string name="Accuracy_best_combo">"Best Combo"</string>
@@ -520,13 +520,13 @@
     <string name="Accuracy_ok">"OK"</string>
     <string name="Accuracy_perfect">"Perfect!"</string>
     <string name="App_description">"Beats is a music rhythm game where you tap to the beat of the music of installed song packs."</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="App_name">"Beats"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/release_notes.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/release_notes.xml -->
     <eat-comment/>
     <string name="App_version">"1.7.5b FINAL"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/strings_trans.xml -->
     <eat-comment/>
     <string name="Button_close">"Close"</string>
     <string name="Button_demo">"Demo"</string>
@@ -577,7 +577,7 @@
     <string name="GUIHandler_combo">" COMBO"</string>
     <string name="GUIHandler_complete">"Complete"</string>
     <string name="GUIHandler_game_over">"Game Over"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="Letter_A">"A"</string>
     <string name="Letter_AA">"AA"</string>
@@ -588,7 +588,7 @@
     <string name="Letter_E">"E"</string>
     <string name="Letter_unknown">"\?\?\?"</string>
     <string name="Localytics_key">"7e17c9425cf4aec59bccf6f-8039babc-3418-11e0-c2c6-007af5bd88a0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/strings_trans.xml -->
     <eat-comment/>
     <string name="MenuFilechooser_file_delete">"Delete"</string>
     <string name="MenuFilechooser_file_delete_confirm">"Are you sure you want to delete the file/folder:\n"</string>
@@ -609,7 +609,7 @@
     <string name="MenuHome_background_sync_undo">"You previously disabled your \"Background data\" setting. Would you like to update the setting now\?"</string>
     <string name="MenuHome_background_sync_warning">"Your phone currently has \"Background data\" enabled. Turning off \"Background data\" helps prevent other apps from causing Beats gameplay to lag. Alternatively, you can increase \"Application Priority\" in \"Advanced Settings\".\n\nDo you wish to change your \"Background data\" setting\? (Recommended to reduce lag)"</string>
     <string name="MenuHome_legacy_warning">"Your phone is currently running Android 1.5 (Cupcake) or 1.6 (Donut), which do not fully support multi-touch capabilities. It is highly recommended you upgrade to 2.1 (Eclair) or higher. Beats can still run with single-touch but many stepfiles will be very difficult to play."</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/release_notes.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/release_notes.xml -->
     <eat-comment/>
     <string name="MenuHome_new_user_notes">
 "~ What is Beats\? ~
@@ -641,10 +641,10 @@ Enjoy the beta release!
 ~Keripo
 "
 </string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/strings_trans.xml -->
     <eat-comment/>
     <string name="MenuHome_new_user_notes_title">"New User Notes"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/release_notes.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/release_notes.xml -->
     <eat-comment/>
     <string name="MenuHome_release_notes">
 "This is the final major version of Beats 1.x.
@@ -665,7 +665,7 @@ Disclaimer:
 This beta release is for use as is, no warrantees expressed or implied. We are not responsible for any damage that may result from usage of this app. Information may be collected via Localytics for feature testing and feedback purposes.
 "
 </string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/strings_trans.xml -->
     <eat-comment/>
     <string name="MenuHome_release_notes_title">"Beats Release Notes"</string>
     <string name="MenuHome_titlebar">"PULSE"</string>
@@ -698,10 +698,10 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="MusicService_unable_resume_playback">"Error: Unable to resume playback. Try restarting Beats if this persists."</string>
     <string name="MusicService_unable_start_playback">"Error: Unable to start playback. Try restarting Beats if this persists."</string>
     <string name="MusicService_unable_stop_playback">"Error: Unable to stop playback. Try restarting Beats if this persists."</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="Titlebar">"Beats - "</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/strings_trans.xml -->
     <eat-comment/>
     <string name="ToolsDownloader_download">"Download: "</string>
     <string name="ToolsDownloader_download_ask">"Would you like to download song pack from:\n"</string>
@@ -725,14 +725,14 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="ToolsUpdateTask_update_ask">"New update for Beats is available!\n\nVersion name: %1$s\nVersion number: %2$d\n\nWould you like to download the new version?"</string>
     <string name="Tools_do_not_show_again">"Do not show me this again"</string>
     <string name="Tools_error_msg">"\nError message:\n"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="Tools_graphics_zip">"Beats 1.7x Graphics.zip"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/strings_trans.xml -->
     <eat-comment/>
     <string name="Tools_mount_error">"Unable to access the Beats folder."</string>
     <string name="Tools_notify_msg">"\nPlease notify me of this error message.\n~Keripo"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="Tools_path_backgrounds">"/Backgrounds"</string>
     <string name="Tools_path_beats">"/Beats"</string>
@@ -743,13 +743,13 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="Tools_path_singles">"/Singles"</string>
     <string name="Tools_path_songs">"/Songs"</string>
     <string name="Tools_path_version">"/version.txt"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/strings_trans.xml -->
     <eat-comment/>
     <string name="Tools_permissions_error">"\nCheck if you have the right file permissions."</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="Tools_sample_zip">"Lisek's Stepfiles (Beats Sample Songs).zip"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/strings_trans.xml -->
     <eat-comment/>
     <string name="Tools_screenshot_saved">"Screenshot saved to:\n"</string>
     <string name="Tools_unable_create_dir">"Error: Unable to create directory:\n"</string>
@@ -758,7 +758,7 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="Tools_unable_delete_file">"Error: Unable to delete file:\n"</string>
     <string name="Tools_usb_error">"\nMaybe you\'re in USB mode\?"</string>
     <string name="Tools_window_error">"Window switching error - I haven\'t figured out how to fix this yet ; / (please email me details!)"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="Url_changelog">"http://beatsportable.com/changelog/"</string>
     <string name="Url_demo">"http://beatsportable.com/demo/"</string>
@@ -772,89 +772,89 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="Url_website">"http://beatsportable.com"</string>
     <string name="accuracyLevel">"accuracyLevel"</string>
     <string name="accuracyLevelDefault">"45"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="accuracyLevelDesc">"Strictness of accuracy scoring"</string>
     <string name="accuracyLevelTitle">"Judgement"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="additionalVibrations">"additionalVibrations"</string>
     <string name="additionalVibrationsDefault">"1"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="additionalVibrationsDesc">"App and song startup vibrations"</string>
     <string name="additionalVibrationsTitle">"Additional Vibrations"</string>
     <string name="advancedScreenDesc">"More settings for customizing Beats to your heart\'s desire!"</string>
     <string name="advancedScreenTitle">"Advanced Settings"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="appPriority">"appPriority"</string>
     <string name="appPriorityDefault">"-16"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="appPriorityDesc">"Increase to reduce lag, may cause instability issues"</string>
     <string name="appPriorityTitle">"Application Priority"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="autoPlay">"autoPlay"</string>
     <string name="autoPlayDefault">"0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="autoPlayDesc">"Use auto-play for learning song patterns (or for the lolz!)"</string>
     <string name="autoPlayTitle">"Auto-Play"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="autoStart">"autoStart"</string>
     <string name="autoStartDefault">"1"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="autoStartDesc">"Automatically start game upon stepfile selection"</string>
     <string name="autoStartTitle">"Auto-Start"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="backgroundBrightness">"backgroundBrightness"</string>
     <string name="backgroundBrightnessDefault">"75"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="backgroundBrightnessDesc">"Background image brightness"</string>
     <string name="backgroundBrightnessTitle">"Background Brightness"</string>
     <string name="backgroundCategoryTitle">"Game Background"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="backgroundFiltering">"backgroundFiltering"</string>
     <string name="backgroundFilteringDefault">"0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="backgroundFilteringDesc">"Smoothen background image (enabling may reduce framerate)"</string>
     <string name="backgroundFilteringTitle">"Background Filtering"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="backgroundImage">"backgroundImage"</string>
     <string name="backgroundImageDefault">"blue"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="backgroundImageDesc">"Background image for main menu and stepfiles without one"</string>
     <string name="backgroundImageTitle">"Menu Background"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="backgroundShow">"backgroundShow"</string>
     <string name="backgroundShowDefault">"1"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="backgroundShowDesc">"Draw the background image"</string>
     <string name="backgroundShowTitle">"Show Background"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="backgroundSong">"backgroundSong"</string>
     <string name="backgroundSongDefault">"1"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="backgroundSongDesc">"Load song-specific background image"</string>
     <string name="backgroundSongTitle">"Load Song Background"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="betaNotesDefault">"1"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="betaNotesDesc">"Display beta notes on next startup"</string>
     <string name="betaNotesTitle">"Beta Notes"</string>
@@ -862,46 +862,46 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="changelogTitle">"Changelog"</string>
     <string name="creditsDesc">"A bit about the devs and all others to thank"</string>
     <string name="creditsTitle">"Credits"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="dark">"dark"</string>
     <string name="darkDefault">"0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="darkDesc">"Hide tap arrows"</string>
     <string name="darkTitle">"Dark"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="debugLogCat">"debugLogCat"</string>
     <string name="debugLogCatDefault">"0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="debugLogCatDesc">"Print warning/error messages to LogCat"</string>
     <string name="debugLogCatTitle">"LogCat Debugging"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="debugTapbox">"debugTapbox"</string>
     <string name="debugTapboxDefault">"0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="debugTapboxDesc">"Draw exact tapbox boxes"</string>
     <string name="debugTapboxTitle">"Tapbox Debugging"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="debugTime">"debugTime"</string>
     <string name="debugTimeDefault">"0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="debugTimeDesc">"Display exact note and sync time diffs"</string>
     <string name="debugTimeTitle">"Timing Debugging"</string>
     <string name="debuggingCategoryTitle">"Debugging"</string>
     <string name="demoDesc">"Video gameplay demo of Beats"</string>
     <string name="demoTitle">"Demo"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="difficultyLevel">"difficultyLevel"</string>
     <string name="difficultyLevelDefault">"2"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="difficultyLevelDesc">"Default difficulty level of song"</string>
     <string name="difficultyLevelTitle">"Difficulty Level"</string>
@@ -911,19 +911,19 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="filebrowserCategoryTitle">"Song Browsing"</string>
     <string name="forumsDesc">"Discussion and support forums for Beats"</string>
     <string name="forumsTitle">"Forums"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="fullscreen">"fullscreen"</string>
     <string name="fullscreenDefault">"0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="fullscreenDesc">"Hide status and title bars"</string>
     <string name="fullscreenTitle">"Fullscreen"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="gameMode">"gameMode"</string>
     <string name="gameModeDefault">"0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="gameModeDesc">"Mode of displaying notes"</string>
     <string name="gameModeTitle">"Game Mode"</string>
@@ -931,39 +931,39 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="gameScreenTitle">"Game Screen"</string>
     <string name="gameSettingsCategoryTitle">"Game Settings"</string>
     <string name="gameplayCategoryTitle">"Gameplay"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="hardwareAccelerate">"hardwareAccelerate"</string>
     <string name="hardwareAccelerateDefault">"-1"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="hardwareAccelerationDesc">May improve FPS</string>
     <string name="hardwareAccelerationTitle">Hardware Acceleration</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="healthMax">"healthMax"</string>
     <string name="healthMaxDefault">"2000"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="healthMaxDesc">"Maximum health value"</string>
     <string name="healthMaxTitle">"Health Total"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="healthPenalty">"healthPenalty"</string>
     <string name="healthPenaltyDefault">"40"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="healthPenaltyDesc">"Health loss per note missed"</string>
     <string name="healthPenaltyTitle">"Health Penalty"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="holds">"holds"</string>
     <string name="holdsDefault">"1"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="holdsDesc">"Notes that have to be held down"</string>
     <string name="holdsTitle">"Holds"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="ignoreBetaNotes">"ignoreBetaNotes"</string>
     <string name="ignoreBetaNotesDefault">"0"</string>
@@ -983,198 +983,198 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="ignoreTabletBackgroundWarningDefault">"0"</string>
     <string name="ignoreUnzipSizeWarning">"ignoreUnzipSizeWarning"</string>
     <string name="ignoreUnzipSizeWarningDefault">"0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="infoCategoryTitle">"Info"</string>
     <string name="infoScreenDesc">"Links and info about Beats"</string>
     <string name="infoScreenTitle">"Info"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/strings_trans.xml -->
     <eat-comment/>
     <string name="initial0">" 000 "</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="installSamples">"installSamples"</string>
     <string name="installSamplesDefault">"1"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="installSamplesDesc">"Re-install sample songs on next startup"</string>
     <string name="installSamplesTitle">"Install Sample Songs"</string>
     <string name="interfaceCategoryTitle">"Game Interface"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="jumps">"jumps"</string>
     <string name="jumpsDefault">"0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="jumpsDesc">"Multiple notes per line"</string>
     <string name="jumpsTitle">"Jumps"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="language">"language"</string>
     <string name="languageDefault">"default"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="languageDesc">"Change displayed language"</string>
     <string name="languageTitle">"Language"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="lastDir">"lastDir"</string>
     <string name="lastDirDefault">""</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="linksCategoryTitle">"Links"</string>
     <string name="machineSettingsCategoryTitle">"Machine Settings"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="manualOGGOffset">"manualOGGOffset"</string>
     <string name="manualOGGOffsetDefault">"0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="manualOGGOffsetDesc">"Manually adjust this if .ogg music is off-sync (I use -0.325s)"</string>
     <string name="manualOGGOffsetTitle">"OGG Offset"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="manualOffset">"manualOffset"</string>
     <string name="manualOffsetDefault">"0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="manualOffsetDesc">"Manually adjust this only if timing is off-sync"</string>
     <string name="manualOffsetTitle">"Music Offset"</string>
     <string name="miscCategoryTitle">"Misc"</string>
     <string name="modifiersScreenDesc">"Modifiers affecting the notes data or appearances"</string>
     <string name="modifiersScreenTitle">"Modifiers"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="noteAppearance">"noteAppearance"</string>
     <string name="noteAppearanceDefault">"0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="noteAppearanceDesc">"Visibility of notes"</string>
     <string name="noteAppearanceTitle">"Appearance"</string>
     <string name="notesCategoryTitle">"Notes"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="noteskin">"noteskin"</string>
     <string name="noteskinDefault">"default"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="noteskinDesc">"Note graphics to load"</string>
     <string name="noteskinTitle">"Note Skin"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="orientation">"orientation"</string>
     <string name="orientationDefault">"2"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="orientationDesc">"Default screen orientation during gameplay"</string>
     <string name="orientationTitle">"Screen Orientation"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="randomize">"randomize"</string>
     <string name="randomizeDefault">"0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="randomizeDesc">"Randomize note patterns (ignores holds)"</string>
     <string name="randomizeTitle">"Randomize"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="resetHighScores">"resetScores"</string>
     <string name="resetHighScoresDefault">"0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="resetHighScoresDesc">"Reset all high scores on next game"</string>
     <string name="resetHighScoresTitle">"Reset High Scores"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="resetSettings">"resetSettings"</string>
     <string name="resetSettingsDefault">"1"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="resetSettingsDesc">"Reset all settings to default values on next startup"</string>
     <string name="resetSettingsTitle">"Reset All Settings"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="screenshotMode">"screenshotMode"</string>
     <string name="screenshotModeDefault">"0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="screenshotModeDesc">"Enable this to take a screenshot when you pause the game"</string>
     <string name="screenshotModeTitle">"Screenshot Mode"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="showFPS">"showFPS"</string>
     <string name="showFPSDefault">"1"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="showFPSDesc">"Display current and average framerate (# of frames updates/sec)"</string>
     <string name="showFPSTitle">"Show FPS"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="showPercent">"showPercent"</string>
     <string name="showPercentDefault">"0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="showPercentDesc">"Display percent instead of letter grade in scoreboard"</string>
     <string name="showPercentTitle">"Display Percentage"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="smFilePath">"smFilePath"</string>
     <string name="smFilePathDefault">""</string>
     <string name="speedMultiplier">"speedMultiplier"</string>
     <string name="speedMultiplierDefault">"2"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="speedMultiplierDesc">"Falling speed of notes"</string>
     <string name="speedMultiplierTitle">"Speed"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/strings_trans.xml -->
     <eat-comment/>
     <string name="status">" Bluetooth Status "</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="stepfileFolderCheck">"stepfileFolderCheck"</string>
     <string name="stepfileFolderCheckDefault">"1"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="stepfileFolderCheckDesc">"Disable to directly open directories with stepfiles"</string>
     <string name="stepfileFolderCheckTitle">"Stepfile Folder Checking"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="syncDuration">"syncDuration"</string>
     <string name="syncDurationDefault">"1024"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="syncDurationDesc">"Notes-audio sync duration for startup and pause/resume"</string>
     <string name="syncDurationTitle">"Audio Re-sync"</string>
     <string name="tapSettingsCategoryTitle">"Tap Settings"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="tapboxFading">"tapboxFading"</string>
     <string name="tapboxFadingDefault">"50"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="tapboxFadingDesc">"Transparency of tapboxes"</string>
     <string name="tapboxFadingTitle">"Tapbox Fading"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="tapboxLayout">"tapboxLayout"</string>
     <string name="tapboxLayoutDefault">"standard"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="tapboxLayoutDesc">"Arrangement of tapboxes"</string>
     <string name="tapboxLayoutTitle">"Tapbox Layout"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="tapboxOverlap">"tapboxOverlap"</string>
     <string name="tapboxOverlapDefault">"0.1"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="tapboxOverlapDesc">"Horizontal overlap of adjacent tapboxes"</string>
     <string name="tapboxOverlapTitle">"Tapbox Overlap"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="tapboxYOffset">"tapboxYOffset"</string>
     <string name="tapboxYOffsetDefault">"0"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="tapboxYOffsetDesc">"Vertical shift of tapboxes"</string>
     <string name="tapboxYOffsetTitle">"Tapbox Placement"</string>
@@ -1184,53 +1184,53 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="tutorialDesc">"Video tutorial demonstrating various features of Beats"</string>
     <string name="tutorialTitle">"Tutorial"</string>
     <string name="tweaksCategoryTitle">"Tweaks"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="updateCheck">"0"</string>
     <string name="updateCheckDefault">"0"</string>
     <string name="useShortDirNames">"useShortDirNames"</string>
     <string name="useShortDirNamesDefault">"1"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="useShortDirNamesDesc">"Remove (...) and [...] tags from folder entries in \'SELECT MUSIC\'"</string>
     <string name="useShortDirNamesTitle">"Shorten Folder Names"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="vibrateHold">"vibrateHold"</string>
     <string name="vibrateHoldDefault">"1"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="vibrateHoldDesc">"Keep vibrating during hold arrows"</string>
     <string name="vibrateHoldTitle">"Vibrate on Holds"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="vibrateMiss">"vibrateMiss"</string>
     <string name="vibrateMissDefault">"1"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="vibrateMissDesc">"Vibrations on a note Miss or Auto-Play tap"</string>
     <string name="vibrateMissTitle">"Vibrate on Miss"</string>
     <string name="vibrateScreenDesc">"Vibration/haptic feedback settings"</string>
     <string name="vibrateScreenTitle">"Vibrations"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="vibrateTap">"vibrateTap"</string>
     <string name="vibrateTapDefault">"1"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="vibrateTapDesc">"Vibrations when tapping arrows"</string>
     <string name="vibrateTapTitle">"Vibrate on Tap"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/constants.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="vibrateTouchSense">"vibrateTouchSense"</string>
     <string name="vibrateTouchSenseDefault">"1"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="vibrateTouchSenseDesc">"Haptic feedback with Immersion\'s Universal Haptic Layer (UHL) technology"</string>
     <string name="vibrateTouchSenseTitle">"Vibrate with UHL"</string>
     <string name="websiteDesc">"Read the latest updates at Beats\' official website http://beatsportable.com"</string>
     <string name="websiteTitle">"Website"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values/theme.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/theme.xml -->
     <eat-comment/>
     <style name="Theme.NoBackground" parent="android:Theme">
         <item name="android:windowBackground">@null</item>
