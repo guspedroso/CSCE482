@@ -733,8 +733,31 @@ public class GUIGame extends Activity {
                 respRate = MenuHome.bpm;
                 //respRate = Double.toString(_NConnListener.respRateDoub);
 
-                h.fallpix_per_ms += 1;
-                // SWITCH STATEMENT HERE FOR SPEED
+
+                // Modify Speed Based on Breathing Rate
+                double resp = Double.parseDouble(respRate);
+                if(resp < 6.0){
+                    h.fallpix_per_ms = 1.5;
+                }
+                else if(resp > 6 && resp < 8){
+                    h.fallpix_per_ms = 2;
+                }
+                else if(resp > 8 && resp < 10){
+                    h.fallpix_per_ms = 2.5;
+                }
+                else if(resp > 10 && resp < 12){
+                    h.fallpix_per_ms = 3;
+                }
+                else if(resp > 12 && resp < 14){
+                    h.fallpix_per_ms = 3.5;
+                }
+                else if(resp > 14 && resp < 16){
+                    h.fallpix_per_ms = 4;
+                }
+                else {
+                    h.fallpix_per_ms = 4.5;
+                }
+
             }
         }
         //****************
