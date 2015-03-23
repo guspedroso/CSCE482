@@ -809,22 +809,22 @@ public class GUIGame extends Activity {
                         break;
                     // GOAL: 12
                     case 3:
-                        if(resp < 6.0){
+                        if(resp < 12.0){
                             h.fallpix_per_ms = 1.5;
                         }
-                        else if(resp > 6 && resp < 8){
+                        else if(resp > 12 && resp < 14){
                             h.fallpix_per_ms = 2;
                         }
-                        else if(resp > 8 && resp < 10){
+                        else if(resp > 14 && resp < 16){
                             h.fallpix_per_ms = 2.5;
                         }
-                        else if(resp > 10 && resp < 12){
+                        else if(resp > 16 && resp < 18){
                             h.fallpix_per_ms = 3;
                         }
-                        else if(resp > 12 && resp < 14){
+                        else if(resp > 18 && resp < 20){
                             h.fallpix_per_ms = 3.5;
                         }
-                        else if(resp > 14 && resp < 16){
+                        else if(resp > 20 && resp < 22){
                             h.fallpix_per_ms = 4;
                         }
                         else {
@@ -833,22 +833,22 @@ public class GUIGame extends Activity {
                         break;
                     // GOAL: 14
                     case 4:
-                        if(resp < 6.0){
+                        if(resp < 14.0){
                             h.fallpix_per_ms = 1.5;
                         }
-                        else if(resp > 6 && resp < 8){
+                        else if(resp > 14 && resp < 16){
                             h.fallpix_per_ms = 2;
                         }
-                        else if(resp > 8 && resp < 10){
+                        else if(resp > 16 && resp < 18){
                             h.fallpix_per_ms = 2.5;
                         }
-                        else if(resp > 10 && resp < 12){
+                        else if(resp > 18 && resp < 20){
                             h.fallpix_per_ms = 3;
                         }
-                        else if(resp > 12 && resp < 14){
+                        else if(resp > 20 && resp < 22){
                             h.fallpix_per_ms = 3.5;
                         }
-                        else if(resp > 14 && resp < 16){
+                        else if(resp > 22 && resp < 24){
                             h.fallpix_per_ms = 4;
                         }
                         else {
