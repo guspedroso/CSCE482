@@ -577,6 +577,11 @@
     <string name="GUIHandler_combo">" COMBO"</string>
     <string name="GUIHandler_complete">"Complete"</string>
     <string name="GUIHandler_game_over">"Game Over"</string>
+    <string name="Goal_10">"Goal: 10 BPM"</string>
+    <string name="Goal_12">"Goal: 12 BPM"</string>
+    <string name="Goal_14">"Goal: 14 BPM"</string>
+    <string name="Goal_6">"Goal: 6 BPM"</string>
+    <string name="Goal_8">"Goal: 8 BPM"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="Letter_A">"A"</string>
@@ -933,6 +938,8 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="gameplayCategoryTitle">"Gameplay"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
+    <string name="goalLevel">"goalLevel"</string>
+    <string name="goalLevelDefault">"0"</string>
     <string name="hardwareAccelerate">"hardwareAccelerate"</string>
     <string name="hardwareAccelerateDefault">"-1"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->

@@ -28,6 +28,11 @@
   <string name="Difficulty_challenge">"Challenge"</string>
   <string name="Difficulty_edit">"Edit"</string>
   <string name="Difficulty_unknown">"Unknown"</string>
+  <string name="Goal_6">"Goal: 6 BPM"</string>
+  <string name="Goal_8">"Goal: 8 BPM"</string>
+  <string name="Goal_10">"Goal: 10 BPM"</string>
+  <string name="Goal_12">"Goal: 12 BPM"</string>
+  <string name="Goal_14">"Goal: 14 BPM"</string>
   <string name="Accuracy_best_combo">"Best Combo"</string>
   <string name="Accuracy_marvelous">"Marvelous!"</string>
   <string name="Accuracy_perfect">"Perfect!"</string>

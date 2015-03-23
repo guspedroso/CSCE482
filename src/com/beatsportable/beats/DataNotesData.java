@@ -104,9 +104,27 @@ public class DataNotesData implements Comparable<DataNotesData> {
 	private NotesType notestype = NotesType.DANCE_UNKNOWN;
 	private String description = "";
 	private Difficulty difficulty = Difficulty.BEGINNER;
+    private Goal goal = Goal.GOAL_6;
 	private int difficultyMeter = 0;
 	// at least 5 values "voltage", "stream", "chaos", "freeze", and "air"
 	private ArrayList<Float> radarValues = new ArrayList<Float>(5);
+
+// ----------------------------------------------------------------------------------------------------
+    public enum Goal {
+        GOAL_6	(R.string.Goal_6),
+        GOAL_8		(R.string.Goal_8),
+        GOAL_10		(R.string.Goal_10),
+        GOAL_12		(R.string.Goal_12),
+        GOAL_14 	(R.string.Goal_14);
+        private int name;
+        Goal(int name) {
+            this.name = name;
+        }
+        public String toString() {
+            return Tools.getString(name);
+        }
+    }
+
 	
 	// These are references only for .osu files
 	public ArrayList<Float> bpmBeat;
@@ -123,6 +141,9 @@ public class DataNotesData implements Comparable<DataNotesData> {
 	
 	public void setDifficulty(Difficulty difficulty) { this.difficulty = difficulty; }
 	public Difficulty getDifficulty() { return difficulty; }
+
+    public void setGoal(Goal goal) { this.goal = goal; }
+    public Goal getGoal() { return goal; }
 	
 	public void setDifficultyMeter(int difficultyMeter) { this.difficultyMeter = difficultyMeter; }
 	public int getDifficultyMeter() { return difficultyMeter; }

@@ -528,9 +528,32 @@ public class MenuHome extends Activity {
 					difficulty.setBackgroundColor(Color.TRANSPARENT);
 				}
 			}
-		});		
-		
-		// AutoPlay button
+		});
+
+        //-------------------------------------- Goal button ------------------------------------------------------
+        final TextView goal = (TextView) findViewById(R.id.goal);
+        goal.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                vibrate();
+                //changeDifficulty();
+                nextGoal();
+            }
+        });
+        goal.setOnFocusChangeListener(new OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    goal.setBackgroundColor(Color.BLACK);
+                } else {
+                    // Using the image increases the view's height and shifts the menu a bit,
+                    // so let's just forget about the background
+                    //difficulty.setBackgroundResource(R.drawable.difficulty_header);
+                    goal.setBackgroundColor(Color.TRANSPARENT);
+                }
+            }
+        });
+
+
+        // AutoPlay button
 		TextView autoPlay = (TextView) findViewById(R.id.autoPlay);
 		autoPlay.setTextColor(Color.RED);
 		autoPlay.setShadowLayer(7f, 0, 0, Color.WHITE);
@@ -933,6 +956,64 @@ public class MenuHome extends Activity {
 				break;
 		}
 	}
+
+
+    private void nextGoal() {
+        int goal = Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault));
+        goal++;
+        if (goal > 4) goal = 0;
+        Tools.putSetting(R.string.goalLevel, Integer.toString(goal));
+        updateGoal();
+    }
+
+    private void updateGoal() {
+        // Header font
+        Typeface tf = Typeface.createFromAsset(getAssets(), MENU_FONT);
+        float textSize = 17f;
+        if (largeText) {
+            textSize += 3f;
+        }
+        if (Tools.tablet) {
+            textSize += 20;
+        }
+        //textSize = Tools.scale(textSize);
+
+        // Goal header
+        TextView goal = (TextView) findViewById(R.id.goal);
+        if (largeText) {
+            goal.setTypeface(Typeface.SANS_SERIF, Typeface.BOLD);
+        } else {
+            goal.setTypeface(tf);
+        }
+        goal.setTextSize(textSize);
+        switch (Integer.parseInt(
+                Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault)
+        )) {
+            case 0:
+                goal.setText(" " + Tools.getString(R.string.Goal_6).toLowerCase());
+                goal.setTextColor(Color.rgb(255, 132, 0)); // orange
+                break;
+            case 1:
+                goal.setText(" " + Tools.getString(R.string.Goal_8).toLowerCase());
+                goal.setTextColor(Color.rgb(0, 185, 255)); // light blue
+                break;
+            case 2:
+                goal.setText(" " + Tools.getString(R.string.Goal_10).toLowerCase());
+                goal.setTextColor(Color.rgb(255, 0, 0)); // red
+                break;
+            case 3:
+                goal.setText(" " + Tools.getString(R.string.Goal_12).toLowerCase());
+                goal.setTextColor(Color.rgb(32, 185, 32)); // green
+                break;
+            case 4:
+                goal.setText(" " + Tools.getString(R.string.Goal_14).toLowerCase());
+                goal.setTextColor(Color.rgb(14, 122, 230)); // dark blue
+                break;
+        }
+    }
+
+
+
 	
 	// Ugly, won't fix
 	private void nextGameMode(boolean prev) {

@@ -49,6 +49,8 @@
 	<!-- Tweakable Settings -->
 	<string name="difficultyLevel">"difficultyLevel"</string>
 	<string name="difficultyLevelDefault">"2"</string>
+    <string name="goalLevel">"goalLevel"</string>
+    <string name="goalLevelDefault">"0"</string>
 	<string name="speedMultiplier">"speedMultiplier"</string>
 	<string name="speedMultiplierDefault">"2"</string>
 	<string name="autoStart">"autoStart"</string>

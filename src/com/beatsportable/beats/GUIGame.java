@@ -552,9 +552,8 @@ public class GUIGame extends Activity {
 			// BPM & Speed
 			rightSettingsTop =
 				String.format(
-						"%s BPM, %3.2fx",
-                        respRate,
-						//dp.df.getBPMRange(dp.notesDataIndex),
+						"%s Beats Per Min, %3.2fx",
+						dp.df.getBPMRange(dp.notesDataIndex),
 						speed_multiplier
 						);
 			
@@ -728,34 +727,134 @@ public class GUIGame extends Activity {
         //self-made function to set fallpix_per_ms speed variable within Update()
         class SpeedTask extends TimerTask {
             public void run() {
-                //_NConnListener = new NewConnectedListener(Newhandler,Newhandler);
-                //MenuHome._bt.addConnectedEventListener(_NConnListener);
-                respRate = MenuHome.bpm;
-                //respRate = Double.toString(_NConnListener.respRateDoub);
 
+                respRate = MenuHome.bpm;
+                double resp = Double.parseDouble(respRate);
 
                 // Modify Speed Based on Breathing Rate
-                double resp = Double.parseDouble(respRate);
-                if(resp < 6.0){
-                    h.fallpix_per_ms = 1.5;
-                }
-                else if(resp > 6 && resp < 8){
-                    h.fallpix_per_ms = 2;
-                }
-                else if(resp > 8 && resp < 10){
-                    h.fallpix_per_ms = 2.5;
-                }
-                else if(resp > 10 && resp < 12){
-                    h.fallpix_per_ms = 3;
-                }
-                else if(resp > 12 && resp < 14){
-                    h.fallpix_per_ms = 3.5;
-                }
-                else if(resp > 14 && resp < 16){
-                    h.fallpix_per_ms = 4;
-                }
-                else {
-                    h.fallpix_per_ms = 4.5;
+                switch (Integer.parseInt(
+                        Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault)
+                )) {
+                    // GOAL: 6
+                    case 0:
+                        if(resp < 6.0){
+                            h.fallpix_per_ms = 1.5;
+                        }
+                        else if(resp > 6 && resp < 8){
+                            h.fallpix_per_ms = 2;
+                        }
+                        else if(resp > 8 && resp < 10){
+                            h.fallpix_per_ms = 2.5;
+                        }
+                        else if(resp > 10 && resp < 12){
+                            h.fallpix_per_ms = 3;
+                        }
+                        else if(resp > 12 && resp < 14){
+                            h.fallpix_per_ms = 3.5;
+                        }
+                        else if(resp > 14 && resp < 16){
+                            h.fallpix_per_ms = 4;
+                        }
+                        else {
+                            h.fallpix_per_ms = 4.5;
+                        }
+                        break;
+                    // GOAL: 8
+                    case 1:
+                        if(resp < 8.0){
+                            h.fallpix_per_ms = 1.5;
+                        }
+                        else if(resp > 8 && resp < 10){
+                            h.fallpix_per_ms = 2;
+                        }
+                        else if(resp > 10 && resp < 12){
+                            h.fallpix_per_ms = 2.5;
+                        }
+                        else if(resp > 12 && resp < 14){
+                            h.fallpix_per_ms = 3;
+                        }
+                        else if(resp > 14 && resp < 16){
+                            h.fallpix_per_ms = 3.5;
+                        }
+                        else if(resp > 16 && resp < 18){
+                            h.fallpix_per_ms = 4;
+                        }
+                        else {
+                            h.fallpix_per_ms = 4.5;
+                        }
+                        break;
+                    // GOAL: 10
+                    case 2:
+                        if(resp < 10.0){
+                            h.fallpix_per_ms = 1.5;
+                        }
+                        else if(resp > 10 && resp < 12){
+                            h.fallpix_per_ms = 2;
+                        }
+                        else if(resp > 12 && resp < 14){
+                            h.fallpix_per_ms = 2.5;
+                        }
+                        else if(resp > 14 && resp < 16){
+                            h.fallpix_per_ms = 3;
+                        }
+                        else if(resp > 16 && resp < 18){
+                            h.fallpix_per_ms = 3.5;
+                        }
+                        else if(resp > 18 && resp < 20){
+                            h.fallpix_per_ms = 4;
+                        }
+                        else {
+                            h.fallpix_per_ms = 4.5;
+                        }
+                        break;
+                    // GOAL: 12
+                    case 3:
+                        if(resp < 6.0){
+                            h.fallpix_per_ms = 1.5;
+                        }
+                        else if(resp > 6 && resp < 8){
+                            h.fallpix_per_ms = 2;
+                        }
+                        else if(resp > 8 && resp < 10){
+                            h.fallpix_per_ms = 2.5;
+                        }
+                        else if(resp > 10 && resp < 12){
+                            h.fallpix_per_ms = 3;
+                        }
+                        else if(resp > 12 && resp < 14){
+                            h.fallpix_per_ms = 3.5;
+                        }
+                        else if(resp > 14 && resp < 16){
+                            h.fallpix_per_ms = 4;
+                        }
+                        else {
+                            h.fallpix_per_ms = 4.5;
+                        }
+                        break;
+                    // GOAL: 14
+                    case 4:
+                        if(resp < 6.0){
+                            h.fallpix_per_ms = 1.5;
+                        }
+                        else if(resp > 6 && resp < 8){
+                            h.fallpix_per_ms = 2;
+                        }
+                        else if(resp > 8 && resp < 10){
+                            h.fallpix_per_ms = 2.5;
+                        }
+                        else if(resp > 10 && resp < 12){
+                            h.fallpix_per_ms = 3;
+                        }
+                        else if(resp > 12 && resp < 14){
+                            h.fallpix_per_ms = 3.5;
+                        }
+                        else if(resp > 14 && resp < 16){
+                            h.fallpix_per_ms = 4;
+                        }
+                        else {
+                            h.fallpix_per_ms = 4.5;
+                        }
+                        break;
                 }
 
             }

@@ -40,6 +40,13 @@
 					android:layout_alignParentLeft="true"
 					android:text="@string/Menu_auto"
 				/>
+                <TextView
+                    android:id="@+id/goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:background="@drawable/difficulty_header"
+                    />
 			</LinearLayout>
 			<LinearLayout
 				android:layout_width="wrap_content"
