@@ -690,7 +690,7 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="MenuStartGame_osu_warning">"As of the moment, .osu support is still very experimental. Sliders, spinners, Taiko mode and many other features not yet implemented.\n\nIf you encounter any .osu beatmaps that Beats fails to load properly, please email them to me, thanks!\n\n~Keripo"</string>
     <string name="MenuStartGame_select_music">"Use \"SELECT SONG\" to choose an installed stepfile to play.\n\nIf you do not have any stepfiles installed, use \"DOWNLOAD SONGS\" to visit BeatsPortable.com and read the download/install instructions there."</string>
     <string name="Menu_auto">" auto "</string>
-    <string name="Menu_connect">" Connect "</string>
+    <string name="Menu_connect">" connect "</string>
     <string name="Menu_download_songs">" download songs "</string>
     <string name="Menu_exit">" exit "</string>
     <string name="Menu_select_song">" select song "</string>

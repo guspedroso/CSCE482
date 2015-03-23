@@ -111,7 +111,7 @@ public class DataNotesData implements Comparable<DataNotesData> {
 
 // ----------------------------------------------------------------------------------------------------
     public enum Goal {
-        GOAL_6	(R.string.Goal_6),
+        GOAL_6	    (R.string.Goal_6),
         GOAL_8		(R.string.Goal_8),
         GOAL_10		(R.string.Goal_10),
         GOAL_12		(R.string.Goal_12),

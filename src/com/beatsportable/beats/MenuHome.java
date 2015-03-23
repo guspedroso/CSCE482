@@ -535,7 +535,6 @@ public class MenuHome extends Activity {
         goal.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 vibrate();
-                //changeDifficulty();
                 nextGoal();
             }
         });
@@ -561,7 +560,7 @@ public class MenuHome extends Activity {
 			public void onClick(View v) {
 				vibrate();
 				//changeAutoPlay();
-				nextAutoPlay();
+				//nextAutoPlay();
 			}
 		});
 		
@@ -936,23 +935,23 @@ public class MenuHome extends Activity {
 				)) {
 			case 0:
 				difficulty.setText(" " + Tools.getString(R.string.Difficulty_beginner).toLowerCase());
-				difficulty.setTextColor(Color.rgb(255, 132, 0)); // orange
+                difficulty.setTextColor(Color.rgb(32, 185, 32)); // green
 				break;
 			case 1:
 				difficulty.setText(" " + Tools.getString(R.string.Difficulty_easy).toLowerCase());
-				difficulty.setTextColor(Color.rgb(0, 185, 255)); // light blue
+                difficulty.setTextColor(Color.rgb(14, 122, 230)); // dark blue
 				break;
 			case 2:
 				difficulty.setText(" " + Tools.getString(R.string.Difficulty_medium).toLowerCase());
-				difficulty.setTextColor(Color.rgb(255, 0, 0)); // red
+                difficulty.setTextColor(Color.rgb(0, 185, 255)); // light blue
 				break;
 			case 3:
 				difficulty.setText(" " + Tools.getString(R.string.Difficulty_hard).toLowerCase());
-				difficulty.setTextColor(Color.rgb(32, 185, 32)); // green
+                difficulty.setTextColor(Color.rgb(255, 132, 0)); // orange
 				break;
 			case 4:
 				difficulty.setText(" " + Tools.getString(R.string.Difficulty_challenge).toLowerCase());
-				difficulty.setTextColor(Color.rgb(14, 122, 230)); // dark blue
+                difficulty.setTextColor(Color.rgb(255, 0, 0)); // red
 				break;
 		}
 	}
@@ -991,23 +990,23 @@ public class MenuHome extends Activity {
         )) {
             case 0:
                 goal.setText(" " + Tools.getString(R.string.Goal_6).toLowerCase());
-                goal.setTextColor(Color.rgb(255, 132, 0)); // orange
+                goal.setTextColor(Color.rgb(255, 0, 0)); // red
                 break;
             case 1:
                 goal.setText(" " + Tools.getString(R.string.Goal_8).toLowerCase());
-                goal.setTextColor(Color.rgb(0, 185, 255)); // light blue
+                goal.setTextColor(Color.rgb(255, 132, 0)); // orange
                 break;
             case 2:
                 goal.setText(" " + Tools.getString(R.string.Goal_10).toLowerCase());
-                goal.setTextColor(Color.rgb(255, 0, 0)); // red
+                goal.setTextColor(Color.rgb(0, 185, 255)); // light blue
                 break;
             case 3:
                 goal.setText(" " + Tools.getString(R.string.Goal_12).toLowerCase());
-                goal.setTextColor(Color.rgb(32, 185, 32)); // green
+                goal.setTextColor(Color.rgb(14, 122, 230)); // dark blue
                 break;
             case 4:
                 goal.setText(" " + Tools.getString(R.string.Goal_14).toLowerCase());
-                goal.setTextColor(Color.rgb(14, 122, 230)); // dark blue
+                goal.setTextColor(Color.rgb(32, 185, 32)); // green
                 break;
         }
     }
