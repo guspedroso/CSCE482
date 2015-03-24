@@ -546,16 +546,17 @@ public class GUIGame extends Activity {
 				rightSettingsBottom = Tools.getString(R.string.GUIGame_standard);
 			}
 
+			// Beats Per Minute
+			rightSettingsTop = String.format("%s Beats Per Min", dp.df.getBPMRange(dp.notesDataIndex));
 
-// ----------------------------------- PUT BREATHS-PER-MINUTE TEXT HERE ------------------------------------------------
+            // BPM & Speed
+           /* rightSettingsTop =
+                    String.format(
+                            "%s Beats Per Min %3.2fx",
+                            dp.df.getBPMRange(dp.notesDataIndex),
+                            speed_multiplier
+                    ); */
 
-			// BPM & Speed
-			rightSettingsTop =
-				String.format(
-						"%s Beats Per Min, %3.2fx",
-						dp.df.getBPMRange(dp.notesDataIndex),
-						speed_multiplier
-						);
 			
 			// Title
 			titlePaint = new GUITextPaint(Tools.scale(14)).alignLeft().bold().ARGB(Tools.MAX_OPA, 0, 0, 0);
@@ -590,7 +591,7 @@ public class GUIGame extends Activity {
 		public void onDraw(Canvas canvas) {
 
 			// FPS
-			if (showFPS) {
+			/*if (showFPS) {
 				frameCount++;
 				if (frameCount > 10) {
 					long fpsCurrentTime = SystemClock.elapsedRealtime(); 
@@ -611,7 +612,7 @@ public class GUIGame extends Activity {
 					frameCount = 0;
 					fpsStartTime = SystemClock.elapsedRealtime();
 				}
-			}
+			} */
 			
 			// Just in case
 			if (h == null) {
@@ -651,13 +652,16 @@ public class GUIGame extends Activity {
 			canvas.drawRect(new Rect(margin, margin * 2 + height, Tools.screen_w - margin, margin * 2 + height * 2), hpBorderPaint);
 			
 			// Show FPS or AutoPlay
-			if (showFPS && autoPlay) {
-				autoPlayPaint.draw(canvas, "AUTO FPS:" + (int)fps + "/" + (int)fpsTotal, margin * 2, margin * 2 + height * 3);
-			} else if (showFPS) {
+// ----------------------------------- PUT BREATHS-PER-MINUTE TEXT HERE ------------------------------------------------
+			//if (showFPS && autoPlay) {
+			//	autoPlayPaint.draw(canvas, "AUTO FPS:" + (int)fps + "/" + (int)fpsTotal, margin * 2, margin * 2 + height * 3);
+			//}
+			if (showFPS) {
 				autoPlayPaint.draw(canvas, "BPM:" + respRate, margin * 2, margin * 2 + height * 3);
-			} else if (autoPlay) {
-				autoPlayPaint.draw(canvas, "AUTO", margin * 2, margin + height * 3);
 			}
+            //else if (autoPlay) {
+			//	autoPlayPaint.draw(canvas, "AUTO", margin * 2, margin + height * 3);
+			//}
 			
 			// Accuracy message
 			int opa = (2 * Tools.MAX_OPA - h.msg_frames * frame_millis);
@@ -729,134 +733,73 @@ public class GUIGame extends Activity {
             public void run() {
 
                 respRate = MenuHome.bpm;
-                double resp = Double.parseDouble(respRate);
+                // Check that the device is connected
+                if (respRate != null) {
+                    double resp = Double.parseDouble(respRate);
+                    // Modify Speed Based on Breathing Rate
+                    switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
+                        // GOAL: 6
+                        case 0:
+                            if (resp < 6.0) { h.fallpix_per_ms = 1.5; }
+                            else if (resp > 6 && resp < 8) { h.fallpix_per_ms = 2; }
+                            else if (resp > 8 && resp < 10) { h.fallpix_per_ms = 2.5; }
+                            else if (resp > 10 && resp < 12) { h.fallpix_per_ms = 3; }
+                            else if (resp > 12 && resp < 14) { h.fallpix_per_ms = 3.5; }
+                            else if (resp > 14 && resp < 16) { h.fallpix_per_ms = 4; }
+                            else { h.fallpix_per_ms = 4.5; }
+                            break;
 
-                // Modify Speed Based on Breathing Rate
-                switch (Integer.parseInt(
-                        Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault)
-                )) {
-                    // GOAL: 6
-                    case 0:
-                        if(resp < 6.0){
-                            h.fallpix_per_ms = 1.5;
-                        }
-                        else if(resp > 6 && resp < 8){
-                            h.fallpix_per_ms = 2;
-                        }
-                        else if(resp > 8 && resp < 10){
-                            h.fallpix_per_ms = 2.5;
-                        }
-                        else if(resp > 10 && resp < 12){
-                            h.fallpix_per_ms = 3;
-                        }
-                        else if(resp > 12 && resp < 14){
-                            h.fallpix_per_ms = 3.5;
-                        }
-                        else if(resp > 14 && resp < 16){
-                            h.fallpix_per_ms = 4;
-                        }
-                        else {
-                            h.fallpix_per_ms = 4.5;
-                        }
-                        break;
-                    // GOAL: 8
-                    case 1:
-                        if(resp < 8.0){
-                            h.fallpix_per_ms = 1.5;
-                        }
-                        else if(resp > 8 && resp < 10){
-                            h.fallpix_per_ms = 2;
-                        }
-                        else if(resp > 10 && resp < 12){
-                            h.fallpix_per_ms = 2.5;
-                        }
-                        else if(resp > 12 && resp < 14){
-                            h.fallpix_per_ms = 3;
-                        }
-                        else if(resp > 14 && resp < 16){
-                            h.fallpix_per_ms = 3.5;
-                        }
-                        else if(resp > 16 && resp < 18){
-                            h.fallpix_per_ms = 4;
-                        }
-                        else {
-                            h.fallpix_per_ms = 4.5;
-                        }
-                        break;
-                    // GOAL: 10
-                    case 2:
-                        if(resp < 10.0){
-                            h.fallpix_per_ms = 1.5;
-                        }
-                        else if(resp > 10 && resp < 12){
-                            h.fallpix_per_ms = 2;
-                        }
-                        else if(resp > 12 && resp < 14){
-                            h.fallpix_per_ms = 2.5;
-                        }
-                        else if(resp > 14 && resp < 16){
-                            h.fallpix_per_ms = 3;
-                        }
-                        else if(resp > 16 && resp < 18){
-                            h.fallpix_per_ms = 3.5;
-                        }
-                        else if(resp > 18 && resp < 20){
-                            h.fallpix_per_ms = 4;
-                        }
-                        else {
-                            h.fallpix_per_ms = 4.5;
-                        }
-                        break;
-                    // GOAL: 12
-                    case 3:
-                        if(resp < 12.0){
-                            h.fallpix_per_ms = 1.5;
-                        }
-                        else if(resp > 12 && resp < 14){
-                            h.fallpix_per_ms = 2;
-                        }
-                        else if(resp > 14 && resp < 16){
-                            h.fallpix_per_ms = 2.5;
-                        }
-                        else if(resp > 16 && resp < 18){
-                            h.fallpix_per_ms = 3;
-                        }
-                        else if(resp > 18 && resp < 20){
-                            h.fallpix_per_ms = 3.5;
-                        }
-                        else if(resp > 20 && resp < 22){
-                            h.fallpix_per_ms = 4;
-                        }
-                        else {
-                            h.fallpix_per_ms = 4.5;
-                        }
-                        break;
-                    // GOAL: 14
-                    case 4:
-                        if(resp < 14.0){
-                            h.fallpix_per_ms = 1.5;
-                        }
-                        else if(resp > 14 && resp < 16){
-                            h.fallpix_per_ms = 2;
-                        }
-                        else if(resp > 16 && resp < 18){
-                            h.fallpix_per_ms = 2.5;
-                        }
-                        else if(resp > 18 && resp < 20){
-                            h.fallpix_per_ms = 3;
-                        }
-                        else if(resp > 20 && resp < 22){
-                            h.fallpix_per_ms = 3.5;
-                        }
-                        else if(resp > 22 && resp < 24){
-                            h.fallpix_per_ms = 4;
-                        }
-                        else {
-                            h.fallpix_per_ms = 4.5;
-                        }
-                        break;
+                        // GOAL: 8
+                        case 1:
+                            if (resp < 8.0) { h.fallpix_per_ms = 1.5; }
+                            else if (resp > 8 && resp < 10) { h.fallpix_per_ms = 2; }
+                            else if (resp > 10 && resp < 12) { h.fallpix_per_ms = 2.5; }
+                            else if (resp > 12 && resp < 14) { h.fallpix_per_ms = 3; }
+                            else if (resp > 14 && resp < 16) { h.fallpix_per_ms = 3.5; }
+                            else if (resp > 16 && resp < 18) { h.fallpix_per_ms = 4; }
+                            else { h.fallpix_per_ms = 4.5; }
+                            break;
+
+                        // GOAL: 10
+                        case 2:
+                            if (resp < 10.0) { h.fallpix_per_ms = 1.5; }
+                            else if (resp > 10 && resp < 12) { h.fallpix_per_ms = 2; }
+                            else if (resp > 12 && resp < 14) { h.fallpix_per_ms = 2.5; }
+                            else if (resp > 14 && resp < 16) { h.fallpix_per_ms = 3; }
+                            else if (resp > 16 && resp < 18) { h.fallpix_per_ms = 3.5; }
+                            else if (resp > 18 && resp < 20) { h.fallpix_per_ms = 4; }
+                            else { h.fallpix_per_ms = 4.5; }
+                            break;
+
+                        // GOAL: 12
+                        case 3:
+                            if (resp < 12.0) { h.fallpix_per_ms = 1.5; }
+                            else if (resp > 12 && resp < 14) { h.fallpix_per_ms = 2; }
+                            else if (resp > 14 && resp < 16) { h.fallpix_per_ms = 2.5; }
+                            else if (resp > 16 && resp < 18) { h.fallpix_per_ms = 3; }
+                            else if (resp > 18 && resp < 20) { h.fallpix_per_ms = 3.5; }
+                            else if (resp > 20 && resp < 22) { h.fallpix_per_ms = 4; }
+                            else { h.fallpix_per_ms = 4.5; }
+                            break;
+
+                        // GOAL: 14
+                        case 4:
+                            if (resp < 14.0) { h.fallpix_per_ms = 1.5; }
+                            else if (resp > 14 && resp < 16) { h.fallpix_per_ms = 2; }
+                            else if (resp > 16 && resp < 18) { h.fallpix_per_ms = 2.5; }
+                            else if (resp > 18 && resp < 20) { h.fallpix_per_ms = 3; }
+                            else if (resp > 20 && resp < 22) { h.fallpix_per_ms = 3.5; }
+                            else if (resp > 22 && resp < 24) { h.fallpix_per_ms = 4; }
+                            else { h.fallpix_per_ms = 4.5; }
+                            break;
+                    }
                 }
 
+                // if not connected to device
+                else {
+                    respRate = "Not Connected";
+                    h.fallpix_per_ms = 2;
+                }
             }
         }
         //****************
@@ -891,7 +834,7 @@ public class GUIGame extends Activity {
 				mp.startPlaying();
 				travelOffset = h.travel_offset_ms();
 
-                //modded speed value, called using TimerTask class (updates after 10 seconds)
+                // Modifies speed value, called using TimerTask class
                 timer.schedule(new SpeedTask(), TIME_DELAY, 500);
 
                 musicCurrentPosition = mp.getCurrentPosition();

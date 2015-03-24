@@ -50,7 +50,7 @@
   <string name="MenuHome_background_image_load_fail">"Unable to load background image - out of memory!"</string>
   <string name="MenuHome_new_user_notes_title">"New User Notes"</string>
   <string name="MenuHome_release_notes_title">"Beats Release Notes"</string>
-  <string name="MenuSettings_title">"Beats - Settings"</string>
+  <string name="MenuSettings_title">"PULSE - Settings"</string>
   <string name="DataParser_unsupported">"Unsupported stepfile: only .sm, .dwi and .osu files are supported currently."</string>
   <string name="MenuStartGame_loading_title">"Loading: "</string>
   <string name="MenuStartGame_loading_progress_bar">"Loading stepfile:\n"</string>

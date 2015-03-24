@@ -99,8 +99,8 @@
   <string name="manualOGGOffsetDesc">"Manually adjust this if .ogg music is off-sync (I use -0.325s)"</string>
   <string name="showPercentTitle">"Display Percentage"</string>
   <string name="showPercentDesc">"Display percent instead of letter grade in scoreboard"</string>
-  <string name="showFPSTitle">"Show FPS"</string>
-  <string name="showFPSDesc">"Display current and average framerate (# of frames updates/sec)"</string>
+  <string name="showFPSTitle">"Show Breaths Per Minute"</string>
+  <string name="showFPSDesc">"Display breaths-per-minute at the top of game screen"</string>
   <string name="screenshotModeTitle">"Screenshot Mode"</string>
   <string name="screenshotModeDesc">"Enable this to take a screenshot when you pause the game"</string>
   <string name="backgroundFilteringTitle">"Background Filtering"</string>

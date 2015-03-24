@@ -674,7 +674,7 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <eat-comment/>
     <string name="MenuHome_release_notes_title">"Beats Release Notes"</string>
     <string name="MenuHome_titlebar">"PULSE"</string>
-    <string name="MenuSettings_title">"Beats - Settings"</string>
+    <string name="MenuSettings_title">"PULSE - Settings"</string>
     <string name="MenuStartGame_choose_new">"\n\nPlease choose a new song."</string>
     <string name="MenuStartGame_difficulty_closest">"\" but the closest difficulty is \""</string>
     <string name="MenuStartGame_difficulty_continue">"\".\n\nDo you wish to continue anyway\?"</string>
@@ -1113,8 +1113,8 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="showFPSDefault">"1"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
-    <string name="showFPSDesc">"Display current and average framerate (# of frames updates/sec)"</string>
-    <string name="showFPSTitle">"Show FPS"</string>
+    <string name="showFPSDesc">"Display breaths-per-minute at the top of game screen"</string>
+    <string name="showFPSTitle">"Show Breaths Per Minute"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="showPercent">"showPercent"</string>

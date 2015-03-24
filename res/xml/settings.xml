@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 	<PreferenceCategory android:title="@string/gameSettingsCategoryTitle">
+        <ListPreference
+            android:title="@string/showFPSTitle"
+            android:summary="@string/showFPSDesc"
+            android:key="@string/showFPS"
+            android:defaultValue="@string/showFPSDefault"
+            android:entries="@array/toggle"
+            android:entryValues="@array/toggleValues" />
 		<ListPreference
 			android:title="@string/difficultyLevelTitle"
 			android:summary="@string/difficultyLevelDesc"
@@ -8,20 +15,7 @@
 			android:defaultValue="@string/difficultyLevelDefault"
 			android:entries="@array/difficultyLevel"
 			android:entryValues="@array/difficultyLevelValues" />
-		<ListPreference
-			android:title="@string/speedMultiplierTitle"
-			android:summary="@string/speedMultiplierDesc"
-			android:key="@string/speedMultiplier"
-			android:defaultValue="@string/speedMultiplierDefault"
-			android:entries="@array/speedMultiplier"
-			android:entryValues="@array/speedMultiplierValues" />
-		<ListPreference
-			android:title="@string/gameModeTitle"
-			android:summary="@string/gameModeDesc"
-			android:key="@string/gameMode"
-			android:defaultValue="@string/gameModeDefault"
-			android:entries="@array/gameMode"
-			android:entryValues="@array/gameModeValues" />
+
 		<ListPreference
 			android:title="@string/tapboxLayoutTitle"
 			android:summary="@string/tapboxLayoutDesc"
@@ -29,18 +23,25 @@
 			android:defaultValue="@string/tapboxLayoutDefault"
 			android:entries="@array/tapboxLayout"
 			android:entryValues="@array/tapboxLayoutValues" />
+        <ListPreference
+            android:title="@string/darkTitle"
+            android:summary="@string/darkDesc"
+            android:key="@string/dark"
+            android:defaultValue="@string/darkDefault"
+            android:entries="@array/toggle"
+            android:entryValues="@array/toggleValues" />
+        <ListPreference
+            android:title="@string/noteAppearanceTitle"
+            android:summary="@string/noteAppearanceDesc"
+            android:key="@string/noteAppearance"
+            android:defaultValue="@string/noteAppearanceDefault"
+            android:entries="@array/noteAppearance"
+            android:entryValues="@array/noteAppearanceValues" />
 	</PreferenceCategory>
 	<PreferenceScreen
 			android:title="@string/modifiersScreenTitle"
 			android:summary="@string/modifiersScreenDesc">
 		<PreferenceCategory android:title="@string/gameplayCategoryTitle">
-		<ListPreference
-			android:title="@string/autoPlayTitle"
-			android:summary="@string/autoPlayDesc"
-			android:key="@string/autoPlay"
-			android:defaultValue="@string/autoPlayDefault"
-			android:entries="@array/toggle"
-			android:entryValues="@array/toggleValues" />
 		<ListPreference
 			android:title="@string/darkTitle"
 			android:summary="@string/darkDesc"
