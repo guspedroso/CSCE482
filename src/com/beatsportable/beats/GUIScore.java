@@ -136,7 +136,8 @@ public class GUIScore {
 			if (this.showPercent) {
 				return "0%";
 			} else {
-				return Tools.getString(R.string.Letter_E);
+				//return Tools.getString(R.string.Letter_E);
+                return "0%";
 			}
 		} else {
 			int maxScore = noteCount * 2 + holdCount * 6;
@@ -160,7 +161,7 @@ public class GUIScore {
 			if (this.showPercent) {
 				return percent + "%";
 			} else {
-				if (percent < 45) {
+				/*if (percent < 45) {
 					return Tools.getString(R.string.Letter_D);
 				} else if (percent < 65) {
 					return Tools.getString(R.string.Letter_C);
@@ -174,7 +175,8 @@ public class GUIScore {
 					return Tools.getString(R.string.Letter_AAA);
 				} else {
 					return Tools.getString(R.string.Letter_unknown) + "/" + percent + "%";
-				}
+				}*/
+                return percent + "%";
 			}
 		}
 	}
