@@ -11,7 +11,7 @@
 		android:layout_width="fill_parent"
 		android:layout_height="fill_parent"
 		android:scaleType="centerCrop"
-		android:src="@drawable/bg_blue"
+		android:src="@drawable/bg_grey"
 	/>
 	<LinearLayout
 		android:orientation="vertical"
@@ -91,7 +91,7 @@
 					android:id="@+id/logo"
 					android:layout_width="fill_parent"
 					android:layout_height="wrap_content"
-					android:src="@drawable/beats_logo_beta"
+					android:src="@drawable/pulse_logo"
 				/>
 				<!-- Menu items -->
 				<LinearLayout
