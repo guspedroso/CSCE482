@@ -574,7 +574,7 @@ public class Tools {
 		path += getBackgroundsDir();
 		String bgImage = getSetting(R.string.backgroundImage, R.string.backgroundImageDefault);
 		if (bgImage.equals("blue")) {
-			path += "/bg_blue.jpg";
+			path += "/bg_blue.jpg"; //these jpgs were updated in the samples.zip -gp
 		} else if (bgImage.equals("red")) {
 			path += "/bg_red.jpg";
 		} else if (bgImage.equals("white")) {
