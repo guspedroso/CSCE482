@@ -799,6 +799,7 @@ public class GUIGame extends Activity {
                 else {
                     respRate = "Not Connected";
                     h.fallpix_per_ms = 2;
+
                 }
             }
         }

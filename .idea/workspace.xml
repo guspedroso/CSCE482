@@ -42,10 +42,11 @@
       <file leaf-file-name="GUIGame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/GUIGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="12.153846" vertical-offset="7756" max-vertical-offset="16440">
-              <caret line="533" column="26" selection-start-line="533" selection-start-column="26" selection-end-line="533" selection-end-column="26" />
+            <state vertical-scroll-proportion="376.73077" vertical-offset="16005" max-vertical-offset="16950">
+              <caret line="418" column="12" selection-start-line="418" selection-start-column="12" selection-end-line="418" selection-end-column="12" />
               <folding>
-                <element signature="e#29587#29607#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#29588#29608#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,7 +55,7 @@
       <file leaf-file-name="MenuHome.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/MenuHome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.5" vertical-offset="3987" max-vertical-offset="15000">
+            <state vertical-scroll-proportion="-20.307692" vertical-offset="3732" max-vertical-offset="15000">
               <caret line="340" column="46" selection-start-line="340" selection-start-column="46" selection-end-line="340" selection-end-column="46" />
               <folding>
                 <element signature="e#10644#10705#0" expanded="true" />
@@ -68,8 +69,8 @@
       <file leaf-file-name="Tools.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/Tools.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.490161" vertical-offset="7511" max-vertical-offset="9300">
-              <caret line="576" column="84" selection-start-line="576" selection-start-column="84" selection-end-line="576" selection-end-column="84" />
+            <state vertical-scroll-proportion="0.5696466" vertical-offset="7511" max-vertical-offset="9300">
+              <caret line="576" column="29" selection-start-line="576" selection-start-column="29" selection-end-line="576" selection-end-column="29" />
               <folding>
                 <element signature="e#7119#7156#0" expanded="true" />
                 <element signature="e#16461#16505#0" expanded="true" />
@@ -85,8 +86,8 @@
       <file leaf-file-name="DataFile.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/DataFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2115" max-vertical-offset="6000">
-              <caret line="156" column="25" selection-start-line="156" selection-start-column="25" selection-end-line="156" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2136" max-vertical-offset="6000">
+              <caret line="160" column="18" selection-start-line="160" selection-start-column="8" selection-end-line="160" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#8985#8986#0" expanded="true" />
@@ -795,11 +796,11 @@
         <option value="$PROJECT_DIR$/res/values/settings_trans.xml" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/GUIScore.java" />
         <option value="$PROJECT_DIR$/res/xml/settings.xml" />
-        <option value="$PROJECT_DIR$/src/com/beatsportable/beats/GUIGame.java" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/DataParserDWI.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/MenuHome.java" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/DataFile.java" />
+        <option value="$PROJECT_DIR$/src/com/beatsportable/beats/GUIGame.java" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/Tools.java" />
       </list>
     </option>
@@ -1173,7 +1174,7 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30041724" sideWeight="0.11246786" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32058048" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19129288" sideWeight="0.8875321" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29419526" sideWeight="0.8875321" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1488,11 +1489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/bg_red_new.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/ToolsDownloader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="2100">
@@ -1614,8 +1610,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/DataFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2115" max-vertical-offset="6000">
-          <caret line="156" column="25" selection-start-line="156" selection-start-column="25" selection-end-line="156" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2136" max-vertical-offset="6000">
+          <caret line="160" column="18" selection-start-line="160" selection-start-column="8" selection-end-line="160" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#8985#8986#0" expanded="true" />
@@ -1628,17 +1624,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/GUIGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.153846" vertical-offset="7756" max-vertical-offset="16440">
-          <caret line="533" column="26" selection-start-line="533" selection-start-column="26" selection-end-line="533" selection-end-column="26" />
+        <state vertical-scroll-proportion="376.73077" vertical-offset="16005" max-vertical-offset="16950">
+          <caret line="418" column="12" selection-start-line="418" selection-start-column="12" selection-end-line="418" selection-end-column="12" />
           <folding>
-            <element signature="e#29587#29607#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#29588#29608#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/MenuHome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.5" vertical-offset="3987" max-vertical-offset="15000">
+        <state vertical-scroll-proportion="-20.307692" vertical-offset="3732" max-vertical-offset="15000">
           <caret line="340" column="46" selection-start-line="340" selection-start-column="46" selection-end-line="340" selection-end-column="46" />
           <folding>
             <element signature="e#10644#10705#0" expanded="true" />
@@ -1650,8 +1647,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/Tools.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.490161" vertical-offset="7511" max-vertical-offset="9300">
-          <caret line="576" column="84" selection-start-line="576" selection-start-column="84" selection-end-line="576" selection-end-column="84" />
+        <state vertical-scroll-proportion="0.5696466" vertical-offset="7511" max-vertical-offset="9300">
+          <caret line="576" column="29" selection-start-line="576" selection-start-column="29" selection-end-line="576" selection-end-column="29" />
           <folding>
             <element signature="e#7119#7156#0" expanded="true" />
             <element signature="e#16461#16505#0" expanded="true" />
