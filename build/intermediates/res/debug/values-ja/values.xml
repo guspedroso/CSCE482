@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-ja/arrays_trans.xml -->
+    <!-- From: file:/Users/gus/git/CSCE482/res/values-ja/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="accuracyLevel">
     <item>簡単すぎる</item>
@@ -76,7 +76,7 @@
     <item>弱い</item>
     <item>オフ</item>
   </string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-ja/strings_trans.xml -->
+    <!-- From: file:/Users/gus/git/CSCE482/res/values-ja/strings_trans.xml -->
     <eat-comment/>
     <string name="Accuracy_almost">"Almost"</string>
     <string name="Accuracy_best_combo">"Best Combo"</string>
@@ -219,7 +219,7 @@
     <string name="Tools_unable_delete_file">"エラー：ファイルを削除できません：\n"</string>
     <string name="Tools_usb_error">"\nUSBモードではありませんか\?"</string>
     <string name="Tools_window_error">"ウィンドウの切り替えエラー - 私はまだこの問題を解決する方法がわかりません（詳細のデータをメールで送ってください）"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-ja/settings_trans.xml -->
+    <!-- From: file:/Users/gus/git/CSCE482/res/values-ja/settings_trans.xml -->
     <eat-comment/>
     <string name="accuracyLevelDesc">スコア判定の厳密度</string>
     <string name="accuracyLevelTitle">判定</string>
