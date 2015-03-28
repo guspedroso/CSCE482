@@ -1,12 +1,9 @@
 package com.beatsportable.beats;
-import android.util.Log;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
-import com.beatsportable.beats.Tools; //To use the getBackground method -gp
 
 public class DataFile {
 	
@@ -152,24 +149,14 @@ public class DataFile {
 		background = getFile(filename, imageFileExtensions, bgFileSuffixe);
 	}
 	public void setBackgroundBackup() {
-
-        //override the sm background.. because they are ugly man.. -gp
-        String path = "";
-        path += Tools.getBackgroundsDir();
-        path += "/bg_blue.jpg"; //need to change this -gp
-        File file = new File(path);
-        background = file;
-        return;
-
-		// Just use any large image file in the folder (This is bad, removing this from original game -gp)
-		/*if (background == null) {
+		// Just use any large image file in the folder
+		if (background == null) {
 			try {
 				File[] files = new File(path).listFiles();
 				for (File f : files) {
 					// Look for big files first over 75kbs
 					if (f.length() > 75000) {
 						String name = f.getAbsolutePath();
-                        Log.d("gusPath",name);
 						for (String suffix : imageFileExtensions) {
 							if (name.endsWith(suffix)) {
 								background = f;
@@ -189,7 +176,7 @@ public class DataFile {
 					}
 				}
 			} catch (Exception e) {} // Whatever
-		}*/
+		}
 	}
 	public File getBackground() { return background; }
 	

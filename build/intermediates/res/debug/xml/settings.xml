@@ -252,7 +252,13 @@
 			android:defaultValue="@string/accuracyLevelDefault"
 			android:entries="@array/accuracyLevel"
 			android:entryValues="@array/accuracyLevelValues" />
-
+		<ListPreference
+			android:title="@string/showPercentTitle"
+			android:summary="@string/showPercentDesc"
+			android:key="@string/showPercent"
+			android:defaultValue="@string/showPercentDefault"
+			android:entries="@array/toggle"
+			android:entryValues="@array/toggleValues" />
 	</PreferenceCategory>
 	<PreferenceCategory android:title="@string/miscCategoryTitle">
 		<PreferenceScreen
@@ -429,4 +435,4 @@
 				android:entries="@array/toggle"
 				android:entryValues="@array/toggleValues" />
 	</PreferenceCategory>
-</PreferenceScreen><!-- From: file:/Users/gus/git/CSCE482/res/xml/settings.xml -->
+</PreferenceScreen><!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/xml/settings.xml -->

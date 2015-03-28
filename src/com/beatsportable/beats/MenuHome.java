@@ -338,7 +338,6 @@ public class MenuHome extends Activity {
 		if (!backgroundPath.equals(backgroundPathNew)) {
 			backgroundPath = backgroundPathNew;
 			ImageView bg = (ImageView) findViewById(R.id.bg);
-            //Log.d("gusgus", backgroundPath);
 			try {
 				Bitmap newBackground = BitmapFactory.decodeFile(backgroundPath);
 				if (newBackground != null) {
