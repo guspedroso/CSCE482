@@ -56,7 +56,6 @@
     <item>Blue</item>
     <item>Red</item>
     <item>White</item>
-    <item>Rabbit</item>
   </string-array>
     <!-- From: file:/Users/gus/git/CSCE482/res/values/arrays_const.xml -->
     <eat-comment/>
@@ -64,7 +63,6 @@
 		<item>blue</item>
 		<item>red</item>
 		<item>white</item>
-        <item>rabbit</item>
 	</string-array>
     <!-- From: file:/Users/gus/git/CSCE482/res/values/arrays_trans.xml -->
     <eat-comment/>
