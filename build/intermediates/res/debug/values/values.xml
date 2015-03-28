@@ -522,7 +522,7 @@
     <string name="App_description">"Beats is a music rhythm game where you tap to the beat of the music of installed song packs."</string>
     <!-- From: file:/Users/gus/git/CSCE482/res/values/constants.xml -->
     <eat-comment/>
-    <string name="App_name">"Beats"</string>
+    <string name="App_name">"Pulse"</string>
     <!-- From: file:/Users/gus/git/CSCE482/res/values/release_notes.xml -->
     <eat-comment/>
     <string name="App_version">"1.7.5b FINAL"</string>
@@ -705,7 +705,7 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="MusicService_unable_stop_playback">"Error: Unable to stop playback. Try restarting Beats if this persists."</string>
     <!-- From: file:/Users/gus/git/CSCE482/res/values/constants.xml -->
     <eat-comment/>
-    <string name="Titlebar">"Beats - "</string>
+    <string name="Titlebar">"Pulse - "</string>
     <!-- From: file:/Users/gus/git/CSCE482/res/values/strings_trans.xml -->
     <eat-comment/>
     <string name="ToolsDownloader_download">"Download: "</string>
