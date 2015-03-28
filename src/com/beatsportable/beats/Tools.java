@@ -565,7 +565,7 @@ public class Tools {
 	public static String getBackgroundsDir() {
 		String path = null;
 		if ((path = getBeatsDir()) != null) {
-            path += "/samples"; //new bgs werent working previously without this -gp
+            //path += "/samples"; //new bgs werent working previously without this -gp
 			path += res.getString(R.string.Tools_path_backgrounds);
 		}
 		return path;

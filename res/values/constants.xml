@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<!-- App -->
-	<string name="App_name">"Pulse"</string>
-	<string name="Titlebar">"Pulse - "</string>
+	<string name="App_name">"Beats"</string>
+	<string name="Titlebar">"Beats - "</string>
 	<string name="Localytics_key">"7e17c9425cf4aec59bccf6f-8039babc-3418-11e0-c2c6-007af5bd88a0"</string>
 	
 	<!-- URLs -->
