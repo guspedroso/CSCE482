@@ -64,12 +64,12 @@ public final class R {
         public static final int beats_logo_beta_xlarge=0x7f020004;
         public static final int beats_logo_beta_xlarge_rotated=0x7f020005;
         public static final int bg_blue=0x7f020006;
-        public static final int bg_blue_old=0x7f020007;
+        public static final int bg_blue_new=0x7f020007;
         public static final int bg_grey=0x7f020008;
         public static final int bg_rabbit=0x7f020009;
-        public static final int bg_red=0x7f02000a;
+        public static final int bg_red_new=0x7f02000a;
         public static final int bg_white=0x7f02000b;
-        public static final int bg_white_old=0x7f02000c;
+        public static final int bg_white_new=0x7f02000c;
         public static final int difficulty_header=0x7f02000d;
         public static final int icon=0x7f02000e;
         public static final int icon_del=0x7f02000f;
