@@ -579,6 +579,8 @@ public class Tools {
 			path += "/bg_red.jpg";
 		} else if (bgImage.equals("white")) {
 			path += "/bg_white.jpg";
+        } else if (bgImage.equals("rabbit")) {
+            path += "/bg_rabbit.jpg";
 		} else {
 			path += "/bg_blue.jpg";
 		}

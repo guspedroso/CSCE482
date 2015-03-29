@@ -84,6 +84,7 @@
 		<item>blue</item>
 		<item>red</item>
 		<item>white</item>
+        <item>rabbit</item>
 	</string-array>
 	
 	<string-array name="backgroundBrightness">

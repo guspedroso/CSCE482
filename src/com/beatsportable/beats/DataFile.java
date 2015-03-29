@@ -154,7 +154,7 @@ public class DataFile {
         //override the sm background.. because they are ugly man.. -gp
         String path = "";
         path += Tools.getBackgroundsDir();
-        path += "/bg_blue.jpg"; //need to change this -gp
+        path += "/bg_white.jpg"; //need to change this -gp
         File file = new File(path);
         background = file;
         return;
