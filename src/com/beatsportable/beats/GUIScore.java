@@ -7,6 +7,9 @@ public class GUIScore {
 	public int score;
 	public int highScore;
 	public boolean newHighScore;
+
+    public String respRate = "000";
+
 	// Health
 	public int healthMax; // max health
 	public int health; // current health
@@ -132,35 +135,36 @@ public class GUIScore {
 		//return scoreGood;
 	//}
 	public String getLetterScore() {
-		if (gameOver) {
-			if (this.showPercent) {
-				return "0%";
-			} else {
-				//return Tools.getString(R.string.Letter_E);
+        if (gameOver) {
+            if (this.showPercent) {
                 return "0%";
-			}
-		} else {
-			int maxScore = noteCount * 2 + holdCount * 6;
-			if (maxScore == 0) maxScore = 1; // Safeguard to prevent dividing by 0...
-			int currentScore = 0;
-			
-			currentScore += this.accuracyChart[AccuracyTypes.N_MARVELOUS.ordinal()] * 2;
-			currentScore += this.accuracyChart[AccuracyTypes.N_PERFECT.ordinal()] * 2;
-			currentScore += this.accuracyChart[AccuracyTypes.N_GREAT.ordinal()];
-			// + 0 for GOODs
-			currentScore -= this.accuracyChart[AccuracyTypes.N_ALMOST.ordinal()] * 4;
-			currentScore -= this.accuracyChart[AccuracyTypes.N_MISS.ordinal()] * 8;
-			
-			currentScore += this.accuracyChart[AccuracyTypes.F_OK.ordinal()] * 6;
-			// + 0 for NGs
-			
-			currentScore *= 100; // Make it out of 100%
-			int percent = currentScore / maxScore;
-			if (percent >= 80) scoreGood = true; // A or higher
-			
-			if (this.showPercent) {
-				return percent + "%";
-			} else {
+            } else {
+                //return Tools.getString(R.string.Letter_E);
+                return "0%";
+            }
+        } else {
+            int maxScore = noteCount * 2 + holdCount * 6;
+            if (maxScore == 0) maxScore = 1; // Safeguard to prevent dividing by 0...
+            int currentScore = 0;
+
+                currentScore += this.accuracyChart[AccuracyTypes.N_MARVELOUS.ordinal()] * 2;
+                currentScore += this.accuracyChart[AccuracyTypes.N_PERFECT.ordinal()] * 2;
+                currentScore += this.accuracyChart[AccuracyTypes.N_GREAT.ordinal()];
+                // + 0 for GOODs
+                currentScore -= this.accuracyChart[AccuracyTypes.N_ALMOST.ordinal()] * 4;
+                currentScore -= this.accuracyChart[AccuracyTypes.N_MISS.ordinal()] * 8;
+
+                currentScore += this.accuracyChart[AccuracyTypes.F_OK.ordinal()] * 6;
+                // + 0 for NGs
+
+
+                currentScore *= 100; // Make it out of 100%
+                int percent = currentScore / maxScore;
+                if (percent >= 80) scoreGood = true; // A or higher
+
+                if (this.showPercent) {
+                    return percent + "%";
+                } else {
 				/*if (percent < 45) {
 					return Tools.getString(R.string.Letter_D);
 				} else if (percent < 65) {
@@ -176,10 +180,12 @@ public class GUIScore {
 				} else {
 					return Tools.getString(R.string.Letter_unknown) + "/" + percent + "%";
 				}*/
-                return percent + "%";
-			}
-		}
-	}
+
+                    return percent + "%";
+                }
+            }
+        }
+
 	
 	// Access
 	public void setHealthMax(int healthMax) {
@@ -255,63 +261,420 @@ public class GUIScore {
 	// Triggered upon arrow press
 	// Returns the accuracy type, use array AccuracyTypeNames for text
 	public AccuracyTypes newEventHit(int timeDifference) {
-		int accuracy = 2 * timeDifference / accuracyLevel;
-		if (gameOver || isPaused) {
-			return AccuracyTypes.X_IGNORE_ABOVE;
-		}
-		// Not GameOver
-		if (accuracy < IGNORE_BELOW_THRESHOLD) {
-			return AccuracyTypes.X_IGNORE_BELOW; // Underneath the arrows
-		} else if (accuracy > IGNORE_ABOVE_THRESHOLD && Tools.gameMode != Tools.OSU_MOD) {
-			return AccuracyTypes.X_IGNORE_ABOVE; // Above the GOOD range
-		} else {
-			int scoreIncrease;
-			if (timeDifference > 0) {
-				scoreIncrease = (int)((200 - timeDifference) * (400d - timeDifference) / 200d) * 10; 
-			} else {
-				scoreIncrease = (int)((200 + timeDifference) * (400d + timeDifference) / 200d) * 10;
-			}
-			if (scoreIncrease < 0) scoreIncrease = 0;
-			switch (accuracy) { // arbitrary multiplying factors
-				case 0: case -1:
-					this.accuracyChart[AccuracyTypes.N_MARVELOUS.ordinal()]++;
-					this.health += this.healthGain;
-					if (this.health > this.healthMax) {
-						this.health = this.healthMax;
-					}
-					this.score += scoreIncrease;
-					this.comboCount++;
-					updateComboBest();
-					return AccuracyTypes.N_MARVELOUS;
-				case 1: case 2: case -2: case -3:
-					this.accuracyChart[AccuracyTypes.N_PERFECT.ordinal()]++;
-					this.health += this.healthGain / 2;
-					if (this.health > this.healthMax) {
-						this.health = this.healthMax;
-					}
-					this.score += scoreIncrease;
-					this.comboCount++;
-					updateComboBest();
-					return AccuracyTypes.N_PERFECT;
-				case 3: case 4: case -4: case -5:
-					this.accuracyChart[AccuracyTypes.N_GREAT.ordinal()]++;
-					this.score += scoreIncrease;
-					this.comboCount++;
-					updateComboBest();
-					return AccuracyTypes.N_GREAT;
-				case 5: case 6: case -6: case -7:
-					this.accuracyChart[AccuracyTypes.N_GOOD.ordinal()]++;
-					this.score += scoreIncrease;
-					this.comboCount = 0;
-					return AccuracyTypes.N_GOOD;
-				case -8: case -9: default:
-					this.accuracyChart[AccuracyTypes.N_ALMOST.ordinal()]++;
-					this.score += scoreIncrease;
-					this.comboCount = 0;
-					return AccuracyTypes.N_ALMOST;
-			}
-		}
-	}
+        int accuracy = 2 * timeDifference / accuracyLevel;
+        if (gameOver || isPaused) {
+            return AccuracyTypes.X_IGNORE_ABOVE;
+        }
+        // Not GameOver
+        if (accuracy < IGNORE_BELOW_THRESHOLD) {
+            return AccuracyTypes.X_IGNORE_BELOW; // Underneath the arrows
+        } else if (accuracy > IGNORE_ABOVE_THRESHOLD && Tools.gameMode != Tools.OSU_MOD) {
+            return AccuracyTypes.X_IGNORE_ABOVE; // Above the GOOD range
+        } else {
+            int scoreIncrease;
+            if (timeDifference > 0) {
+                scoreIncrease = (int) ((200 - timeDifference) * (400d - timeDifference) / 200d) * 10;
+            } else {
+                scoreIncrease = (int) ((200 + timeDifference) * (400d + timeDifference) / 200d) * 10;
+            }
+            if (scoreIncrease < 0) scoreIncrease = 0;
+
+
+            //Modify so that the user is rewarded for staying in goal BPM rate - VKM
+            //Adjust scored and health by multiplier of 2
+            respRate = MenuHome.bpm;
+            // Check that the device is connected
+            if (respRate != null) {
+                double resp = Double.parseDouble(respRate);
+                switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
+                    case 0:
+                        //GOAL: 6
+                        if (resp < 6.0) {
+                            switch (accuracy) { // arbitrary multiplying factors
+                                case 0:
+                                case -1:
+                                    this.accuracyChart[AccuracyTypes.N_MARVELOUS.ordinal()]++;
+                                    this.health += this.healthGain;
+                                    if (this.health > this.healthMax) {
+                                        this.health = this.healthMax;
+                                    }
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount++;
+                                    updateComboBest();
+                                    return AccuracyTypes.N_MARVELOUS;
+                                case 1:
+                                case 2:
+                                case -2:
+                                case -3:
+                                    this.accuracyChart[AccuracyTypes.N_PERFECT.ordinal()]++;
+                                    this.health += this.healthGain;
+                                    if (this.health > this.healthMax) {
+                                        this.health = this.healthMax;
+                                    }
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount++;
+                                    updateComboBest();
+                                    return AccuracyTypes.N_PERFECT;
+                                case 3:
+                                case 4:
+                                case -4:
+                                case -5:
+                                    this.accuracyChart[AccuracyTypes.N_GREAT.ordinal()]++;
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount++;
+                                    updateComboBest();
+                                    return AccuracyTypes.N_GREAT;
+                                case 5:
+                                case 6:
+                                case -6:
+                                case -7:
+                                    this.accuracyChart[AccuracyTypes.N_GOOD.ordinal()]++;
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount = 0;
+                                    return AccuracyTypes.N_GOOD;
+                                case -8:
+                                case -9:
+                                default:
+                                    this.accuracyChart[AccuracyTypes.N_ALMOST.ordinal()]++;
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount = 0;
+                                    return AccuracyTypes.N_ALMOST;
+                            }
+
+                        }
+
+                    //GOAL: 8
+                    case 1:
+                        if (resp < 8.0) {
+                            switch (accuracy) { // arbitrary multiplying factors
+                                case 0:
+                                case -1:
+                                    this.accuracyChart[AccuracyTypes.N_MARVELOUS.ordinal()]++;
+                                    this.health += this.healthGain;
+                                    if (this.health > this.healthMax) {
+                                        this.health = this.healthMax;
+                                    }
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount++;
+                                    updateComboBest();
+                                    return AccuracyTypes.N_MARVELOUS;
+                                case 1:
+                                case 2:
+                                case -2:
+                                case -3:
+                                    this.accuracyChart[AccuracyTypes.N_PERFECT.ordinal()]++;
+                                    this.health += this.healthGain;
+                                    if (this.health > this.healthMax) {
+                                        this.health = this.healthMax;
+                                    }
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount++;
+                                    updateComboBest();
+                                    return AccuracyTypes.N_PERFECT;
+                                case 3:
+                                case 4:
+                                case -4:
+                                case -5:
+                                    this.accuracyChart[AccuracyTypes.N_GREAT.ordinal()]++;
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount++;
+                                    updateComboBest();
+                                    return AccuracyTypes.N_GREAT;
+                                case 5:
+                                case 6:
+                                case -6:
+                                case -7:
+                                    this.accuracyChart[AccuracyTypes.N_GOOD.ordinal()]++;
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount = 0;
+                                    return AccuracyTypes.N_GOOD;
+                                case -8:
+                                case -9:
+                                default:
+                                    this.accuracyChart[AccuracyTypes.N_ALMOST.ordinal()]++;
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount = 0;
+                                    return AccuracyTypes.N_ALMOST;
+                            }
+                        }
+
+                    //GOAL:10
+                    case 2:
+                        if (resp < 10.0) {
+                            switch (accuracy) { // arbitrary multiplying factors
+                                case 0:
+                                case -1:
+                                    this.accuracyChart[AccuracyTypes.N_MARVELOUS.ordinal()]++;
+                                    this.health += this.healthGain;
+                                    if (this.health > this.healthMax) {
+                                        this.health = this.healthMax;
+                                    }
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount++;
+                                    updateComboBest();
+                                    return AccuracyTypes.N_MARVELOUS;
+                                case 1:
+                                case 2:
+                                case -2:
+                                case -3:
+                                    this.accuracyChart[AccuracyTypes.N_PERFECT.ordinal()]++;
+                                    this.health += this.healthGain;
+                                    if (this.health > this.healthMax) {
+                                        this.health = this.healthMax;
+                                    }
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount++;
+                                    updateComboBest();
+                                    return AccuracyTypes.N_PERFECT;
+                                case 3:
+                                case 4:
+                                case -4:
+                                case -5:
+                                    this.accuracyChart[AccuracyTypes.N_GREAT.ordinal()]++;
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount++;
+                                    updateComboBest();
+                                    return AccuracyTypes.N_GREAT;
+                                case 5:
+                                case 6:
+                                case -6:
+                                case -7:
+                                    this.accuracyChart[AccuracyTypes.N_GOOD.ordinal()]++;
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount = 0;
+                                    return AccuracyTypes.N_GOOD;
+                                case -8:
+                                case -9:
+                                default:
+                                    this.accuracyChart[AccuracyTypes.N_ALMOST.ordinal()]++;
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount = 0;
+                                    return AccuracyTypes.N_ALMOST;
+                            }
+                        }
+
+                    //GOAL: 12
+                    case 3:
+                        if (resp < 12.0) {
+                            switch (accuracy) { // arbitrary multiplying factors
+                                case 0:
+                                case -1:
+                                    this.accuracyChart[AccuracyTypes.N_MARVELOUS.ordinal()]++;
+                                    this.health += this.healthGain;
+                                    if (this.health > this.healthMax) {
+                                        this.health = this.healthMax;
+                                    }
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount++;
+                                    updateComboBest();
+                                    return AccuracyTypes.N_MARVELOUS;
+                                case 1:
+                                case 2:
+                                case -2:
+                                case -3:
+                                    this.accuracyChart[AccuracyTypes.N_PERFECT.ordinal()]++;
+                                    this.health += this.healthGain;
+                                    if (this.health > this.healthMax) {
+                                        this.health = this.healthMax;
+                                    }
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount++;
+                                    updateComboBest();
+                                    return AccuracyTypes.N_PERFECT;
+                                case 3:
+                                case 4:
+                                case -4:
+                                case -5:
+                                    this.accuracyChart[AccuracyTypes.N_GREAT.ordinal()]++;
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount++;
+                                    updateComboBest();
+                                    return AccuracyTypes.N_GREAT;
+                                case 5:
+                                case 6:
+                                case -6:
+                                case -7:
+                                    this.accuracyChart[AccuracyTypes.N_GOOD.ordinal()]++;
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount = 0;
+                                    return AccuracyTypes.N_GOOD;
+                                case -8:
+                                case -9:
+                                default:
+                                    this.accuracyChart[AccuracyTypes.N_ALMOST.ordinal()]++;
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount = 0;
+                                    return AccuracyTypes.N_ALMOST;
+                            }
+                        }
+
+                    //GOAL: 14
+                    case 4:
+                        if (resp < 14.0) {
+                            switch (accuracy) { // arbitrary multiplying factors
+                                case 0:
+                                case -1:
+                                    this.accuracyChart[AccuracyTypes.N_MARVELOUS.ordinal()]++;
+                                    this.health += this.healthGain;
+                                    if (this.health > this.healthMax) {
+                                        this.health = this.healthMax;
+                                    }
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount++;
+                                    updateComboBest();
+                                    return AccuracyTypes.N_MARVELOUS;
+                                case 1:
+                                case 2:
+                                case -2:
+                                case -3:
+                                    this.accuracyChart[AccuracyTypes.N_PERFECT.ordinal()]++;
+                                    this.health += this.healthGain;
+                                    if (this.health > this.healthMax) {
+                                        this.health = this.healthMax;
+                                    }
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount++;
+                                    updateComboBest();
+                                    return AccuracyTypes.N_PERFECT;
+                                case 3:
+                                case 4:
+                                case -4:
+                                case -5:
+                                    this.accuracyChart[AccuracyTypes.N_GREAT.ordinal()]++;
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount++;
+                                    updateComboBest();
+                                    return AccuracyTypes.N_GREAT;
+                                case 5:
+                                case 6:
+                                case -6:
+                                case -7:
+                                    this.accuracyChart[AccuracyTypes.N_GOOD.ordinal()]++;
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount = 0;
+                                    return AccuracyTypes.N_GOOD;
+                                case -8:
+                                case -9:
+                                default:
+                                    this.accuracyChart[AccuracyTypes.N_ALMOST.ordinal()]++;
+                                    this.score += scoreIncrease * 3;
+                                    this.comboCount = 0;
+                                    return AccuracyTypes.N_ALMOST;
+                            }
+                        }
+
+                    default:
+                        switch (accuracy) { // arbitrary multiplying factors
+                            case 0:
+                            case -1:
+                                this.accuracyChart[AccuracyTypes.N_MARVELOUS.ordinal()]++;
+                                this.health += this.healthGain / 2;
+                                if (this.health > this.healthMax) {
+                                    this.health = this.healthMax;
+                                }
+                                this.score += scoreIncrease;
+                                this.comboCount++;
+                                updateComboBest();
+                                return AccuracyTypes.N_MARVELOUS;
+                            case 1:
+                            case 2:
+                            case -2:
+                            case -3:
+                                this.accuracyChart[AccuracyTypes.N_PERFECT.ordinal()]++;
+                                this.health += this.healthGain / 2;
+                                if (this.health > this.healthMax) {
+                                    this.health = this.healthMax;
+                                }
+                                this.score += scoreIncrease;
+                                this.comboCount++;
+                                updateComboBest();
+                                return AccuracyTypes.N_PERFECT;
+                            case 3:
+                            case 4:
+                            case -4:
+                            case -5:
+                                this.accuracyChart[AccuracyTypes.N_GREAT.ordinal()]++;
+                                this.score += scoreIncrease;
+                                this.comboCount++;
+                                updateComboBest();
+                                return AccuracyTypes.N_GREAT;
+                            case 5:
+                            case 6:
+                            case -6:
+                            case -7:
+                                this.accuracyChart[AccuracyTypes.N_GOOD.ordinal()]++;
+                                this.score += scoreIncrease;
+                                this.comboCount = 0;
+                                return AccuracyTypes.N_GOOD;
+                            case -8:
+                            case -9:
+                            default:
+                                this.accuracyChart[AccuracyTypes.N_ALMOST.ordinal()]++;
+                                this.score += scoreIncrease;
+                                this.comboCount = 0;
+                                return AccuracyTypes.N_ALMOST;
+                        }
+                }
+
+            }
+            else {
+                respRate = "Not Connected";
+
+                //Use default values
+                switch (accuracy) { // arbitrary multiplying factors
+                    case 0:
+                    case -1:
+                        this.accuracyChart[AccuracyTypes.N_MARVELOUS.ordinal()]++;
+                        this.health += this.healthGain / 2;
+                        if (this.health > this.healthMax) {
+                            this.health = this.healthMax;
+                        }
+                        this.score += scoreIncrease;
+                        this.comboCount++;
+                        updateComboBest();
+                        return AccuracyTypes.N_MARVELOUS;
+                    case 1:
+                    case 2:
+                    case -2:
+                    case -3:
+                        this.accuracyChart[AccuracyTypes.N_PERFECT.ordinal()]++;
+                        this.health += this.healthGain / 2;
+                        if (this.health > this.healthMax) {
+                            this.health = this.healthMax;
+                        }
+                        this.score += scoreIncrease;
+                        this.comboCount++;
+                        updateComboBest();
+                        return AccuracyTypes.N_PERFECT;
+                    case 3:
+                    case 4:
+                    case -4:
+                    case -5:
+                        this.accuracyChart[AccuracyTypes.N_GREAT.ordinal()]++;
+                        this.score += scoreIncrease;
+                        this.comboCount++;
+                        updateComboBest();
+                        return AccuracyTypes.N_GREAT;
+                    case 5:
+                    case 6:
+                    case -6:
+                    case -7:
+                        this.accuracyChart[AccuracyTypes.N_GOOD.ordinal()]++;
+                        this.score += scoreIncrease;
+                        this.comboCount = 0;
+                        return AccuracyTypes.N_GOOD;
+                    case -8:
+                    case -9:
+                    default:
+                        this.accuracyChart[AccuracyTypes.N_ALMOST.ordinal()]++;
+                        this.score += scoreIncrease;
+                        this.comboCount = 0;
+                        return AccuracyTypes.N_ALMOST;
+                }
+            }
+        }
+    }
+
 	
 	public AccuracyTypes newEventHoldEnd(boolean ok) {
 		//Called when a hold is over.

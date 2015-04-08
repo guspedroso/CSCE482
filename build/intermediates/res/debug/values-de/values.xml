@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/gus/git/CSCE482/res/values-de/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/values-de/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="accuracyLevel">
     <item>Zu einfach</item>
@@ -76,7 +76,7 @@
     <item>Leicht</item>
     <item>Aus</item>
   </string-array>
-    <!-- From: file:/Users/gus/git/CSCE482/res/values-de/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/values-de/strings_trans.xml -->
     <eat-comment/>
     <string name="Accuracy_almost">"Geht so"</string>
     <string name="Accuracy_best_combo">"Höchste Kombo"</string>
@@ -219,7 +219,7 @@
     <string name="Tools_unable_delete_file">"Error: Kann Datei nicht löschen:\n"</string>
     <string name="Tools_usb_error">"\nBist Du vielleicht im USB-Modus\?"</string>
     <string name="Tools_window_error">"Windows Umschaltfehler - ich habe noch nicht herausgefunden wie ich den Fehler korrigieren kann. ; / (bitte E-mailen Sie mir Detailinformationen!)"</string>
-    <!-- From: file:/Users/gus/git/CSCE482/res/values-de/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/values-de/settings_trans.xml -->
     <eat-comment/>
     <string name="accuracyLevelDesc">"Strenge der Genauigkeitspunkte"</string>
     <string name="accuracyLevelTitle">"Bewertung"</string>

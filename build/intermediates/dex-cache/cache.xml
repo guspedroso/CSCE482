@@ -2,18 +2,18 @@
 <items version="2" >
 
     <item
-        jar="/Users/gus/git/CSCE482/libs/BioHarnessBT.jar"
+        jar="C:\Users\Owner\Documents\GitHub\CSCE482\libs\BioHarnessBT.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="c6551fa37067ea1ea039f6f858bcf93b62be4cd6">
-        <dex dex="/Users/gus/git/CSCE482/build/intermediates/pre-dexed/debug/BioHarnessBT-e9be6802995a5b151e379c4bcfb9a51b38025db5.jar" />
+        <dex dex="C:\Users\Owner\Documents\GitHub\CSCE482\build\intermediates\pre-dexed\debug\BioHarnessBT-27d9c526216c168162bbc31b3d3b841b54040e74.jar" />
     </item>
     <item
-        jar="/Users/gus/git/CSCE482/libs/UHL.jar"
+        jar="C:\Users\Owner\Documents\GitHub\CSCE482\libs\UHL.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="9f6e2207f6a895076409cb18b608e82ea2a3e99b">
-        <dex dex="/Users/gus/git/CSCE482/build/intermediates/pre-dexed/debug/UHL-4addc07889c9a426736b73a5d2033be8d951c37f.jar" />
+        <dex dex="C:\Users\Owner\Documents\GitHub\CSCE482\build\intermediates\pre-dexed\debug\UHL-383203c799eb6c29a171f59c1de7b3f640991ec0.jar" />
     </item>
 
 </items>

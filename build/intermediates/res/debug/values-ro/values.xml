@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/gus/git/CSCE482/res/values-ro/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/values-ro/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="accuracyLevel">
     <item>Prea uşor</item>
@@ -76,7 +76,7 @@
     <item>Uşor</item>
     <item>Oprit</item>
   </string-array>
-    <!-- From: file:/Users/gus/git/CSCE482/res/values-ro/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/values-ro/strings_trans.xml -->
     <eat-comment/>
     <string name="Accuracy_almost">"Pe aproape"</string>
     <string name="Accuracy_best_combo">"Cel mai bun combo"</string>
@@ -219,7 +219,7 @@
     <string name="Tools_unable_delete_file">"Eroare: Nu s-a putut şterge fişierul:\n"</string>
     <string name="Tools_usb_error">"\nPoate dispozitivul se află în mod USB\?"</string>
     <string name="Tools_window_error">"Eroare comutare fereastră - Nu mi-am dat seama cum să repar asta încă ; / (vă rog daţi-mi un email cu detalii!)"</string>
-    <!-- From: file:/Users/gus/git/CSCE482/res/values-ro/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/values-ro/settings_trans.xml -->
     <eat-comment/>
     <string name="accuracyLevelDesc">"Modifică stricteţea notării preciziei tapping-ului"</string>
     <string name="accuracyLevelTitle">"Apreciere"</string>

@@ -784,7 +784,7 @@ public class GUIGame extends Activity {
 
                         // GOAL: 14
                         case 4:
-                            if (resp < 14.0) { h.fallpix_per_ms = 1.5; }
+                            if (resp < 14.0) {h.fallpix_per_ms = 1.5;}
                             else if (resp > 14 && resp < 16) { h.fallpix_per_ms = 2; }
                             else if (resp > 16 && resp < 18) { h.fallpix_per_ms = 2.5; }
                             else if (resp > 18 && resp < 20) { h.fallpix_per_ms = 3; }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/gus/git/CSCE482/res/values-ko/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/values-ko/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="accuracyLevel">
     <item>초급</item>
@@ -76,7 +76,7 @@
     <item>약함</item>
     <item>꺼짐</item>
   </string-array>
-    <!-- From: file:/Users/gus/git/CSCE482/res/values-ko/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/values-ko/strings_trans.xml -->
     <eat-comment/>
     <string name="Accuracy_almost">"Almost"</string>
     <string name="Accuracy_best_combo">"Best Combo"</string>
@@ -219,7 +219,7 @@
     <string name="Tools_unable_delete_file">"에러: 파일을 지울 수 없습니다.\n"</string>
     <string name="Tools_usb_error">"\nUSB모드인지 확인하세요"</string>
     <string name="Tools_window_error">"창 스위칭 에러-아직까지는 이것을 해결하는 방법을 알아내지 못하여습니다 ;/ (세부 사항을 이메일로 보내주세요!) "</string>
-    <!-- From: file:/Users/gus/git/CSCE482/res/values-ko/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/values-ko/settings_trans.xml -->
     <eat-comment/>
     <string name="accuracyLevelDesc">"판정의 난이도"</string>
     <string name="accuracyLevelTitle">"판정"</string>
