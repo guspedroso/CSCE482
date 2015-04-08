@@ -429,4 +429,4 @@
 				android:entries="@array/toggle"
 				android:entryValues="@array/toggleValues" />
 	</PreferenceCategory>
-</PreferenceScreen><!-- From: file:/Users/gus/git/CSCE482/res/xml/settings.xml -->
+</PreferenceScreen><!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/xml/settings.xml -->

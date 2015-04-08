@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/gus/git/CSCE482/res/values-fr/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-fr/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="accuracyLevel">
     <item>Trop facile</item>
@@ -76,7 +76,7 @@
     <item>Léger</item>
     <item>Désactivé</item>
   </string-array>
-    <!-- From: file:/Users/gus/git/CSCE482/res/values-fr/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-fr/strings_trans.xml -->
     <eat-comment/>
     <string name="Accuracy_almost">"Almost"</string>
     <string name="Accuracy_best_combo">"Meilleur Combo"</string>
@@ -219,7 +219,7 @@
     <string name="Tools_unable_delete_file">"Erreur : Impossible de supprimer le fichier : \n"</string>
     <string name="Tools_usb_error">"\nPeut-être n\'êtes-vous pas en mode USB\?"</string>
     <string name="Tools_window_error">"Erreur de navigation entre fenêtres - Je n\'ai pas encore pas trouvé comment régler cette erreur ;/ (envoyez-moi des détails s\'il vous plaît !)"</string>
-    <!-- From: file:/Users/gus/git/CSCE482/res/values-fr/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-fr/settings_trans.xml -->
     <eat-comment/>
     <string name="accuracyLevelDesc">"Tolérance dans la précision des notes"</string>
     <string name="accuracyLevelTitle">"Tolérance"</string>
