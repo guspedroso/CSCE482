@@ -5,13 +5,13 @@ import android.graphics.Canvas;
 public class GUIHandler { //TODO is there any reason this isn't abstract?
 	
 	public boolean done;
-	
+
 	protected GUIVibrator v;
 	protected double fallpix_per_ms;
 	protected int tapboxYOffset;
 	protected boolean autoPlay;
 	protected boolean debugTime;
-	
+
 	public int button_y;
 	protected GUIFallingObjectSpace fallingobjects;
 	protected GUIFallingObject[] fallingobj_arr;

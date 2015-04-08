@@ -35,7 +35,6 @@ import android.widget.*;
 
 import zephyr.android.BioHarnessBT.*;
 
-
 public class GUIGame extends Activity {
 	
 	// TODO - MAJOR CLEANUP!!!
@@ -72,9 +71,10 @@ public class GUIGame extends Activity {
     private final int RESPIRATION_RATE = 0x101;
     public String respRate = "000";
     String rightSettingsTop;
-	
+    private int increment = 0;
 	private static final int ROTATABLE = 2;
-	
+    private int direction = 1;
+
 	private GUIDrawingArea drawarea = new GUIDrawingArea() {
 		
 		private SparseArray<Bitmap> rsrcBitmaps = new SparseArray<Bitmap>();
@@ -178,8 +178,9 @@ public class GUIGame extends Activity {
 			Tools.getBooleanSetting(R.string.backgroundSong, R.string.backgroundSongDefault);
 		backgroundFiltering =
 				Tools.getBooleanSetting(R.string.backgroundFiltering, R.string.backgroundFilteringDefault);
-		backgroundBrightness = Integer.valueOf(
-				Tools.getSetting(R.string.backgroundBrightness, R.string.backgroundBrightnessDefault));
+		/*backgroundBrightness = Integer.valueOf(
+				Tools.getSetting(R.string.backgroundBrightness, R.string.backgroundBrightnessDefault));*/
+        backgroundBrightness = 0;
 		//frame_millis = Integer.valueOf(
 		//		Tools.getSetting(R.string.fps, R.string.fpsDefault));
 		frame_millis = 17; // 60 FPS = 1000/17
@@ -401,9 +402,19 @@ public class GUIGame extends Activity {
 		private GUITextPaint textScorePaint, autoPlayPaint;
 		private GUITextPaint titlePaint;
 		private Paint titlebarPaint;
-		
+
 		private GUIScoreDisplay scoreDisplay;
-		
+
+        /*------------------------------------------------------------------------------*/
+        public int leftShift, topShift;
+        public Bitmap bgImageUnscaled;
+        public File bg;
+        public Canvas bgImageCanvas;
+        public int scaled_width, scaled_height;
+        public Bitmap bgImageScaled;
+        public Paint bgAlpha;
+        public Paint rectAlpha;
+        /*------------------------------------------------------------------------------*/
 		public void clearBitmaps() {
 			if (bgImage != null) {
 				bgImage.recycle(); //grr garbage collector
@@ -420,11 +431,10 @@ public class GUIGame extends Activity {
 			// Background
 			clearBitmaps();
 			if (backgroundShow) {
-				int leftShift, topShift;
-				Bitmap bgImageUnscaled;
-				File bg = dp.df.getBackground();
+
+				bg = dp.df.getBackground();
 				if (bg != null && bg.canRead() && backgroundSong) {
-					// Background image file finding is done within DataFile's setBackground 
+					// Background image file finding is done within DataFile's setBackground
 					bgImageUnscaled = BitmapFactory.decodeFile(bg.getPath());
 				} else {
 					bgImageUnscaled = BitmapFactory.decodeFile(Tools.getBackgroundRes());
@@ -432,10 +442,11 @@ public class GUIGame extends Activity {
 				if (bgImageUnscaled != null) {
 					// Create a new canvas to draw background image on
 					bgImage = Bitmap.createBitmap(Tools.screen_w, Tools.screen_h, Config.RGB_565);
-					Canvas bgImageCanvas = new Canvas(bgImage);
+					bgImageCanvas = new Canvas(bgImage);
 					
 					// Set scaling and alpha
-					int scaled_width = Tools.screen_w, scaled_height = Tools.screen_h;
+					scaled_width = Tools.screen_w;
+                    scaled_height = Tools.screen_h;
 					if (Tools.screen_h > Tools.screen_w) {
 						scaled_width = Tools.screen_h * bgImageUnscaled.getWidth() / bgImageUnscaled.getHeight();
 						leftShift = (Tools.screen_w - scaled_width) / 2;
@@ -445,9 +456,9 @@ public class GUIGame extends Activity {
 						leftShift = 0;
 						topShift = (Tools.screen_h - scaled_height) / 2;
 					}
-					Bitmap bgImageScaled = Bitmap.createScaledBitmap(
+					bgImageScaled = Bitmap.createScaledBitmap(
 							bgImageUnscaled, scaled_width, scaled_height, true);
-					Paint bgAlpha = new Paint();
+					bgAlpha = new Paint();
 					bgAlpha.setAlpha(Tools.MAX_OPA * backgroundBrightness / 100);
 					
 					// Draw background image onto canvas
@@ -456,7 +467,7 @@ public class GUIGame extends Activity {
 					bgImageScaled.recycle(); bgImageScaled = null; //grr garbage collector
 					
 					// Draw grey boxes behind info text
-					Paint rectAlpha = new Paint(); // default colour is black
+					rectAlpha = new Paint(); // default colour is black
 					rectAlpha.setAlpha(Tools.MAX_OPA * backgroundBrightness / (4 * 100));
 					bgImageCanvas.drawRect(0, 0, Tools.screen_w, (margin * 3 + height * 3), rectAlpha);
 					bgImageCanvas.drawRect(0, Tools.screen_h - (margin + height * 2), Tools.screen_w, Tools.screen_h, rectAlpha);
@@ -587,7 +598,182 @@ public class GUIGame extends Activity {
 			attributes.put("rightSettingsBottom", rightSettingsBottom);
 			ToolsTracker.data("Game started", attributes);
 		}
-		
+
+        private void reSetupBG() {
+            // Dimensions
+            margin = Tools.scale(7);
+            height = Tools.scale(17);
+
+            // Background
+            clearBitmaps();
+            if (backgroundShow) {
+
+                bg = dp.df.getBackground();
+                if (bg != null && bg.canRead() && backgroundSong) {
+                    // Background image file finding is done within DataFile's setBackground
+                    bgImageUnscaled = BitmapFactory.decodeFile(bg.getPath());
+                } else {
+                    bgImageUnscaled = BitmapFactory.decodeFile(Tools.getBackgroundRes());
+                }
+                if (bgImageUnscaled != null) {
+                    // Create a new canvas to draw background image on
+                    bgImage = Bitmap.createBitmap(Tools.screen_w, Tools.screen_h, Config.RGB_565);
+                    bgImageCanvas = new Canvas(bgImage);
+
+                    // Set scaling and alpha
+                    scaled_width = Tools.screen_w;
+                    scaled_height = Tools.screen_h;
+                    if (Tools.screen_h > Tools.screen_w) {
+                        scaled_width = Tools.screen_h * bgImageUnscaled.getWidth() / bgImageUnscaled.getHeight();
+                        leftShift = (Tools.screen_w - scaled_width) / 2;
+                        topShift = 0;
+                    } else {
+                        scaled_height = Tools.screen_w * bgImageUnscaled.getHeight() / bgImageUnscaled.getWidth();
+                        leftShift = 0;
+                        topShift = (Tools.screen_h - scaled_height) / 2;
+                    }
+                    bgImageScaled = Bitmap.createScaledBitmap(
+                            bgImageUnscaled, scaled_width, scaled_height, true);
+                    bgAlpha = new Paint();
+                    bgAlpha.setAlpha(Tools.MAX_OPA * backgroundBrightness / 100);
+
+                    // Draw background image onto canvas
+                    bgImageCanvas.drawBitmap(bgImageScaled, leftShift, topShift, bgAlpha);
+                    bgImageUnscaled.recycle(); bgImageUnscaled = null; //grr garbage collector
+                    bgImageScaled.recycle(); bgImageScaled = null; //grr garbage collector
+
+                    // Draw grey boxes behind info text
+                    rectAlpha = new Paint(); // default colour is black
+                    rectAlpha.setAlpha(Tools.MAX_OPA * backgroundBrightness / (4 * 100));
+                    bgImageCanvas.drawRect(0, 0, Tools.screen_w, (margin * 3 + height * 3), rectAlpha);
+                    bgImageCanvas.drawRect(0, Tools.screen_h - (margin + height * 2), Tools.screen_w, Tools.screen_h, rectAlpha);
+
+                    // Draw Tapboxes
+                    GUIGame.this.h.drawTapboxes(bgImageCanvas); // Draw it directly on the background
+
+                    // Set filtering and matrix
+                    if (backgroundFiltering) {
+                        bgImageFiltering = new Paint();
+                        bgImageFiltering.setFilterBitmap(true);
+                    } else {
+                        bgImageFiltering = null;
+                    }
+                    bgImageMatrix = new Matrix();
+                    bgImageMatrix.reset();
+                }
+            }
+        }
+        private void reSetupDraw() {
+            reSetupBG();
+
+            // Background
+            bgSolidPaint = new Paint();
+            bgSolidPaint.setARGB(Tools.MAX_OPA, 0,0,0);
+
+            // Accuracy message
+            textPaint = new GUITextPaint(Tools.scale(32)).alignCenter().serif().
+                    bold().italic().strokeWidth(Tools.scale(3));
+
+            // Combo
+            textComboPaint = new GUITextPaint(Tools.scale(36)).alignCenter().sansSerif().
+                    bold().strokeWidth(Tools.scale(3));
+
+            // Health
+            hpBackPaint = new Paint();
+            hpBackPaint.setARGB(60,0,0,255);
+            hpBarPaint = new Paint();
+            hpBorderPaint = new Paint();
+            hpBorderPaint.setStyle(Paint.Style.STROKE);
+            hpBorderPaint.setStrokeWidth(Tools.scale(2));
+            hpBorderPaint.setARGB(Tools.MAX_OPA, 0, 0, 0);
+
+            // Left Settings (difficulty and credits)
+            leftSettingsPaint = new GUITextPaint(Tools.scale(13)).alignLeft().serif().
+                    italic().ARGB(170, 255, 255, 255);
+
+            // Credits
+            leftSettingsTop = dp.df.getCredit();
+
+            // Difficulty
+            leftSettingsBottom =
+                    dp.getNotesData().getDifficulty().toString() + " [" +
+                            dp.getNotesData().getDifficultyMeter() + "]";
+
+            // Right Settings (modifiers)
+            rightSettingsPaint = new GUITextPaint(Tools.scale(13)).alignRight().serif().
+                    italic().ARGB(170, 255, 255, 255);
+
+            // Modifiers
+            rightSettingsBottom = "";
+            if (dark) rightSettingsBottom += Tools.getString(R.string.GUIGame_dark);
+            switch(noteAppearance) {
+                case 1: rightSettingsBottom += Tools.getString(R.string.GUIGame_hidden); break;
+                case 2: rightSettingsBottom += Tools.getString(R.string.GUIGame_sudden); break;
+                case 3: rightSettingsBottom += Tools.getString(R.string.GUIGame_invisible); break;
+                default: break;
+            }
+            if (jumps && !osu) rightSettingsBottom += Tools.getString(R.string.GUIGame_jumps);
+            switch (randomize) {
+                case Randomizer.OFF:
+                    if (!holds && !osu)
+                        rightSettingsBottom += Tools.getString(R.string.GUIGame_no_holds);
+                    break;
+                case Randomizer.STATIC:
+                    rightSettingsBottom += Tools.getString(R.string.GUIGame_randomize_static);
+                    break;
+                case Randomizer.DYNAMIC:
+                    rightSettingsBottom += Tools.getString(R.string.GUIGame_randomize_dynamic);
+                    break;
+            }
+            if (osu) rightSettingsBottom += Tools.getString(R.string.GUIGame_osu_mod);
+            if (rightSettingsBottom.length() > 2) {
+                rightSettingsBottom = rightSettingsBottom.substring(2); // ignore the first ", "
+            } else {
+                rightSettingsBottom = Tools.getString(R.string.GUIGame_standard);
+            }
+
+            // Beats Per Minute
+            rightSettingsTop = String.format("%s Beats Per Min", dp.df.getBPMRange(dp.notesDataIndex));
+
+            // BPM & Speed
+           /* rightSettingsTop =
+                    String.format(
+                            "%s Beats Per Min %3.2fx",
+                            dp.df.getBPMRange(dp.notesDataIndex),
+                            speed_multiplier
+                    ); */
+
+
+            // Title
+            titlePaint = new GUITextPaint(Tools.scale(14)).alignLeft().bold().ARGB(Tools.MAX_OPA, 0, 0, 0);
+            titlebarPaint = new Paint();
+            titlebarPaint.setColor(Color.LTGRAY);
+            titlebarPaint.setAlpha(Tools.MAX_OPA * 3 / 4);
+
+            // Score
+            textScorePaint = new GUITextPaint(Tools.scale(13)).alignRight().monospace().
+                    italic().ARGB(Tools.MAX_OPA, 255, 255, 255);
+
+            // Show FPS or Auto-Play
+            if (showFPS || autoPlay) {
+                autoPlayPaint = new GUITextPaint(Tools.scale(13)).alignLeft().monospace().
+                        italic().ARGB(Tools.MAX_OPA, 255, 255, 255);
+            } else {
+                autoPlayPaint = null;
+            }
+
+            //Endgame score display
+            scoreDisplay = new GUIScoreDisplay(h.score);
+
+            // Tracking
+            HashMap<String,String> attributes = new HashMap<String,String>();
+            attributes.put("leftSettingsTop", leftSettingsTop);
+            attributes.put("leftSettingsBottom", leftSettingsBottom);
+            attributes.put("rightSettingsTop", rightSettingsTop);
+            attributes.put("rightSettingsBottom", rightSettingsBottom);
+            ToolsTracker.data("Game started", attributes);
+        }
+
 		public void onDraw(Canvas canvas) {
 
 			// FPS
@@ -802,6 +988,32 @@ public class GUIGame extends Activity {
                 }
             }
         }
+
+        //Java Timer class object declaration
+        Timer timer2 = new Timer();
+
+        //self-made function to set fallpix_per_ms speed variable within Update() -gp
+        class SpeedTask2 extends TimerTask {
+            public void run() {
+
+                if (backgroundBrightness >= 100)
+                    direction = 0;
+                else if (backgroundBrightness <= 0)
+                    direction = 1;
+
+                if (direction == 1) {
+                    //go up
+                    backgroundBrightness+=10;
+                }
+                else {
+                    //go down
+                    backgroundBrightness-=10;
+                }
+
+
+                mView.getGameView().reSetupDraw();
+            }
+        }
         //****************
 
 		private void nextFrame() {
@@ -836,6 +1048,7 @@ public class GUIGame extends Activity {
 
                 // Modifies speed value, called using TimerTask class
                 timer.schedule(new SpeedTask(), TIME_DELAY, 500);
+                timer2.schedule(new SpeedTask2(), TIME_DELAY, 1000); //-gp
 
                 musicCurrentPosition = mp.getCurrentPosition();
 				musicStartTime = musicCurrentPosition + manualOffset;

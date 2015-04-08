@@ -9,7 +9,7 @@ import com.beatsportable.beats.DataNote.NoteType;
 import com.beatsportable.beats.GUIScore.*;
 
 public class GUIHandlerTap extends GUIHandler {
-	
+
 	private int[] button_x;
 	private int[] hitbox_left, hitbox_right, hitbox_top, hitbox_bottom;
 	private GUIFallingObject[] object_held; //the object held under button p, or null
@@ -322,7 +322,7 @@ public class GUIHandlerTap extends GUIHandler {
 		}
 		
 	}
-	
+
 	@Override
 	public void drawTapboxes(Canvas canvas) {
 		float tapboxBitmap_x = 0;
