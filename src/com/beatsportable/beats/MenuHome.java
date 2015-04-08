@@ -565,7 +565,7 @@ public class MenuHome extends Activity {
 		});
 		
 		// Game Mode
-		ImageView gameModePrev = (ImageView) findViewById(R.id.gameModePrev);
+		/*ImageView gameModePrev = (ImageView) findViewById(R.id.gameModePrev);
 		ImageView gameModeNext = (ImageView) findViewById(R.id.gameModeNext);
 		final ImageView gameMode = (ImageView) findViewById(R.id.gameMode);
 		
@@ -602,8 +602,8 @@ public class MenuHome extends Activity {
 					gameMode.setBackgroundColor(Color.TRANSPARENT);
 				}
 			}
-		});	
-		
+		});	*/
+
 		/*
 		// Background Data button
 		ImageView backgroundData = (ImageView) findViewById(R.id.backgroundData);
@@ -755,6 +755,7 @@ public class MenuHome extends Activity {
 		R.id.settings,
 		R.id.exit,
 		R.id.difficulty,
+        R.id.goal,
 		R.id.gameMode
 	};
 	
@@ -1017,25 +1018,25 @@ public class MenuHome extends Activity {
 	// Ugly, won't fix
 	private void nextGameMode(boolean prev) {
 		int gameMode = Integer.parseInt(Tools.getSetting(R.string.gameMode, R.string.gameModeDefault));
-		if (prev) {
+		/*if (prev) {
 			gameMode -= 1;
 			if (gameMode < 0) gameMode = 3;
 		} else {
 			gameMode += 1;
 			if (gameMode > 3) gameMode = 0;
-		}
+		} */
 		Tools.putSetting(R.string.gameMode, Integer.toString(gameMode));
 		updateGameMode();
 	}
 	
 	private void updateGameMode() {
-		Tools.updateGameMode();
-		ImageView gameMode = (ImageView) findViewById(R.id.gameMode);
-		switch(Tools.gameMode) {
-			case Tools.REVERSE:
-				gameMode.setImageResource(R.drawable.mode_step_down);
-				break;
-			case Tools.STANDARD:
+		//Tools.updateGameMode();
+		//ImageView gameMode = (ImageView) findViewById(R.id.gameMode);
+		//switch(Tools.gameMode) {
+			//case Tools.REVERSE:
+				//gameMode.setImageResource(R.drawable.mode_step_down);
+			//	break;
+			/*case Tools.STANDARD:
 				gameMode.setImageResource(R.drawable.mode_step_up);
 				break;
 			case Tools.OSU_MOD:
@@ -1044,8 +1045,8 @@ public class MenuHome extends Activity {
 				} else {
 					gameMode.setImageResource(R.drawable.mode_osu);
 				}
-				break;
-		}
+				break; */
+		//}
 	}
 	/*
 	private void changeGameMode() {
