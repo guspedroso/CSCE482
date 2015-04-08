@@ -110,7 +110,7 @@
 	<string name="manualOGGOffset">"manualOGGOffset"</string>
 	<string name="manualOGGOffsetDefault">"0"</string>
 	<string name="showPercent">"showPercent"</string>
-	<string name="showPercentDefault">"0"</string>
+	<string name="showPercentDefault">"1"</string>
 	<!-- 
 	<string name="fps">"fps"</string>
 	<string name="fpsDefault">"1"</string>

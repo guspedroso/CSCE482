@@ -41,7 +41,8 @@
                     android:layout_height="wrap_content"
                     android:gravity="left"
                     android:background="@drawable/difficulty_header"
-                    />
+                    android:autoText="false"
+                    android:text="@string/Goal_6" />
 			</LinearLayout>
 			<LinearLayout
 				android:layout_width="wrap_content"

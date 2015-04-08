@@ -837,7 +837,7 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="backgroundImage">"backgroundImage"</string>
-    <string name="backgroundImageDefault">"white"</string>
+    <string name="backgroundImageDefault">"white  "</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="backgroundImageDesc">"Background image for main menu and stepfiles without one"</string>
@@ -1120,7 +1120,7 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="showPercent">"showPercent"</string>
-    <string name="showPercentDefault">"0"</string>
+    <string name="showPercentDefault">"1"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="showPercentDesc">"Display percent instead of letter grade in scoreboard"</string>
