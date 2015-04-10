@@ -71,11 +71,20 @@ public class GUIGame extends Activity {
     private final int RESPIRATION_RATE = 0x101;
     public String respRate = "000";
     String rightSettingsTop;
-    private int increment = 0;
+
 	private static final int ROTATABLE = 2;
-    private int direction = 1; // these variables are needed for breath display -gp
-    private int breathColor = 0;
-    private int tapBoxes = 0;
+
+    /*-------these variables are needed for breath display -gp ----------*/
+
+    private int increment = 0; //start at zero
+    private int direction = 1; //default up
+    private int breathColor = 0; //default black
+    private int interval = 25; //default one sec interval
+    private int span = 10; //default 10 sec
+    private int inBreath = 6; //default 6 sec
+    private int outBreath = 4; //default 4 sec
+
+    /*--------------------------------------------------------------------*/
 
 	private GUIDrawingArea drawarea = new GUIDrawingArea() {
 		
@@ -632,22 +641,14 @@ public class GUIGame extends Activity {
 				return;
 			}
 									
-			// Background -gp
+			// Background bitmap type removed -gp
 			/*if (bgImage != null) {
 				canvas.drawBitmap(bgImage, bgImageMatrix, bgImageFiltering);
 			} else {*/
 				//canvas.drawRect(0, 0, canvas.getWidth(), canvas.getHeight(), bgSolidPaint);
 
             canvas.drawPaint(bgSolidPaint);
-
-            /*if (tapBoxes == 0)
-                {
-                    h.drawTapboxes(canvas);
-                    tapBoxes = 1;
-                }*/
-
-
-			//}
+            //h.drawTapboxes(canvas); // this is too slow -gp
 
 			// Arrows
 			//GUIFallingObject[] falling_objs = h.get_objs();
@@ -832,21 +833,69 @@ public class GUIGame extends Activity {
         class SpeedTask2 extends TimerTask {
             public void run() {
 
-                if (breathColor >= 100)
-                    direction = 0;
-                else if (breathColor <= 0)
-                    direction = 1;
+                int sections = 1000/interval; // 1000/1000 = 1 section per sec
+                int totalCap = span*sections; // 10 sec * 1 section = 10 total sections
+                int inCap = (inBreath*sections); // 6 sec * 1 section = 6 in sections
+                int outCap = (outBreath*sections); // 4 sec * 1 section = 4 out sections
+                int inMid = inCap/2; // (6 sec * 1 section)/2 = 3 sec is midpoint for inBreath
+                int outMid = outCap/2 + inCap; // (4 sec * 1 section)/2 + 6 = 8 sec is mid for outBreath
+                int colorIncrement;
+                int inColorRange = 400; //100/300
+                int outColorRange = 250;
+                //start the process over
+                if (increment >= totalCap)
+                    increment = 0;
 
+
+                //set the direction for increment/decrement based on midpoints
+                if (increment <= inMid) {
+                    //keep direction up
+                    direction = 1;
+                }
+                else if (increment > inMid && increment < inCap) {
+                    //bring it down
+                    direction = 0;
+                }
+                else if (increment >= inCap && increment < outMid) {
+                    //bring it up
+                    direction = 1;
+                }
+                else if (increment >= outMid) {
+                    //bring it up
+                    direction = 0;
+                }
+
+                //determine increment amount
+                if (increment <= inCap) {
+                    //we are in inBreath section
+                    colorIncrement = inColorRange/inCap; // 100/6 = 16
+                }
+                else {
+                    //we are in outBreath section
+                    colorIncrement = outColorRange/outCap; // 100/4 = 25
+                }
+
+                //add to color or remove depending on where direction is going
                 if (direction == 1) {
                     //go up
-                    breathColor+=10;
+                    breathColor+=colorIncrement;
                 }
                 else {
                     //go down
-                    breathColor-=10;
+                    breathColor-=colorIncrement;
                 }
 
-                bgSolidPaint.setARGB(Tools.MAX_OPA, breathColor,breathColor,breathColor);
+                //determine color
+                if (increment <= inCap) {
+                    //we are in inBreath section (maintain a color)
+                    bgSolidPaint.setARGB(Tools.MAX_OPA, breathColor , 40 + breathColor, breathColor);
+                }
+                else {
+                    //we are in outBreath section (maintain a color)
+                    bgSolidPaint.setARGB(Tools.MAX_OPA, 40 + breathColor, breathColor, breathColor);
+                }
+
+                increment++;
             }
         }
         //****************
@@ -883,7 +932,7 @@ public class GUIGame extends Activity {
 
                 // Modifies speed value, called using TimerTask class
                 timer.schedule(new SpeedTask(), TIME_DELAY, 500);
-                timer2.schedule(new SpeedTask2(), TIME_DELAY, 1000); //-gp
+                timer2.schedule(new SpeedTask2(), TIME_DELAY, interval);
 
                 musicCurrentPosition = mp.getCurrentPosition();
 				musicStartTime = musicCurrentPosition + manualOffset;
