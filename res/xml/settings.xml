@@ -8,6 +8,20 @@
             android:defaultValue="@string/showFPSDefault"
             android:entries="@array/toggle"
             android:entryValues="@array/toggleValues" />
+        <ListPreference
+            android:title="@string/showBreathTitle"
+            android:summary="@string/showBreathDesc"
+            android:key="@string/showBreath"
+            android:defaultValue="@string/showBreathDefault"
+            android:entries="@array/toggle"
+            android:entryValues="@array/toggleValues" />
+        <ListPreference
+            android:title="@string/breathColorTitle"
+            android:summary="@string/breathColorDesc"
+            android:key="@string/breathColor"
+            android:defaultValue="@string/breathColorDefault"
+            android:entries="@array/breathColor"
+            android:entryValues="@array/breathColorValues" />
 		<ListPreference
 			android:title="@string/difficultyLevelTitle"
 			android:summary="@string/difficultyLevelDesc"
@@ -15,7 +29,6 @@
 			android:defaultValue="@string/difficultyLevelDefault"
 			android:entries="@array/difficultyLevel"
 			android:entryValues="@array/difficultyLevelValues" />
-
 		<ListPreference
 			android:title="@string/tapboxLayoutTitle"
 			android:summary="@string/tapboxLayoutDesc"

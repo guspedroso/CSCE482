@@ -68,6 +68,22 @@
 	</string-array>
     <!-- From: file:/Users/gus/git/CSCE482/res/values/arrays_trans.xml -->
     <eat-comment/>
+    <string-array name="breathColor">
+     <item>None</item>
+     <item>Red</item>
+     <item>Green</item>
+     <item>Blue</item>
+    </string-array>
+    <!-- From: file:/Users/gus/git/CSCE482/res/values/arrays_const.xml -->
+    <eat-comment/>
+    <string-array name="breathColorValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <!-- From: file:/Users/gus/git/CSCE482/res/values/arrays_trans.xml -->
+    <eat-comment/>
     <string-array name="difficultyLevel">
     <item>Beginner</item>
     <item>Easy</item>
@@ -865,6 +881,14 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <eat-comment/>
     <string name="betaNotesDesc">"Display beta notes on next startup"</string>
     <string name="betaNotesTitle">"Beta Notes"</string>
+    <!-- From: file:/Users/gus/git/CSCE482/res/values/constants.xml -->
+    <eat-comment/>
+    <string name="breathColor">"breathColor"</string>
+    <string name="breathColorDefault">"0"</string>
+    <!-- From: file:/Users/gus/git/CSCE482/res/values/settings_trans.xml -->
+    <eat-comment/>
+    <string name="breathColorDesc">"Default color of breath"</string>
+    <string name="breathColorTitle">"Breath Color"</string>
     <string name="changelogDesc">"Updated Changelog forum thread for the next release"</string>
     <string name="changelogTitle">"Changelog"</string>
     <string name="creditsDesc">"A bit about the devs and all others to thank"</string>
@@ -1109,6 +1133,14 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <eat-comment/>
     <string name="screenshotModeDesc">"Enable this to take a screenshot when you pause the game"</string>
     <string name="screenshotModeTitle">"Screenshot Mode"</string>
+    <!-- From: file:/Users/gus/git/CSCE482/res/values/constants.xml -->
+    <eat-comment/>
+    <string name="showBreath">"showBreath"</string>
+    <string name="showBreathDefault">"0"</string>
+    <!-- From: file:/Users/gus/git/CSCE482/res/values/settings_trans.xml -->
+    <eat-comment/>
+    <string name="showBreathDesc">"Display breath goal in background of game, light is in dark is out"</string>
+    <string name="showBreathTitle">"Show Breaths Goal in Background"</string>
     <!-- From: file:/Users/gus/git/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="showFPS">"showFPS"</string>

@@ -76,13 +76,21 @@ public class GUIGame extends Activity {
 
     /*-------these variables are needed for breath display -gp ----------*/
 
+    private boolean showBreath; //default false to not show
     private int increment = 0; //start at zero
     private int direction = 1; //default up
-    private int breathColor = 0; //default black
-    private int interval = 25; //default one sec interval
-    private int span = 10; //default 10 sec
+    private int breathBase = 0; //default black
+    private int interval = 25; //default .04 sec interval
     private int inBreath = 6; //default 6 sec
     private int outBreath = 4; //default 4 sec
+    private int span = inBreath + outBreath; //default 10 sec
+    private int breathColor; //default 0 (none), 1 (red), 2 (green), 1 (blue)
+    private int breathRedIn; //default colors to add none
+    private int breathBlueIn;
+    private int breathGreenIn;
+    private int breathRedOut;
+    private int breathBlueOut;
+    private int breathGreenOut;
 
     /*--------------------------------------------------------------------*/
 
@@ -189,9 +197,8 @@ public class GUIGame extends Activity {
 			Tools.getBooleanSetting(R.string.backgroundSong, R.string.backgroundSongDefault);
 		backgroundFiltering =
 				Tools.getBooleanSetting(R.string.backgroundFiltering, R.string.backgroundFilteringDefault);
-		/*backgroundBrightness = Integer.valueOf(
-				Tools.getSetting(R.string.backgroundBrightness, R.string.backgroundBrightnessDefault));*/
-        backgroundBrightness = 0;
+		backgroundBrightness = Integer.valueOf(
+				Tools.getSetting(R.string.backgroundBrightness, R.string.backgroundBrightnessDefault));
 		//frame_millis = Integer.valueOf(
 		//		Tools.getSetting(R.string.fps, R.string.fpsDefault));
 		frame_millis = 17; // 60 FPS = 1000/17
@@ -207,7 +214,9 @@ public class GUIGame extends Activity {
 		holds = Tools.getBooleanSetting(R.string.holds, R.string.holdsDefault);
 		autoPlay = Tools.getBooleanSetting(R.string.autoPlay, R.string.autoPlayDefault);
 		showFPS = Tools.getBooleanSetting(R.string.showFPS, R.string.showFPSDefault);
-
+        showBreath = Tools.getBooleanSetting(R.string.showBreath, R.string.showBreathDefault);
+        breathColor = Integer.valueOf(
+                Tools.getSetting(R.string.breathColor, R.string.breathColorDefault));
 // --------------------- ADDED -----------------------------------------
         //showBPM = Tools.getBooleanSetting("showBPM", "1");
 		screenshotMode = Tools.getBooleanSetting(R.string.screenshotMode, R.string.screenshotModeDefault);
@@ -318,7 +327,43 @@ public class GUIGame extends Activity {
 			b = drawarea.getBitmap(GUINoteImage.rsrc(pitch, 0, true));
 			b = drawarea.getBitmap(GUINoteImage.rsrc(pitch, 0, false));
 		}*/
-		
+
+        //set up breath color -gp
+        if (breathColor == 0) {
+            breathRedIn = 0;
+            breathRedOut = 0;
+            breathGreenIn = 0;
+            breathGreenOut = 0;
+            breathBlueIn = 0;
+            breathBlueOut = 0;
+        }
+        else if (breathColor == 1) {
+            breathRedIn = 50;
+            breathRedOut = 50;
+            breathGreenIn = 0;
+            breathGreenOut = 0;
+            breathBlueIn = 0;
+            breathBlueOut = 0;
+        }
+        else if (breathColor == 2) {
+            breathRedIn = 0;
+            breathRedOut = 0;
+            breathGreenIn = 50;
+            breathGreenOut = 50;
+            breathBlueIn = 0;
+            breathBlueOut = 0;
+        }
+        else if (breathColor == 3) {
+            breathRedIn = 0;
+            breathRedOut = 0;
+            breathGreenIn = 0;
+            breathGreenOut = 0;
+            breathBlueIn = 50;
+            breathBlueOut = 50;
+        }
+
+
+
 		// Start updating
 		mView.startTimer();
 		h.setMessageLong(Tools.getString(R.string.GUIGame_ready), 0, 64, 255); // royal blue
@@ -417,14 +462,14 @@ public class GUIGame extends Activity {
 		private GUIScoreDisplay scoreDisplay;
 
         /*------------------------------------------------------------------------------*/
-        private int leftShift, topShift;
-        private Bitmap bgImageUnscaled;
-        private File bg;
-        private Canvas bgImageCanvas;
-        private int scaled_width, scaled_height;
-        private Bitmap bgImageScaled;
-        private Paint bgAlpha;
-        private Paint rectAlpha;
+        public int leftShift, topShift;
+        public Bitmap bgImageUnscaled;
+        public File bg;
+        public Canvas bgImageCanvas;
+        public int scaled_width, scaled_height;
+        public Bitmap bgImageScaled;
+        public Paint bgAlpha;
+        public Paint rectAlpha;
         /*------------------------------------------------------------------------------*/
 		public void clearBitmaps() {
 			if (bgImage != null) {
@@ -641,14 +686,16 @@ public class GUIGame extends Activity {
 				return;
 			}
 									
-			// Background bitmap type removed -gp
-			/*if (bgImage != null) {
+			// Background, modified to have breathing -gp
+			if (bgImage != null && !showBreath) {
 				canvas.drawBitmap(bgImage, bgImageMatrix, bgImageFiltering);
-			} else {*/
-				//canvas.drawRect(0, 0, canvas.getWidth(), canvas.getHeight(), bgSolidPaint);
-
-            canvas.drawPaint(bgSolidPaint);
-            //h.drawTapboxes(canvas); // this is too slow -gp
+			} else if (showBreath) {
+                canvas.drawPaint(bgSolidPaint);
+                //h.drawTapboxes(canvas); // this is too slow -gp
+            }
+            else {
+                canvas.drawRect(0, 0, canvas.getWidth(), canvas.getHeight(), bgSolidPaint);
+            }
 
 			// Arrows
 			//GUIFallingObject[] falling_objs = h.get_objs();
@@ -829,7 +876,7 @@ public class GUIGame extends Activity {
         //Java Timer class object declaration
         Timer timer2 = new Timer();
 
-        //self-made function to set fallpix_per_ms speed variable within Update() -gp
+        //self-made function to show background breathing within Update() -gp
         class SpeedTask2 extends TimerTask {
             public void run() {
 
@@ -837,64 +884,50 @@ public class GUIGame extends Activity {
                 int totalCap = span*sections; // 10 sec * 1 section = 10 total sections
                 int inCap = (inBreath*sections); // 6 sec * 1 section = 6 in sections
                 int outCap = (outBreath*sections); // 4 sec * 1 section = 4 out sections
-                int inMid = inCap/2; // (6 sec * 1 section)/2 = 3 sec is midpoint for inBreath
-                int outMid = outCap/2 + inCap; // (4 sec * 1 section)/2 + 6 = 8 sec is mid for outBreath
                 int colorIncrement;
-                int inColorRange = 400; //100/300
-                int outColorRange = 250;
+                int colorRange = 255;
+
                 //start the process over
                 if (increment >= totalCap)
                     increment = 0;
 
-
-                //set the direction for increment/decrement based on midpoints
-                if (increment <= inMid) {
-                    //keep direction up
-                    direction = 1;
-                }
-                else if (increment > inMid && increment < inCap) {
-                    //bring it down
-                    direction = 0;
-                }
-                else if (increment >= inCap && increment < outMid) {
-                    //bring it up
-                    direction = 1;
-                }
-                else if (increment >= outMid) {
-                    //bring it up
-                    direction = 0;
-                }
-
                 //determine increment amount
                 if (increment <= inCap) {
                     //we are in inBreath section
-                    colorIncrement = inColorRange/inCap; // 100/6 = 16
+                    colorIncrement = (int) Math.floor((double)colorRange / inCap); // 100/6 = 16
+
+                    //error checking
+                    if (colorIncrement < 1)
+                        colorIncrement = 1;
+
+                    breathBase+=colorIncrement;
+
+                    //limit to how bright the color can get (if you change this then change additional colors accordingly, ie sum must be <= 255)
+                    if (breathBase > 100)
+                        breathBase = 100;
+
+                    //Log.d("gusgus", "incremented by " + colorIncrement + " with inCap at " + inCap);
+                    bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase + breathRedIn, breathBase + breathGreenIn, breathBase + breathBlueIn);
                 }
                 else {
                     //we are in outBreath section
-                    colorIncrement = outColorRange/outCap; // 100/4 = 25
+                    colorIncrement = (int) Math.ceil((double)colorRange / outCap); // 100/4 = 25
+
+                    //error checking
+                    if (colorIncrement < 1)
+                        colorIncrement = 1;
+
+                    breathBase-=colorIncrement;
+
+                    //error checking
+                    if (breathBase < 0)
+                        breathBase = 0;
+
+                    //Log.d("gusgus", "decremented by " + colorIncrement + " with outCap at " + outCap);
+                    bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase + breathRedOut, breathBase + breathGreenOut, breathBase + breathBlueOut);
                 }
 
-                //add to color or remove depending on where direction is going
-                if (direction == 1) {
-                    //go up
-                    breathColor+=colorIncrement;
-                }
-                else {
-                    //go down
-                    breathColor-=colorIncrement;
-                }
-
-                //determine color
-                if (increment <= inCap) {
-                    //we are in inBreath section (maintain a color)
-                    bgSolidPaint.setARGB(Tools.MAX_OPA, breathColor , 40 + breathColor, breathColor);
-                }
-                else {
-                    //we are in outBreath section (maintain a color)
-                    bgSolidPaint.setARGB(Tools.MAX_OPA, 40 + breathColor, breathColor, breathColor);
-                }
-
+                //Log.d("gusgus", "opa is " + breathColor);
                 increment++;
             }
         }
@@ -932,7 +965,9 @@ public class GUIGame extends Activity {
 
                 // Modifies speed value, called using TimerTask class
                 timer.schedule(new SpeedTask(), TIME_DELAY, 500);
-                timer2.schedule(new SpeedTask2(), TIME_DELAY, interval);
+                // If user selects to show breathing background -gp
+                if (showBreath)
+                    timer2.schedule(new SpeedTask2(), TIME_DELAY, interval);
 
                 musicCurrentPosition = mp.getCurrentPosition();
 				musicStartTime = musicCurrentPosition + manualOffset;

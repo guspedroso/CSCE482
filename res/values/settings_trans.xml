@@ -45,6 +45,8 @@
   <string name="creditsDesc">"A bit about the devs and all others to thank"</string>
   <string name="difficultyLevelTitle">"Difficulty Level"</string>
   <string name="difficultyLevelDesc">"Default difficulty level of song"</string>
+  <string name="breathColorTitle">"Breath Color"</string>
+  <string name="breathColorDesc">"Default color of breath"</string>
   <string name="speedMultiplierTitle">"Speed"</string>
   <string name="speedMultiplierDesc">"Falling speed of notes"</string>
   <string name="gameModeTitle">"Game Mode"</string>
@@ -101,6 +103,8 @@
   <string name="showPercentDesc">"Display percent instead of letter grade in scoreboard"</string>
   <string name="showFPSTitle">"Show Breaths Per Minute"</string>
   <string name="showFPSDesc">"Display breaths-per-minute at the top of game screen"</string>
+  <string name="showBreathTitle">"Show Breaths Goal in Background"</string>
+  <string name="showBreathDesc">"Display breath goal in background of game, light is in dark is out"</string>
   <string name="screenshotModeTitle">"Screenshot Mode"</string>
   <string name="screenshotModeDesc">"Enable this to take a screenshot when you pause the game"</string>
   <string name="backgroundFilteringTitle">"Background Filtering"</string>

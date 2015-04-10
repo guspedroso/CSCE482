@@ -42,91 +42,61 @@
       <file leaf-file-name="GUIGame.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/GUIGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32561505" vertical-offset="12945" max-vertical-offset="18780">
-              <caret line="882" column="22" selection-start-line="882" selection-start-column="22" selection-end-line="882" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.25244072" vertical-offset="4979" max-vertical-offset="18915">
+              <caret line="344" column="29" selection-start-line="344" selection-start-column="29" selection-end-line="344" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2608#2616#0" expanded="true" />
-                <element signature="e#5570#5599#0" expanded="true" />
-                <element signature="e#5601#5637#0" expanded="true" />
-                <element signature="e#5694#5714#0" expanded="true" />
-                <element signature="e#5716#5743#0" expanded="true" />
-                <element signature="e#5794#5817#0" expanded="true" />
-                <element signature="e#5819#5849#0" expanded="true" />
-                <element signature="e#5898#5921#0" expanded="true" />
-                <element signature="e#5923#5953#0" expanded="true" />
-                <element signature="e#6008#6036#0" expanded="true" />
-                <element signature="e#6038#6073#0" expanded="true" />
-                <element signature="e#6443#6467#0" expanded="true" />
-                <element signature="e#6469#6500#0" expanded="true" />
-                <element signature="e#6561#6584#0" expanded="true" />
-                <element signature="e#6586#6616#0" expanded="true" />
-                <element signature="e#6673#6691#0" expanded="true" />
-                <element signature="e#6693#6718#0" expanded="true" />
-                <element signature="e#6798#6811#0" expanded="true" />
-                <element signature="e#6813#6833#0" expanded="true" />
-                <element signature="e#6870#6884#0" expanded="true" />
-                <element signature="e#6886#6907#0" expanded="true" />
-                <element signature="e#6944#6958#0" expanded="true" />
-                <element signature="e#6960#6981#0" expanded="true" />
-                <element signature="e#7021#7038#0" expanded="true" />
-                <element signature="e#7040#7064#0" expanded="true" />
-                <element signature="e#7103#7119#0" expanded="true" />
-                <element signature="e#7121#7144#0" expanded="true" />
-                <element signature="e#7325#7348#0" expanded="true" />
-                <element signature="e#7350#7380#0" expanded="true" />
-                <element signature="e#7422#7441#0" expanded="true" />
-                <element signature="e#7443#7469#0" expanded="true" />
-                <element signature="e#7510#7528#0" expanded="true" />
-                <element signature="e#7530#7555#0" expanded="true" />
-                <element signature="e#7613#7634#0" expanded="true" />
-                <element signature="e#7636#7664#0" expanded="true" />
-                <element signature="e#7723#7744#0" expanded="true" />
-                <element signature="e#7746#7774#0" expanded="true" />
-                <element signature="e#7836#7860#0" expanded="true" />
-                <element signature="e#7862#7893#0" expanded="true" />
-                <element signature="e#8501#8528#0" expanded="true" />
-                <element signature="e#8530#8564#0" expanded="true" />
-                <element signature="e#10425#10459#0" expanded="true" />
-                <element signature="e#10474#10510#0" expanded="true" />
-                <element signature="e#11284#11323#0" expanded="true" />
-                <element signature="e#26762#26780#0" expanded="true" />
-                <element signature="e#26782#26807#0" expanded="true" />
-                <element signature="e#33551#33571#0" expanded="true" />
-                <element signature="e#33573#33600#0" expanded="true" />
-                <element signature="e#33635#33684#0" expanded="true" />
-                <element signature="e#33695#33736#0" expanded="true" />
-                <element signature="e#33770#33812#0" expanded="true" />
-                <element signature="e#36290#36291#0" expanded="true" />
-                <element signature="e#36310#36311#0" expanded="true" />
-                <element signature="e#36346#36347#0" expanded="true" />
-                <element signature="e#36367#36368#0" expanded="true" />
-                <element signature="e#36566#36567#0" expanded="true" />
-                <element signature="e#36597#36598#0" expanded="true" />
-                <element signature="e#36631#36632#0" expanded="true" />
-                <element signature="e#36687#36688#0" expanded="true" />
-                <element signature="e#36720#36721#0" expanded="true" />
-                <element signature="e#36763#36764#0" expanded="true" />
-                <element signature="e#36816#36817#0" expanded="true" />
-                <element signature="e#36845#36846#0" expanded="true" />
-                <element signature="e#37532#37533#0" expanded="true" />
-                <element signature="e#37552#37553#0" expanded="true" />
-                <element signature="e#37589#37590#0" expanded="true" />
-                <element signature="e#37610#37611#0" expanded="true" />
-                <element signature="e#37638#37639#0" expanded="true" />
-                <element signature="e#37661#37662#0" expanded="true" />
-                <element signature="e#37775#37776#0" expanded="true" />
-                <element signature="e#37808#37809#0" expanded="true" />
-                <element signature="e#37842#37843#0" expanded="true" />
-                <element signature="e#37874#37875#0" expanded="true" />
-                <element signature="e#39643#39644#0" expanded="true" />
-                <element signature="e#39677#39678#0" expanded="true" />
-                <element signature="e#39754#39794#0" expanded="true" />
-                <element signature="e#39881#39922#0" expanded="true" />
-                <element signature="e#39994#39995#0" expanded="true" />
-                <element signature="e#40017#40018#0" expanded="true" />
-                <element signature="e#40137#40178#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/xml/settings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="6750">
+              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="arrays_const.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/arrays_const.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="6735">
+              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/constants.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="523" max-vertical-offset="2775">
+              <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings_trans.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/settings_trans.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1520" max-vertical-offset="2250">
+              <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="arrays_trans.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/arrays_trans.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1350">
+              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -824,19 +794,19 @@
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/NewConnectedListener.java" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/DataNotesData.java" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/MenuHome.java" />
-        <option value="$PROJECT_DIR$/res/values/settings_trans.xml" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/GUIScore.java" />
-        <option value="$PROJECT_DIR$/res/xml/settings.xml" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/ToolsSampleInstaller.java" />
         <option value="$PROJECT_DIR$/res/values/strings_trans.xml" />
-        <option value="$PROJECT_DIR$/res/values/constants.xml" />
-        <option value="$PROJECT_DIR$/res/values/arrays_const.xml" />
-        <option value="$PROJECT_DIR$/res/values/arrays_trans.xml" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/DataFile.java" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/Tools.java" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/GUIHandler.java" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/GUIHandlerTap.java" />
+        <option value="$PROJECT_DIR$/res/xml/settings.xml" />
+        <option value="$PROJECT_DIR$/res/values/constants.xml" />
+        <option value="$PROJECT_DIR$/res/values/settings_trans.xml" />
+        <option value="$PROJECT_DIR$/res/values/arrays_const.xml" />
+        <option value="$PROJECT_DIR$/res/values/arrays_trans.xml" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/GUIGame.java" />
       </list>
     </option>
@@ -892,7 +862,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -917,7 +887,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1208,9 +1178,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30041724" sideWeight="0.11246786" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.8875321" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.027704485" sideWeight="0.8875321" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32999283" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1224,7 +1193,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969153" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1372,13 +1342,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/notes.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/images/holds.py">
@@ -1400,13 +1370,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3400447" vertical-offset="8351" max-vertical-offset="9894">
           <caret line="465" column="60" selection-start-line="465" selection-start-column="60" selection-end-line="465" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/DataNotesData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.501144" vertical-offset="124" max-vertical-offset="2924">
-          <caret line="131" column="4" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1433,13 +1396,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/choose.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/DataParserSM.java">
@@ -1479,36 +1442,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="2822">
           <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/unzipper.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/unzipper.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/songpacks/zip-all.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="390">
           <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/xml/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7075472" vertical-offset="975" max-vertical-offset="6555">
-          <caret line="85" column="61" selection-start-line="85" selection-start-column="61" selection-end-line="85" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -1549,30 +1505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings_trans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="513" max-vertical-offset="2370">
-          <caret line="44" column="39" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/arrays_const.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1799" max-vertical-offset="6630">
-          <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/arrays_trans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1260">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
@@ -1587,46 +1519,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/constants.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30278885" vertical-offset="1168" max-vertical-offset="2715">
-          <caret line="88" column="47" selection-start-line="88" selection-start-column="43" selection-end-line="88" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/settings_trans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28286853" vertical-offset="1688" max-vertical-offset="2190">
-          <caret line="122" column="48" selection-start-line="122" selection-start-column="46" selection-end-line="122" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/DataFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="119.0" vertical-offset="5165" max-vertical-offset="5835">
-          <caret line="151" column="35" selection-start-line="151" selection-start-column="16" selection-end-line="151" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/MenuHome.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="5642" max-vertical-offset="14985">
           <caret line="451" column="13" selection-start-line="451" selection-start-column="12" selection-end-line="451" selection-end-column="13" />
           <folding>
-            <element signature="e#11567#11589#0" expanded="true" />
-            <element signature="e#11591#11620#0" expanded="true" />
+            <element signature="e#11567#11589#0" expanded="false" />
+            <element signature="e#11591#11620#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/Tools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="9330">
-          <caret line="57" column="41" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1659,92 +1559,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/DataFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20044053" vertical-offset="1979" max-vertical-offset="5835">
+          <caret line="143" column="21" selection-start-line="143" selection-start-column="16" selection-end-line="143" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings_trans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33283582" vertical-offset="452" max-vertical-offset="2370">
+          <caret line="45" column="126" selection-start-line="45" selection-start-column="125" selection-end-line="45" selection-end-column="126" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/DataNotesData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33190578" vertical-offset="2080" max-vertical-offset="2580">
+          <caret line="163" column="20" selection-start-line="163" selection-start-column="17" selection-end-line="163" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/Tools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.157534" vertical-offset="4185" max-vertical-offset="9330">
+          <caret line="57" column="41" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/xml/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6750">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/arrays_const.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="6735">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/settings_trans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1520" max-vertical-offset="2250">
+          <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/arrays_trans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1350">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/constants.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="523" max-vertical-offset="2775">
+          <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/GUIGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32561505" vertical-offset="12945" max-vertical-offset="18780">
-          <caret line="882" column="22" selection-start-line="882" selection-start-column="22" selection-end-line="882" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.25244072" vertical-offset="4979" max-vertical-offset="18915">
+          <caret line="344" column="29" selection-start-line="344" selection-start-column="29" selection-end-line="344" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2608#2616#0" expanded="true" />
-            <element signature="e#5570#5599#0" expanded="true" />
-            <element signature="e#5601#5637#0" expanded="true" />
-            <element signature="e#5694#5714#0" expanded="true" />
-            <element signature="e#5716#5743#0" expanded="true" />
-            <element signature="e#5794#5817#0" expanded="true" />
-            <element signature="e#5819#5849#0" expanded="true" />
-            <element signature="e#5898#5921#0" expanded="true" />
-            <element signature="e#5923#5953#0" expanded="true" />
-            <element signature="e#6008#6036#0" expanded="true" />
-            <element signature="e#6038#6073#0" expanded="true" />
-            <element signature="e#6443#6467#0" expanded="true" />
-            <element signature="e#6469#6500#0" expanded="true" />
-            <element signature="e#6561#6584#0" expanded="true" />
-            <element signature="e#6586#6616#0" expanded="true" />
-            <element signature="e#6673#6691#0" expanded="true" />
-            <element signature="e#6693#6718#0" expanded="true" />
-            <element signature="e#6798#6811#0" expanded="true" />
-            <element signature="e#6813#6833#0" expanded="true" />
-            <element signature="e#6870#6884#0" expanded="true" />
-            <element signature="e#6886#6907#0" expanded="true" />
-            <element signature="e#6944#6958#0" expanded="true" />
-            <element signature="e#6960#6981#0" expanded="true" />
-            <element signature="e#7021#7038#0" expanded="true" />
-            <element signature="e#7040#7064#0" expanded="true" />
-            <element signature="e#7103#7119#0" expanded="true" />
-            <element signature="e#7121#7144#0" expanded="true" />
-            <element signature="e#7325#7348#0" expanded="true" />
-            <element signature="e#7350#7380#0" expanded="true" />
-            <element signature="e#7422#7441#0" expanded="true" />
-            <element signature="e#7443#7469#0" expanded="true" />
-            <element signature="e#7510#7528#0" expanded="true" />
-            <element signature="e#7530#7555#0" expanded="true" />
-            <element signature="e#7613#7634#0" expanded="true" />
-            <element signature="e#7636#7664#0" expanded="true" />
-            <element signature="e#7723#7744#0" expanded="true" />
-            <element signature="e#7746#7774#0" expanded="true" />
-            <element signature="e#7836#7860#0" expanded="true" />
-            <element signature="e#7862#7893#0" expanded="true" />
-            <element signature="e#8501#8528#0" expanded="true" />
-            <element signature="e#8530#8564#0" expanded="true" />
-            <element signature="e#10425#10459#0" expanded="true" />
-            <element signature="e#10474#10510#0" expanded="true" />
-            <element signature="e#11284#11323#0" expanded="true" />
-            <element signature="e#26762#26780#0" expanded="true" />
-            <element signature="e#26782#26807#0" expanded="true" />
-            <element signature="e#33551#33571#0" expanded="true" />
-            <element signature="e#33573#33600#0" expanded="true" />
-            <element signature="e#33635#33684#0" expanded="true" />
-            <element signature="e#33695#33736#0" expanded="true" />
-            <element signature="e#33770#33812#0" expanded="true" />
-            <element signature="e#36290#36291#0" expanded="true" />
-            <element signature="e#36310#36311#0" expanded="true" />
-            <element signature="e#36346#36347#0" expanded="true" />
-            <element signature="e#36367#36368#0" expanded="true" />
-            <element signature="e#36566#36567#0" expanded="true" />
-            <element signature="e#36597#36598#0" expanded="true" />
-            <element signature="e#36631#36632#0" expanded="true" />
-            <element signature="e#36687#36688#0" expanded="true" />
-            <element signature="e#36720#36721#0" expanded="true" />
-            <element signature="e#36763#36764#0" expanded="true" />
-            <element signature="e#36816#36817#0" expanded="true" />
-            <element signature="e#36845#36846#0" expanded="true" />
-            <element signature="e#37532#37533#0" expanded="true" />
-            <element signature="e#37552#37553#0" expanded="true" />
-            <element signature="e#37589#37590#0" expanded="true" />
-            <element signature="e#37610#37611#0" expanded="true" />
-            <element signature="e#37638#37639#0" expanded="true" />
-            <element signature="e#37661#37662#0" expanded="true" />
-            <element signature="e#37775#37776#0" expanded="true" />
-            <element signature="e#37808#37809#0" expanded="true" />
-            <element signature="e#37842#37843#0" expanded="true" />
-            <element signature="e#37874#37875#0" expanded="true" />
-            <element signature="e#39643#39644#0" expanded="true" />
-            <element signature="e#39677#39678#0" expanded="true" />
-            <element signature="e#39754#39794#0" expanded="true" />
-            <element signature="e#39881#39922#0" expanded="true" />
-            <element signature="e#39994#39995#0" expanded="true" />
-            <element signature="e#40017#40018#0" expanded="true" />
-            <element signature="e#40137#40178#0" expanded="true" />
           </folding>
         </state>
       </provider>
