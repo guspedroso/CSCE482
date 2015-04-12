@@ -78,12 +78,12 @@ public class GUIGame extends Activity {
 
     private boolean showBreath; //default false to not show
     private int increment = 0; //start at zero
-    private int direction = 1; //default up
-    private int breathBase = 0; //default black
+    private int breathBase = 0; //start at zero
     private int interval = 25; //default .04 sec interval
-    private int inBreath = 6; //default 6 sec
-    private int outBreath = 4; //default 4 sec
-    private int span = inBreath + outBreath; //default 10 sec
+    private int breathGoal; //default 0 (6/4 option)
+    private int inBreath; //default 6 sec
+    private int outBreath; //default 4 sec
+    private int span; //default 10 sec
     private int breathColor; //default 0 (none), 1 (red), 2 (green), 1 (blue)
     private int breathRedIn; //default colors to add none
     private int breathBlueIn;
@@ -216,7 +216,9 @@ public class GUIGame extends Activity {
 		showFPS = Tools.getBooleanSetting(R.string.showFPS, R.string.showFPSDefault);
         showBreath = Tools.getBooleanSetting(R.string.showBreath, R.string.showBreathDefault);
         breathColor = Integer.valueOf(
-                Tools.getSetting(R.string.breathColor, R.string.breathColorDefault));
+            Tools.getSetting(R.string.breathColor, R.string.breathColorDefault));
+        breathGoal = Integer.valueOf(
+            Tools.getSetting(R.string.breathGoal, R.string.breathGoalDefault));
 // --------------------- ADDED -----------------------------------------
         //showBPM = Tools.getBooleanSetting("showBPM", "1");
 		screenshotMode = Tools.getBooleanSetting(R.string.screenshotMode, R.string.screenshotModeDefault);
@@ -362,7 +364,12 @@ public class GUIGame extends Activity {
             breathBlueOut = 50;
         }
 
-
+        //set up breath goal -gp
+        if (breathGoal == 0) {
+            inBreath = 6;
+            outBreath = 4;
+            span = inBreath + outBreath;
+        }
 
 		// Start updating
 		mView.startTimer();

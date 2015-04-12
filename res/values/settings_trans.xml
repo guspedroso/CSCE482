@@ -47,6 +47,8 @@
   <string name="difficultyLevelDesc">"Default difficulty level of song"</string>
   <string name="breathColorTitle">"Breath Color"</string>
   <string name="breathColorDesc">"Default color of breath"</string>
+  <string name="breathGoalTitle">"Breath Goal"</string>
+  <string name="breathGoalDesc">"Default rate of breath"</string>
   <string name="speedMultiplierTitle">"Speed"</string>
   <string name="speedMultiplierDesc">"Falling speed of notes"</string>
   <string name="gameModeTitle">"Game Mode"</string>

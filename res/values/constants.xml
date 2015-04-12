@@ -51,6 +51,8 @@
 	<string name="difficultyLevelDefault">"2"</string>
     <string name="breathColor">"breathColor"</string>
     <string name="breathColorDefault">"0"</string>
+    <string name="breathGoal">"breathGoal"</string>
+    <string name="breathGoalDefault">"0"</string>
     <string name="goalLevel">"goalLevel"</string>
     <string name="goalLevelDefault">"0"</string>
 	<string name="speedMultiplier">"speedMultiplier"</string>
