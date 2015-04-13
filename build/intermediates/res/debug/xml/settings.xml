@@ -18,13 +18,6 @@
 			android:entries="@array/tapboxLayout"
 			android:entryValues="@array/tapboxLayoutValues" />
         <ListPreference
-            android:title="@string/darkTitle"
-            android:summary="@string/darkDesc"
-            android:key="@string/dark"
-            android:defaultValue="@string/darkDefault"
-            android:entries="@array/toggle"
-            android:entryValues="@array/toggleValues" />
-        <ListPreference
             android:title="@string/noteAppearanceTitle"
             android:summary="@string/noteAppearanceDesc"
             android:key="@string/noteAppearance"
@@ -89,13 +82,20 @@
             android:defaultValue="@string/screenshotModeDefault"
             android:entries="@array/toggle"
             android:entryValues="@array/toggleValues" />
-		<ListPreference
+	<!--	<ListPreference
 			android:title="@string/noteskinTitle"
 			android:summary="@string/noteskinDesc"
 			android:key="@string/noteskin"
 			android:defaultValue="@string/noteskinDefault"
 			android:entries="@array/noteskin"
-			android:entryValues="@array/noteskinValues" />
+			android:entryValues="@array/noteskinValues" /> -->
+        <ListPreference
+            android:title="@string/darkTitle"
+            android:summary="@string/darkDesc"
+            android:key="@string/dark"
+            android:defaultValue="@string/darkDefault"
+            android:entries="@array/toggle"
+            android:entryValues="@array/toggleValues" />
 		<ListPreference
 			android:title="@string/backgroundImageTitle"
 			android:summary="@string/backgroundImageDesc"

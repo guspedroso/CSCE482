@@ -55,8 +55,8 @@
   <string name="gameModeDesc">"Mode of displaying notes"</string>
   <string name="noteAppearanceTitle">"Appearance"</string>
   <string name="noteAppearanceDesc">"Visibility of notes"</string>
-  <string name="darkTitle">"Dark"</string>
-  <string name="darkDesc">"Hide tap arrows"</string>
+  <string name="darkTitle">"Dark Tapbox Arrows"</string>
+  <string name="darkDesc">"Hide tap arrows at the bottom of screen"</string>
   <string name="holdsTitle">"Holds"</string>
   <string name="holdsDesc">"Notes that have to be held down"</string>
   <string name="jumpsTitle">"Jumps"</string>

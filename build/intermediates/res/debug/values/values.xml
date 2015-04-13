@@ -923,8 +923,8 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="darkDefault">"0"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
-    <string name="darkDesc">"Hide tap arrows"</string>
-    <string name="darkTitle">"Dark"</string>
+    <string name="darkDesc">"Hide tap arrows at the bottom of screen"</string>
+    <string name="darkTitle">"Dark Tapbox Arrows"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="debugLogCat">"debugLogCat"</string>
