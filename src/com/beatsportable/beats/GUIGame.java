@@ -714,7 +714,7 @@ public class GUIGame extends Activity {
 			// Title
 			canvas.drawRect(0, 0, Tools.screen_w, margin + height, titlebarPaint);
 			titlePaint.draw(canvas, title, margin, height);
-			
+
 			// Health
 			double health = h.score.getHealthPercent();
 			if (health > 0.5)
@@ -730,7 +730,6 @@ public class GUIGame extends Activity {
 			canvas.drawRect(new Rect(margin, margin * 2 + height, Tools.screen_w - margin, margin * 2 + height * 2), hpBorderPaint);
 			
 			// Show FPS or AutoPlay
-// ----------------------------------- PUT BREATHS-PER-MINUTE TEXT HERE ------------------------------------------------
 			//if (showFPS && autoPlay) {
 			//	autoPlayPaint.draw(canvas, "AUTO FPS:" + (int)fps + "/" + (int)fpsTotal, margin * 2, margin * 2 + height * 3);
 			//}

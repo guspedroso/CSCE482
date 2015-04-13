@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/gus/git/CSCE482/res/values-tr/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-tr/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="accuracyLevel">
     <item>Çok kolay</item>
@@ -76,7 +76,7 @@
     <item>Hafif</item>
     <item>Kapalı</item>
   </string-array>
-    <!-- From: file:/Users/gus/git/CSCE482/res/values-tr/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-tr/strings_trans.xml -->
     <eat-comment/>
     <string name="Accuracy_almost">"Kıl Payı"</string>
     <string name="Accuracy_best_combo">"En İyi Kombo"</string>
@@ -219,7 +219,7 @@
     <string name="Tools_unable_delete_file">"Hata: Dosya silinemedi:\n"</string>
     <string name="Tools_usb_error">"\nMuhtemelen USB modundasın\?"</string>
     <string name="Tools_window_error">"Pencere değiştirme hatası - Henüz bunu nasıl düzelteceğimi bulamadım ; / (lütfen detayları bana e-posta ile gönderin!)"</string>
-    <!-- From: file:/Users/gus/git/CSCE482/res/values-tr/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-tr/settings_trans.xml -->
     <eat-comment/>
     <string name="accuracyLevelDesc">"Doğruluk puanlamasında katılık"</string>
     <string name="accuracyLevelTitle">"Değerlendirme"</string>
