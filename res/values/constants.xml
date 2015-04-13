@@ -90,7 +90,7 @@
 	<string name="noteskin">"noteskin"</string>
 	<string name="noteskinDefault">"default"</string>
 	<string name="backgroundImage">"backgroundImage"</string>
-	<string name="backgroundImageDefault">"blue"</string>
+	<string name="backgroundImageDefault">"white"</string>
 	<string name="orientation">"orientation"</string>
 	<string name="orientationDefault">"2"</string>
 	<string name="tapboxLayout">"tapboxLayout"</string>

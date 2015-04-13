@@ -84,13 +84,7 @@ public class GUIGame extends Activity {
     private int inBreath; //default 4 sec
     private int outBreath; //default 6 sec
     private int span; //default 10 sec
-    private int breathColor; //default 0 (none), 1 (red), 2 (green), 1 (blue)
-    private int breathRedIn; //default colors to add none
-    private int breathBlueIn;
-    private int breathGreenIn;
-    private int breathRedOut;
-    private int breathBlueOut;
-    private int breathGreenOut;
+    private int breathColor; //default 0 (none), 1 (red), 2 (green), 3 (blue)
     private int flag = 0;
 
     /*--------------------------------------------------------------------*/
@@ -331,40 +325,6 @@ public class GUIGame extends Activity {
 			b = drawarea.getBitmap(GUINoteImage.rsrc(pitch, 0, false));
 		}*/
 
-        //set up breath color -gp
-        if (breathColor == 0) {
-            breathRedIn = 0;
-            breathRedOut = 0;
-            breathGreenIn = 0;
-            breathGreenOut = 0;
-            breathBlueIn = 0;
-            breathBlueOut = 0;
-        }
-        else if (breathColor == 1) {
-            breathRedIn = 20;
-            breathRedOut = 20;
-            breathGreenIn = 0;
-            breathGreenOut = 0;
-            breathBlueIn = 0;
-            breathBlueOut = 0;
-        }
-        else if (breathColor == 2) {
-            breathRedIn = 0;
-            breathRedOut = 0;
-            breathGreenIn = 20;
-            breathGreenOut = 20;
-            breathBlueIn = 0;
-            breathBlueOut = 0;
-        }
-        else if (breathColor == 3) {
-            breathRedIn = 0;
-            breathRedOut = 0;
-            breathGreenIn = 0;
-            breathGreenOut = 0;
-            breathBlueIn = 20;
-            breathBlueOut = 20;
-        }
-
         //set up breath goal -gp
         if (breathGoal == 0) {
             inBreath = 4;
@@ -581,7 +541,8 @@ public class GUIGame extends Activity {
 				italic().ARGB(170, 255, 255, 255);
 			
 			// Credits
-			leftSettingsTop = dp.df.getCredit();
+			//leftSettingsTop = dp.df.getCredit();
+            leftSettingsTop = "";
 			
 			// Difficulty
 			leftSettingsBottom =
@@ -614,15 +575,17 @@ public class GUIGame extends Activity {
 					rightSettingsBottom += Tools.getString(R.string.GUIGame_randomize_dynamic);
 					break;
 			}
-			if (osu) rightSettingsBottom += Tools.getString(R.string.GUIGame_osu_mod);
+			//if (osu) rightSettingsBottom += Tools.getString(R.string.GUIGame_osu_mod);
 			if (rightSettingsBottom.length() > 2) {
 				rightSettingsBottom = rightSettingsBottom.substring(2); // ignore the first ", "
-			} else {
-				rightSettingsBottom = Tools.getString(R.string.GUIGame_standard);
 			}
+            //else {
+			//	rightSettingsBottom = Tools.getString(R.string.GUIGame_standard);
+		//	}
 
 			// Beats Per Minute
-			rightSettingsTop = String.format("%s Beats Per Min", dp.df.getBPMRange(dp.notesDataIndex));
+			//rightSettingsTop = String.format("%s Beats Per Min", dp.df.getBPMRange(dp.notesDataIndex));
+            rightSettingsTop = "";
 
             // BPM & Speed
            /* rightSettingsTop =
@@ -715,24 +678,114 @@ public class GUIGame extends Activity {
 			canvas.drawRect(0, 0, Tools.screen_w, margin + height, titlebarPaint);
 			titlePaint.draw(canvas, title, margin, height);
 
-			// Health
-			double health = h.score.getHealthPercent();
-			if (health > 0.5)
-				hpBarPaint.setARGB(Tools.MAX_OPA, (int)((1-health)*255*2), 255, 0);
-			else if (health > 0)
-				hpBarPaint.setARGB(Tools.MAX_OPA, 255, (int)(health*255*2), 0);
-			else {
-				hpBarPaint.setARGB(Tools.MAX_OPA, 127,0,0);
-				health = 1; //for drawing purposes only
-			}
-			canvas.drawRect(new Rect(margin, margin * 2 + height, Tools.screen_w - margin, margin * 2 + height * 2), hpBackPaint);
+            // Health
+            double health = h.score.getHealthPercent();
+            respRate = MenuHome.bpm;
+            // Turns the Health Bar blue when the player is under their target rate! Star Power!
+            if (respRate!= null) {
+                double resp = Double.parseDouble(respRate);
+                // Modify Speed Based on Breathing Rate
+                switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
+                    // GOAL: 6
+                    case 0:
+                        if (resp <= 6.0) { hpBarPaint.setARGB(Tools.MAX_OPA, 7, 191, 247); }
+                        else {
+                            if (health > 0.5)
+                                hpBarPaint.setARGB(Tools.MAX_OPA, (int) ((1 - health) * 255 * 2), 255, 0);
+                            else if (health > 0)
+                                hpBarPaint.setARGB(Tools.MAX_OPA, 255, (int) (health * 255 * 2), 0);
+                                //hpBarPaint.setARGB(Tools.MAX_OPA, 7, 191, 247);
+                            else {
+                                hpBarPaint.setARGB(Tools.MAX_OPA, 127, 0, 0);
+                                health = 1; //for drawing purposes only
+                            }
+                        }
+                        break;
+
+                    // GOAL: 8
+                    case 1:
+                        if (resp <= 8.0) { hpBarPaint.setARGB(Tools.MAX_OPA, 7, 191, 247); }
+                        else {
+                            if (health > 0.5)
+                                hpBarPaint.setARGB(Tools.MAX_OPA, (int) ((1 - health) * 255 * 2), 255, 0);
+                            else if (health > 0)
+                                hpBarPaint.setARGB(Tools.MAX_OPA, 255, (int) (health * 255 * 2), 0);
+                                //hpBarPaint.setARGB(Tools.MAX_OPA, 7, 191, 247);
+                            else {
+                                hpBarPaint.setARGB(Tools.MAX_OPA, 127, 0, 0);
+                                health = 1; //for drawing purposes only
+                            }
+                        }
+                        break;
+
+                    // GOAL: 10
+                    case 2:
+                        if (resp <= 10.0) { hpBarPaint.setARGB(Tools.MAX_OPA, 7, 191, 247); }
+                        else {
+                            if (health > 0.5)
+                                hpBarPaint.setARGB(Tools.MAX_OPA, (int) ((1 - health) * 255 * 2), 255, 0);
+                            else if (health > 0)
+                                hpBarPaint.setARGB(Tools.MAX_OPA, 255, (int) (health * 255 * 2), 0);
+                                //hpBarPaint.setARGB(Tools.MAX_OPA, 7, 191, 247);
+                            else {
+                                hpBarPaint.setARGB(Tools.MAX_OPA, 127, 0, 0);
+                                health = 1; //for drawing purposes only
+                            }
+                        }
+                        break;
+
+                    // GOAL: 12
+                    case 3:
+                        if (resp <= 12.0) { hpBarPaint.setARGB(Tools.MAX_OPA, 7, 191, 247); }
+                        else {
+                            if (health > 0.5)
+                                hpBarPaint.setARGB(Tools.MAX_OPA, (int) ((1 - health) * 255 * 2), 255, 0);
+                            else if (health > 0)
+                                hpBarPaint.setARGB(Tools.MAX_OPA, 255, (int) (health * 255 * 2), 0);
+                                //hpBarPaint.setARGB(Tools.MAX_OPA, 7, 191, 247);
+                            else {
+                                hpBarPaint.setARGB(Tools.MAX_OPA, 127, 0, 0);
+                                health = 1; //for drawing purposes only
+                            }
+                        }
+                        break;
+
+                    // GOAL: 14
+                    case 4:
+                        if (resp <= 14.0) { hpBarPaint.setARGB(Tools.MAX_OPA, 7, 191, 247);}
+                        else {
+                            if (health > 0.5)
+                                hpBarPaint.setARGB(Tools.MAX_OPA, (int) ((1 - health) * 255 * 2), 255, 0);
+                            else if (health > 0)
+                                hpBarPaint.setARGB(Tools.MAX_OPA, 255, (int) (health * 255 * 2), 0);
+                                //hpBarPaint.setARGB(Tools.MAX_OPA, 7, 191, 247);
+                            else {
+                                hpBarPaint.setARGB(Tools.MAX_OPA, 127, 0, 0);
+                                health = 1; //for drawing purposes only
+                            }
+                        }
+                        break;
+                }
+            }
+            // Default Case
+            else {
+                respRate = "Not Connected";
+                if (health > 0.5)
+                    hpBarPaint.setARGB(Tools.MAX_OPA, (int) ((1 - health) * 255 * 2), 255, 0);
+                else if (health > 0)
+                    hpBarPaint.setARGB(Tools.MAX_OPA, 255, (int) (health * 255 * 2), 0);
+                    //hpBarPaint.setARGB(Tools.MAX_OPA, 7, 191, 247);
+                else {
+                    hpBarPaint.setARGB(Tools.MAX_OPA, 127, 0, 0);
+                    health = 1; //for drawing purposes only
+                }
+            }
+
+            canvas.drawRect(new Rect(margin, margin * 2 + height, Tools.screen_w - margin, margin * 2 + height * 2), hpBackPaint);
 			canvas.drawRect(new Rect(margin, margin * 2 + height, (int)((Tools.screen_w - margin) * health), margin * 2 + height * 2), hpBarPaint);
 			canvas.drawRect(new Rect(margin, margin * 2 + height, Tools.screen_w - margin, margin * 2 + height * 2), hpBorderPaint);
 			
-			// Show FPS or AutoPlay
-			//if (showFPS && autoPlay) {
-			//	autoPlayPaint.draw(canvas, "AUTO FPS:" + (int)fps + "/" + (int)fpsTotal, margin * 2, margin * 2 + height * 3);
-			//}
+			// Show Breaths-Per-Minute on game screen
 			if (showFPS) {
 				autoPlayPaint.draw(canvas, "BPM:" + respRate, margin * 2, margin * 2 + height * 3);
 			}
@@ -817,56 +870,56 @@ public class GUIGame extends Activity {
                     switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
                         // GOAL: 6
                         case 0:
-                            if (resp < 6.0) { h.fallpix_per_ms = 1.5; }
-                            else if (resp > 6 && resp < 8) { h.fallpix_per_ms = 2; }
-                            else if (resp > 8 && resp < 10) { h.fallpix_per_ms = 2.5; }
-                            else if (resp > 10 && resp < 12) { h.fallpix_per_ms = 3; }
-                            else if (resp > 12 && resp < 14) { h.fallpix_per_ms = 3.5; }
-                            else if (resp > 14 && resp < 16) { h.fallpix_per_ms = 4; }
+                            if (resp <= 6.0) { h.fallpix_per_ms = 1.5; }
+                            else if (resp > 6.0 && resp <= 8.0) { h.fallpix_per_ms = 2; }
+                            else if (resp > 8.0 && resp <= 10.0) { h.fallpix_per_ms = 2.5; }
+                            else if (resp > 10.0 && resp <= 12.0) { h.fallpix_per_ms = 3; }
+                            else if (resp > 12.0 && resp <= 14.0) { h.fallpix_per_ms = 3.5; }
+                            else if (resp > 14.0 && resp <= 16.0) { h.fallpix_per_ms = 4; }
                             else { h.fallpix_per_ms = 4.5; }
                             break;
 
                         // GOAL: 8
                         case 1:
-                            if (resp < 8.0) { h.fallpix_per_ms = 1.5; }
-                            else if (resp > 8 && resp < 10) { h.fallpix_per_ms = 2; }
-                            else if (resp > 10 && resp < 12) { h.fallpix_per_ms = 2.5; }
-                            else if (resp > 12 && resp < 14) { h.fallpix_per_ms = 3; }
-                            else if (resp > 14 && resp < 16) { h.fallpix_per_ms = 3.5; }
-                            else if (resp > 16 && resp < 18) { h.fallpix_per_ms = 4; }
+                            if (resp <= 8.0) { h.fallpix_per_ms = 1.5; }
+                            else if (resp > 8.0 && resp <= 10.0) { h.fallpix_per_ms = 2; }
+                            else if (resp > 10.0 && resp <= 12.0) { h.fallpix_per_ms = 2.5; }
+                            else if (resp > 12.0 && resp <= 14.0) { h.fallpix_per_ms = 3; }
+                            else if (resp > 14.0 && resp <= 16.0) { h.fallpix_per_ms = 3.5; }
+                            else if (resp > 16.0 && resp <= 18.0) { h.fallpix_per_ms = 4; }
                             else { h.fallpix_per_ms = 4.5; }
                             break;
 
                         // GOAL: 10
                         case 2:
-                            if (resp < 10.0) { h.fallpix_per_ms = 1.5; }
-                            else if (resp > 10 && resp < 12) { h.fallpix_per_ms = 2; }
-                            else if (resp > 12 && resp < 14) { h.fallpix_per_ms = 2.5; }
-                            else if (resp > 14 && resp < 16) { h.fallpix_per_ms = 3; }
-                            else if (resp > 16 && resp < 18) { h.fallpix_per_ms = 3.5; }
-                            else if (resp > 18 && resp < 20) { h.fallpix_per_ms = 4; }
+                            if (resp <= 10.0) { h.fallpix_per_ms = 1.5; }
+                            else if (resp > 10.0 && resp <= 12.0) { h.fallpix_per_ms = 2; }
+                            else if (resp > 12.0 && resp <= 14.0) { h.fallpix_per_ms = 2.5; }
+                            else if (resp > 14.0 && resp <= 16.0) { h.fallpix_per_ms = 3; }
+                            else if (resp > 16.0 && resp <= 18.0) { h.fallpix_per_ms = 3.5; }
+                            else if (resp > 18.0 && resp <= 20.0) { h.fallpix_per_ms = 4; }
                             else { h.fallpix_per_ms = 4.5; }
                             break;
 
                         // GOAL: 12
                         case 3:
-                            if (resp < 12.0) { h.fallpix_per_ms = 1.5; }
-                            else if (resp > 12 && resp < 14) { h.fallpix_per_ms = 2; }
-                            else if (resp > 14 && resp < 16) { h.fallpix_per_ms = 2.5; }
-                            else if (resp > 16 && resp < 18) { h.fallpix_per_ms = 3; }
-                            else if (resp > 18 && resp < 20) { h.fallpix_per_ms = 3.5; }
-                            else if (resp > 20 && resp < 22) { h.fallpix_per_ms = 4; }
+                            if (resp <= 12.0) { h.fallpix_per_ms = 1.5; }
+                            else if (resp > 12.0 && resp <= 14.0) { h.fallpix_per_ms = 2; }
+                            else if (resp > 14.0 && resp <= 16.0) { h.fallpix_per_ms = 2.5; }
+                            else if (resp > 16.0 && resp <= 18.0) { h.fallpix_per_ms = 3; }
+                            else if (resp > 18.0 && resp <= 20.0) { h.fallpix_per_ms = 3.5; }
+                            else if (resp > 20.0 && resp <= 22.0) { h.fallpix_per_ms = 4; }
                             else { h.fallpix_per_ms = 4.5; }
                             break;
 
                         // GOAL: 14
                         case 4:
-                            if (resp < 14.0) {h.fallpix_per_ms = 1.5;}
-                            else if (resp > 14 && resp < 16) { h.fallpix_per_ms = 2; }
-                            else if (resp > 16 && resp < 18) { h.fallpix_per_ms = 2.5; }
-                            else if (resp > 18 && resp < 20) { h.fallpix_per_ms = 3; }
-                            else if (resp > 20 && resp < 22) { h.fallpix_per_ms = 3.5; }
-                            else if (resp > 22 && resp < 24) { h.fallpix_per_ms = 4; }
+                            if (resp <= 14.0) {h.fallpix_per_ms = 1.5;}
+                            else if (resp > 14.0 && resp <= 16.0) { h.fallpix_per_ms = 2; }
+                            else if (resp > 16.0 && resp <= 18.0) { h.fallpix_per_ms = 2.5; }
+                            else if (resp > 18.0 && resp <= 20.0) { h.fallpix_per_ms = 3; }
+                            else if (resp > 20.0 && resp <= 22.0) { h.fallpix_per_ms = 3.5; }
+                            else if (resp > 22.0 && resp <= 24.0) { h.fallpix_per_ms = 4; }
                             else { h.fallpix_per_ms = 4.5; }
                             break;
                     }
@@ -917,7 +970,28 @@ public class GUIGame extends Activity {
                         breathBase = 200;
 
                     //Log.d("gusgus", "incremented by " + colorIncrement + " with inCap at " + inCap);
-                    bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase + breathRedIn, breathBase + breathGreenIn, breathBase + breathBlueIn);
+                    if (breathColor == 0) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase, breathBase, breathBase);
+                    }
+                    else if (breathColor == 1) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase, 0, 0);
+                    }
+                    else if (breathColor == 2) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, 0, breathBase, 0);
+                    }
+                    else if (breathColor == 3) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, 0, 0, breathBase);
+                    }
+                    else if (breathColor == 4) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase, breathBase, 0);
+                    }
+                    else if (breathColor == 5) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, 0, breathBase, breathBase);
+                    }
+                    else if (breathColor == 6) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase, 0, breathBase);
+                    }
+
                 }
                 else {
                     //we are in outBreath section
@@ -944,7 +1018,28 @@ public class GUIGame extends Activity {
                         breathBase = 0;
 
                     //Log.d("gusgus", "decremented by " + colorIncrement + " with outCap at " + outCap);
-                    bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase + breathRedOut, breathBase + breathGreenOut, breathBase + breathBlueOut);
+                    if (breathColor == 0) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase, breathBase, breathBase);
+                    }
+                    else if (breathColor == 1) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase, 0, 0);
+                    }
+                    else if (breathColor == 2) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, 0, breathBase, 0);
+                    }
+                    else if (breathColor == 3) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, 0, 0, breathBase);
+                    }
+                    else if (breathColor == 4) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase, breathBase, 0);
+                    }
+                    else if (breathColor == 5) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, 0, breathBase, breathBase);
+                    }
+                    else if (breathColor == 6) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase, 0, breathBase);
+                    }
+
                 }
 
                 //Log.d("gusgus", "opa is " + breathBase);

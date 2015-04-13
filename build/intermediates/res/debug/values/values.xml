@@ -73,6 +73,9 @@
      <item>Red</item>
      <item>Green</item>
      <item>Blue</item>
+     <item>Yellow</item>
+     <item>Turquoise</item>
+     <item>Pink</item>
     </string-array>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_const.xml -->
     <eat-comment/>
@@ -81,11 +84,14 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
     </string-array>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="breathGoal">
-    <item>6 in / 4 out</item>
+    <item>4 in / 6 out</item>
     </string-array>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/arrays_const.xml -->
     <eat-comment/>
@@ -863,7 +869,7 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="backgroundImage">"backgroundImage"</string>
-    <string name="backgroundImageDefault">"blue"</string>
+    <string name="backgroundImageDefault">"white"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="backgroundImageDesc">"Background image for main menu and stepfiles without one"</string>
