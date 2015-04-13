@@ -84,13 +84,7 @@ public class GUIGame extends Activity {
     private int inBreath; //default 4 sec
     private int outBreath; //default 6 sec
     private int span; //default 10 sec
-    private int breathColor; //default 0 (none), 1 (red), 2 (green), 1 (blue)
-    private int breathRedIn; //default colors to add none
-    private int breathBlueIn;
-    private int breathGreenIn;
-    private int breathRedOut;
-    private int breathBlueOut;
-    private int breathGreenOut;
+    private int breathColor; //default 0 (none), 1 (red), 2 (green), 3 (blue)
     private int flag = 0;
 
     /*--------------------------------------------------------------------*/
@@ -330,40 +324,6 @@ public class GUIGame extends Activity {
 			b = drawarea.getBitmap(GUINoteImage.rsrc(pitch, 0, true));
 			b = drawarea.getBitmap(GUINoteImage.rsrc(pitch, 0, false));
 		}*/
-
-        //set up breath color -gp
-        if (breathColor == 0) {
-            breathRedIn = 0;
-            breathRedOut = 0;
-            breathGreenIn = 0;
-            breathGreenOut = 0;
-            breathBlueIn = 0;
-            breathBlueOut = 0;
-        }
-        else if (breathColor == 1) {
-            breathRedIn = 20;
-            breathRedOut = 20;
-            breathGreenIn = 0;
-            breathGreenOut = 0;
-            breathBlueIn = 0;
-            breathBlueOut = 0;
-        }
-        else if (breathColor == 2) {
-            breathRedIn = 0;
-            breathRedOut = 0;
-            breathGreenIn = 20;
-            breathGreenOut = 20;
-            breathBlueIn = 0;
-            breathBlueOut = 0;
-        }
-        else if (breathColor == 3) {
-            breathRedIn = 0;
-            breathRedOut = 0;
-            breathGreenIn = 0;
-            breathGreenOut = 0;
-            breathBlueIn = 20;
-            breathBlueOut = 20;
-        }
 
         //set up breath goal -gp
         if (breathGoal == 0) {
@@ -918,7 +878,28 @@ public class GUIGame extends Activity {
                         breathBase = 200;
 
                     //Log.d("gusgus", "incremented by " + colorIncrement + " with inCap at " + inCap);
-                    bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase + breathRedIn, breathBase + breathGreenIn, breathBase + breathBlueIn);
+                    if (breathColor == 0) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase, breathBase, breathBase);
+                    }
+                    else if (breathColor == 1) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase, 0, 0);
+                    }
+                    else if (breathColor == 2) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, 0, breathBase, 0);
+                    }
+                    else if (breathColor == 3) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, 0, 0, breathBase);
+                    }
+                    else if (breathColor == 4) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase, breathBase, 0);
+                    }
+                    else if (breathColor == 5) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, 0, breathBase, breathBase);
+                    }
+                    else if (breathColor == 6) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase, 0, breathBase);
+                    }
+
                 }
                 else {
                     //we are in outBreath section
@@ -945,7 +926,28 @@ public class GUIGame extends Activity {
                         breathBase = 0;
 
                     //Log.d("gusgus", "decremented by " + colorIncrement + " with outCap at " + outCap);
-                    bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase + breathRedOut, breathBase + breathGreenOut, breathBase + breathBlueOut);
+                    if (breathColor == 0) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase, breathBase, breathBase);
+                    }
+                    else if (breathColor == 1) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase, 0, 0);
+                    }
+                    else if (breathColor == 2) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, 0, breathBase, 0);
+                    }
+                    else if (breathColor == 3) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, 0, 0, breathBase);
+                    }
+                    else if (breathColor == 4) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase, breathBase, 0);
+                    }
+                    else if (breathColor == 5) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, 0, breathBase, breathBase);
+                    }
+                    else if (breathColor == 6) {
+                        bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase, 0, breathBase);
+                    }
+
                 }
 
                 //Log.d("gusgus", "opa is " + breathBase);

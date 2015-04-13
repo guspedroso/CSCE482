@@ -73,6 +73,9 @@
      <item>Red</item>
      <item>Green</item>
      <item>Blue</item>
+     <item>Yellow</item>
+     <item>Turquoise</item>
+     <item>Pink</item>
     </string-array>
     <!-- From: file:/Users/gus/git/CSCE482/res/values/arrays_const.xml -->
     <eat-comment/>
@@ -81,11 +84,14 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
     </string-array>
     <!-- From: file:/Users/gus/git/CSCE482/res/values/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="breathGoal">
-    <item>6 in / 4 out</item>
+    <item>4 in / 6 out</item>
     </string-array>
     <!-- From: file:/Users/gus/git/CSCE482/res/values/arrays_const.xml -->
     <eat-comment/>
