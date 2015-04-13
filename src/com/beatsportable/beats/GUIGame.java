@@ -81,8 +81,8 @@ public class GUIGame extends Activity {
     private int breathBase = 0; //start at zero
     private int interval = 25; //default .04 sec interval
     private int breathGoal; //default 0 (6/4 option)
-    private int inBreath; //default 6 sec
-    private int outBreath; //default 4 sec
+    private int inBreath; //default 4 sec
+    private int outBreath; //default 6 sec
     private int span; //default 10 sec
     private int breathColor; //default 0 (none), 1 (red), 2 (green), 1 (blue)
     private int breathRedIn; //default colors to add none
@@ -91,6 +91,7 @@ public class GUIGame extends Activity {
     private int breathRedOut;
     private int breathBlueOut;
     private int breathGreenOut;
+    private int flag = 0;
 
     /*--------------------------------------------------------------------*/
 
@@ -340,8 +341,8 @@ public class GUIGame extends Activity {
             breathBlueOut = 0;
         }
         else if (breathColor == 1) {
-            breathRedIn = 50;
-            breathRedOut = 50;
+            breathRedIn = 20;
+            breathRedOut = 20;
             breathGreenIn = 0;
             breathGreenOut = 0;
             breathBlueIn = 0;
@@ -350,8 +351,8 @@ public class GUIGame extends Activity {
         else if (breathColor == 2) {
             breathRedIn = 0;
             breathRedOut = 0;
-            breathGreenIn = 50;
-            breathGreenOut = 50;
+            breathGreenIn = 20;
+            breathGreenOut = 20;
             breathBlueIn = 0;
             breathBlueOut = 0;
         }
@@ -360,14 +361,14 @@ public class GUIGame extends Activity {
             breathRedOut = 0;
             breathGreenIn = 0;
             breathGreenOut = 0;
-            breathBlueIn = 50;
-            breathBlueOut = 50;
+            breathBlueIn = 20;
+            breathBlueOut = 20;
         }
 
         //set up breath goal -gp
         if (breathGoal == 0) {
-            inBreath = 6;
-            outBreath = 4;
+            inBreath = 4;
+            outBreath = 6;
             span = inBreath + outBreath;
         }
 
@@ -891,17 +892,20 @@ public class GUIGame extends Activity {
                 int totalCap = span*sections; // 10 sec * 1 section = 10 total sections
                 int inCap = (inBreath*sections); // 6 sec * 1 section = 6 in sections
                 int outCap = (outBreath*sections); // 4 sec * 1 section = 4 out sections
+                int outMid = outCap/2 + inCap; // (4 sec * 1 section)/2 + 6 = 8 sec is mid for outBreath
                 int colorIncrement;
-                int colorRange = 255;
-
+                int inColorRange = 200;
+                int outColorRange = 255;
                 //start the process over
-                if (increment >= totalCap)
+                if (increment >= totalCap) {
                     increment = 0;
+                    breathBase = 0;
+                }
 
                 //determine increment amount
                 if (increment <= inCap) {
                     //we are in inBreath section
-                    colorIncrement = (int) Math.floor((double)colorRange / inCap); // 100/6 = 16
+                    colorIncrement = (int) Math.floor((double)inColorRange / inCap); // 100/6 = 16
 
                     //error checking
                     if (colorIncrement < 1)
@@ -910,21 +914,31 @@ public class GUIGame extends Activity {
                     breathBase+=colorIncrement;
 
                     //limit to how bright the color can get (if you change this then change additional colors accordingly, ie sum must be <= 255)
-                    if (breathBase > 100)
-                        breathBase = 100;
+                    if (breathBase > 200)
+                        breathBase = 200;
 
                     //Log.d("gusgus", "incremented by " + colorIncrement + " with inCap at " + inCap);
                     bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase + breathRedIn, breathBase + breathGreenIn, breathBase + breathBlueIn);
                 }
                 else {
                     //we are in outBreath section
-                    colorIncrement = (int) Math.ceil((double)colorRange / outCap); // 100/4 = 25
+                    colorIncrement = (int) Math.floor((double)outColorRange / outCap); // 100/4 = 25
 
                     //error checking
                     if (colorIncrement < 1)
                         colorIncrement = 1;
 
-                    breathBase-=colorIncrement;
+                    int midOfInCapOutMid = ((outMid + inCap)/2);
+                    int midOfInCapOutMidAndInCap = (midOfInCapOutMid + inCap)/2;
+                    if (flag == 1 || increment <  midOfInCapOutMidAndInCap) {
+                        breathBase-=colorIncrement;
+                        flag = 0;
+                    }
+                    else {
+                        flag = 1;
+                    }
+
+
 
                     //error checking
                     if (breathBase < 0)
@@ -934,7 +948,7 @@ public class GUIGame extends Activity {
                     bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase + breathRedOut, breathBase + breathGreenOut, breathBase + breathBlueOut);
                 }
 
-                //Log.d("gusgus", "opa is " + breathColor);
+                //Log.d("gusgus", "opa is " + breathBase);
                 increment++;
             }
         }
