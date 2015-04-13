@@ -294,11 +294,13 @@ public class GUIScore {
                                 case 0:
                                 case -1:
                                     this.accuracyChart[AccuracyTypes.N_MARVELOUS.ordinal()]++;
-                                    this.health += this.healthGain;
+                                    this.health += this.healthGain * 7;
                                     if (this.health > this.healthMax) {
                                         this.health = this.healthMax;
                                     }
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
                                     return AccuracyTypes.N_MARVELOUS;
@@ -307,11 +309,13 @@ public class GUIScore {
                                 case -2:
                                 case -3:
                                     this.accuracyChart[AccuracyTypes.N_PERFECT.ordinal()]++;
-                                    this.health += this.healthGain;
+                                    this.health += this.healthGain * 7;
                                     if (this.health > this.healthMax) {
                                         this.health = this.healthMax;
                                     }
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
                                     return AccuracyTypes.N_PERFECT;
@@ -320,7 +324,13 @@ public class GUIScore {
                                 case -4:
                                 case -5:
                                     this.accuracyChart[AccuracyTypes.N_GREAT.ordinal()]++;
-                                    this.score += scoreIncrease * 3;
+                                    this.health += this.healthGain * 7;
+                                    if (this.health > this.healthMax) {
+                                        this.health = this.healthMax;
+                                    }
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
                                     return AccuracyTypes.N_GREAT;
@@ -329,14 +339,18 @@ public class GUIScore {
                                 case -6:
                                 case -7:
                                     this.accuracyChart[AccuracyTypes.N_GOOD.ordinal()]++;
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount = 0;
                                     return AccuracyTypes.N_GOOD;
                                 case -8:
                                 case -9:
                                 default:
                                     this.accuracyChart[AccuracyTypes.N_ALMOST.ordinal()]++;
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount = 0;
                                     return AccuracyTypes.N_ALMOST;
                             }
@@ -350,11 +364,13 @@ public class GUIScore {
                                 case 0:
                                 case -1:
                                     this.accuracyChart[AccuracyTypes.N_MARVELOUS.ordinal()]++;
-                                    this.health += this.healthGain;
+                                    this.health += this.healthGain * 7;
                                     if (this.health > this.healthMax) {
                                         this.health = this.healthMax;
                                     }
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
                                     return AccuracyTypes.N_MARVELOUS;
@@ -363,11 +379,13 @@ public class GUIScore {
                                 case -2:
                                 case -3:
                                     this.accuracyChart[AccuracyTypes.N_PERFECT.ordinal()]++;
-                                    this.health += this.healthGain;
+                                    this.health += this.healthGain * 7;
                                     if (this.health > this.healthMax) {
                                         this.health = this.healthMax;
                                     }
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
                                     return AccuracyTypes.N_PERFECT;
@@ -376,7 +394,13 @@ public class GUIScore {
                                 case -4:
                                 case -5:
                                     this.accuracyChart[AccuracyTypes.N_GREAT.ordinal()]++;
-                                    this.score += scoreIncrease * 3;
+                                    this.health += this.healthGain * 7;
+                                    if (this.health > this.healthMax) {
+                                        this.health = this.healthMax;
+                                    }
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
                                     return AccuracyTypes.N_GREAT;
@@ -385,14 +409,18 @@ public class GUIScore {
                                 case -6:
                                 case -7:
                                     this.accuracyChart[AccuracyTypes.N_GOOD.ordinal()]++;
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount = 0;
                                     return AccuracyTypes.N_GOOD;
                                 case -8:
                                 case -9:
                                 default:
                                     this.accuracyChart[AccuracyTypes.N_ALMOST.ordinal()]++;
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount = 0;
                                     return AccuracyTypes.N_ALMOST;
                             }
@@ -405,11 +433,13 @@ public class GUIScore {
                                 case 0:
                                 case -1:
                                     this.accuracyChart[AccuracyTypes.N_MARVELOUS.ordinal()]++;
-                                    this.health += this.healthGain;
+                                    this.health += this.healthGain * 7;
                                     if (this.health > this.healthMax) {
                                         this.health = this.healthMax;
                                     }
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
                                     return AccuracyTypes.N_MARVELOUS;
@@ -418,11 +448,13 @@ public class GUIScore {
                                 case -2:
                                 case -3:
                                     this.accuracyChart[AccuracyTypes.N_PERFECT.ordinal()]++;
-                                    this.health += this.healthGain;
+                                    this.health += this.healthGain * 7;
                                     if (this.health > this.healthMax) {
                                         this.health = this.healthMax;
                                     }
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
                                     return AccuracyTypes.N_PERFECT;
@@ -431,7 +463,13 @@ public class GUIScore {
                                 case -4:
                                 case -5:
                                     this.accuracyChart[AccuracyTypes.N_GREAT.ordinal()]++;
-                                    this.score += scoreIncrease * 3;
+                                    this.health += this.healthGain * 7;
+                                    if (this.health > this.healthMax) {
+                                        this.health = this.healthMax;
+                                    }
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
                                     return AccuracyTypes.N_GREAT;
@@ -440,14 +478,18 @@ public class GUIScore {
                                 case -6:
                                 case -7:
                                     this.accuracyChart[AccuracyTypes.N_GOOD.ordinal()]++;
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount = 0;
                                     return AccuracyTypes.N_GOOD;
                                 case -8:
                                 case -9:
                                 default:
                                     this.accuracyChart[AccuracyTypes.N_ALMOST.ordinal()]++;
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount = 0;
                                     return AccuracyTypes.N_ALMOST;
                             }
@@ -460,11 +502,13 @@ public class GUIScore {
                                 case 0:
                                 case -1:
                                     this.accuracyChart[AccuracyTypes.N_MARVELOUS.ordinal()]++;
-                                    this.health += this.healthGain;
+                                    this.health += this.healthGain * 7;
                                     if (this.health > this.healthMax) {
                                         this.health = this.healthMax;
                                     }
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
                                     return AccuracyTypes.N_MARVELOUS;
@@ -473,11 +517,13 @@ public class GUIScore {
                                 case -2:
                                 case -3:
                                     this.accuracyChart[AccuracyTypes.N_PERFECT.ordinal()]++;
-                                    this.health += this.healthGain;
+                                    this.health += this.healthGain * 7;
                                     if (this.health > this.healthMax) {
                                         this.health = this.healthMax;
                                     }
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
                                     return AccuracyTypes.N_PERFECT;
@@ -486,7 +532,13 @@ public class GUIScore {
                                 case -4:
                                 case -5:
                                     this.accuracyChart[AccuracyTypes.N_GREAT.ordinal()]++;
-                                    this.score += scoreIncrease * 3;
+                                    this.health += this.healthGain * 7;
+                                    if (this.health > this.healthMax) {
+                                        this.health = this.healthMax;
+                                    }
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
                                     return AccuracyTypes.N_GREAT;
@@ -495,14 +547,18 @@ public class GUIScore {
                                 case -6:
                                 case -7:
                                     this.accuracyChart[AccuracyTypes.N_GOOD.ordinal()]++;
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount = 0;
                                     return AccuracyTypes.N_GOOD;
                                 case -8:
                                 case -9:
                                 default:
                                     this.accuracyChart[AccuracyTypes.N_ALMOST.ordinal()]++;
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount = 0;
                                     return AccuracyTypes.N_ALMOST;
                             }
@@ -515,11 +571,13 @@ public class GUIScore {
                                 case 0:
                                 case -1:
                                     this.accuracyChart[AccuracyTypes.N_MARVELOUS.ordinal()]++;
-                                    this.health += this.healthGain;
+                                    this.health += this.healthGain * 7;
                                     if (this.health > this.healthMax) {
                                         this.health = this.healthMax;
                                     }
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
                                     return AccuracyTypes.N_MARVELOUS;
@@ -528,11 +586,13 @@ public class GUIScore {
                                 case -2:
                                 case -3:
                                     this.accuracyChart[AccuracyTypes.N_PERFECT.ordinal()]++;
-                                    this.health += this.healthGain;
+                                    this.health += this.healthGain * 7;
                                     if (this.health > this.healthMax) {
                                         this.health = this.healthMax;
                                     }
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
                                     return AccuracyTypes.N_PERFECT;
@@ -541,7 +601,13 @@ public class GUIScore {
                                 case -4:
                                 case -5:
                                     this.accuracyChart[AccuracyTypes.N_GREAT.ordinal()]++;
-                                    this.score += scoreIncrease * 3;
+                                    this.health += this.healthGain * 7;
+                                    if (this.health > this.healthMax) {
+                                        this.health = this.healthMax;
+                                    }
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
                                     return AccuracyTypes.N_GREAT;
@@ -550,14 +616,18 @@ public class GUIScore {
                                 case -6:
                                 case -7:
                                     this.accuracyChart[AccuracyTypes.N_GOOD.ordinal()]++;
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount = 0;
                                     return AccuracyTypes.N_GOOD;
                                 case -8:
                                 case -9:
                                 default:
                                     this.accuracyChart[AccuracyTypes.N_ALMOST.ordinal()]++;
-                                    this.score += scoreIncrease * 3;
+                                    // Took this out so it didn't skew graphing results or percentage
+                                    //this.score += scoreIncrease * 3;
+                                    this.score += scoreIncrease;
                                     this.comboCount = 0;
                                     return AccuracyTypes.N_ALMOST;
                             }
