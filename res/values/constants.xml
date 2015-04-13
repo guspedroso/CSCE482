@@ -122,7 +122,7 @@
 	<string name="showFPS">"showFPS"</string>
 	<string name="showFPSDefault">"1"</string>
     <string name="showBreath">"showBreath"</string>
-    <string name="showBreathDefault">"0"</string>
+    <string name="showBreathDefault">"1"</string>
 	<string name="screenshotMode">"screenshotMode"</string>
 	<string name="screenshotModeDefault">"0"</string>
 	<string name="syncDuration">"syncDuration"</string>

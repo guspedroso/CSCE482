@@ -897,16 +897,16 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="breathColorDefault">"0"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
-    <string name="breathColorDesc">"Default color of breath"</string>
-    <string name="breathColorTitle">"Breath Color"</string>
+    <string name="breathColorDesc">"Default color of the background to pace breathing"</string>
+    <string name="breathColorTitle">"Pacing Color"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="breathGoal">"breathGoal"</string>
     <string name="breathGoalDefault">"0"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
-    <string name="breathGoalDesc">"Default rate of breath"</string>
-    <string name="breathGoalTitle">"Breath Goal"</string>
+    <string name="breathGoalDesc">"Seconds between breaths as displayed as a pulsing background."</string>
+    <string name="breathGoalTitle">"Pacing Rate"</string>
     <string name="changelogDesc">"Updated Changelog forum thread for the next release"</string>
     <string name="changelogTitle">"Changelog"</string>
     <string name="creditsDesc">"A bit about the devs and all others to thank"</string>
@@ -1154,11 +1154,11 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="showBreath">"showBreath"</string>
-    <string name="showBreathDefault">"0"</string>
+    <string name="showBreathDefault">"1"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
-    <string name="showBreathDesc">"Display breath goal in background of game, light is in dark is out"</string>
-    <string name="showBreathTitle">"Show Breaths Goal in Background"</string>
+    <string name="showBreathDesc">"Display pacing signifier as the background of game: light is inhale dark is exhale"</string>
+    <string name="showBreathTitle">"Show Background Pacing Signifier"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="showFPS">"showFPS"</string>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 	<PreferenceCategory android:title="@string/gameSettingsCategoryTitle">
+
 		<ListPreference
 			android:title="@string/difficultyLevelTitle"
 			android:summary="@string/difficultyLevelDesc"
@@ -105,12 +106,26 @@
 	</PreferenceCategory>
         <PreferenceCategory android:title="@string/backgroundCategoryTitle">
             <ListPreference
-                android:title="@string/backgroundShowTitle"
-                android:summary="@string/backgroundShowDesc"
-                android:key="@string/backgroundShow"
-                android:defaultValue="@string/backgroundShowDefault"
+                android:title="@string/showBreathTitle"
+                android:summary="@string/showBreathDesc"
+                android:key="@string/showBreath"
+                android:defaultValue="@string/showBreathDefault"
                 android:entries="@array/toggle"
                 android:entryValues="@array/toggleValues" />
+            <ListPreference
+                android:title="@string/breathColorTitle"
+                android:summary="@string/breathColorDesc"
+                android:key="@string/breathColor"
+                android:defaultValue="@string/breathColorDefault"
+                android:entries="@array/breathColor"
+                android:entryValues="@array/breathColorValues" />
+            <ListPreference
+                android:title="@string/breathGoalTitle"
+                android:summary="@string/breathGoalDesc"
+                android:key="@string/breathGoal"
+                android:defaultValue="@string/breathGoalDefault"
+                android:entries="@array/breathGoal"
+                android:entryValues="@array/breathGoalValues" />
             <ListPreference
                 android:title="@string/backgroundBrightnessTitle"
                 android:summary="@string/backgroundBrightnessDesc"
