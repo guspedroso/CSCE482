@@ -35,7 +35,6 @@ import android.widget.*;
 
 import zephyr.android.BioHarnessBT.*;
 
-
 public class GUIGame extends Activity {
 	
 	// TODO - MAJOR CLEANUP!!!
@@ -72,9 +71,29 @@ public class GUIGame extends Activity {
     private final int RESPIRATION_RATE = 0x101;
     public String respRate = "000";
     String rightSettingsTop;
-	
+
 	private static final int ROTATABLE = 2;
-	
+
+    /*-------these variables are needed for breath display -gp ----------*/
+
+    private boolean showBreath; //default false to not show
+    private int increment = 0; //start at zero
+    private int breathBase = 0; //start at zero
+    private int interval = 25; //default .04 sec interval
+    private int breathGoal; //default 0 (6/4 option)
+    private int inBreath; //default 6 sec
+    private int outBreath; //default 4 sec
+    private int span; //default 10 sec
+    private int breathColor; //default 0 (none), 1 (red), 2 (green), 1 (blue)
+    private int breathRedIn; //default colors to add none
+    private int breathBlueIn;
+    private int breathGreenIn;
+    private int breathRedOut;
+    private int breathBlueOut;
+    private int breathGreenOut;
+
+    /*--------------------------------------------------------------------*/
+
 	private GUIDrawingArea drawarea = new GUIDrawingArea() {
 		
 		private SparseArray<Bitmap> rsrcBitmaps = new SparseArray<Bitmap>();
@@ -195,7 +214,11 @@ public class GUIGame extends Activity {
 		holds = Tools.getBooleanSetting(R.string.holds, R.string.holdsDefault);
 		autoPlay = Tools.getBooleanSetting(R.string.autoPlay, R.string.autoPlayDefault);
 		showFPS = Tools.getBooleanSetting(R.string.showFPS, R.string.showFPSDefault);
-
+        showBreath = Tools.getBooleanSetting(R.string.showBreath, R.string.showBreathDefault);
+        breathColor = Integer.valueOf(
+            Tools.getSetting(R.string.breathColor, R.string.breathColorDefault));
+        breathGoal = Integer.valueOf(
+            Tools.getSetting(R.string.breathGoal, R.string.breathGoalDefault));
 // --------------------- ADDED -----------------------------------------
         //showBPM = Tools.getBooleanSetting("showBPM", "1");
 		screenshotMode = Tools.getBooleanSetting(R.string.screenshotMode, R.string.screenshotModeDefault);
@@ -306,7 +329,48 @@ public class GUIGame extends Activity {
 			b = drawarea.getBitmap(GUINoteImage.rsrc(pitch, 0, true));
 			b = drawarea.getBitmap(GUINoteImage.rsrc(pitch, 0, false));
 		}*/
-		
+
+        //set up breath color -gp
+        if (breathColor == 0) {
+            breathRedIn = 0;
+            breathRedOut = 0;
+            breathGreenIn = 0;
+            breathGreenOut = 0;
+            breathBlueIn = 0;
+            breathBlueOut = 0;
+        }
+        else if (breathColor == 1) {
+            breathRedIn = 50;
+            breathRedOut = 50;
+            breathGreenIn = 0;
+            breathGreenOut = 0;
+            breathBlueIn = 0;
+            breathBlueOut = 0;
+        }
+        else if (breathColor == 2) {
+            breathRedIn = 0;
+            breathRedOut = 0;
+            breathGreenIn = 50;
+            breathGreenOut = 50;
+            breathBlueIn = 0;
+            breathBlueOut = 0;
+        }
+        else if (breathColor == 3) {
+            breathRedIn = 0;
+            breathRedOut = 0;
+            breathGreenIn = 0;
+            breathGreenOut = 0;
+            breathBlueIn = 50;
+            breathBlueOut = 50;
+        }
+
+        //set up breath goal -gp
+        if (breathGoal == 0) {
+            inBreath = 6;
+            outBreath = 4;
+            span = inBreath + outBreath;
+        }
+
 		// Start updating
 		mView.startTimer();
 		h.setMessageLong(Tools.getString(R.string.GUIGame_ready), 0, 64, 255); // royal blue
@@ -401,9 +465,19 @@ public class GUIGame extends Activity {
 		private GUITextPaint textScorePaint, autoPlayPaint;
 		private GUITextPaint titlePaint;
 		private Paint titlebarPaint;
-		
+
 		private GUIScoreDisplay scoreDisplay;
-		
+
+        /*------------------------------------------------------------------------------*/
+        public int leftShift, topShift;
+        public Bitmap bgImageUnscaled;
+        public File bg;
+        public Canvas bgImageCanvas;
+        public int scaled_width, scaled_height;
+        public Bitmap bgImageScaled;
+        public Paint bgAlpha;
+        public Paint rectAlpha;
+        /*------------------------------------------------------------------------------*/
 		public void clearBitmaps() {
 			if (bgImage != null) {
 				bgImage.recycle(); //grr garbage collector
@@ -420,11 +494,10 @@ public class GUIGame extends Activity {
 			// Background
 			clearBitmaps();
 			if (backgroundShow) {
-				int leftShift, topShift;
-				Bitmap bgImageUnscaled;
-				File bg = dp.df.getBackground();
+
+				bg = dp.df.getBackground();
 				if (bg != null && bg.canRead() && backgroundSong) {
-					// Background image file finding is done within DataFile's setBackground 
+					// Background image file finding is done within DataFile's setBackground
 					bgImageUnscaled = BitmapFactory.decodeFile(bg.getPath());
 				} else {
 					bgImageUnscaled = BitmapFactory.decodeFile(Tools.getBackgroundRes());
@@ -432,10 +505,11 @@ public class GUIGame extends Activity {
 				if (bgImageUnscaled != null) {
 					// Create a new canvas to draw background image on
 					bgImage = Bitmap.createBitmap(Tools.screen_w, Tools.screen_h, Config.RGB_565);
-					Canvas bgImageCanvas = new Canvas(bgImage);
+					bgImageCanvas = new Canvas(bgImage);
 					
 					// Set scaling and alpha
-					int scaled_width = Tools.screen_w, scaled_height = Tools.screen_h;
+					scaled_width = Tools.screen_w;
+                    scaled_height = Tools.screen_h;
 					if (Tools.screen_h > Tools.screen_w) {
 						scaled_width = Tools.screen_h * bgImageUnscaled.getWidth() / bgImageUnscaled.getHeight();
 						leftShift = (Tools.screen_w - scaled_width) / 2;
@@ -445,9 +519,9 @@ public class GUIGame extends Activity {
 						leftShift = 0;
 						topShift = (Tools.screen_h - scaled_height) / 2;
 					}
-					Bitmap bgImageScaled = Bitmap.createScaledBitmap(
+					bgImageScaled = Bitmap.createScaledBitmap(
 							bgImageUnscaled, scaled_width, scaled_height, true);
-					Paint bgAlpha = new Paint();
+					bgAlpha = new Paint();
 					bgAlpha.setAlpha(Tools.MAX_OPA * backgroundBrightness / 100);
 					
 					// Draw background image onto canvas
@@ -456,7 +530,7 @@ public class GUIGame extends Activity {
 					bgImageScaled.recycle(); bgImageScaled = null; //grr garbage collector
 					
 					// Draw grey boxes behind info text
-					Paint rectAlpha = new Paint(); // default colour is black
+					rectAlpha = new Paint(); // default colour is black
 					rectAlpha.setAlpha(Tools.MAX_OPA * backgroundBrightness / (4 * 100));
 					bgImageCanvas.drawRect(0, 0, Tools.screen_w, (margin * 3 + height * 3), rectAlpha);
 					bgImageCanvas.drawRect(0, Tools.screen_h - (margin + height * 2), Tools.screen_w, Tools.screen_h, rectAlpha);
@@ -474,7 +548,7 @@ public class GUIGame extends Activity {
 					bgImageMatrix = new Matrix();
 					bgImageMatrix.reset();
 				}
-			}	
+			}
 		}
 		
 		private void setupDraw() {
@@ -483,7 +557,7 @@ public class GUIGame extends Activity {
 			// Background
 			bgSolidPaint = new Paint();
 			bgSolidPaint.setARGB(Tools.MAX_OPA, 0,0,0);
-			
+
 			// Accuracy message
 			textPaint = new GUITextPaint(Tools.scale(32)).alignCenter().serif().
 				bold().italic().strokeWidth(Tools.scale(3));
@@ -587,7 +661,7 @@ public class GUIGame extends Activity {
 			attributes.put("rightSettingsBottom", rightSettingsBottom);
 			ToolsTracker.data("Game started", attributes);
 		}
-		
+
 		public void onDraw(Canvas canvas) {
 
 			// FPS
@@ -619,14 +693,17 @@ public class GUIGame extends Activity {
 				return;
 			}
 									
-			// Background
-			if (bgImage != null) {
+			// Background, modified to have breathing -gp
+			if (bgImage != null && !showBreath) {
 				canvas.drawBitmap(bgImage, bgImageMatrix, bgImageFiltering);
-			} else {
-				//canvas.drawRect(0, 0, canvas.getWidth(), canvas.getHeight(), bgSolidPaint);
-				canvas.drawPaint(bgSolidPaint);
-			}
-			
+			} else if (showBreath) {
+                canvas.drawPaint(bgSolidPaint);
+                //h.drawTapboxes(canvas); // this is too slow -gp
+            }
+            else {
+                canvas.drawRect(0, 0, canvas.getWidth(), canvas.getHeight(), bgSolidPaint);
+            }
+
 			// Arrows
 			//GUIFallingObject[] falling_objs = h.get_objs();
 			if (h.fallingobjects == null)
@@ -802,6 +879,65 @@ public class GUIGame extends Activity {
                 }
             }
         }
+
+        //Java Timer class object declaration
+        Timer timer2 = new Timer();
+
+        //self-made function to show background breathing within Update() -gp
+        class SpeedTask2 extends TimerTask {
+            public void run() {
+
+                int sections = 1000/interval; // 1000/1000 = 1 section per sec
+                int totalCap = span*sections; // 10 sec * 1 section = 10 total sections
+                int inCap = (inBreath*sections); // 6 sec * 1 section = 6 in sections
+                int outCap = (outBreath*sections); // 4 sec * 1 section = 4 out sections
+                int colorIncrement;
+                int colorRange = 255;
+
+                //start the process over
+                if (increment >= totalCap)
+                    increment = 0;
+
+                //determine increment amount
+                if (increment <= inCap) {
+                    //we are in inBreath section
+                    colorIncrement = (int) Math.floor((double)colorRange / inCap); // 100/6 = 16
+
+                    //error checking
+                    if (colorIncrement < 1)
+                        colorIncrement = 1;
+
+                    breathBase+=colorIncrement;
+
+                    //limit to how bright the color can get (if you change this then change additional colors accordingly, ie sum must be <= 255)
+                    if (breathBase > 100)
+                        breathBase = 100;
+
+                    //Log.d("gusgus", "incremented by " + colorIncrement + " with inCap at " + inCap);
+                    bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase + breathRedIn, breathBase + breathGreenIn, breathBase + breathBlueIn);
+                }
+                else {
+                    //we are in outBreath section
+                    colorIncrement = (int) Math.ceil((double)colorRange / outCap); // 100/4 = 25
+
+                    //error checking
+                    if (colorIncrement < 1)
+                        colorIncrement = 1;
+
+                    breathBase-=colorIncrement;
+
+                    //error checking
+                    if (breathBase < 0)
+                        breathBase = 0;
+
+                    //Log.d("gusgus", "decremented by " + colorIncrement + " with outCap at " + outCap);
+                    bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase + breathRedOut, breathBase + breathGreenOut, breathBase + breathBlueOut);
+                }
+
+                //Log.d("gusgus", "opa is " + breathColor);
+                increment++;
+            }
+        }
         //****************
 
 		private void nextFrame() {
@@ -836,6 +972,9 @@ public class GUIGame extends Activity {
 
                 // Modifies speed value, called using TimerTask class
                 timer.schedule(new SpeedTask(), TIME_DELAY, 500);
+                // If user selects to show breathing background -gp
+                if (showBreath)
+                    timer2.schedule(new SpeedTask2(), TIME_DELAY, interval);
 
                 musicCurrentPosition = mp.getCurrentPosition();
 				musicStartTime = musicCurrentPosition + manualOffset;
