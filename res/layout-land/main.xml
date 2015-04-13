@@ -50,19 +50,16 @@
 					android:id="@+id/gameModePrev"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:src="@drawable/mode_prev"
 				/>
 				<ImageView
 					android:id="@+id/gameMode"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:src="@drawable/mode_step_down"
 				/>
 				<ImageView
 					android:id="@+id/gameModeNext"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:src="@drawable/mode_next"
 				/>
 			</LinearLayout>
 		</RelativeLayout>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/values-ru/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-ru/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="accuracyLevel">
     <item>Слишком Легко</item>
@@ -76,7 +76,7 @@
     <item>Легкая</item>
     <item>Выкл</item>
   </string-array>
-    <!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/values-ru/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-ru/strings_trans.xml -->
     <eat-comment/>
     <string name="Accuracy_almost">"Почти"</string>
     <string name="Accuracy_best_combo">"Лучшее Комбо"</string>
@@ -219,7 +219,7 @@
     <string name="Tools_unable_delete_file">"Ошибка: Невозможно удалить файл:\n"</string>
     <string name="Tools_usb_error">"\nМожет вы в режиме USB накопителя\?"</string>
     <string name="Tools_window_error">"Ошибка переключения окон - Я еще не выяснил, как устранить её; / (пожалуйста, напишите мне детали!)"</string>
-    <!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/values-ru/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-ru/settings_trans.xml -->
     <eat-comment/>
     <string name="accuracyLevelDesc">"Строгость определения точности касаний"</string>
     <string name="accuracyLevelTitle">"Определение Точности"</string>

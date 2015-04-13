@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 	<PreferenceCategory android:title="@string/gameSettingsCategoryTitle">
-        <ListPreference
-            android:title="@string/showFPSTitle"
-            android:summary="@string/showFPSDesc"
-            android:key="@string/showFPS"
-            android:defaultValue="@string/showFPSDefault"
-            android:entries="@array/toggle"
-            android:entryValues="@array/toggleValues" />
 		<ListPreference
 			android:title="@string/difficultyLevelTitle"
 			android:summary="@string/difficultyLevelDesc"
@@ -37,122 +30,64 @@
             android:defaultValue="@string/noteAppearanceDefault"
             android:entries="@array/noteAppearance"
             android:entryValues="@array/noteAppearanceValues" />
+        <ListPreference
+            android:title="@string/holdsTitle"
+            android:summary="@string/holdsDesc"
+            android:key="@string/holds"
+            android:defaultValue="@string/holdsDefault"
+            android:entries="@array/toggle"
+            android:entryValues="@array/toggleValues" />
+        <ListPreference
+            android:title="@string/jumpsTitle"
+            android:summary="@string/jumpsDesc"
+            android:key="@string/jumps"
+            android:defaultValue="@string/jumpsDefault"
+            android:entries="@array/toggle"
+            android:entryValues="@array/toggleValues" />
+        <ListPreference
+            android:title="@string/healthPenaltyTitle"
+            android:summary="@string/healthPenaltyDesc"
+            android:key="@string/healthPenalty"
+            android:defaultValue="@string/healthPenaltyDefault"
+            android:entries="@array/healthPenalty"
+            android:entryValues="@array/healthPenaltyValues" />
+        <ListPreference
+            android:title="@string/healthMaxTitle"
+            android:summary="@string/healthMaxDesc"
+            android:key="@string/healthMax"
+            android:defaultValue="@string/healthMaxDefault"
+            android:entries="@array/healthMax"
+            android:entryValues="@array/healthMaxValues" />
+        <ListPreference
+            android:title="@string/syncDurationTitle"
+            android:summary="@string/syncDurationDesc"
+            android:key="@string/syncDuration"
+            android:defaultValue="@string/syncDurationDefault"
+            android:entries="@array/syncDuration"
+            android:entryValues="@array/syncDurationValues" />
 	</PreferenceCategory>
-	<PreferenceScreen
-			android:title="@string/modifiersScreenTitle"
-			android:summary="@string/modifiersScreenDesc">
-		<PreferenceCategory android:title="@string/gameplayCategoryTitle">
-		<ListPreference
-			android:title="@string/darkTitle"
-			android:summary="@string/darkDesc"
-			android:key="@string/dark"
-			android:defaultValue="@string/darkDefault"
-			android:entries="@array/toggle"
-			android:entryValues="@array/toggleValues" />
-		<ListPreference
-			android:title="@string/noteAppearanceTitle"
-			android:summary="@string/noteAppearanceDesc"
-			android:key="@string/noteAppearance"
-			android:defaultValue="@string/noteAppearanceDefault"
-			android:entries="@array/noteAppearance"
-			android:entryValues="@array/noteAppearanceValues" />
-		</PreferenceCategory>
-		<PreferenceCategory android:title="@string/notesCategoryTitle">
-		<ListPreference
-			android:title="@string/holdsTitle"
-			android:summary="@string/holdsDesc"
-			android:key="@string/holds"
-			android:defaultValue="@string/holdsDefault"
-			android:entries="@array/toggle"
-			android:entryValues="@array/toggleValues" />
-		<ListPreference
-			android:title="@string/jumpsTitle"
-			android:summary="@string/jumpsDesc"
-			android:key="@string/jumps"
-			android:defaultValue="@string/jumpsDefault"
-			android:entries="@array/toggle"
-			android:entryValues="@array/toggleValues" />
-		<ListPreference
-			android:title="@string/randomizeTitle"
-			android:summary="@string/randomizeDesc"
-			android:key="@string/randomize"
-			android:defaultValue="@string/randomizeDefault"
-			android:entries="@array/randomize"
-			android:entryValues="@array/randomizeValues" />
-		</PreferenceCategory>
-	</PreferenceScreen>
 	<PreferenceCategory android:title="@string/displaySettingsCategoryTitle">
-		<ListPreference
-			android:title="@string/hardwareAccelerationTitle"
-			android:summary="@string/hardwareAccelerationDesc"
-			android:key="@string/hardwareAccelerate"
-			android:defaultValue="@string/hardwareAccelerateDefault"
-			android:entries="@array/toggleDefault"
-			android:entryValues="@array/toggleDefaultValues" />
-		<PreferenceScreen
-			android:title="@string/gameScreenTitle"
-			android:summary="@string/gameScreenDesc">
-		<PreferenceCategory android:title="@string/interfaceCategoryTitle">
-			<ListPreference
-				android:title="@string/fullscreenTitle"
-				android:summary="@string/fullscreenDesc"
-				android:key="@string/fullscreen"
-				android:defaultValue="@string/fullscreenDefault"
-				android:entries="@array/toggle"
-				android:entryValues="@array/toggleValues" />
-			<ListPreference
-				android:title="@string/orientationTitle"
-				android:summary="@string/orientationDesc"
-				android:key="@string/orientation"
-				android:defaultValue="@string/orientationDefault"
-				android:entries="@array/orientation"
-				android:entryValues="@array/orientationValues" />
-			<ListPreference
-				android:title="@string/showFPSTitle"
-				android:summary="@string/showFPSDesc"
-				android:key="@string/showFPS"
-				android:defaultValue="@string/showFPSDefault"
-				android:entries="@array/toggle"
-				android:entryValues="@array/toggleValues" />
-			<ListPreference
-				android:title="@string/screenshotModeTitle"
-				android:summary="@string/screenshotModeDesc"
-				android:key="@string/screenshotMode"
-				android:defaultValue="@string/screenshotModeDefault"
-				android:entries="@array/toggle"
-				android:entryValues="@array/toggleValues" />
-		</PreferenceCategory>
-		<PreferenceCategory android:title="@string/backgroundCategoryTitle">
-			<ListPreference
-				android:title="@string/backgroundShowTitle"
-				android:summary="@string/backgroundShowDesc"
-				android:key="@string/backgroundShow"
-				android:defaultValue="@string/backgroundShowDefault"
-				android:entries="@array/toggle"
-				android:entryValues="@array/toggleValues" />
-			<ListPreference
-				android:title="@string/backgroundSongTitle"
-				android:summary="@string/backgroundSongDesc"
-				android:key="@string/backgroundSong"
-				android:defaultValue="@string/backgroundSongDefault"
-				android:entries="@array/toggle"
-				android:entryValues="@array/toggleValues" />
-			<ListPreference
-				android:title="@string/backgroundBrightnessTitle"
-				android:summary="@string/backgroundBrightnessDesc"
-				android:key="@string/backgroundBrightness"
-				android:defaultValue="@string/backgroundBrightnessDefault"
-				android:entries="@array/backgroundBrightness"
-				android:entryValues="@array/backgroundBrightnessValues" />
-			<ListPreference
-				android:title="@string/backgroundFilteringTitle"
-				android:summary="@string/backgroundFilteringDesc"
-				android:key="@string/backgroundFiltering"
-				android:defaultValue="@string/backgroundFilteringDefault"
-				android:entries="@array/toggle"
-				android:entryValues="@array/toggleValues" />
-		</PreferenceCategory>
-		</PreferenceScreen>
+        <ListPreference
+            android:title="@string/showFPSTitle"
+            android:summary="@string/showFPSDesc"
+            android:key="@string/showFPS"
+            android:defaultValue="@string/showFPSDefault"
+            android:entries="@array/toggle"
+            android:entryValues="@array/toggleValues" />
+        <ListPreference
+            android:title="@string/orientationTitle"
+            android:summary="@string/orientationDesc"
+            android:key="@string/orientation"
+            android:defaultValue="@string/orientationDefault"
+            android:entries="@array/orientation"
+            android:entryValues="@array/orientationValues" />
+        <ListPreference
+            android:title="@string/screenshotModeTitle"
+            android:summary="@string/screenshotModeDesc"
+            android:key="@string/screenshotMode"
+            android:defaultValue="@string/screenshotModeDefault"
+            android:entries="@array/toggle"
+            android:entryValues="@array/toggleValues" />
 		<ListPreference
 			android:title="@string/noteskinTitle"
 			android:summary="@string/noteskinDesc"
@@ -168,6 +103,22 @@
 			android:entries="@array/backgroundImage"
 			android:entryValues="@array/backgroundImageValues" />
 	</PreferenceCategory>
+        <PreferenceCategory android:title="@string/backgroundCategoryTitle">
+            <ListPreference
+                android:title="@string/backgroundShowTitle"
+                android:summary="@string/backgroundShowDesc"
+                android:key="@string/backgroundShow"
+                android:defaultValue="@string/backgroundShowDefault"
+                android:entries="@array/toggle"
+                android:entryValues="@array/toggleValues" />
+            <ListPreference
+                android:title="@string/backgroundBrightnessTitle"
+                android:summary="@string/backgroundBrightnessDesc"
+                android:key="@string/backgroundBrightness"
+                android:defaultValue="@string/backgroundBrightnessDefault"
+                android:entries="@array/backgroundBrightness"
+                android:entryValues="@array/backgroundBrightnessValues" />
+        </PreferenceCategory>
 	<PreferenceCategory android:title="@string/tapSettingsCategoryTitle">
 		<ListPreference
 			android:title="@string/tapboxFadingTitle"
@@ -190,69 +141,27 @@
 			android:defaultValue="@string/tapboxYOffsetDefault"
 			android:entries="@array/tapboxYOffset"
 			android:entryValues="@array/tapboxYOffsetValues" />
-		<PreferenceScreen
-			android:title="@string/vibrateScreenTitle"
-			android:summary="@string/vibrateScreenDesc">
-		<ListPreference
-			android:title="@string/vibrateTapTitle"
-			android:summary="@string/vibrateTapDesc"
-			android:key="@string/vibrateTap"
-			android:defaultValue="@string/vibrateMissDefault"
-			android:entries="@array/vibrateMiss"
-			android:entryValues="@array/vibrateMissValues" />
-		<ListPreference
-			android:title="@string/vibrateHoldTitle"
-			android:summary="@string/vibrateHoldDesc"
-			android:key="@string/vibrateHold"
-			android:defaultValue="@string/vibrateMissDefault"
-			android:entries="@array/vibrateMiss"
-			android:entryValues="@array/vibrateMissValues" />
-		<ListPreference
-			android:title="@string/vibrateMissTitle"
-			android:summary="@string/vibrateMissDesc"
-			android:key="@string/vibrateMiss"
-			android:defaultValue="@string/vibrateMissDefault"
-			android:entries="@array/vibrateMiss"
-			android:entryValues="@array/vibrateMissValues" />
-		<ListPreference
-			android:title="@string/additionalVibrationsTitle"
-			android:summary="@string/additionalVibrationsDesc"
-			android:key="@string/additionalVibrations"
-			android:defaultValue="@string/additionalVibrationsDefault"
-			android:entries="@array/toggle"
-			android:entryValues="@array/toggleValues" />
-		<ListPreference
-			android:title="@string/vibrateTouchSenseTitle"
-			android:summary="@string/vibrateTouchSenseDesc"
-			android:key="@string/vibrateTouchSense"
-			android:defaultValue="@string/vibrateTouchSenseDefault"
-			android:entries="@array/toggle"
-			android:entryValues="@array/toggleValues" />
-		</PreferenceScreen>
-	</PreferenceCategory>
-	<PreferenceCategory android:title="@string/machineSettingsCategoryTitle">
-		<ListPreference
-			android:title="@string/manualOffsetTitle"
-			android:summary="@string/manualOffsetDesc"
-			android:key="@string/manualOffset"
-			android:defaultValue="@string/manualOffsetDefault"
-			android:entries="@array/manualOffset"
-			android:entryValues="@array/manualOffsetValues" />
-		<ListPreference
-			android:title="@string/manualOGGOffsetTitle"
-			android:summary="@string/manualOGGOffsetDesc"
-			android:key="@string/manualOGGOffset"
-			android:defaultValue="@string/manualOGGOffsetDefault"
-			android:entries="@array/manualOffset"
-			android:entryValues="@array/manualOffsetValues" />
-		<ListPreference
-			android:title="@string/accuracyLevelTitle"
-			android:summary="@string/accuracyLevelDesc"
-			android:key="@string/accuracyLevel"
-			android:defaultValue="@string/accuracyLevelDefault"
-			android:entries="@array/accuracyLevel"
-			android:entryValues="@array/accuracyLevelValues" />
-
+        <ListPreference
+            android:title="@string/manualOffsetTitle"
+            android:summary="@string/manualOffsetDesc"
+            android:key="@string/manualOffset"
+            android:defaultValue="@string/manualOffsetDefault"
+            android:entries="@array/manualOffset"
+            android:entryValues="@array/manualOffsetValues" />
+        <ListPreference
+            android:title="@string/manualOGGOffsetTitle"
+            android:summary="@string/manualOGGOffsetDesc"
+            android:key="@string/manualOGGOffset"
+            android:defaultValue="@string/manualOGGOffsetDefault"
+            android:entries="@array/manualOffset"
+            android:entryValues="@array/manualOffsetValues" />
+        <ListPreference
+            android:title="@string/accuracyLevelTitle"
+            android:summary="@string/accuracyLevelDesc"
+            android:key="@string/accuracyLevel"
+            android:defaultValue="@string/accuracyLevelDefault"
+            android:entries="@array/accuracyLevel"
+            android:entryValues="@array/accuracyLevelValues" />
 	</PreferenceCategory>
 	<PreferenceCategory android:title="@string/miscCategoryTitle">
 		<PreferenceScreen
@@ -323,29 +232,6 @@
 		<PreferenceScreen
 			android:title="@string/advancedScreenTitle"
 			android:summary="@string/advancedScreenDesc">
-		<PreferenceCategory android:title="@string/tweaksCategoryTitle">
-			<ListPreference
-				android:title="@string/healthPenaltyTitle"
-				android:summary="@string/healthPenaltyDesc"
-				android:key="@string/healthPenalty"
-				android:defaultValue="@string/healthPenaltyDefault"
-				android:entries="@array/healthPenalty"
-				android:entryValues="@array/healthPenaltyValues" />
-			<ListPreference
-				android:title="@string/healthMaxTitle"
-				android:summary="@string/healthMaxDesc"
-				android:key="@string/healthMax"
-				android:defaultValue="@string/healthMaxDefault"
-				android:entries="@array/healthMax"
-				android:entryValues="@array/healthMaxValues" />
-			<ListPreference
-				android:title="@string/syncDurationTitle"
-				android:summary="@string/syncDurationDesc"
-				android:key="@string/syncDuration"
-				android:defaultValue="@string/syncDurationDefault"
-				android:entries="@array/syncDuration"
-				android:entryValues="@array/syncDurationValues" />
-		</PreferenceCategory>
 		<PreferenceCategory android:title="@string/filebrowserCategoryTitle">
 			<ListPreference
 				android:title="@string/autoStartTitle"
@@ -429,4 +315,4 @@
 				android:entries="@array/toggle"
 				android:entryValues="@array/toggleValues" />
 	</PreferenceCategory>
-</PreferenceScreen><!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/xml/settings.xml -->
+</PreferenceScreen><!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/xml/settings.xml -->

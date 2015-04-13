@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\Owner\Documents\GitHub\CSCE482\assets"><file name="fonts/HappyKiller.ttf" path="C:\Users\Owner\Documents\GitHub\CSCE482\assets\fonts\HappyKiller.ttf"/></source></dataSet><dataSet config="debug"><source path="C:\Users\Owner\Documents\GitHub\CSCE482\build-types\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\Elizabeth\Documents\GitHub\CSCE482\assets"><file name="fonts/HappyKiller.ttf" path="C:\Users\Elizabeth\Documents\GitHub\CSCE482\assets\fonts\HappyKiller.ttf"/></source></dataSet><dataSet config="debug"><source path="C:\Users\Elizabeth\Documents\GitHub\CSCE482\build-types\debug\assets"/></dataSet></merger>

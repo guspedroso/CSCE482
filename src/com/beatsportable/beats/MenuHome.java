@@ -565,10 +565,10 @@ public class MenuHome extends Activity {
 		});
 		
 		// Game Mode
-		ImageView gameModePrev = (ImageView) findViewById(R.id.gameModePrev);
-		ImageView gameModeNext = (ImageView) findViewById(R.id.gameModeNext);
-		final ImageView gameMode = (ImageView) findViewById(R.id.gameMode);
-		
+		//ImageView gameModePrev = (ImageView) findViewById(R.id.gameModePrev);
+		//ImageView gameModeNext = (ImageView) findViewById(R.id.gameModeNext);
+		//final ImageView gameMode = (ImageView) findViewById(R.id.gameMode);
+		/*
 		int maxHeight = Tools.button_h * 2 / 3;
 		gameMode.setAdjustViewBounds(true);
 		gameMode.setMaxHeight(maxHeight);
@@ -602,7 +602,7 @@ public class MenuHome extends Activity {
 					gameMode.setBackgroundColor(Color.TRANSPARENT);
 				}
 			}
-		});	
+		});	*/
 		
 		/*
 		// Background Data button
@@ -754,8 +754,8 @@ public class MenuHome extends Activity {
 		R.id.download_songs,
 		R.id.settings,
 		R.id.exit,
-		R.id.difficulty,
-		R.id.gameMode
+		R.id.difficulty
+		//R.id.gameMode
 	};
 	
 	private void setupDpadNavigation() {
@@ -930,9 +930,7 @@ public class MenuHome extends Activity {
 			difficulty.setTypeface(tf);
 		}
 		difficulty.setTextSize(textSize);
-		switch (Integer.parseInt(
-				Tools.getSetting(R.string.difficultyLevel, R.string.difficultyLevelDefault)
-				)) {
+		switch (Integer.parseInt(Tools.getSetting(R.string.difficultyLevel, R.string.difficultyLevelDefault))) {
 			case 0:
 				difficulty.setText(" " + Tools.getString(R.string.Difficulty_beginner).toLowerCase());
                 difficulty.setTextColor(Color.rgb(32, 185, 32)); // green
@@ -985,9 +983,7 @@ public class MenuHome extends Activity {
             goal.setTypeface(tf);
         }
         goal.setTextSize(textSize);
-        switch (Integer.parseInt(
-                Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault)
-        )) {
+        switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
             case 0:
                 goal.setText(" " + Tools.getString(R.string.Goal_6).toLowerCase());
                 goal.setTextColor(Color.rgb(255, 0, 0)); // red
@@ -1016,8 +1012,8 @@ public class MenuHome extends Activity {
 	
 	// Ugly, won't fix
 	private void nextGameMode(boolean prev) {
-		int gameMode = Integer.parseInt(Tools.getSetting(R.string.gameMode, R.string.gameModeDefault));
-		if (prev) {
+		//int gameMode = Integer.parseInt(Tools.getSetting(R.string.gameMode, R.string.gameModeDefault));
+		/*if (prev) {
 			gameMode -= 1;
 			if (gameMode < 0) gameMode = 3;
 		} else {
@@ -1025,17 +1021,17 @@ public class MenuHome extends Activity {
 			if (gameMode > 3) gameMode = 0;
 		}
 		Tools.putSetting(R.string.gameMode, Integer.toString(gameMode));
-		updateGameMode();
+		updateGameMode();*/
 	}
 	
 	private void updateGameMode() {
 		Tools.updateGameMode();
-		ImageView gameMode = (ImageView) findViewById(R.id.gameMode);
-		switch(Tools.gameMode) {
-			case Tools.REVERSE:
-				gameMode.setImageResource(R.drawable.mode_step_down);
-				break;
-			case Tools.STANDARD:
+		//ImageView gameMode = (ImageView) findViewById(R.id.gameMode);
+		//switch(Tools.gameMode) {
+		//	case Tools.REVERSE:
+		//		gameMode.setImageResource(R.drawable.mode_step_down);
+		//		break;
+			/*case Tools.STANDARD:
 				gameMode.setImageResource(R.drawable.mode_step_up);
 				break;
 			case Tools.OSU_MOD:
@@ -1044,8 +1040,8 @@ public class MenuHome extends Activity {
 				} else {
 					gameMode.setImageResource(R.drawable.mode_osu);
 				}
-				break;
-		}
+				break;*/
+		//}
 	}
 	/*
 	private void changeGameMode() {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/values-es/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-es/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="accuracyLevel">
     <item>Muy Facil</item>
@@ -76,7 +76,7 @@
     <item>Suave</item>
     <item>Desactivado</item>
   </string-array>
-    <!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/values-es/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-es/strings_trans.xml -->
     <eat-comment/>
     <string name="Accuracy_almost">Por poco</string>
     <string name="Accuracy_best_combo">"Mejor Combo"</string>
@@ -219,7 +219,7 @@
     <string name="Tools_unable_delete_file">"Error: No se ha podido eliminar el archivo:\n"</string>
     <string name="Tools_usb_error">"\nTal vez estas en modo USB\?"</string>
     <string name="Tools_window_error">Error en cambio de ventana - No he encontrado solución a esto; / (Por favor, mandarme un correo con detalles!)</string>
-    <!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/values-es/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-es/settings_trans.xml -->
     <eat-comment/>
     <string name="accuracyLevelDesc">"Severidad de la exactitud de puntuación"</string>
     <string name="accuracyLevelTitle">"Juicio"</string>

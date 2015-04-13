@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/values-pt/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-pt/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="accuracyLevel">
     <item>Muito fácil</item>
@@ -76,7 +76,7 @@
     <item>Fraco</item>
     <item>Desligado</item>
   </string-array>
-    <!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/values-pt/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-pt/strings_trans.xml -->
     <eat-comment/>
     <string name="Accuracy_almost">Quase</string>
     <string name="Accuracy_best_combo">Melhor combo</string>
@@ -219,7 +219,7 @@
     <string name="Tools_unable_delete_file">"Error: Unable to delete file:\n"</string>
     <string name="Tools_usb_error">"\nMaybe you\'re in USB mode\?"</string>
     <string name="Tools_window_error">"Window switching error - I haven\'t figured out how to fix this yet ; / (please email me details!)"</string>
-    <!-- From: file:/C:/Users/Owner/Documents/GitHub/CSCE482/res/values-pt/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-pt/settings_trans.xml -->
     <eat-comment/>
     <string name="accuracyLevelDesc">"Strictness of accuracy scoring"</string>
     <string name="accuracyLevelTitle">"Judgement"</string>

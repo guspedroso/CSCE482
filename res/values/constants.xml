@@ -54,7 +54,7 @@
 	<string name="speedMultiplier">"speedMultiplier"</string>
 	<string name="speedMultiplierDefault">"2"</string>
 	<string name="autoStart">"autoStart"</string>
-	<string name="autoStartDefault">"1"</string>
+	<string name="autoStartDefault">"0"</string>
 	<string name="noteAppearance">"noteAppearance"</string>
 	<string name="noteAppearanceDefault">"0"</string>
 	<string name="dark">"dark"</string>
@@ -98,19 +98,19 @@
 	<string name="tapboxYOffset">"tapboxYOffset"</string>
 	<string name="tapboxYOffsetDefault">"0"</string>
 	<string name="vibrateTap">"vibrateTap"</string>
-	<string name="vibrateTapDefault">"1"</string>
+	<string name="vibrateTapDefault">"0"</string>
 	<string name="vibrateHold">"vibrateHold"</string>
-	<string name="vibrateHoldDefault">"1"</string>
+	<string name="vibrateHoldDefault">"0"</string>
 	<string name="vibrateMiss">"vibrateMiss"</string>
-	<string name="vibrateMissDefault">"1"</string>
+	<string name="vibrateMissDefault">"0"</string>
 	<string name="vibrateTouchSense">"vibrateTouchSense"</string>
-	<string name="vibrateTouchSenseDefault">"1"</string>
+	<string name="vibrateTouchSenseDefault">"0"</string>
 	<string name="manualOffset">"manualOffset"</string>
 	<string name="manualOffsetDefault">"0"</string>
 	<string name="manualOGGOffset">"manualOGGOffset"</string>
 	<string name="manualOGGOffsetDefault">"0"</string>
 	<string name="showPercent">"showPercent"</string>
-	<string name="showPercentDefault">"0"</string>
+	<string name="showPercentDefault">"1"</string>
 	<!-- 
 	<string name="fps">"fps"</string>
 	<string name="fpsDefault">"1"</string>
