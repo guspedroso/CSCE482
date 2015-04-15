@@ -9,14 +9,6 @@
 			android:defaultValue="@string/difficultyLevelDefault"
 			android:entries="@array/difficultyLevel"
 			android:entryValues="@array/difficultyLevelValues" />
-
-		<ListPreference
-			android:title="@string/tapboxLayoutTitle"
-			android:summary="@string/tapboxLayoutDesc"
-			android:key="@string/tapboxLayout"
-			android:defaultValue="@string/tapboxLayoutDefault"
-			android:entries="@array/tapboxLayout"
-			android:entryValues="@array/tapboxLayoutValues" />
         <ListPreference
             android:title="@string/noteAppearanceTitle"
             android:summary="@string/noteAppearanceDesc"
@@ -69,6 +61,34 @@
             android:entries="@array/toggle"
             android:entryValues="@array/toggleValues" />
         <ListPreference
+            android:title="@string/showBreathTitle"
+            android:summary="@string/showBreathDesc"
+            android:key="@string/showBreath"
+            android:defaultValue="@string/showBreathDefault"
+            android:entries="@array/toggle"
+            android:entryValues="@array/toggleValues" />
+        <ListPreference
+            android:title="@string/breathColorTitle"
+            android:summary="@string/breathColorDesc"
+            android:key="@string/breathColor"
+            android:defaultValue="@string/breathColorDefault"
+            android:entries="@array/breathColor"
+            android:entryValues="@array/breathColorValues" />
+        <ListPreference
+            android:title="@string/breathGoalTitle"
+            android:summary="@string/breathGoalDesc"
+            android:key="@string/breathGoal"
+            android:defaultValue="@string/breathGoalDefault"
+            android:entries="@array/breathGoal"
+            android:entryValues="@array/breathGoalValues" />
+        <ListPreference
+            android:title="@string/backgroundBrightnessTitle"
+            android:summary="@string/backgroundBrightnessDesc"
+            android:key="@string/backgroundBrightness"
+            android:defaultValue="@string/backgroundBrightnessDefault"
+            android:entries="@array/backgroundBrightness"
+            android:entryValues="@array/backgroundBrightnessValues" />
+        <ListPreference
             android:title="@string/orientationTitle"
             android:summary="@string/orientationDesc"
             android:key="@string/orientation"
@@ -104,36 +124,36 @@
 			android:entries="@array/backgroundImage"
 			android:entryValues="@array/backgroundImageValues" />
 	</PreferenceCategory>
-        <PreferenceCategory android:title="@string/backgroundCategoryTitle">
-            <ListPreference
-                android:title="@string/showBreathTitle"
-                android:summary="@string/showBreathDesc"
-                android:key="@string/showBreath"
-                android:defaultValue="@string/showBreathDefault"
-                android:entries="@array/toggle"
-                android:entryValues="@array/toggleValues" />
-            <ListPreference
-                android:title="@string/breathColorTitle"
-                android:summary="@string/breathColorDesc"
-                android:key="@string/breathColor"
-                android:defaultValue="@string/breathColorDefault"
-                android:entries="@array/breathColor"
-                android:entryValues="@array/breathColorValues" />
-            <ListPreference
-                android:title="@string/breathGoalTitle"
-                android:summary="@string/breathGoalDesc"
-                android:key="@string/breathGoal"
-                android:defaultValue="@string/breathGoalDefault"
-                android:entries="@array/breathGoal"
-                android:entryValues="@array/breathGoalValues" />
-            <ListPreference
-                android:title="@string/backgroundBrightnessTitle"
-                android:summary="@string/backgroundBrightnessDesc"
-                android:key="@string/backgroundBrightness"
-                android:defaultValue="@string/backgroundBrightnessDefault"
-                android:entries="@array/backgroundBrightness"
-                android:entryValues="@array/backgroundBrightnessValues" />
-        </PreferenceCategory>
+    <!--       <PreferenceCategory android:title="@string/backgroundCategoryTitle">
+               <ListPreference
+                   android:title="@string/showBreathTitle"
+                   android:summary="@string/showBreathDesc"
+                   android:key="@string/showBreath"
+                   android:defaultValue="@string/showBreathDefault"
+                   android:entries="@array/toggle"
+                   android:entryValues="@array/toggleValues" />
+               <ListPreference
+                   android:title="@string/breathColorTitle"
+                   android:summary="@string/breathColorDesc"
+                   android:key="@string/breathColor"
+                   android:defaultValue="@string/breathColorDefault"
+                   android:entries="@array/breathColor"
+                   android:entryValues="@array/breathColorValues" />
+               <ListPreference
+                   android:title="@string/breathGoalTitle"
+                   android:summary="@string/breathGoalDesc"
+                   android:key="@string/breathGoal"
+                   android:defaultValue="@string/breathGoalDefault"
+                   android:entries="@array/breathGoal"
+                   android:entryValues="@array/breathGoalValues" />
+               <ListPreference
+                   android:title="@string/backgroundBrightnessTitle"
+                   android:summary="@string/backgroundBrightnessDesc"
+                   android:key="@string/backgroundBrightness"
+                   android:defaultValue="@string/backgroundBrightnessDefault"
+                   android:entries="@array/backgroundBrightness"
+                   android:entryValues="@array/backgroundBrightnessValues" />
+           </PreferenceCategory> -->
 	<PreferenceCategory android:title="@string/tapSettingsCategoryTitle">
 		<ListPreference
 			android:title="@string/tapboxFadingTitle"
@@ -149,6 +169,13 @@
 			android:defaultValue="@string/tapboxOverlapDefault"
 			android:entries="@array/tapboxOverlap"
 			android:entryValues="@array/tapboxOverlapValues" />
+        <ListPreference
+            android:title="@string/tapboxLayoutTitle"
+            android:summary="@string/tapboxLayoutDesc"
+            android:key="@string/tapboxLayout"
+            android:defaultValue="@string/tapboxLayoutDefault"
+            android:entries="@array/tapboxLayout"
+            android:entryValues="@array/tapboxLayoutValues" />
 		<ListPreference
 			android:title="@string/tapboxYOffsetTitle"
 			android:summary="@string/tapboxYOffsetDesc"

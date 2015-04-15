@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-zh/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values-zh/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="accuracyLevel">
     <item>太容易</item>
@@ -76,7 +76,7 @@
     <item>轻</item>
     <item>关</item>
   </string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-zh/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values-zh/strings_trans.xml -->
     <eat-comment/>
     <string name="Accuracy_almost">"差不多"</string>
     <string name="Accuracy_best_combo">"最高连击"</string>
@@ -219,7 +219,7 @@
     <string name="Tools_unable_delete_file">"错误: 无法删除文件:\n"</string>
     <string name="Tools_usb_error">"\n您的手机可能处于USB模式"</string>
     <string name="Tools_window_error">"窗口切换错误-我还没搞定这个问题orz~~~~ （请给我发电子邮件说明详细信息）"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-zh/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values-zh/settings_trans.xml -->
     <eat-comment/>
     <string name="accuracyLevelDesc">"计分精确度"</string>
     <string name="accuracyLevelTitle">"评判严格度"</string>

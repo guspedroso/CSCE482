@@ -80,7 +80,7 @@
 	<string name="fullscreen">"fullscreen"</string>
 	<string name="fullscreenDefault">"0"</string>
 	<string name="backgroundShow">"backgroundShow"</string>
-	<string name="backgroundShowDefault">"1"</string>
+	<string name="backgroundShowDefault">"0"</string>
 	<string name="backgroundFiltering">"backgroundFiltering"</string>
 	<string name="backgroundFilteringDefault">"0"</string>
 	<string name="backgroundSong">"backgroundSong"</string>
@@ -90,7 +90,7 @@
 	<string name="noteskin">"noteskin"</string>
 	<string name="noteskinDefault">"default"</string>
 	<string name="backgroundImage">"backgroundImage"</string>
-	<string name="backgroundImageDefault">"white"</string>
+	<string name="backgroundImageDefault">"blue"</string>
 	<string name="orientation">"orientation"</string>
 	<string name="orientationDefault">"2"</string>
 	<string name="tapboxLayout">"tapboxLayout"</string>
