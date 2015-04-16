@@ -48,7 +48,7 @@
   <string name="breathColorTitle">"Pacing Color"</string>
   <string name="breathColorDesc">"Default color of the background to pace breathing"</string>
   <string name="breathGoalTitle">"Pacing Rate"</string>
-  <string name="breathGoalDesc">"Seconds between breaths as displayed as a pulsing background."</string>
+  <string name="breathGoalDesc">"Seconds between breaths as displayed as a pulsing background"</string>
   <string name="speedMultiplierTitle">"Speed"</string>
   <string name="speedMultiplierDesc">"Falling speed of notes"</string>
   <string name="gameModeTitle">"Game Mode"</string>
@@ -122,7 +122,7 @@
   <string name="additionalVibrationsTitle">"Additional Vibrations"</string>
   <string name="additionalVibrationsDesc">"App and song startup vibrations"</string>
   <string name="autoStartTitle">"Auto-Start"</string>
-  <string name="autoStartDesc">"Automatically start game upon stepfile selection"</string>
+  <string name="autoStartDesc">"Automatically start game upon song selection"</string>
   <string name="useShortDirNamesTitle">"Shorten Folder Names"</string>
   <string name="useShortDirNamesDesc">"Remove (...) and [...] tags from folder entries in \'SELECT MUSIC\'"</string>
   <string name="stepfileFolderCheckTitle">"Stepfile Folder Checking"</string>

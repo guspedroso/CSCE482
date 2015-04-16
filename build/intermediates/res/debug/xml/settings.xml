@@ -51,6 +51,13 @@
             android:defaultValue="@string/syncDurationDefault"
             android:entries="@array/syncDuration"
             android:entryValues="@array/syncDurationValues" />
+        <ListPreference
+            android:title="@string/autoStartTitle"
+            android:summary="@string/autoStartDesc"
+            android:key="@string/autoStart"
+            android:defaultValue="@string/autoStartDefault"
+            android:entries="@array/toggle"
+            android:entryValues="@array/toggleValues" />
 	</PreferenceCategory>
 	<PreferenceCategory android:title="@string/displaySettingsCategoryTitle">
         <ListPreference
@@ -275,13 +282,6 @@
 			android:title="@string/advancedScreenTitle"
 			android:summary="@string/advancedScreenDesc">
 		<PreferenceCategory android:title="@string/filebrowserCategoryTitle">
-			<ListPreference
-				android:title="@string/autoStartTitle"
-				android:summary="@string/autoStartDesc"
-				android:key="@string/autoStart"
-				android:defaultValue="@string/autoStartDefault"
-				android:entries="@array/toggle"
-				android:entryValues="@array/toggleValues" />
 			<ListPreference
 				android:title="@string/useShortDirNamesTitle"
 				android:summary="@string/useShortDirNamesDesc"

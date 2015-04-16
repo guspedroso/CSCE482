@@ -847,7 +847,7 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="autoStartDefault">"0"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
-    <string name="autoStartDesc">"Automatically start game upon stepfile selection"</string>
+    <string name="autoStartDesc">"Automatically start game upon song selection"</string>
     <string name="autoStartTitle">"Auto-Start"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
@@ -911,7 +911,7 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="breathGoalDefault">"0"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
-    <string name="breathGoalDesc">"Seconds between breaths as displayed as a pulsing background."</string>
+    <string name="breathGoalDesc">"Seconds between breaths as displayed as a pulsing background"</string>
     <string name="breathGoalTitle">"Pacing Rate"</string>
     <string name="changelogDesc">"Updated Changelog forum thread for the next release"</string>
     <string name="changelogTitle">"Changelog"</string>
