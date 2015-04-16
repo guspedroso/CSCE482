@@ -725,7 +725,7 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="MenuStartGame_select_music">"Use \"SELECT SONG\" to choose an installed stepfile to play.\n\nIf you do not have any stepfiles installed, use \"DOWNLOAD SONGS\" to visit BeatsPortable.com and read the download/install instructions there."</string>
     <string name="Menu_auto">" auto "</string>
     <string name="Menu_connect">" connect "</string>
-    <string name="Menu_download_songs">" download songs "</string>
+    <string name="Menu_download_songs">" statistics "</string>
     <string name="Menu_exit">" exit "</string>
     <string name="Menu_select_song">" select song "</string>
     <string name="Menu_settings">" settings "</string>
@@ -869,7 +869,7 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="backgroundImage">"backgroundImage"</string>
-    <string name="backgroundImageDefault">"white"</string>
+    <string name="backgroundImageDefault">"blue"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="backgroundImageDesc">"Background image for main menu and stepfiles without one"</string>
@@ -877,7 +877,7 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/constants.xml -->
     <eat-comment/>
     <string name="backgroundShow">"backgroundShow"</string>
-    <string name="backgroundShowDefault">"1"</string>
+    <string name="backgroundShowDefault">"0"</string>
     <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values/settings_trans.xml -->
     <eat-comment/>
     <string name="backgroundShowDesc">"Draw the background image"</string>

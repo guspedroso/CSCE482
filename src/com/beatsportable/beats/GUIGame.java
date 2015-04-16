@@ -76,7 +76,7 @@ public class GUIGame extends Activity {
 
     /*-------these variables are needed for breath display -gp ----------*/
 
-    private boolean showBreath; //default false to not show
+    private boolean showBreath; //default True to show
     private int increment = 0; //start at zero
     private int breathBase = 0; //start at zero
     private int interval = 25; //default .04 sec interval
@@ -681,7 +681,7 @@ public class GUIGame extends Activity {
             // Health
             double health = h.score.getHealthPercent();
             respRate = MenuHome.bpm;
-            // Turns the Health Bar blue when the player is under their target rate! Star Power!
+            // Turns the Health Bar blue when the player is under their target rate  to show them they get extra points! Star Power!
             if (respRate!= null) {
                 double resp = Double.parseDouble(respRate);
                 // Modify Speed Based on Breathing Rate

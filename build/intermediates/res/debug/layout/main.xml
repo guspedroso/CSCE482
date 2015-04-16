@@ -40,8 +40,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="left"
-                    android:background="@drawable/difficulty_header"
-                    android:text="Goal: 6 BPM" />
+                    android:background="@drawable/difficulty_header" />
 			</LinearLayout>
 			<LinearLayout
 				android:layout_width="wrap_content"

@@ -295,7 +295,7 @@ public class MenuHome extends Activity {
 		updateLanguage();
 		
 		// Titlebar
-		title = Tools.getString(R.string.MenuHome_titlebar) + " [" + Tools.getString(R.string.App_version) + "]";
+		title = Tools.getString(R.string.MenuHome_titlebar);
 		setTitle(title);
 		
 		// Menu items
@@ -305,8 +305,12 @@ public class MenuHome extends Activity {
 		formatMenuItem(((TextView) findViewById(R.id.settings)), R.string.Menu_settings);
 		formatMenuItem(((TextView) findViewById(R.id.exit)), R.string.Menu_exit);
         formatMenuItem(((TextView) findViewById(R.id.ButtonConnect)), R.string.Menu_connect);
+        formatMenuItem(((TextView) findViewById(R.id.labelRespRate)), R.string.initial0);
+        //formatMenuItem(((TextView) findViewById(R.id.goal)), R.string.goalLevelDefault);
 
 		updateDifficulty();
+
+        updateGoal();
 
 		updateAutoPlay();
 		
@@ -728,9 +732,9 @@ public class MenuHome extends Activity {
 		download_songs_b.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				vibrate();
-				if (Tools.isMediaMounted()) {
-					Tools.startWebsiteActivity(Tools.getString(R.string.Url_downloads));
-				}
+				//if (Tools.isMediaMounted()) {
+				//	Tools.startWebsiteActivity(Tools.getString(R.string.Url_downloads));
+				//}
 			}
 		});
 		
@@ -754,7 +758,8 @@ public class MenuHome extends Activity {
 		R.id.download_songs,
 		R.id.settings,
 		R.id.exit,
-		R.id.difficulty
+		R.id.difficulty,
+        R.id.goal
 		//R.id.gameMode
 	};
 	
