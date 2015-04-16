@@ -40,7 +40,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="left"
-                    android:background="@drawable/difficulty_header" />
+                    android:background="@drawable/difficulty_header"
+                    android:text="Goal: 6 BPM" />
 			</LinearLayout>
 			<LinearLayout
 				android:layout_width="wrap_content"
@@ -154,4 +155,4 @@
     </LinearLayout>
 		</RelativeLayout>
 	</LinearLayout>
-</RelativeLayout><!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/layout/main.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/layout/main.xml -->

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values-pt-rBR/arrays_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-pt-rBR/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="accuracyLevel">
     <item>Muito Fácil</item>
@@ -76,7 +76,7 @@
     <item>Fraco</item>
     <item>Desligado</item>
   </string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values-pt-rBR/strings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-pt-rBR/strings_trans.xml -->
     <eat-comment/>
     <string name="Accuracy_almost">"Quase"</string>
     <string name="Accuracy_best_combo">"Melhor Combo"</string>
@@ -219,7 +219,7 @@
     <string name="Tools_unable_delete_file">"Erro: Não foi possível apagar o arquivo:\n"</string>
     <string name="Tools_usb_error">"\nTalvez você esteja no modo USB\?"</string>
     <string name="Tools_window_error">"Erro na troca de janelas - Eu ainda não descobri como arrumar isso ;/ (por favor me mande um e-mail com os detalhes!)"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/CSCE482/res/values-pt-rBR/settings_trans.xml -->
+    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-pt-rBR/settings_trans.xml -->
     <eat-comment/>
     <string name="accuracyLevelDesc">"Rigor no julgamento da precisão dos acertos"</string>
     <string name="accuracyLevelTitle">"Julgamento"</string>

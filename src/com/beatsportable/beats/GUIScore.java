@@ -1,7 +1,5 @@
 package com.beatsportable.beats;
 
-import android.util.Log;
-
 public class GUIScore {
 
     // Overall
@@ -297,7 +295,6 @@ public class GUIScore {
                                     if (this.health > this.healthMax) {
                                         this.health = this.healthMax;
                                     }
-                                    //Log.d("liz", "health == " + this.health);
                                     this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
@@ -311,7 +308,6 @@ public class GUIScore {
                                     if (this.health > this.healthMax) {
                                         this.health = this.healthMax;
                                     }
-                                    //Log.d("liz", "health == " + this.health);
                                     this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
@@ -325,8 +321,7 @@ public class GUIScore {
                                     if (this.health > this.healthMax) {
                                         this.health = this.healthMax;
                                     }
-                                    //Log.d("liz", "health == " + this.health);
-                                    this.score += scoreIncrease;
+                                        this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
                                     return AccuracyTypes.N_GREAT;
@@ -356,7 +351,6 @@ public class GUIScore {
                                     if (this.health > this.healthMax) {
                                         this.health = this.healthMax;
                                     }
-                                    //Log.d("liz", "health == " + this.health);
                                     this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
@@ -367,14 +361,12 @@ public class GUIScore {
                                     if (this.health > this.healthMax) {
                                         this.health = this.healthMax;
                                     }
-                                    //Log.d("liz", "health == " + this.health);
                                     this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();
                                     return AccuracyTypes.N_PERFECT;
                                 case 3: case 4: case -4: case -5:
                                     this.accuracyChart[AccuracyTypes.N_GREAT.ordinal()]++;
-                                    //Log.d("liz", "health == " + this.health);
                                     this.score += scoreIncrease;
                                     this.comboCount++;
                                     updateComboBest();

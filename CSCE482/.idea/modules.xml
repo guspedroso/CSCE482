@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BioHarnessBT/BioHarnessBT.iml" filepath="$PROJECT_DIR$/BioHarnessBT/BioHarnessBT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CSCE482.iml" filepath="$PROJECT_DIR$/CSCE482.iml" />
+    </modules>
+  </component>
+</project>
+
