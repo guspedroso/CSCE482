@@ -42,211 +42,145 @@
       <file leaf-file-name="GUIGame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/GUIGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="22831">
-              <caret line="1224" column="5" selection-start-line="1224" selection-start-column="4" selection-end-line="1224" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings_trans.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/values/settings_trans.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4352227" vertical-offset="635" max-vertical-offset="2584">
-              <caret line="50" column="93" selection-start-line="50" selection-start-column="93" selection-end-line="50" selection-end-column="93" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/xml/settings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="532" max-vertical-offset="6205">
-              <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1471" max-vertical-offset="20640">
+              <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
               <folding>
-                <element signature="e#152#187#0" expanded="true" />
-                <element signature="e#225#255#0" expanded="true" />
-                <element signature="e#275#304#0" expanded="true" />
-                <element signature="e#320#345#0" expanded="true" />
-                <element signature="e#370#402#0" expanded="true" />
-                <element signature="e#554#583#0" expanded="true" />
-                <element signature="e#612#640#0" expanded="true" />
-                <element signature="e#665#689#0" expanded="true" />
-                <element signature="e#723#754#0" expanded="true" />
-                <element signature="e#922#942#0" expanded="true" />
-                <element signature="e#971#990#0" expanded="true" />
-                <element signature="e#1015#1030#0" expanded="true" />
-                <element signature="e#1064#1086#0" expanded="true" />
-                <element signature="e#1238#1258#0" expanded="true" />
-                <element signature="e#1287#1306#0" expanded="true" />
-                <element signature="e#1331#1346#0" expanded="true" />
-                <element signature="e#1380#1402#0" expanded="true" />
-                <element signature="e#1554#1582#0" expanded="true" />
-                <element signature="e#1611#1638#0" expanded="true" />
-                <element signature="e#1663#1686#0" expanded="true" />
-                <element signature="e#1720#1750#0" expanded="true" />
-                <element signature="e#1916#1940#0" expanded="true" />
-                <element signature="e#1969#1992#0" expanded="true" />
-                <element signature="e#2017#2036#0" expanded="true" />
-                <element signature="e#2070#2096#0" expanded="true" />
-                <element signature="e#2254#2281#0" expanded="true" />
-                <element signature="e#2310#2336#0" expanded="true" />
-                <element signature="e#2361#2383#0" expanded="true" />
-                <element signature="e#2417#2446#0" expanded="true" />
-                <element signature="e#2610#2634#0" expanded="true" />
-                <element signature="e#2663#2686#0" expanded="true" />
-                <element signature="e#2711#2730#0" expanded="true" />
-                <element signature="e#2764#2790#0" expanded="true" />
-                <element signature="e#2950#2988#0" expanded="true" />
-                <element signature="e#3040#3062#0" expanded="true" />
-                <element signature="e#3091#3112#0" expanded="true" />
-                <element signature="e#3137#3154#0" expanded="true" />
-                <element signature="e#3188#3212#0" expanded="true" />
-                <element signature="e#3364#3389#0" expanded="true" />
-                <element signature="e#3418#3442#0" expanded="true" />
-                <element signature="e#3467#3487#0" expanded="true" />
-                <element signature="e#3521#3548#0" expanded="true" />
-                <element signature="e#3700#3726#0" expanded="true" />
-                <element signature="e#3755#3780#0" expanded="true" />
-                <element signature="e#3805#3826#0" expanded="true" />
-                <element signature="e#3860#3888#0" expanded="true" />
-                <element signature="e#4050#4075#0" expanded="true" />
-                <element signature="e#4104#4128#0" expanded="true" />
-                <element signature="e#4153#4173#0" expanded="true" />
-                <element signature="e#4207#4234#0" expanded="true" />
-                <element signature="e#4394#4429#0" expanded="true" />
-                <element signature="e#4458#4492#0" expanded="true" />
-                <element signature="e#4517#4547#0" expanded="true" />
-                <element signature="e#4581#4618#0" expanded="true" />
-                <element signature="e#4798#4824#0" expanded="true" />
-                <element signature="e#4853#4878#0" expanded="true" />
-                <element signature="e#4903#4924#0" expanded="true" />
-                <element signature="e#4958#4986#0" expanded="true" />
-                <element signature="e#5148#5177#0" expanded="true" />
-                <element signature="e#5206#5234#0" expanded="true" />
-                <element signature="e#5259#5283#0" expanded="true" />
-                <element signature="e#5317#5348#0" expanded="true" />
-                <element signature="e#5780#5799#0" expanded="true" />
-                <element signature="e#5828#5846#0" expanded="true" />
-                <element signature="e#5871#5885#0" expanded="true" />
-                <element signature="e#5919#5940#0" expanded="true" />
-                <element signature="e#6077#6107#0" expanded="true" />
-                <element signature="e#6127#6156#0" expanded="true" />
-                <element signature="e#6172#6197#0" expanded="true" />
-                <element signature="e#6222#6254#0" expanded="true" />
-                <element signature="e#8165#8199#0" expanded="true" />
-                <element signature="e#8236#8263#0" expanded="true" />
-                <element signature="e#8283#8309#0" expanded="true" />
-                <element signature="e#8325#8347#0" expanded="true" />
-                <element signature="e#8372#8401#0" expanded="true" />
-                <element signature="e#8548#8576#0" expanded="true" />
-                <element signature="e#8596#8623#0" expanded="true" />
-                <element signature="e#8639#8662#0" expanded="true" />
-                <element signature="e#8687#8717#0" expanded="true" />
-                <element signature="e#8865#8892#0" expanded="true" />
-                <element signature="e#8921#8947#0" expanded="true" />
-                <element signature="e#8972#8994#0" expanded="true" />
-                <element signature="e#9028#9057#0" expanded="true" />
-                <element signature="e#9206#9234#0" expanded="true" />
-                <element signature="e#9254#9281#0" expanded="true" />
-                <element signature="e#9297#9320#0" expanded="true" />
-                <element signature="e#9345#9375#0" expanded="true" />
-                <element signature="e#9523#9550#0" expanded="true" />
-                <element signature="e#9579#9605#0" expanded="true" />
-                <element signature="e#9630#9652#0" expanded="true" />
-                <element signature="e#9686#9715#0" expanded="true" />
-                <element signature="e#9879#9909#0" expanded="true" />
-                <element signature="e#9938#9967#0" expanded="true" />
-                <element signature="e#9992#10017#0" expanded="true" />
-                <element signature="e#10051#10083#0" expanded="true" />
-                <element signature="e#10247#10275#0" expanded="true" />
-                <element signature="e#10304#10331#0" expanded="true" />
-                <element signature="e#10356#10379#0" expanded="true" />
-                <element signature="e#10413#10443#0" expanded="true" />
-                <element signature="e#10617#10644#0" expanded="true" />
-                <element signature="e#10683#10708#0" expanded="true" />
-                <element signature="e#10728#10752#0" expanded="true" />
-                <element signature="e#10790#10818#0" expanded="true" />
-                <element signature="e#10859#10881#0" expanded="true" />
-                <element signature="e#10902#10923#0" expanded="true" />
-                <element signature="e#11004#11025#0" expanded="true" />
-                <element signature="e#11091#11112#0" expanded="true" />
-                <element signature="e#11133#11153#0" expanded="true" />
-                <element signature="e#11234#11254#0" expanded="true" />
-                <element signature="e#11341#11368#0" expanded="true" />
-                <element signature="e#11409#11432#0" expanded="true" />
-                <element signature="e#11453#11475#0" expanded="true" />
-                <element signature="e#11556#11578#0" expanded="true" />
-                <element signature="e#11644#11663#0" expanded="true" />
-                <element signature="e#11684#11702#0" expanded="true" />
-                <element signature="e#11783#11801#0" expanded="true" />
-                <element signature="e#11867#11886#0" expanded="true" />
-                <element signature="e#11907#11925#0" expanded="true" />
-                <element signature="e#12006#12024#0" expanded="true" />
-                <element signature="e#12090#12114#0" expanded="true" />
-                <element signature="e#12135#12158#0" expanded="true" />
-                <element signature="e#12239#12262#0" expanded="true" />
-                <element signature="e#12349#12378#0" expanded="true" />
-                <element signature="e#12419#12440#0" expanded="true" />
-                <element signature="e#12461#12481#0" expanded="true" />
-                <element signature="e#12562#12582#0" expanded="true" />
-                <element signature="e#12648#12670#0" expanded="true" />
-                <element signature="e#12691#12712#0" expanded="true" />
-                <element signature="e#12870#12899#0" expanded="true" />
-                <element signature="e#12919#12947#0" expanded="true" />
-                <element signature="e#12985#13019#0" expanded="true" />
-                <element signature="e#13058#13089#0" expanded="true" />
-                <element signature="e#13110#13140#0" expanded="true" />
-                <element signature="e#13157#13183#0" expanded="true" />
-                <element signature="e#13209#13242#0" expanded="true" />
-                <element signature="e#13365#13399#0" expanded="true" />
-                <element signature="e#13420#13453#0" expanded="true" />
-                <element signature="e#13470#13499#0" expanded="true" />
-                <element signature="e#13525#13561#0" expanded="true" />
-                <element signature="e#13684#13713#0" expanded="true" />
-                <element signature="e#13734#13762#0" expanded="true" />
-                <element signature="e#13779#13803#0" expanded="true" />
-                <element signature="e#13829#13860#0" expanded="true" />
-                <element signature="e#14006#14038#0" expanded="true" />
-                <element signature="e#14077#14101#0" expanded="true" />
-                <element signature="e#14122#14145#0" expanded="true" />
-                <element signature="e#14162#14183#0" expanded="true" />
-                <element signature="e#14209#14235#0" expanded="true" />
-                <element signature="e#14358#14382#0" expanded="true" />
-                <element signature="e#14403#14426#0" expanded="true" />
-                <element signature="e#14443#14462#0" expanded="true" />
-                <element signature="e#14488#14514#0" expanded="true" />
-                <element signature="e#14637#14663#0" expanded="true" />
-                <element signature="e#14684#14709#0" expanded="true" />
-                <element signature="e#14726#14747#0" expanded="true" />
-                <element signature="e#14773#14801#0" expanded="true" />
-                <element signature="e#14924#14950#0" expanded="true" />
-                <element signature="e#14971#14996#0" expanded="true" />
-                <element signature="e#15013#15034#0" expanded="true" />
-                <element signature="e#15060#15088#0" expanded="true" />
-                <element signature="e#15257#15280#0" expanded="true" />
-                <element signature="e#15301#15323#0" expanded="true" />
-                <element signature="e#15340#15358#0" expanded="true" />
-                <element signature="e#15384#15409#0" expanded="true" />
-                <element signature="e#15538#15568#0" expanded="true" />
-                <element signature="e#15589#15618#0" expanded="true" />
-                <element signature="e#15635#15660#0" expanded="true" />
-                <element signature="e#15686#15718#0" expanded="true" />
-                <element signature="e#15841#15869#0" expanded="true" />
-                <element signature="e#15890#15917#0" expanded="true" />
-                <element signature="e#15934#15957#0" expanded="true" />
-                <element signature="e#15983#16013#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gradle-wrapper.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <file leaf-file-name="MenuHome.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/MenuHome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-9.807693" vertical-offset="11970" max-vertical-offset="17565">
+              <caret line="815" column="33" selection-start-line="815" selection-start-column="33" selection-end-line="815" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2852#2880#0" expanded="true" />
+                <element signature="e#2882#2917#0" expanded="true" />
+                <element signature="e#2973#3022#0" expanded="true" />
+                <element signature="e#3050#3078#0" expanded="true" />
+                <element signature="e#3158#3195#0" expanded="true" />
+                <element signature="e#5428#5455#0" expanded="true" />
+                <element signature="e#5457#5491#0" expanded="true" />
+                <element signature="e#5552#5751#0" expanded="true" />
+                <element signature="e#5704#5738#0" expanded="true" />
+                <element signature="e#5745#5746#0" expanded="true" />
+                <element signature="e#5807#5937#0" expanded="true" />
+                <element signature="e#5931#5932#0" expanded="true" />
+                <element signature="e#5963#6018#0" expanded="true" />
+                <element signature="e#6053#6102#0" expanded="true" />
+                <element signature="e#6109#6146#0" expanded="true" />
+                <element signature="e#6174#6212#0" expanded="true" />
+                <element signature="e#6238#6265#0" expanded="true" />
+                <element signature="e#6327#6347#0" expanded="true" />
+                <element signature="e#6349#6374#0" expanded="true" />
+                <element signature="e#6407#6431#0" expanded="true" />
+                <element signature="e#6433#6464#0" expanded="true" />
+                <element signature="e#6539#6796#0" expanded="true" />
+                <element signature="e#6659#6679#0" expanded="true" />
+                <element signature="e#6746#6783#0" expanded="true" />
+                <element signature="e#6790#6791#0" expanded="true" />
+                <element signature="e#6852#7037#0" expanded="true" />
+                <element signature="e#6972#6992#0" expanded="true" />
+                <element signature="e#7031#7032#0" expanded="true" />
+                <element signature="e#7067#7121#0" expanded="true" />
+                <element signature="e#7156#7204#0" expanded="true" />
+                <element signature="e#7211#7251#0" expanded="true" />
+                <element signature="e#7278#7316#0" expanded="true" />
+                <element signature="e#7342#7366#0" expanded="true" />
+                <element signature="e#7515#7538#0" expanded="true" />
+                <element signature="e#7540#7570#0" expanded="true" />
+                <element signature="e#7603#7630#0" expanded="true" />
+                <element signature="e#7632#7666#0" expanded="true" />
+                <element signature="e#7839#7862#0" expanded="true" />
+                <element signature="e#8189#8207#0" expanded="true" />
+                <element signature="e#8209#8234#0" expanded="true" />
+                <element signature="e#8589#8606#0" expanded="true" />
+                <element signature="e#8608#8632#0" expanded="true" />
+                <element signature="e#9409#9452#0" expanded="true" />
+                <element signature="e#9548#9567#0" expanded="true" />
+                <element signature="e#9632#9657#0" expanded="true" />
+                <element signature="e#9725#9753#0" expanded="true" />
+                <element signature="e#9815#9837#0" expanded="true" />
+                <element signature="e#9903#9923#0" expanded="true" />
+                <element signature="e#9981#9999#0" expanded="true" />
+                <element signature="e#10072#10093#0" expanded="true" />
+                <element signature="e#10166#10183#0" expanded="true" />
+                <element signature="e#11502#11563#0" expanded="true" />
+                <element signature="e#12472#12494#0" expanded="true" />
+                <element signature="e#12496#12525#0" expanded="true" />
+                <element signature="e#12733#12762#0" expanded="true" />
+                <element signature="e#12764#12800#0" expanded="true" />
+                <element signature="e#15134#15649#0" expanded="true" />
+                <element signature="e#15641#15642#0" expanded="true" />
+                <element signature="e#16457#16755#0" expanded="true" />
+                <element signature="e#16750#16751#0" expanded="true" />
+                <element signature="e#16782#17162#0" expanded="true" />
+                <element signature="e#17157#17158#0" expanded="true" />
+                <element signature="e#17619#17747#0" expanded="true" />
+                <element signature="e#17742#17743#0" expanded="true" />
+                <element signature="e#17788#18228#0" expanded="true" />
+                <element signature="e#18223#18224#0" expanded="true" />
+                <element signature="e#18446#18590#0" expanded="true" />
+                <element signature="e#18579#18580#0" expanded="true" />
+                <element signature="e#18631#19192#0" expanded="true" />
+                <element signature="e#19181#19182#0" expanded="true" />
+                <element signature="e#19402#19528#0" expanded="true" />
+                <element signature="e#19523#19524#0" expanded="true" />
+                <element signature="e#21458#23533#0" expanded="true" />
+                <element signature="e#23518#23519#0" expanded="true" />
+                <element signature="e#23652#23794#0" expanded="true" />
+                <element signature="e#23789#23790#0" expanded="true" />
+                <element signature="e#23929#24180#0" expanded="true" />
+                <element signature="e#24175#24176#0" expanded="true" />
+                <element signature="e#24303#24485#0" expanded="true" />
+                <element signature="e#24480#24481#0" expanded="true" />
+                <element signature="e#24632#24832#0" expanded="true" />
+                <element signature="e#24827#24828#0" expanded="true" />
+                <element signature="e#24963#25179#0" expanded="true" />
+                <element signature="e#25168#25169#0" expanded="true" />
+                <element signature="e#25284#25437#0" expanded="true" />
+                <element signature="e#25432#25433#0" expanded="true" />
+                <element signature="e#30383#30400#0" expanded="true" />
+                <element signature="e#30402#30426#0" expanded="true" />
+                <element signature="e#30497#30514#0" expanded="true" />
+                <element signature="e#31083#31100#0" expanded="true" />
+                <element signature="e#31102#31126#0" expanded="true" />
+                <element signature="e#31151#31186#0" expanded="true" />
+                <element signature="e#31382#31406#0" expanded="true" />
+                <element signature="e#31408#31439#0" expanded="true" />
+                <element signature="e#31516#31540#0" expanded="true" />
+                <element signature="e#32215#32239#0" expanded="true" />
+                <element signature="e#32241#32272#0" expanded="true" />
+                <element signature="e#32318#32363#0" expanded="true" />
+                <element signature="e#32505#32546#0" expanded="true" />
+                <element signature="e#32693#32736#0" expanded="true" />
+                <element signature="e#32883#32924#0" expanded="true" />
+                <element signature="e#33067#33113#0" expanded="true" />
+                <element signature="e#33303#33321#0" expanded="true" />
+                <element signature="e#33323#33348#0" expanded="true" />
+                <element signature="e#33425#33443#0" expanded="true" />
+                <element signature="e#34151#34169#0" expanded="true" />
+                <element signature="e#34171#34196#0" expanded="true" />
+                <element signature="e#34257#34289#0" expanded="true" />
+                <element signature="e#34448#34480#0" expanded="true" />
+                <element signature="e#34644#34677#0" expanded="true" />
+                <element signature="e#34845#34878#0" expanded="true" />
+                <element signature="e#35046#35079#0" expanded="true" />
+                <element signature="e#36992#37029#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.38043478" vertical-offset="90" max-vertical-offset="855">
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -255,8 +189,8 @@
       <file leaf-file-name="strings_trans.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values/strings_trans.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="2686">
-              <caret line="52" column="63" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
+            <state vertical-scroll-proportion="-5.769231" vertical-offset="0" max-vertical-offset="2385">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -265,28 +199,18 @@
       <file leaf-file-name="constants.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values/constants.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1564" max-vertical-offset="3179">
-              <caret line="92" column="48" selection-start-line="92" selection-start-column="48" selection-end-line="92" selection-end-column="48" />
+            <state vertical-scroll-proportion="-6.730769" vertical-offset="1220" max-vertical-offset="2805">
+              <caret line="93" column="16" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GUIScore.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/GUIScore.java">
+      <file leaf-file-name="arrays_const.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/arrays_const.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="15708">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arrays_trans.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/arrays_trans.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1632">
-              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="6840">
+              <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -335,64 +259,9 @@
           <value>
             <list>
               <ExternalTaskPojo>
+                <option name="description" value="Displays the Android dependencies of the project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateReleaseAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="preReleaseBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Creates a version of android.jar that's suitable for unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="mockableAndroidJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="packageRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateReleaseBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processDebugManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="preCompileReleaseUnitTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstalls the android (on device) tests for the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="uninstallDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateDebugAndroidTestAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on the Release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="lintRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="mergeReleaseAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Run unit tests for the Release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="testRelease" />
+                <option name="name" value="androidDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles all variants of all applications and secondary packages." />
@@ -400,64 +269,14 @@
                 <option name="name" value="assemble" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the Android dependencies of the project." />
+                <option name="description" value="Assembles all the Test applications." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="androidDependencies" />
+                <option name="name" value="assembleAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Assembles all Debug builds." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareReleaseDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dexRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileReleaseSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileReleaseRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all Release builds." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="assembleRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="installDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugUnitTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="checkReleaseManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareDebugDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processReleaseManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="mergeDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="preDebugBuild" />
+                <option name="name" value="assembleDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles the android (on device) tests for the Debug build." />
@@ -465,168 +284,34 @@
                 <option name="name" value="assembleDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Uninstalls the Debug build." />
+                <option name="description" value="Assembles the unit tests for the Debug build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="uninstallDebug" />
+                <option name="name" value="assembleDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Assembles all Release builds." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateDebugResValues" />
+                <option name="name" value="assembleRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Assembles the unit tests for the Release build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileReleaseUnitTestJava" />
+                <option name="name" value="assembleReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="preDebugAndroidTestBuild" />
+                <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Runs lint on the Debug build." />
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="lintDebug" />
+                <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateDebugAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="packageDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugAndroidTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileReleaseUnitTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processDebugJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Run all unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstalls the Release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="uninstallRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="mergeDebugAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareDebugAndroidTestDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateDebugAndroidTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateDebugAndroidTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateDebugAndroidTestBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugAndroidTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="validateDebugSigning" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateReleaseSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugAndroidTestAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all the Test applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="assembleAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugAndroidTestRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processDebugAndroidTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dexDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugAndroidTestNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="mergeReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="preDexRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateDebugSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstall all applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="uninstallAll" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Run unit tests for the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="testDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateDebugAndroidTestResValues" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugUnitTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs and runs the tests for Debug build on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="connectedAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="preDexDebugAndroidTest" />
+                <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all checks." />
@@ -634,23 +319,12 @@
                 <option name="name" value="check" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the signing info for each variant." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="signingReport" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on just the fatal issues in the Release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="lintVitalRelease" />
+                <option name="name" value="checkDebugManifest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="preDexDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all device checks on currently connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="connectedCheck" />
+                <option name="name" value="checkReleaseManifest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Deletes the build directory." />
@@ -659,12 +333,93 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="mergeDebugAndroidTestAssets" />
+                <option name="name" value="compileDebugAidl" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="build" />
+                <option name="name" value="compileDebugAndroidTestAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugAndroidTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugAndroidTestNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugAndroidTestRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugAndroidTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugUnitTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugUnitTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileLint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileReleaseAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileReleaseJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileReleaseNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileReleaseRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileReleaseSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileReleaseUnitTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileReleaseUnitTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs and runs the tests for Debug build on connected devices." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="connectedAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all device checks on currently connected devices." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="connectedCheck" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
@@ -673,7 +428,80 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileLint" />
+                <option name="name" value="dexDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dexDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dexRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugAndroidTestAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugAndroidTestBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugAndroidTestResValues" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugAndroidTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugAndroidTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugResValues" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateReleaseAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateReleaseBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateReleaseResValues" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateReleaseSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="installDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs the android (on device) tests for the Debug build." />
@@ -681,93 +509,28 @@
                 <option name="name" value="installDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processDebugAndroidTestJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileReleaseNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="packageDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="preCompileDebugUnitTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileReleaseAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="preBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="zipalignDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileReleaseJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateReleaseResValues" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the unit tests for the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="assembleDebugUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateDebugBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all Debug builds." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="assembleDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processDebugAndroidTestManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="checkDebugManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processReleaseJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the unit tests for the Release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="assembleReleaseUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Runs lint on all variants." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="lint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="lintDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on the Release build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="lintRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on just the fatal issues in the Release build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="lintVitalRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="mergeDebugAndroidTestAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -775,7 +538,168 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dexDebug" />
+                <option name="name" value="mergeDebugAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="mergeDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="mergeReleaseAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="mergeReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Creates a version of android.jar that's suitable for unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="mockableAndroidJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="packageDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="packageDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="packageRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="preBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="preCompileDebugUnitTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="preCompileReleaseUnitTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="preDebugAndroidTestBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="preDebugBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="preDexDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="preDexDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="preDexRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="preReleaseBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareDebugAndroidTestDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareDebugDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareReleaseDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processDebugAndroidTestJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processDebugAndroidTestManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processDebugAndroidTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processDebugJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processDebugManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processReleaseJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processReleaseManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the signing info for each variant." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="signingReport" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Run all unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Run unit tests for the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Run unit tests for the Release build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstall all applications." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="uninstallAll" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="uninstallDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the android (on device) tests for the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="uninstallDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the Release build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="uninstallRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="validateDebugSigning" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="zipalignDebug" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -784,7 +708,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4287437449391" />
+        <entry key="$PROJECT_DIR$" value="4284092310000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -800,6 +724,7 @@
                         <option name="entries">
                           <list>
                             <option value="$MODULE_DIR$/libs/BioHarnessBT.jar" />
+                            <option value="$MODULE_DIR$/libs/opencsv-2.4.jar" />
                             <option value="$MODULE_DIR$/libs/UHL.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.1.0/gradle-1.1.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.1.0/gradle-1.1.0.jar" />
@@ -883,6 +808,7 @@
                         <option name="entries">
                           <list>
                             <option value="$MODULE_DIR$/libs/BioHarnessBT.jar" />
+                            <option value="$MODULE_DIR$/libs/opencsv-2.4.jar" />
                             <option value="$MODULE_DIR$/libs/UHL.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.1.0/gradle-1.1.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/1.1.0/gradle-1.1.0.jar" />
@@ -965,59 +891,6 @@
               <option name="name" value="CSCE482" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/ant-1.9.3.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/ant-launcher-1.9.3.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-base-services-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-base-services-groovy-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-cli-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-core-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-docs-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-launcher-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-messaging-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-model-core-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-model-groovy-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-native-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-open-api-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-resources-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-tooling-api-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-ui-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-wrapper-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/groovy-all-2.3.6.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/ant-antlr-1.9.3.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-announce-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-antlr-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-build-comparison-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-build-init-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-code-quality-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-cunit-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-dependency-management-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-diagnostics-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-ear-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-ide-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-ide-native-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-ivy-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-jacoco-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-javascript-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-jetty-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-language-groovy-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-language-java-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-language-jvm-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-language-native-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-maven-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-osgi-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-platform-base-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-platform-jvm-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-platform-native-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-plugin-development-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-plugin-use-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-plugins-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-publish-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-reporting-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-resources-http-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-scala-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-signing-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-sonar-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -1031,21 +904,17 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/GUIFallingOsuFading.java" />
         <option value="$PROJECT_DIR$/BioHarnessBT/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/NewConnectedListener.java" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/DataNotesData.java" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/ToolsSampleInstaller.java" />
-        <option value="$PROJECT_DIR$/res/values/strings_trans.xml" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/DataFile.java" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/Tools.java" />
         <option value="$PROJECT_DIR$/res/layout-land/main.xml" />
         <option value="$PROJECT_DIR$/res/layout-xlarge/main.xml" />
         <option value="$PROJECT_DIR$/res/layout-xlarge-land/main.xml" />
-        <option value="$PROJECT_DIR$/src/com/beatsportable/beats/MenuHome.java" />
-        <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/res/values/arrays_const.xml" />
         <option value="$PROJECT_DIR$/res/values/arrays_trans.xml" />
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/GUIScore.java" />
@@ -1053,6 +922,15 @@
         <option value="$PROJECT_DIR$/src/com/beatsportable/beats/GUIGame.java" />
         <option value="$PROJECT_DIR$/res/xml/settings.xml" />
         <option value="$PROJECT_DIR$/res/values/settings_trans.xml" />
+        <option value="$PROJECT_DIR$/src/com/beatsportable/beats/DataBaseHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/beatsportable/beats/MyDBHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/beatsportable/beats/Product.java" />
+        <option value="$PROJECT_DIR$/src/com/beatsportable/beats/ExportDatabaseCSVTask.java" />
+        <option value="$PROJECT_DIR$/res/values/strings_trans.xml" />
+        <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/src/com/beatsportable/beats/PulseDatabase.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/com/beatsportable/beats/MenuHome.java" />
       </list>
     </option>
   </component>
@@ -1060,10 +938,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="x" value="106" />
+    <option name="y" value="22" />
+    <option name="width" value="1334" />
+    <option name="height" value="874" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1110,8 +988,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1194,76 +1070,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSCE482" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSCE482" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSCE482" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSCE482" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSCE482" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSCE482" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSCE482" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSCE482" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1274,7 +1084,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="0ad2cce6" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="a2d4b17e07cbc778" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_21_x86" />
     <property name="SearchEverywhereHistoryKey" value="showBreathTitle&#9;PSI&#9;JAVA://com.beatsportable.beats.R.string#showBreathTitle&#10;score &#9;PSI&#9;JAVA://com.beatsportable.beats.GUIHandler#score&#10;GUIScore&#9;FILE&#9;file://C:/Users/Elizabeth/Documents/GitHub/CSCE482/src/com/beatsportable/beats/GUIScore.java&#10;showFPSDefault&#9;PSI&#9;JAVA://com.beatsportable.beats.R.string#showFPSDefault&#10;showFPS&#9;PSI&#9;JAVA://com.beatsportable.beats.R.string#showFPS&#10;respRate&#9;PSI&#9;JAVA://com.beatsportable.beats.GUIGame#respRate&#10;EditText&#9;null&#9;null" />
     <property name="options.lastSelected" value="Errors" />
@@ -1291,6 +1101,15 @@
     </key>
   </component>
   <component name="RunManager" selected="Android Application.CSCE482">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -1481,35 +1300,35 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
+    <frame x="106" y="22" width="1334" height="874" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969153" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23504868" sideWeight="0.18316196" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2348285" sideWeight="0.18421052" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18245614" sideWeight="0.31518406" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31849793" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23504868" sideWeight="0.816838" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31794196" sideWeight="0.8288288" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2348285" sideWeight="0.81578946" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14652957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1821975" sideWeight="0.6844473" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24613003" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18205805" sideWeight="0.6836837" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30180806" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969153" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1518,15 +1337,15 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33518776" sideWeight="0.11246786" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30041724" sideWeight="0.11246786" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30041724" sideWeight="0.11246786" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20244215" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18497914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30180806" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1539,8 +1358,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32127956" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33518776" sideWeight="0.8875321" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1566,43 +1385,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/GUIGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="14671" max-vertical-offset="21267">
-          <caret line="900" column="21" selection-start-line="900" selection-start-column="21" selection-end-line="900" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/arrays_trans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1632">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/GUIFallingObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/GUIFallingObjectSpace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4505">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/GUIFallingOsuBeat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3026">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/GUIFallingOsuFading.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="1275">
@@ -1680,7 +1462,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1727,7 +1508,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1766,7 +1546,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1814,13 +1593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/DataFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2839" max-vertical-offset="6766">
-          <caret line="167" column="26" selection-start-line="167" selection-start-column="26" selection-end-line="167" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/DataNotesData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2534" max-vertical-offset="2924">
@@ -1865,54 +1637,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/MenuHome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3497943" vertical-offset="13386" max-vertical-offset="15015">
-          <caret line="1044" column="5" selection-start-line="1044" selection-start-column="5" selection-end-line="1044" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="2771">
-          <caret line="74" column="57" selection-start-line="74" selection-start-column="57" selection-end-line="74" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/generated/source/r/debug/com/beatsportable/beats/R.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="7980" max-vertical-offset="9285">
           <caret line="532" column="32" selection-start-line="532" selection-start-column="32" selection-end-line="532" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/arrays_const.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63786006" vertical-offset="0" max-vertical-offset="6840">
-          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/constants.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="287" max-vertical-offset="3179">
-          <caret line="92" column="48" selection-start-line="92" selection-start-column="48" selection-end-line="92" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings_trans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="2686">
-          <caret line="52" column="63" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1920,204 +1648,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/GUIScore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="15708">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/GUIGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="22831">
-          <caret line="1224" column="5" selection-start-line="1224" selection-start-column="4" selection-end-line="1224" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="13860">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/xml/settings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="532" max-vertical-offset="6205">
-          <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
-          <folding>
-            <element signature="e#152#187#0" expanded="true" />
-            <element signature="e#225#255#0" expanded="true" />
-            <element signature="e#275#304#0" expanded="true" />
-            <element signature="e#320#345#0" expanded="true" />
-            <element signature="e#370#402#0" expanded="true" />
-            <element signature="e#554#583#0" expanded="true" />
-            <element signature="e#612#640#0" expanded="true" />
-            <element signature="e#665#689#0" expanded="true" />
-            <element signature="e#723#754#0" expanded="true" />
-            <element signature="e#922#942#0" expanded="true" />
-            <element signature="e#971#990#0" expanded="true" />
-            <element signature="e#1015#1030#0" expanded="true" />
-            <element signature="e#1064#1086#0" expanded="true" />
-            <element signature="e#1238#1258#0" expanded="true" />
-            <element signature="e#1287#1306#0" expanded="true" />
-            <element signature="e#1331#1346#0" expanded="true" />
-            <element signature="e#1380#1402#0" expanded="true" />
-            <element signature="e#1554#1582#0" expanded="true" />
-            <element signature="e#1611#1638#0" expanded="true" />
-            <element signature="e#1663#1686#0" expanded="true" />
-            <element signature="e#1720#1750#0" expanded="true" />
-            <element signature="e#1916#1940#0" expanded="true" />
-            <element signature="e#1969#1992#0" expanded="true" />
-            <element signature="e#2017#2036#0" expanded="true" />
-            <element signature="e#2070#2096#0" expanded="true" />
-            <element signature="e#2254#2281#0" expanded="true" />
-            <element signature="e#2310#2336#0" expanded="true" />
-            <element signature="e#2361#2383#0" expanded="true" />
-            <element signature="e#2417#2446#0" expanded="true" />
-            <element signature="e#2610#2634#0" expanded="true" />
-            <element signature="e#2663#2686#0" expanded="true" />
-            <element signature="e#2711#2730#0" expanded="true" />
-            <element signature="e#2764#2790#0" expanded="true" />
-            <element signature="e#2950#2988#0" expanded="true" />
-            <element signature="e#3040#3062#0" expanded="true" />
-            <element signature="e#3091#3112#0" expanded="true" />
-            <element signature="e#3137#3154#0" expanded="true" />
-            <element signature="e#3188#3212#0" expanded="true" />
-            <element signature="e#3364#3389#0" expanded="true" />
-            <element signature="e#3418#3442#0" expanded="true" />
-            <element signature="e#3467#3487#0" expanded="true" />
-            <element signature="e#3521#3548#0" expanded="true" />
-            <element signature="e#3700#3726#0" expanded="true" />
-            <element signature="e#3755#3780#0" expanded="true" />
-            <element signature="e#3805#3826#0" expanded="true" />
-            <element signature="e#3860#3888#0" expanded="true" />
-            <element signature="e#4050#4075#0" expanded="true" />
-            <element signature="e#4104#4128#0" expanded="true" />
-            <element signature="e#4153#4173#0" expanded="true" />
-            <element signature="e#4207#4234#0" expanded="true" />
-            <element signature="e#4394#4429#0" expanded="true" />
-            <element signature="e#4458#4492#0" expanded="true" />
-            <element signature="e#4517#4547#0" expanded="true" />
-            <element signature="e#4581#4618#0" expanded="true" />
-            <element signature="e#4798#4824#0" expanded="true" />
-            <element signature="e#4853#4878#0" expanded="true" />
-            <element signature="e#4903#4924#0" expanded="true" />
-            <element signature="e#4958#4986#0" expanded="true" />
-            <element signature="e#5148#5177#0" expanded="true" />
-            <element signature="e#5206#5234#0" expanded="true" />
-            <element signature="e#5259#5283#0" expanded="true" />
-            <element signature="e#5317#5348#0" expanded="true" />
-            <element signature="e#5780#5799#0" expanded="true" />
-            <element signature="e#5828#5846#0" expanded="true" />
-            <element signature="e#5871#5885#0" expanded="true" />
-            <element signature="e#5919#5940#0" expanded="true" />
-            <element signature="e#6077#6107#0" expanded="true" />
-            <element signature="e#6127#6156#0" expanded="true" />
-            <element signature="e#6172#6197#0" expanded="true" />
-            <element signature="e#6222#6254#0" expanded="true" />
-            <element signature="e#8165#8199#0" expanded="true" />
-            <element signature="e#8236#8263#0" expanded="true" />
-            <element signature="e#8283#8309#0" expanded="true" />
-            <element signature="e#8325#8347#0" expanded="true" />
-            <element signature="e#8372#8401#0" expanded="true" />
-            <element signature="e#8548#8576#0" expanded="true" />
-            <element signature="e#8596#8623#0" expanded="true" />
-            <element signature="e#8639#8662#0" expanded="true" />
-            <element signature="e#8687#8717#0" expanded="true" />
-            <element signature="e#8865#8892#0" expanded="true" />
-            <element signature="e#8921#8947#0" expanded="true" />
-            <element signature="e#8972#8994#0" expanded="true" />
-            <element signature="e#9028#9057#0" expanded="true" />
-            <element signature="e#9206#9234#0" expanded="true" />
-            <element signature="e#9254#9281#0" expanded="true" />
-            <element signature="e#9297#9320#0" expanded="true" />
-            <element signature="e#9345#9375#0" expanded="true" />
-            <element signature="e#9523#9550#0" expanded="true" />
-            <element signature="e#9579#9605#0" expanded="true" />
-            <element signature="e#9630#9652#0" expanded="true" />
-            <element signature="e#9686#9715#0" expanded="true" />
-            <element signature="e#9879#9909#0" expanded="true" />
-            <element signature="e#9938#9967#0" expanded="true" />
-            <element signature="e#9992#10017#0" expanded="true" />
-            <element signature="e#10051#10083#0" expanded="true" />
-            <element signature="e#10247#10275#0" expanded="true" />
-            <element signature="e#10304#10331#0" expanded="true" />
-            <element signature="e#10356#10379#0" expanded="true" />
-            <element signature="e#10413#10443#0" expanded="true" />
-            <element signature="e#10617#10644#0" expanded="true" />
-            <element signature="e#10683#10708#0" expanded="true" />
-            <element signature="e#10728#10752#0" expanded="true" />
-            <element signature="e#10790#10818#0" expanded="true" />
-            <element signature="e#10859#10881#0" expanded="true" />
-            <element signature="e#10902#10923#0" expanded="true" />
-            <element signature="e#11004#11025#0" expanded="true" />
-            <element signature="e#11091#11112#0" expanded="true" />
-            <element signature="e#11133#11153#0" expanded="true" />
-            <element signature="e#11234#11254#0" expanded="true" />
-            <element signature="e#11341#11368#0" expanded="true" />
-            <element signature="e#11409#11432#0" expanded="true" />
-            <element signature="e#11453#11475#0" expanded="true" />
-            <element signature="e#11556#11578#0" expanded="true" />
-            <element signature="e#11644#11663#0" expanded="true" />
-            <element signature="e#11684#11702#0" expanded="true" />
-            <element signature="e#11783#11801#0" expanded="true" />
-            <element signature="e#11867#11886#0" expanded="true" />
-            <element signature="e#11907#11925#0" expanded="true" />
-            <element signature="e#12006#12024#0" expanded="true" />
-            <element signature="e#12090#12114#0" expanded="true" />
-            <element signature="e#12135#12158#0" expanded="true" />
-            <element signature="e#12239#12262#0" expanded="true" />
-            <element signature="e#12349#12378#0" expanded="true" />
-            <element signature="e#12419#12440#0" expanded="true" />
-            <element signature="e#12461#12481#0" expanded="true" />
-            <element signature="e#12562#12582#0" expanded="true" />
-            <element signature="e#12648#12670#0" expanded="true" />
-            <element signature="e#12691#12712#0" expanded="true" />
-            <element signature="e#12870#12899#0" expanded="true" />
-            <element signature="e#12919#12947#0" expanded="true" />
-            <element signature="e#12985#13019#0" expanded="true" />
-            <element signature="e#13058#13089#0" expanded="true" />
-            <element signature="e#13110#13140#0" expanded="true" />
-            <element signature="e#13157#13183#0" expanded="true" />
-            <element signature="e#13209#13242#0" expanded="true" />
-            <element signature="e#13365#13399#0" expanded="true" />
-            <element signature="e#13420#13453#0" expanded="true" />
-            <element signature="e#13470#13499#0" expanded="true" />
-            <element signature="e#13525#13561#0" expanded="true" />
-            <element signature="e#13684#13713#0" expanded="true" />
-            <element signature="e#13734#13762#0" expanded="true" />
-            <element signature="e#13779#13803#0" expanded="true" />
-            <element signature="e#13829#13860#0" expanded="true" />
-            <element signature="e#14006#14038#0" expanded="true" />
-            <element signature="e#14077#14101#0" expanded="true" />
-            <element signature="e#14122#14145#0" expanded="true" />
-            <element signature="e#14162#14183#0" expanded="true" />
-            <element signature="e#14209#14235#0" expanded="true" />
-            <element signature="e#14358#14382#0" expanded="true" />
-            <element signature="e#14403#14426#0" expanded="true" />
-            <element signature="e#14443#14462#0" expanded="true" />
-            <element signature="e#14488#14514#0" expanded="true" />
-            <element signature="e#14637#14663#0" expanded="true" />
-            <element signature="e#14684#14709#0" expanded="true" />
-            <element signature="e#14726#14747#0" expanded="true" />
-            <element signature="e#14773#14801#0" expanded="true" />
-            <element signature="e#14924#14950#0" expanded="true" />
-            <element signature="e#14971#14996#0" expanded="true" />
-            <element signature="e#15013#15034#0" expanded="true" />
-            <element signature="e#15060#15088#0" expanded="true" />
-            <element signature="e#15257#15280#0" expanded="true" />
-            <element signature="e#15301#15323#0" expanded="true" />
-            <element signature="e#15340#15358#0" expanded="true" />
-            <element signature="e#15384#15409#0" expanded="true" />
-            <element signature="e#15538#15568#0" expanded="true" />
-            <element signature="e#15589#15618#0" expanded="true" />
-            <element signature="e#15635#15660#0" expanded="true" />
-            <element signature="e#15686#15718#0" expanded="true" />
-            <element signature="e#15841#15869#0" expanded="true" />
-            <element signature="e#15890#15917#0" expanded="true" />
-            <element signature="e#15934#15957#0" expanded="true" />
-            <element signature="e#15983#16013#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="5475">
+          <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -2129,10 +1674,215 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/DataFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48913044" vertical-offset="0" max-vertical-offset="5910">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/constants.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.730769" vertical-offset="1220" max-vertical-offset="2805">
+          <caret line="93" column="16" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/arrays_const.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="6840">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings_trans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.769231" vertical-offset="0" max-vertical-offset="2385">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/settings_trans.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4352227" vertical-offset="635" max-vertical-offset="2584">
-          <caret line="50" column="93" selection-start-line="50" selection-start-column="93" selection-end-line="50" selection-end-column="93" />
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="1449" max-vertical-offset="2280">
+          <caret line="108" column="111" selection-start-line="108" selection-start-column="109" selection-end-line="108" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-67.77778" vertical-offset="0" max-vertical-offset="2520">
+          <caret line="122" column="22" selection-start-line="122" selection-start-column="22" selection-end-line="122" selection-end-column="22" />
+          <folding>
+            <element signature="e#2237#2256#0" expanded="true" />
+            <element signature="e#3367#3387#0" expanded="true" />
+            <element signature="e#3551#3577#0" expanded="true" />
+            <element signature="e#3744#3773#0" expanded="true" />
+            <element signature="e#3934#3957#0" expanded="true" />
+            <element signature="e#4203#4224#0" expanded="true" />
+            <element signature="e#4396#4415#0" expanded="true" />
+            <element signature="e#4490#4512#0" expanded="true" />
+            <element signature="e#4949#4965#0" expanded="true" />
+            <element signature="e#5391#5409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/MenuHome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693" vertical-offset="11970" max-vertical-offset="17565">
+          <caret line="815" column="33" selection-start-line="815" selection-start-column="33" selection-end-line="815" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2852#2880#0" expanded="true" />
+            <element signature="e#2882#2917#0" expanded="true" />
+            <element signature="e#2973#3022#0" expanded="true" />
+            <element signature="e#3050#3078#0" expanded="true" />
+            <element signature="e#3158#3195#0" expanded="true" />
+            <element signature="e#5428#5455#0" expanded="true" />
+            <element signature="e#5457#5491#0" expanded="true" />
+            <element signature="e#5552#5751#0" expanded="true" />
+            <element signature="e#5704#5738#0" expanded="true" />
+            <element signature="e#5745#5746#0" expanded="true" />
+            <element signature="e#5807#5937#0" expanded="true" />
+            <element signature="e#5931#5932#0" expanded="true" />
+            <element signature="e#5963#6018#0" expanded="true" />
+            <element signature="e#6053#6102#0" expanded="true" />
+            <element signature="e#6109#6146#0" expanded="true" />
+            <element signature="e#6174#6212#0" expanded="true" />
+            <element signature="e#6238#6265#0" expanded="true" />
+            <element signature="e#6327#6347#0" expanded="true" />
+            <element signature="e#6349#6374#0" expanded="true" />
+            <element signature="e#6407#6431#0" expanded="true" />
+            <element signature="e#6433#6464#0" expanded="true" />
+            <element signature="e#6539#6796#0" expanded="true" />
+            <element signature="e#6659#6679#0" expanded="true" />
+            <element signature="e#6746#6783#0" expanded="true" />
+            <element signature="e#6790#6791#0" expanded="true" />
+            <element signature="e#6852#7037#0" expanded="true" />
+            <element signature="e#6972#6992#0" expanded="true" />
+            <element signature="e#7031#7032#0" expanded="true" />
+            <element signature="e#7067#7121#0" expanded="true" />
+            <element signature="e#7156#7204#0" expanded="true" />
+            <element signature="e#7211#7251#0" expanded="true" />
+            <element signature="e#7278#7316#0" expanded="true" />
+            <element signature="e#7342#7366#0" expanded="true" />
+            <element signature="e#7515#7538#0" expanded="true" />
+            <element signature="e#7540#7570#0" expanded="true" />
+            <element signature="e#7603#7630#0" expanded="true" />
+            <element signature="e#7632#7666#0" expanded="true" />
+            <element signature="e#7839#7862#0" expanded="true" />
+            <element signature="e#8189#8207#0" expanded="true" />
+            <element signature="e#8209#8234#0" expanded="true" />
+            <element signature="e#8589#8606#0" expanded="true" />
+            <element signature="e#8608#8632#0" expanded="true" />
+            <element signature="e#9409#9452#0" expanded="true" />
+            <element signature="e#9548#9567#0" expanded="true" />
+            <element signature="e#9632#9657#0" expanded="true" />
+            <element signature="e#9725#9753#0" expanded="true" />
+            <element signature="e#9815#9837#0" expanded="true" />
+            <element signature="e#9903#9923#0" expanded="true" />
+            <element signature="e#9981#9999#0" expanded="true" />
+            <element signature="e#10072#10093#0" expanded="true" />
+            <element signature="e#10166#10183#0" expanded="true" />
+            <element signature="e#11502#11563#0" expanded="true" />
+            <element signature="e#12472#12494#0" expanded="true" />
+            <element signature="e#12496#12525#0" expanded="true" />
+            <element signature="e#12733#12762#0" expanded="true" />
+            <element signature="e#12764#12800#0" expanded="true" />
+            <element signature="e#15134#15649#0" expanded="true" />
+            <element signature="e#15641#15642#0" expanded="true" />
+            <element signature="e#16457#16755#0" expanded="true" />
+            <element signature="e#16750#16751#0" expanded="true" />
+            <element signature="e#16782#17162#0" expanded="true" />
+            <element signature="e#17157#17158#0" expanded="true" />
+            <element signature="e#17619#17747#0" expanded="true" />
+            <element signature="e#17742#17743#0" expanded="true" />
+            <element signature="e#17788#18228#0" expanded="true" />
+            <element signature="e#18223#18224#0" expanded="true" />
+            <element signature="e#18446#18590#0" expanded="true" />
+            <element signature="e#18579#18580#0" expanded="true" />
+            <element signature="e#18631#19192#0" expanded="true" />
+            <element signature="e#19181#19182#0" expanded="true" />
+            <element signature="e#19402#19528#0" expanded="true" />
+            <element signature="e#19523#19524#0" expanded="true" />
+            <element signature="e#21458#23533#0" expanded="true" />
+            <element signature="e#23518#23519#0" expanded="true" />
+            <element signature="e#23652#23794#0" expanded="true" />
+            <element signature="e#23789#23790#0" expanded="true" />
+            <element signature="e#23929#24180#0" expanded="true" />
+            <element signature="e#24175#24176#0" expanded="true" />
+            <element signature="e#24303#24485#0" expanded="true" />
+            <element signature="e#24480#24481#0" expanded="true" />
+            <element signature="e#24632#24832#0" expanded="true" />
+            <element signature="e#24827#24828#0" expanded="true" />
+            <element signature="e#24963#25179#0" expanded="true" />
+            <element signature="e#25168#25169#0" expanded="true" />
+            <element signature="e#25284#25437#0" expanded="true" />
+            <element signature="e#25432#25433#0" expanded="true" />
+            <element signature="e#30383#30400#0" expanded="true" />
+            <element signature="e#30402#30426#0" expanded="true" />
+            <element signature="e#30497#30514#0" expanded="true" />
+            <element signature="e#31083#31100#0" expanded="true" />
+            <element signature="e#31102#31126#0" expanded="true" />
+            <element signature="e#31151#31186#0" expanded="true" />
+            <element signature="e#31382#31406#0" expanded="true" />
+            <element signature="e#31408#31439#0" expanded="true" />
+            <element signature="e#31516#31540#0" expanded="true" />
+            <element signature="e#32215#32239#0" expanded="true" />
+            <element signature="e#32241#32272#0" expanded="true" />
+            <element signature="e#32318#32363#0" expanded="true" />
+            <element signature="e#32505#32546#0" expanded="true" />
+            <element signature="e#32693#32736#0" expanded="true" />
+            <element signature="e#32883#32924#0" expanded="true" />
+            <element signature="e#33067#33113#0" expanded="true" />
+            <element signature="e#33303#33321#0" expanded="true" />
+            <element signature="e#33323#33348#0" expanded="true" />
+            <element signature="e#33425#33443#0" expanded="true" />
+            <element signature="e#34151#34169#0" expanded="true" />
+            <element signature="e#34171#34196#0" expanded="true" />
+            <element signature="e#34257#34289#0" expanded="true" />
+            <element signature="e#34448#34480#0" expanded="true" />
+            <element signature="e#34644#34677#0" expanded="true" />
+            <element signature="e#34845#34878#0" expanded="true" />
+            <element signature="e#35046#35079#0" expanded="true" />
+            <element signature="e#36992#37029#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/GUIGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1471" max-vertical-offset="20640">
+          <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38043478" vertical-offset="90" max-vertical-offset="855">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding />
         </state>
       </provider>

@@ -6,6 +6,7 @@
   <string name="Menu_download_songs">" statistics "</string>
   <string name="Menu_settings">" settings "</string>
   <string name="Menu_exit">" exit "</string>
+  <string name="Menu_export">" export "</string>
   <string name="Menu_connect">" connect "</string>
   <string name="status">" Bluetooth Status "</string>
   <string name="initial0">" 000 "</string>

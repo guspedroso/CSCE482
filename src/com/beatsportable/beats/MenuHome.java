@@ -42,12 +42,29 @@ import android.widget.*;
 
 import zephyr.android.BioHarnessBT.*;
 
-
-
 import android.bluetooth.*;
 import android.content.*;
 import zephyr.android.BioHarnessBT.*;
-	
+
+/*--------------- DB includes ---------------*/
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.nio.channels.FileChannel;
+import java.io.FileWriter;
+
+import android.os.Bundle;
+import android.os.Environment;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Toast;
+import android.database.sqlite.SQLiteDatabase;
+import au.com.bytecode.opencsv.CSVWriter;
+import android.database.Cursor;
+/*-------------------------------------------*/
+
 public class MenuHome extends Activity {
 
     // ---------------------------------- BioHarness variables ---------------------------------
@@ -58,8 +75,8 @@ public class MenuHome extends Activity {
     //private final int HEART_RATE = 0x100;
     private final int RESPIRATION_RATE = 0x101;
     public static String bpm;
-
-
+    private static final String SAMPLE_DB_NAME = "PulseDB";
+    private static final String SAMPLE_TABLE_NAME = "Info";
 
 	private static final int SELECT_MUSIC = 123;
 	private static final String MENU_FONT = "fonts/HappyKiller.ttf";
@@ -303,6 +320,7 @@ public class MenuHome extends Activity {
 		formatMenuItem(((TextView) findViewById(R.id.select_song)), R.string.Menu_select_song);
 		formatMenuItem(((TextView) findViewById(R.id.download_songs)), R.string.Menu_download_songs);
 		formatMenuItem(((TextView) findViewById(R.id.settings)), R.string.Menu_settings);
+        formatMenuItem(((TextView) findViewById(R.id.export)), R.string.Menu_export);
 		formatMenuItem(((TextView) findViewById(R.id.exit)), R.string.Menu_exit);
         formatMenuItem(((TextView) findViewById(R.id.ButtonConnect)), R.string.Menu_connect);
         formatMenuItem(((TextView) findViewById(R.id.labelRespRate)), R.string.initial0);
@@ -377,7 +395,7 @@ public class MenuHome extends Activity {
 		}
 		Tools.setScreenDimensions();
 		setupLayout();
-		
+		createDB(); //create DB for session -gp
 		updateCheck();
 		versionCheck();
 		showNotes();
@@ -687,13 +705,6 @@ public class MenuHome extends Activity {
             });
         }
 
-
-
-
-
-
-
-
 		// Start button
 		TextView start_b = (TextView) findViewById(R.id.start);
 		start_b.setOnClickListener(new OnClickListener() {
@@ -737,13 +748,26 @@ public class MenuHome extends Activity {
 				//}
 			}
 		});
-		
+
+        // Export button
+        TextView export_b = (TextView) findViewById(R.id.export);
+        export_b.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                vibrate();
+                //backgroundDataUncheck();
+                //finish();
+                exportDB();
+
+            }
+        });
+
 		// Exit button
 		TextView exit_b = (TextView) findViewById(R.id.exit);
 		exit_b.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				vibrate();
 				//backgroundDataUncheck();
+                deleteDB();
 				finish();
 			}
 		});
@@ -757,12 +781,67 @@ public class MenuHome extends Activity {
 		R.id.select_song,
 		R.id.download_songs,
 		R.id.settings,
+        R.id.export,
 		R.id.exit,
 		R.id.difficulty,
         R.id.goal
 		//R.id.gameMode
 	};
-	
+
+    // DB functions -gp
+    private void exportDB(){
+        File exportDir = new File(Environment.getExternalStorageDirectory(), "");
+        if (!exportDir.exists())
+        {
+            exportDir.mkdirs();
+        }
+
+        File file = new File(exportDir, "pulseDB.csv");
+        try
+        {
+            file.createNewFile();
+            CSVWriter csvWrite = new CSVWriter(new FileWriter(file), ',', ' ', '\n');
+
+            SQLiteDatabase db =  this.openOrCreateDatabase(SAMPLE_DB_NAME, MODE_PRIVATE, null);
+            Cursor curCSV = db.rawQuery("SELECT * FROM " + SAMPLE_TABLE_NAME,null);
+            csvWrite.writeNext(curCSV.getColumnNames());
+            while(curCSV.moveToNext())
+            {
+                //Which column you want to export
+                String arrStr[] ={curCSV.getString(0),curCSV.getString(1), curCSV.getString(2)};
+                csvWrite.writeNext(arrStr);
+            }
+            csvWrite.close();
+            curCSV.close();
+            Toast.makeText(this, "DB Exported!", Toast.LENGTH_LONG).show();
+        }
+        catch(Exception sqlEx)
+        {
+            Log.e("MainActivity", sqlEx.getMessage(), sqlEx);
+        }
+    }
+
+    private void deleteDB(){
+        boolean result = this.deleteDatabase(SAMPLE_DB_NAME);
+        if (result==true) {
+            Toast.makeText(this, "DB Deleted!", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    private void createDB() {
+        SQLiteDatabase sampleDB =  this.openOrCreateDatabase(SAMPLE_DB_NAME, MODE_PRIVATE, null);
+        sampleDB.execSQL("CREATE TABLE IF NOT EXISTS " +
+                SAMPLE_TABLE_NAME +
+                " (LastName VARCHAR, FirstName VARCHAR," +
+                " Rank VARCHAR);");
+        sampleDB.execSQL("INSERT INTO " +
+                SAMPLE_TABLE_NAME +
+                " Values ('Pedroso','Gustavo','PM');");
+        sampleDB.close();
+        sampleDB.getPath();
+        Toast.makeText(this, "DB Created @ "+sampleDB.getPath(), Toast.LENGTH_LONG).show();
+    }
+
 	private void setupDpadNavigation() {
 		for (int i = 0; i < viewIds.length; i++) {
 			View view = findViewById(viewIds[i]);

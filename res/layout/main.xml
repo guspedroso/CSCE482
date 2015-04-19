@@ -121,6 +121,12 @@
 						android:layout_height="wrap_content"
 						android:text="@string/Menu_settings"
 					/>
+                    <TextView
+                        android:id="@+id/export"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Menu_export"
+                    />
 					<TextView
 						android:id="@+id/exit"
 						android:layout_width="wrap_content"
