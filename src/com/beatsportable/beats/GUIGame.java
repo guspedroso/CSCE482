@@ -35,6 +35,12 @@ import android.widget.*;
 
 import zephyr.android.BioHarnessBT.*;
 
+/*--------------- DB includes ---------------*/
+
+import android.database.sqlite.SQLiteDatabase;
+
+/*-------------------------------------------*/
+
 public class GUIGame extends Activity {
 	
 	// TODO - MAJOR CLEANUP!!!
@@ -684,6 +690,11 @@ public class GUIGame extends Activity {
             // Turns the Health Bar blue when the player is under their target rate  to show them they get extra points! Star Power!
             if (respRate!= null) {
                 double resp = Double.parseDouble(respRate);
+
+                MenuHome.sampleDB.execSQL("INSERT INTO " +
+                        MenuHome.SAMPLE_TABLE_NAME +
+                        " Values ('test','test');");
+
                 // Modify Speed Based on Breathing Rate
                 switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
                     // GOAL: 6

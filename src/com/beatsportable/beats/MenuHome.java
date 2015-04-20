@@ -75,8 +75,9 @@ public class MenuHome extends Activity {
     //private final int HEART_RATE = 0x100;
     private final int RESPIRATION_RATE = 0x101;
     public static String bpm;
-    private static final String SAMPLE_DB_NAME = "PulseDB";
-    private static final String SAMPLE_TABLE_NAME = "Info";
+    public static final String SAMPLE_DB_NAME = "PulseDB";
+    public static final String SAMPLE_TABLE_NAME = "Info";
+    public static SQLiteDatabase sampleDB;
 
 	private static final int SELECT_MUSIC = 123;
 	private static final String MENU_FONT = "fonts/HappyKiller.ttf";
@@ -790,6 +791,7 @@ public class MenuHome extends Activity {
 
     // DB functions -gp
     private void exportDB(){
+        sampleDB.close();
         File exportDir = new File(Environment.getExternalStorageDirectory(), "");
         if (!exportDir.exists())
         {
@@ -808,7 +810,7 @@ public class MenuHome extends Activity {
             while(curCSV.moveToNext())
             {
                 //Which column you want to export
-                String arrStr[] ={curCSV.getString(0),curCSV.getString(1), curCSV.getString(2)};
+                String arrStr[] ={curCSV.getString(0),curCSV.getString(1)};
                 csvWrite.writeNext(arrStr);
             }
             csvWrite.close();
@@ -822,6 +824,7 @@ public class MenuHome extends Activity {
     }
 
     private void deleteDB(){
+        sampleDB.close();
         boolean result = this.deleteDatabase(SAMPLE_DB_NAME);
         if (result==true) {
             Toast.makeText(this, "DB Deleted!", Toast.LENGTH_LONG).show();
@@ -829,15 +832,11 @@ public class MenuHome extends Activity {
     }
 
     private void createDB() {
-        SQLiteDatabase sampleDB =  this.openOrCreateDatabase(SAMPLE_DB_NAME, MODE_PRIVATE, null);
+        sampleDB =  this.openOrCreateDatabase(SAMPLE_DB_NAME, MODE_PRIVATE, null);
         sampleDB.execSQL("CREATE TABLE IF NOT EXISTS " +
                 SAMPLE_TABLE_NAME +
-                " (LastName VARCHAR, FirstName VARCHAR," +
-                " Rank VARCHAR);");
-        sampleDB.execSQL("INSERT INTO " +
-                SAMPLE_TABLE_NAME +
-                " Values ('Pedroso','Gustavo','PM');");
-        sampleDB.close();
+                " (Time VARCHAR, Rate VARCHAR);");
+        //sampleDB.close();
         sampleDB.getPath();
         Toast.makeText(this, "DB Created @ "+sampleDB.getPath(), Toast.LENGTH_LONG).show();
     }
