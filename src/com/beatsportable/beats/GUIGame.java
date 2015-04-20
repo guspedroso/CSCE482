@@ -77,7 +77,8 @@ public class GUIGame extends Activity {
     private final int RESPIRATION_RATE = 0x101;
     public String respRate = "000";
     String rightSettingsTop;
-
+    String songtitle;
+    boolean exitingGame;
 	private static final int ROTATABLE = 2;
 
     /*-------these variables are needed for breath display -gp ----------*/
@@ -92,6 +93,12 @@ public class GUIGame extends Activity {
     private int span; //default 10 sec
     private int breathColor; //default 0 (none), 1 (red), 2 (green), 3 (blue)
     private int flag = 0;
+
+    /*--------------------------------------------------------------------*/
+
+    /*-------these variables are needed for db updates -gp ----------*/
+
+    private int seconds;
 
     /*--------------------------------------------------------------------*/
 
@@ -304,10 +311,12 @@ public class GUIGame extends Activity {
 		h.score.loadHighScore(dp.df.md5hash + dp.getNotesData().getDifficultyMeter());
 		
 		// Title
-		String songtitle = dp.df.getTitle();
+		songtitle = dp.df.getTitle();
+
 		if (songtitle.length() <= 1) {
 			songtitle = dp.df.getTitleTranslit();
 		}
+
 		title = Tools.getString(R.string.Titlebar) + songtitle + Tools.getString(R.string.GUIGame_by) + dp.df.getArtist();
 		this.setTitle(title);
 		
@@ -338,6 +347,22 @@ public class GUIGame extends Activity {
             span = inBreath + outBreath;
         }
 
+        //for logging breathrate
+        seconds = 0;
+
+        //remove spaces from title for table name
+        songtitle = songtitle.replaceAll("\\s+","");
+
+        //add title to list of table names
+        MenuHome.tableNames.add(songtitle);
+
+        Toast.makeText(this, "Adding table " + songtitle, Toast.LENGTH_LONG).show();
+        //set up table for song and put in database
+        MenuHome.sampleDB.execSQL("CREATE TABLE IF NOT EXISTS " +
+                songtitle +
+                " (Time VARCHAR, Rate VARCHAR);");
+
+        exitingGame = false;
 		// Start updating
 		mView.startTimer();
 		h.setMessageLong(Tools.getString(R.string.GUIGame_ready), 0, 64, 255); // royal blue
@@ -691,10 +716,6 @@ public class GUIGame extends Activity {
             if (respRate!= null) {
                 double resp = Double.parseDouble(respRate);
 
-                MenuHome.sampleDB.execSQL("INSERT INTO " +
-                        MenuHome.SAMPLE_TABLE_NAME +
-                        " Values ('test','test');");
-
                 // Modify Speed Based on Breathing Rate
                 switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
                     // GOAL: 6
@@ -873,6 +894,9 @@ public class GUIGame extends Activity {
         class SpeedTask extends TimerTask {
             public void run() {
 
+                if (exitingGame == true)
+                    cancel();
+
                 respRate = MenuHome.bpm;
                 // Check that the device is connected
                 if (respRate != null) {
@@ -950,6 +974,9 @@ public class GUIGame extends Activity {
         //self-made function to show background breathing within Update() -gp
         class SpeedTask2 extends TimerTask {
             public void run() {
+
+                if (exitingGame == true)
+                    cancel();
 
                 int sections = 1000/interval; // 1000/1000 = 1 section per sec
                 int totalCap = span*sections; // 10 sec * 1 section = 10 total sections
@@ -1059,6 +1086,35 @@ public class GUIGame extends Activity {
         }
         //****************
 
+        //Java Timer class object declaration
+        Timer timer3 = new Timer();
+
+        //self-made function to show background breathing within Update() -gp
+        class SpeedTask3 extends TimerTask {
+            public void run() {
+
+                if (exitingGame == true)
+                    cancel();
+
+                seconds++;
+
+                if (respRate == "Not Connected") {
+                    MenuHome.sampleDB.execSQL("INSERT INTO " +
+                            songtitle +
+                            " Values ('" + seconds + "','N/A');");
+                    Log.d("gusgus", "inserting into " + songtitle);
+                }
+                else {
+                    MenuHome.sampleDB.execSQL("INSERT INTO " +
+                            songtitle +
+                            " Values ('" + seconds + "','" + respRate + "');");
+                }
+
+            }
+        }
+
+
+
 		private void nextFrame() {
 			if (h != null) {
 				try {
@@ -1094,6 +1150,8 @@ public class GUIGame extends Activity {
                 // If user selects to show breathing background -gp
                 if (showBreath)
                     timer2.schedule(new SpeedTask2(), TIME_DELAY, interval);
+
+                timer3.schedule(new SpeedTask3(), TIME_DELAY, 1000);
 
                 musicCurrentPosition = mp.getCurrentPosition();
 				musicStartTime = musicCurrentPosition + manualOffset;
@@ -1311,6 +1369,7 @@ public class GUIGame extends Activity {
 	}
 	private void exitGame() {
 		stopGame(Tools.getString(R.string.GUIGame_exiting), 0, 64, 255, false, true); // royal blue
+
 	}
 	private void resumeGame() {
 		resumeGame(true);
@@ -1366,6 +1425,7 @@ public class GUIGame extends Activity {
 	protected void onDestroy() {
 		//Log.d("GUIGame", "GUIGame destroyed.");
 		clearBitmaps();
+        exitingGame = true;
 		exitGame();
 		mp.onDestroy();
 		h.releaseVibrator();

@@ -63,6 +63,11 @@ import android.widget.Toast;
 import android.database.sqlite.SQLiteDatabase;
 import au.com.bytecode.opencsv.CSVWriter;
 import android.database.Cursor;
+
+import java.util.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 /*-------------------------------------------*/
 
 public class MenuHome extends Activity {
@@ -76,8 +81,8 @@ public class MenuHome extends Activity {
     private final int RESPIRATION_RATE = 0x101;
     public static String bpm;
     public static final String SAMPLE_DB_NAME = "PulseDB";
-    public static final String SAMPLE_TABLE_NAME = "Info";
     public static SQLiteDatabase sampleDB;
+    public static ArrayList<String> tableNames = new ArrayList<String>();
 
 	private static final int SELECT_MUSIC = 123;
 	private static final String MENU_FONT = "fonts/HappyKiller.ttf";
@@ -795,31 +800,41 @@ public class MenuHome extends Activity {
 
     // DB functions -gp
     private void exportDB(){
-        sampleDB.close();
+        //sampleDB.close();
         File exportDir = new File(Environment.getExternalStorageDirectory(), "");
         if (!exportDir.exists())
         {
             exportDir.mkdirs();
         }
 
-        File file = new File(exportDir, SAMPLE_DB_NAME + "--" + Tools.getString(R.string.Menu_user) + ".csv");
+        //timestamp for db name
+        DateFormat dateFormat = new SimpleDateFormat("yyyy.MM.dd--HH.mm.ss");
+        //get current date time with Date()
+        Date date = new Date();
+
+        String dbName = SAMPLE_DB_NAME + "--" + Tools.getString(R.string.Menu_user).replaceAll("\\s+","") + "--" + dateFormat.format(date).replaceAll("\\s+","");
+        File file = new File(exportDir, dbName + ".csv");
         try
         {
             file.createNewFile();
             CSVWriter csvWrite = new CSVWriter(new FileWriter(file), ',', ' ', '\n');
 
             SQLiteDatabase db =  this.openOrCreateDatabase(SAMPLE_DB_NAME, MODE_PRIVATE, null);
-            Cursor curCSV = db.rawQuery("SELECT * FROM " + SAMPLE_TABLE_NAME,null);
-            csvWrite.writeNext(curCSV.getColumnNames());
-            while(curCSV.moveToNext())
-            {
-                //Which column you want to export
-                String arrStr[] ={curCSV.getString(0),curCSV.getString(1)};
-                csvWrite.writeNext(arrStr);
+
+            for (int i = 0; i < tableNames.size(); i++) {
+                Cursor curCSV = db.rawQuery("SELECT * FROM " + tableNames.get(i), null);
+                Toast.makeText(this, "exporting table " + tableNames.get(i), Toast.LENGTH_LONG).show();
+                csvWrite.writeNext(curCSV.getColumnNames());
+                while (curCSV.moveToNext()) {
+                    //Which column you want to export
+                    String arrStr[] = {curCSV.getString(0), curCSV.getString(1)};
+                    csvWrite.writeNext(arrStr);
+                }
+
+                curCSV.close();
             }
             csvWrite.close();
-            curCSV.close();
-            Toast.makeText(this, "DB Exported!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "DB " + dbName +" Exported!", Toast.LENGTH_LONG).show();
         }
         catch(Exception sqlEx)
         {
@@ -828,7 +843,7 @@ public class MenuHome extends Activity {
     }
 
     private void deleteDB(){
-        sampleDB.close();
+        //sampleDB.close();
         boolean result = this.deleteDatabase(SAMPLE_DB_NAME);
         if (result==true) {
             Toast.makeText(this, "DB Deleted!", Toast.LENGTH_LONG).show();
@@ -837,9 +852,7 @@ public class MenuHome extends Activity {
 
     private void createDB() {
         sampleDB =  this.openOrCreateDatabase(SAMPLE_DB_NAME, MODE_PRIVATE, null);
-        sampleDB.execSQL("CREATE TABLE IF NOT EXISTS " +
-                SAMPLE_TABLE_NAME +
-                " (Time VARCHAR, Rate VARCHAR);");
+        tableNames.clear();
         //sampleDB.close();
         sampleDB.getPath();
         Toast.makeText(this, "DB Created @ "+sampleDB.getPath(), Toast.LENGTH_LONG).show();
