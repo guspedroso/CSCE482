@@ -855,12 +855,12 @@ public class MenuHome extends Activity {
             Toast.makeText(this, "DB is not empty and you haven't exported.. Exporting!", Toast.LENGTH_LONG).show();
             exportDB();
         }
-        else {
-            boolean result = this.deleteDatabase(SAMPLE_DB_NAME);
-            if (result==true) {
-                Toast.makeText(this, "DB Deleted!", Toast.LENGTH_LONG).show();
-            }
+
+        boolean result = this.deleteDatabase(SAMPLE_DB_NAME);
+        if (result==true) {
+            Toast.makeText(this, "DB Deleted!", Toast.LENGTH_LONG).show();
         }
+
     }
 
     private void createDB() {
