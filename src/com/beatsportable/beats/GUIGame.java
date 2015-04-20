@@ -1,6 +1,9 @@
 package com.beatsportable.beats;
 
 import java.io.File;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -352,10 +355,16 @@ public class GUIGame extends Activity {
 
         //remove spaces from title for table name
         songtitle = songtitle.replaceAll("\\s+","");
+        //timestamp for db name
+        DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+        //get current date time with Date()
+        Date date = new Date();
+
+        songtitle += dateFormat.format(date).replaceAll("\\s+",""); //APPEND DIFFICULTY AND OTHER INFO TO THIS TABLE NAME
 
         //add title to list of table names
         MenuHome.tableNames.add(songtitle);
-
+        //Log.d("gusgus","Adding table " + songtitle);
         Toast.makeText(this, "Adding table " + songtitle, Toast.LENGTH_LONG).show();
         //set up table for song and put in database
         MenuHome.sampleDB.execSQL("CREATE TABLE IF NOT EXISTS " +
