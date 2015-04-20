@@ -102,6 +102,7 @@ public class GUIGame extends Activity {
     /*-------these variables are needed for db updates -gp ----------*/
 
     private int seconds;
+    private boolean manipulating = true; //we need to enable/disable this value
 
     /*--------------------------------------------------------------------*/
 
@@ -363,6 +364,16 @@ public class GUIGame extends Activity {
         songtitle += "splitme" + dateFormat.format(date).replaceAll("\\s+",""); //name + timestamp + difficulty + goal
         songtitle += "splitme" + dp.getNotesData().getDifficulty().toString();
         songtitle += "splitme" + "NA"; //need to add goal!!!!!!
+
+        String inGameManipulation;
+
+        if (manipulating) {
+            inGameManipulation = "Enabled";
+        }
+        else {
+            inGameManipulation = "Disabled";
+        }
+        songtitle += "splitme" + inGameManipulation;
 
         //add title to list of table names
         MenuHome.tableNames.add(songtitle);
