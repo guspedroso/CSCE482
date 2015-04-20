@@ -360,7 +360,9 @@ public class GUIGame extends Activity {
         //get current date time with Date()
         Date date = new Date();
 
-        songtitle += dateFormat.format(date).replaceAll("\\s+",""); //APPEND DIFFICULTY AND OTHER INFO TO THIS TABLE NAME
+        songtitle += "splitme" + dateFormat.format(date).replaceAll("\\s+",""); //name + timestamp + difficulty + goal
+        songtitle += "splitme" + dp.getNotesData().getDifficulty().toString();
+        songtitle += "splitme" + "NA"; //need to add goal!!!!!!
 
         //add title to list of table names
         MenuHome.tableNames.add(songtitle);
