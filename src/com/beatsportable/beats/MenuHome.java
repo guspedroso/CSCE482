@@ -83,7 +83,7 @@ public class MenuHome extends Activity {
     public static final String SAMPLE_DB_NAME = "PulseDB";
     public static SQLiteDatabase sampleDB;
     public static ArrayList<String> tableNames = new ArrayList<String>();
-
+    public static boolean exported;
 	private static final int SELECT_MUSIC = 123;
 	private static final String MENU_FONT = "fonts/HappyKiller.ttf";
 	
@@ -801,58 +801,72 @@ public class MenuHome extends Activity {
     // DB functions -gp
     private void exportDB(){
         //sampleDB.close();
-        File exportDir = new File(Environment.getExternalStorageDirectory(), "");
-        if (!exportDir.exists())
-        {
-            exportDir.mkdirs();
+        if (tableNames.isEmpty()) {
+            Toast.makeText(this, "DB is empty!", Toast.LENGTH_LONG).show();
         }
-
-        //timestamp for db name
-        DateFormat dateFormat = new SimpleDateFormat("yyyy.MM.dd--HH.mm.ss");
-        //get current date time with Date()
-        Date date = new Date();
-
-        String dbName = SAMPLE_DB_NAME + "--" + Tools.getString(R.string.Menu_user).replaceAll("\\s+","") + "--" + dateFormat.format(date).replaceAll("\\s+","");
-        File file = new File(exportDir, dbName + ".csv");
-        try
-        {
-            file.createNewFile();
-            CSVWriter csvWrite = new CSVWriter(new FileWriter(file), ',', ' ', '\n');
-
-            SQLiteDatabase db =  this.openOrCreateDatabase(SAMPLE_DB_NAME, MODE_PRIVATE, null);
-
-            for (int i = 0; i < tableNames.size(); i++) {
-                Cursor curCSV = db.rawQuery("SELECT * FROM " + tableNames.get(i), null);
-                Toast.makeText(this, "exporting table " + tableNames.get(i), Toast.LENGTH_LONG).show();
-                csvWrite.writeNext(curCSV.getColumnNames());
-                while (curCSV.moveToNext()) {
-                    //Which column you want to export
-                    String arrStr[] = {curCSV.getString(0), curCSV.getString(1)};
-                    csvWrite.writeNext(arrStr);
-                }
-
-                curCSV.close();
+        else {
+            exported = true;
+            File exportDir = new File(Environment.getExternalStorageDirectory(), "");
+            if (!exportDir.exists())
+            {
+                exportDir.mkdirs();
             }
-            csvWrite.close();
-            Toast.makeText(this, "DB " + dbName +" Exported!", Toast.LENGTH_LONG).show();
+
+            //timestamp for db name
+            DateFormat dateFormat = new SimpleDateFormat("yyyy.MM.dd--HH.mm.ss");
+            //get current date time with Date()
+            Date date = new Date();
+
+            String dbName = SAMPLE_DB_NAME + "--" + Tools.getString(R.string.Menu_user).replaceAll("\\s+","") + "--" + dateFormat.format(date).replaceAll("\\s+","");
+            File file = new File(exportDir, dbName + ".csv");
+            try
+            {
+                file.createNewFile();
+                CSVWriter csvWrite = new CSVWriter(new FileWriter(file), ',', ' ', '\n');
+
+                SQLiteDatabase db =  this.openOrCreateDatabase(SAMPLE_DB_NAME, MODE_PRIVATE, null);
+
+                for (int i = 0; i < tableNames.size(); i++) {
+                    Cursor curCSV = db.rawQuery("SELECT * FROM " + tableNames.get(i), null);
+                    Toast.makeText(this, "exporting table " + tableNames.get(i), Toast.LENGTH_LONG).show();
+                    csvWrite.writeNext(curCSV.getColumnNames());
+                    while (curCSV.moveToNext()) {
+                        //Which column you want to export
+                        String arrStr[] = {curCSV.getString(0), curCSV.getString(1)};
+                        csvWrite.writeNext(arrStr);
+                    }
+
+                    curCSV.close();
+                }
+                csvWrite.close();
+                Toast.makeText(this, "DB " + dbName +" Exported!", Toast.LENGTH_LONG).show();
+            }
+            catch(Exception sqlEx)
+            {
+                Log.e("MainActivity", sqlEx.getMessage(), sqlEx);
+            }
         }
-        catch(Exception sqlEx)
-        {
-            Log.e("MainActivity", sqlEx.getMessage(), sqlEx);
-        }
+
     }
 
     private void deleteDB(){
         //sampleDB.close();
-        boolean result = this.deleteDatabase(SAMPLE_DB_NAME);
-        if (result==true) {
-            Toast.makeText(this, "DB Deleted!", Toast.LENGTH_LONG).show();
+        if (!tableNames.isEmpty() && !exported) {
+            Toast.makeText(this, "DB is not empty and you haven't exported.. Exporting!", Toast.LENGTH_LONG).show();
+            exportDB();
+        }
+        else {
+            boolean result = this.deleteDatabase(SAMPLE_DB_NAME);
+            if (result==true) {
+                Toast.makeText(this, "DB Deleted!", Toast.LENGTH_LONG).show();
+            }
         }
     }
 
     private void createDB() {
         sampleDB =  this.openOrCreateDatabase(SAMPLE_DB_NAME, MODE_PRIVATE, null);
         tableNames.clear();
+        exported = false;
         //sampleDB.close();
         sampleDB.getPath();
         Toast.makeText(this, "DB Created @ "+sampleDB.getPath(), Toast.LENGTH_LONG).show();
