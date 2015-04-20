@@ -90,7 +90,14 @@
 					android:src="@drawable/pulse_logo"
 				/>
 				<!-- Menu items -->
-				<LinearLayout
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User"
+                    android:id="@+id/username"
+                    android:layout_gravity="center_horizontal" />
+
+                <LinearLayout
 					android:id="@+id/menu_main_items_LinearLayout"
 					android:layout_width="fill_parent"
 					android:layout_height="fill_parent"

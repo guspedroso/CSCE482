@@ -731,6 +731,7 @@ This beta release is for use as is, no warrantees expressed or implied. We are n
     <string name="Menu_select_song">" select song "</string>
     <string name="Menu_settings">" settings "</string>
     <string name="Menu_start">" start "</string>
+    <string name="Menu_user">" user "</string>
     <string name="MusicService_invalid_path">"Invalid music file path:\n"</string>
     <string name="MusicService_not_initialized">"MusicPlayer not initialized."</string>
     <string name="MusicService_unable_create_service">"Error: Unable to create MusicService."</string>

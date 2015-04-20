@@ -16,6 +16,13 @@
         <dex dex="/Users/gus/git/CSCE482/build/intermediates/pre-dexed/debug/UHL-4addc07889c9a426736b73a5d2033be8d951c37f.jar" />
     </item>
     <item
+        jar="/Users/gus/git/CSCE482/libs/mpandroidchartlibrary-2-0-9.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="db5a003a317b20269d6fbedcf9ee8917d6a66fff">
+        <dex dex="/Users/gus/git/CSCE482/build/intermediates/pre-dexed/debug/mpandroidchartlibrary-2-0-9-ffc0e586a7206bc0917bdc9ea3f5c30da54b1b71.jar" />
+    </item>
+    <item
         jar="/Users/gus/git/CSCE482/libs/opencsv-2.4.jar"
         jumboMode="false"
         revision="21.1.2"

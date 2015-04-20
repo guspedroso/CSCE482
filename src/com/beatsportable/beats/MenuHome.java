@@ -317,6 +317,7 @@ public class MenuHome extends Activity {
 		setTitle(title);
 		
 		// Menu items
+        formatMenuItem(((EditText) findViewById(R.id.username)), R.string.Menu_user);
 		formatMenuItem(((TextView) findViewById(R.id.start)), R.string.Menu_start);
 		formatMenuItem(((TextView) findViewById(R.id.select_song)), R.string.Menu_select_song);
 		formatMenuItem(((TextView) findViewById(R.id.download_songs)), R.string.Menu_download_songs);
@@ -706,6 +707,8 @@ public class MenuHome extends Activity {
             });
         }
 
+        EditText user = (EditText) findViewById(R.id.username);
+
 		// Start button
 		TextView start_b = (TextView) findViewById(R.id.start);
 		start_b.setOnClickListener(new OnClickListener() {
@@ -778,6 +781,7 @@ public class MenuHome extends Activity {
 	}
 	
 	private static int[] viewIds = {
+        R.id.username,
 		R.id.start,
 		R.id.select_song,
 		R.id.download_songs,
@@ -798,7 +802,7 @@ public class MenuHome extends Activity {
             exportDir.mkdirs();
         }
 
-        File file = new File(exportDir, "pulseDB.csv");
+        File file = new File(exportDir, SAMPLE_DB_NAME + "--" + Tools.getString(R.string.Menu_user) + ".csv");
         try
         {
             file.createNewFile();
