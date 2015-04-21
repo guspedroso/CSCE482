@@ -9,9 +9,12 @@
         android:minSdkVersion="5"
         android:targetSdkVersion="19" />
 
-    <uses-permission android:name="android.permission.INTERNET" /> <!-- Localytics -->
-    <uses-permission android:name="android.permission.VIBRATE" /> <!-- Game -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Updates -->
+    <uses-permission android:name="android.permission.INTERNET" />
+ <!-- Localytics -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+ <!-- Game -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ <!-- Updates -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
@@ -24,7 +27,8 @@
         android:label="@string/App_name" >
         <activity
             android:name="com.beatsportable.beats.MenuHome"
-            android:configChanges="orientation|keyboardHidden|screenSize" >
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

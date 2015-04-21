@@ -47,6 +47,8 @@
 	<string name="lastDirDefault">""</string>
 	
 	<!-- Tweakable Settings -->
+    <string name="bioharnessToggle">"bioharnessToggle"</string>
+    <string name="bioharnessToggleDefault">"1"</string>
 	<string name="difficultyLevel">"difficultyLevel"</string>
 	<string name="difficultyLevelDefault">"2"</string>
     <string name="breathColor">"breathColor"</string>

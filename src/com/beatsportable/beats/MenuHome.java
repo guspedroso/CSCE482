@@ -80,6 +80,7 @@ public class MenuHome extends Activity {
     //private final int HEART_RATE = 0x100;
     private final int RESPIRATION_RATE = 0x101;
     public static String bpm;
+    public static String userID;
     public static final String SAMPLE_DB_NAME = "PulseDB";
     public static SQLiteDatabase sampleDB;
     public static ArrayList<String> tableNames = new ArrayList<String>();
@@ -536,6 +537,8 @@ public class MenuHome extends Activity {
 		
 		backgroundPath = ""; // Force background reload
 		updateLayout();
+
+        //TextView un = (TextView)findViewById(R.id.username);
 		
 		// Difficulty button
 		final TextView difficulty = (TextView) findViewById(R.id.difficulty);
@@ -712,13 +715,17 @@ public class MenuHome extends Activity {
             });
         }
 
-        EditText user = (EditText) findViewById(R.id.username);
+        // Editable Username Box
+        final EditText user = (EditText) findViewById(R.id.username);
 
 		// Start button
 		TextView start_b = (TextView) findViewById(R.id.start);
 		start_b.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				vibrate();
+                //Get user ID when they click start
+                userID = user.getText().toString().trim();
+                user.setText(userID);
 				new MenuStartGame(MenuHome.this, title).startGameCheck();
 			}
 		});

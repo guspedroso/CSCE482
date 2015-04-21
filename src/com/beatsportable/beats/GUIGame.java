@@ -68,6 +68,7 @@ public class GUIGame extends Activity {
 	private boolean dark;
 	private boolean jumps;
 	private boolean holds;
+    private boolean bioharnessToggle;
 	private boolean autoPlay;
 	private boolean showFPS;
 	private boolean screenshotMode;
@@ -224,6 +225,7 @@ public class GUIGame extends Activity {
 		dark = Tools.getBooleanSetting(R.string.dark, R.string.darkDefault);
 		jumps = Tools.getBooleanSetting(R.string.jumps, R.string.jumpsDefault);
 		holds = Tools.getBooleanSetting(R.string.holds, R.string.holdsDefault);
+        bioharnessToggle = Tools.getBooleanSetting(R.string.bioharnessToggle, R.string.bioharnessToggleDefault);
 		autoPlay = Tools.getBooleanSetting(R.string.autoPlay, R.string.autoPlayDefault);
 		showFPS = Tools.getBooleanSetting(R.string.showFPS, R.string.showFPSDefault);
         showBreath = Tools.getBooleanSetting(R.string.showBreath, R.string.showBreathDefault);
@@ -378,7 +380,7 @@ public class GUIGame extends Activity {
         //add title to list of table names
         MenuHome.tableNames.add(songtitle);
         //Log.d("gusgus","Adding table " + songtitle);
-        Toast.makeText(this, "Adding table " + songtitle, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Adding table " + MenuHome.userID + songtitle, Toast.LENGTH_LONG).show();
         //set up table for song and put in database
         MenuHome.sampleDB.execSQL("CREATE TABLE IF NOT EXISTS " +
                 songtitle +
@@ -922,63 +924,110 @@ public class GUIGame extends Activity {
                 respRate = MenuHome.bpm;
                 // Check that the device is connected
                 if (respRate != null) {
-                    double resp = Double.parseDouble(respRate);
-                    // Modify Speed Based on Breathing Rate
-                    switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
-                        // GOAL: 6
-                        case 0:
-                            if (resp <= 6.0) { h.fallpix_per_ms = 1.5; }
-                            else if (resp > 6.0 && resp <= 8.0) { h.fallpix_per_ms = 2; }
-                            else if (resp > 8.0 && resp <= 10.0) { h.fallpix_per_ms = 2.5; }
-                            else if (resp > 10.0 && resp <= 12.0) { h.fallpix_per_ms = 3; }
-                            else if (resp > 12.0 && resp <= 14.0) { h.fallpix_per_ms = 3.5; }
-                            else if (resp > 14.0 && resp <= 16.0) { h.fallpix_per_ms = 4; }
-                            else { h.fallpix_per_ms = 4.5; }
-                            break;
+                    // if you want to use the bioharness to control the speed
+                    if (bioharnessToggle) {
+                        double resp = Double.parseDouble(respRate);
+                        // Modify Speed Based on Breathing Rate
+                        switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
+                            // GOAL: 6
+                            case 0:
+                                if (resp <= 6.0) {
+                                    h.fallpix_per_ms = 1.5;
+                                } else if (resp > 6.0 && resp <= 8.0) {
+                                    h.fallpix_per_ms = 2;
+                                } else if (resp > 8.0 && resp <= 10.0) {
+                                    h.fallpix_per_ms = 2.5;
+                                } else if (resp > 10.0 && resp <= 12.0) {
+                                    h.fallpix_per_ms = 3;
+                                } else if (resp > 12.0 && resp <= 14.0) {
+                                    h.fallpix_per_ms = 3.5;
+                                } else if (resp > 14.0 && resp <= 16.0) {
+                                    h.fallpix_per_ms = 4;
+                                } else {
+                                    h.fallpix_per_ms = 4.5;
+                                }
+                                break;
 
-                        // GOAL: 8
-                        case 1:
-                            if (resp <= 8.0) { h.fallpix_per_ms = 1.5; }
-                            else if (resp > 8.0 && resp <= 10.0) { h.fallpix_per_ms = 2; }
-                            else if (resp > 10.0 && resp <= 12.0) { h.fallpix_per_ms = 2.5; }
-                            else if (resp > 12.0 && resp <= 14.0) { h.fallpix_per_ms = 3; }
-                            else if (resp > 14.0 && resp <= 16.0) { h.fallpix_per_ms = 3.5; }
-                            else if (resp > 16.0 && resp <= 18.0) { h.fallpix_per_ms = 4; }
-                            else { h.fallpix_per_ms = 4.5; }
-                            break;
+                            // GOAL: 8
+                            case 1:
+                                if (resp <= 8.0) {
+                                    h.fallpix_per_ms = 1.5;
+                                } else if (resp > 8.0 && resp <= 10.0) {
+                                    h.fallpix_per_ms = 2;
+                                } else if (resp > 10.0 && resp <= 12.0) {
+                                    h.fallpix_per_ms = 2.5;
+                                } else if (resp > 12.0 && resp <= 14.0) {
+                                    h.fallpix_per_ms = 3;
+                                } else if (resp > 14.0 && resp <= 16.0) {
+                                    h.fallpix_per_ms = 3.5;
+                                } else if (resp > 16.0 && resp <= 18.0) {
+                                    h.fallpix_per_ms = 4;
+                                } else {
+                                    h.fallpix_per_ms = 4.5;
+                                }
+                                break;
 
-                        // GOAL: 10
-                        case 2:
-                            if (resp <= 10.0) { h.fallpix_per_ms = 1.5; }
-                            else if (resp > 10.0 && resp <= 12.0) { h.fallpix_per_ms = 2; }
-                            else if (resp > 12.0 && resp <= 14.0) { h.fallpix_per_ms = 2.5; }
-                            else if (resp > 14.0 && resp <= 16.0) { h.fallpix_per_ms = 3; }
-                            else if (resp > 16.0 && resp <= 18.0) { h.fallpix_per_ms = 3.5; }
-                            else if (resp > 18.0 && resp <= 20.0) { h.fallpix_per_ms = 4; }
-                            else { h.fallpix_per_ms = 4.5; }
-                            break;
+                            // GOAL: 10
+                            case 2:
+                                if (resp <= 10.0) {
+                                    h.fallpix_per_ms = 1.5;
+                                } else if (resp > 10.0 && resp <= 12.0) {
+                                    h.fallpix_per_ms = 2;
+                                } else if (resp > 12.0 && resp <= 14.0) {
+                                    h.fallpix_per_ms = 2.5;
+                                } else if (resp > 14.0 && resp <= 16.0) {
+                                    h.fallpix_per_ms = 3;
+                                } else if (resp > 16.0 && resp <= 18.0) {
+                                    h.fallpix_per_ms = 3.5;
+                                } else if (resp > 18.0 && resp <= 20.0) {
+                                    h.fallpix_per_ms = 4;
+                                } else {
+                                    h.fallpix_per_ms = 4.5;
+                                }
+                                break;
 
-                        // GOAL: 12
-                        case 3:
-                            if (resp <= 12.0) { h.fallpix_per_ms = 1.5; }
-                            else if (resp > 12.0 && resp <= 14.0) { h.fallpix_per_ms = 2; }
-                            else if (resp > 14.0 && resp <= 16.0) { h.fallpix_per_ms = 2.5; }
-                            else if (resp > 16.0 && resp <= 18.0) { h.fallpix_per_ms = 3; }
-                            else if (resp > 18.0 && resp <= 20.0) { h.fallpix_per_ms = 3.5; }
-                            else if (resp > 20.0 && resp <= 22.0) { h.fallpix_per_ms = 4; }
-                            else { h.fallpix_per_ms = 4.5; }
-                            break;
+                            // GOAL: 12
+                            case 3:
+                                if (resp <= 12.0) {
+                                    h.fallpix_per_ms = 1.5;
+                                } else if (resp > 12.0 && resp <= 14.0) {
+                                    h.fallpix_per_ms = 2;
+                                } else if (resp > 14.0 && resp <= 16.0) {
+                                    h.fallpix_per_ms = 2.5;
+                                } else if (resp > 16.0 && resp <= 18.0) {
+                                    h.fallpix_per_ms = 3;
+                                } else if (resp > 18.0 && resp <= 20.0) {
+                                    h.fallpix_per_ms = 3.5;
+                                } else if (resp > 20.0 && resp <= 22.0) {
+                                    h.fallpix_per_ms = 4;
+                                } else {
+                                    h.fallpix_per_ms = 4.5;
+                                }
+                                break;
 
-                        // GOAL: 14
-                        case 4:
-                            if (resp <= 14.0) {h.fallpix_per_ms = 1.5;}
-                            else if (resp > 14.0 && resp <= 16.0) { h.fallpix_per_ms = 2; }
-                            else if (resp > 16.0 && resp <= 18.0) { h.fallpix_per_ms = 2.5; }
-                            else if (resp > 18.0 && resp <= 20.0) { h.fallpix_per_ms = 3; }
-                            else if (resp > 20.0 && resp <= 22.0) { h.fallpix_per_ms = 3.5; }
-                            else if (resp > 22.0 && resp <= 24.0) { h.fallpix_per_ms = 4; }
-                            else { h.fallpix_per_ms = 4.5; }
-                            break;
+                            // GOAL: 14
+                            case 4:
+                                if (resp <= 14.0) {
+                                    h.fallpix_per_ms = 1.5;
+                                } else if (resp > 14.0 && resp <= 16.0) {
+                                    h.fallpix_per_ms = 2;
+                                } else if (resp > 16.0 && resp <= 18.0) {
+                                    h.fallpix_per_ms = 2.5;
+                                } else if (resp > 18.0 && resp <= 20.0) {
+                                    h.fallpix_per_ms = 3;
+                                } else if (resp > 20.0 && resp <= 22.0) {
+                                    h.fallpix_per_ms = 3.5;
+                                } else if (resp > 22.0 && resp <= 24.0) {
+                                    h.fallpix_per_ms = 4;
+                                } else {
+                                    h.fallpix_per_ms = 4.5;
+                                }
+                                break;
+                        }
+                    }
+                    // if you don't want the bioharness to control the speed, sets at 2
+                    else {
+                        h.fallpix_per_ms = 2;
                     }
                 }
 

@@ -2,6 +2,13 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 	<PreferenceCategory android:title="@string/gameSettingsCategoryTitle">
 
+        <ListPreference
+            android:title="@string/bioharnessToggleTitle"
+            android:summary="@string/bioharnessToggleDesc"
+            android:key="@string/bioharnessToggle"
+            android:defaultValue="@string/bioharnessToggleDefault"
+            android:entries="@array/toggle"
+            android:entryValues="@array/toggleValues" />
 		<ListPreference
 			android:title="@string/difficultyLevelTitle"
 			android:summary="@string/difficultyLevelDesc"
@@ -357,4 +364,4 @@
 				android:entries="@array/toggle"
 				android:entryValues="@array/toggleValues" />
 	</PreferenceCategory>
-</PreferenceScreen><!-- From: file:/Users/gus/git/CSCE482/res/xml/settings.xml -->
+</PreferenceScreen><!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/xml/settings.xml -->

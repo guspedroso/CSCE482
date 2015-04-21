@@ -23,6 +23,7 @@
 		android:description="@string/App_description">
 		<activity
 			android:name=".MenuHome"
+            android:windowSoftInputMode="stateHidden"
             android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action	android:name="android.intent.action.MAIN" />

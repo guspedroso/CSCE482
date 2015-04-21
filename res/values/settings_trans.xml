@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="gameSettingsCategoryTitle">"Game Settings"</string>
+  <string name="bioharnessToggleTitle">"Use BioHarness"</string>
+  <string name="bioharnessToggleDesc">"Turn on if you want to use the BioHarness breathing rate to modify speed"</string>
   <string name="modifiersScreenTitle">"Modifiers"</string>
   <string name="modifiersScreenDesc">"Modifiers affecting the notes data or appearances"</string>
   <string name="gameplayCategoryTitle">"Gameplay"</string>
