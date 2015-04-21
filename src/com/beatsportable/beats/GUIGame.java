@@ -364,7 +364,36 @@ public class GUIGame extends Activity {
 
         songtitle += "splitme" + dateFormat.format(date).replaceAll("\\s+",""); //name + timestamp + difficulty + goal
         songtitle += "splitme" + dp.getNotesData().getDifficulty().toString();
-        songtitle += "splitme" + "NA"; //need to add goal!!!!!!
+
+        String goal = "NA";
+        switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
+            // GOAL: 6
+            case 0:
+                goal = "6";
+                break;
+
+            // GOAL: 8
+            case 1:
+                goal = "8";
+                break;
+
+            // GOAL: 10
+            case 2:
+                goal = "10";
+                break;
+
+            // GOAL: 12
+            case 3:
+                goal = "12";
+                break;
+
+            // GOAL: 14
+            case 4:
+                goal = "14";
+                break;
+        }
+
+        songtitle += "splitme" + goal; //need to add goal!!!!!!
 
         String inGameManipulation;
 
@@ -376,6 +405,18 @@ public class GUIGame extends Activity {
         }
         songtitle += "splitme" + inGameManipulation;
         songtitle += "splitme" + MenuHome.userID;
+
+        String breathing;
+
+        if (showBreath) {
+            breathing = "Enabled";
+        }
+        else {
+            breathing = "Disabled";
+        }
+
+        songtitle += "splitme" + breathing;
+        songtitle.replaceAll("[^a-zA-Z0-9]+",""); //remove all special char
 
         //add title to list of table names
         MenuHome.tableNames.add(songtitle);
