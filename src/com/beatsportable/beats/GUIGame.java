@@ -842,12 +842,15 @@ public class GUIGame extends Activity {
 			canvas.drawRect(new Rect(margin, margin * 2 + height, Tools.screen_w - margin, margin * 2 + height * 2), hpBorderPaint);
 			
 			// Show Breaths-Per-Minute on game screen
-			if (showFPS) {
+            if (showFPS && autoPlay) {
+                autoPlayPaint.draw(canvas, "Auto, BPM:" + respRate, margin * 2, margin * 2 + height * 3);
+            }
+			else if (showFPS) {
 				autoPlayPaint.draw(canvas, "BPM:" + respRate, margin * 2, margin * 2 + height * 3);
 			}
-            //else if (autoPlay) {
-			//	autoPlayPaint.draw(canvas, "AUTO", margin * 2, margin + height * 3);
-			//}
+            else if (autoPlay) {
+				autoPlayPaint.draw(canvas, "Auto", margin * 2, margin * 2 + height * 3);
+			}
 			
 			// Accuracy message
 			int opa = (2 * Tools.MAX_OPA - h.msg_frames * frame_millis);

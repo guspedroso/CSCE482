@@ -537,8 +537,6 @@ public class MenuHome extends Activity {
 		
 		backgroundPath = ""; // Force background reload
 		updateLayout();
-
-        //TextView un = (TextView)findViewById(R.id.username);
 		
 		// Difficulty button
 		final TextView difficulty = (TextView) findViewById(R.id.difficulty);
@@ -592,7 +590,7 @@ public class MenuHome extends Activity {
 			public void onClick(View v) {
 				vibrate();
 				//changeAutoPlay();
-				//nextAutoPlay();
+				nextAutoPlay();
 			}
 		});
 		
