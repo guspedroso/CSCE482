@@ -103,7 +103,6 @@ public class GUIGame extends Activity {
     /*-------these variables are needed for db updates -gp ----------*/
 
     private int seconds;
-    private boolean manipulating = true; //we need to enable/disable this value
 
     /*--------------------------------------------------------------------*/
 
@@ -369,7 +368,7 @@ public class GUIGame extends Activity {
 
         String inGameManipulation;
 
-        if (manipulating) {
+        if (bioharnessToggle) {
             inGameManipulation = "Enabled";
         }
         else {
@@ -379,7 +378,7 @@ public class GUIGame extends Activity {
 
         //add title to list of table names
         MenuHome.tableNames.add(songtitle);
-        //Log.d("gusgus","Adding table " + songtitle);
+        // MenuHome.userID is the username, but not persistent -liz
         Toast.makeText(this, "Adding table " + MenuHome.userID + songtitle, Toast.LENGTH_LONG).show();
         //set up table for song and put in database
         MenuHome.sampleDB.execSQL("CREATE TABLE IF NOT EXISTS " +
