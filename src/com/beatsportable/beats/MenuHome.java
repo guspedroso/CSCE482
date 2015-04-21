@@ -822,7 +822,7 @@ public class MenuHome extends Activity {
             //get current date time with Date()
             Date date = new Date();
 
-            String dbName = SAMPLE_DB_NAME + "--" + Tools.getString(R.string.Menu_user).replaceAll("\\s+","") + "--" + dateFormat.format(date).replaceAll("\\s+","");
+            String dbName = SAMPLE_DB_NAME + "--" + userID.replaceAll("\\s+","") + "--" + dateFormat.format(date).replaceAll("\\s+","");
             File file = new File(exportDir, dbName + ".csv");
             try
             {
@@ -836,8 +836,8 @@ public class MenuHome extends Activity {
                     Toast.makeText(this, "exporting table " + tableNames.get(i), Toast.LENGTH_LONG).show();
                     String[] parts = tableNames.get(i).split("splitme");
 
-                    csvWrite.writeNext("Song", "Timestamp","Difficulty","Goal","InGameManipulation");
-                    csvWrite.writeNext(parts[0], parts[1],parts[2],parts[3],parts[4]);
+                    csvWrite.writeNext("Song", "Timestamp","Difficulty","Goal","InGameManipulation", "Username");
+                    csvWrite.writeNext(parts[0], parts[1],parts[2],parts[3],parts[4],parts[5]);
                     csvWrite.writeNext(curCSV.getColumnNames());
                     while (curCSV.moveToNext()) {
                         //Which column you want to export

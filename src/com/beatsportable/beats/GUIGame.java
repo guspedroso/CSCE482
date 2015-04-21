@@ -375,11 +375,12 @@ public class GUIGame extends Activity {
             inGameManipulation = "Disabled";
         }
         songtitle += "splitme" + inGameManipulation;
+        songtitle += "splitme" + MenuHome.userID;
 
         //add title to list of table names
         MenuHome.tableNames.add(songtitle);
         // MenuHome.userID is the username, but not persistent -liz
-        Toast.makeText(this, "Adding table " + MenuHome.userID + songtitle, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Adding table " + songtitle, Toast.LENGTH_LONG).show();
         //set up table for song and put in database
         MenuHome.sampleDB.execSQL("CREATE TABLE IF NOT EXISTS " +
                 songtitle +

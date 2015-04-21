@@ -2,25 +2,32 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Elizabeth\Documents\GitHub\CSCE482\libs\opencsv-2.4.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="60597690a065746f9dd950e2e47e5f476b6c7367">
-        <dex dex="C:\Users\Elizabeth\Documents\GitHub\CSCE482\build\intermediates\pre-dexed\debug\opencsv-2.4-7816e5a4433a04721a332f71359f81fb0b025dca.jar" />
-    </item>
-    <item
-        jar="C:\Users\Elizabeth\Documents\GitHub\CSCE482\libs\BioHarnessBT.jar"
+        jar="/Users/gus/git/CSCE482/libs/BioHarnessBT.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="c6551fa37067ea1ea039f6f858bcf93b62be4cd6">
-        <dex dex="C:\Users\Elizabeth\Documents\GitHub\CSCE482\build\intermediates\pre-dexed\debug\BioHarnessBT-da05c7ad7ccd7723a84dc64ea64be71b4a85ab6d.jar" />
+        <dex dex="/Users/gus/git/CSCE482/build/intermediates/pre-dexed/debug/BioHarnessBT-e9be6802995a5b151e379c4bcfb9a51b38025db5.jar" />
     </item>
     <item
-        jar="C:\Users\Elizabeth\Documents\GitHub\CSCE482\libs\UHL.jar"
+        jar="/Users/gus/git/CSCE482/libs/opencsv-2.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="60597690a065746f9dd950e2e47e5f476b6c7367">
+        <dex dex="/Users/gus/git/CSCE482/build/intermediates/pre-dexed/debug/opencsv-2.4-e9f84bce3dab10d1ff52bcf5566cf4b05cbf64e0.jar" />
+    </item>
+    <item
+        jar="/Users/gus/git/CSCE482/libs/mpandroidchartlibrary-2-0-9.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="db5a003a317b20269d6fbedcf9ee8917d6a66fff">
+        <dex dex="/Users/gus/git/CSCE482/build/intermediates/pre-dexed/debug/mpandroidchartlibrary-2-0-9-ffc0e586a7206bc0917bdc9ea3f5c30da54b1b71.jar" />
+    </item>
+    <item
+        jar="/Users/gus/git/CSCE482/libs/UHL.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="9f6e2207f6a895076409cb18b608e82ea2a3e99b">
-        <dex dex="C:\Users\Elizabeth\Documents\GitHub\CSCE482\build\intermediates\pre-dexed\debug\UHL-98e0f3dc28181687c77df681614706eb5e3809e7.jar" />
+        <dex dex="/Users/gus/git/CSCE482/build/intermediates/pre-dexed/debug/UHL-4addc07889c9a426736b73a5d2033be8d951c37f.jar" />
     </item>
 
 </items>

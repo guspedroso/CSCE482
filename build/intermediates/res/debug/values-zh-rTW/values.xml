@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-zh-rTW/arrays_trans.xml -->
+    <!-- From: file:/Users/gus/git/CSCE482/res/values-zh-rTW/arrays_trans.xml -->
     <eat-comment/>
     <string-array name="accuracyLevel">
     <item>太容易</item>
@@ -76,7 +76,7 @@
     <item>輕</item>
     <item>關</item>
   </string-array>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-zh-rTW/strings_trans.xml -->
+    <!-- From: file:/Users/gus/git/CSCE482/res/values-zh-rTW/strings_trans.xml -->
     <eat-comment/>
     <string name="Accuracy_almost">"差不多"</string>
     <string name="Accuracy_best_combo">"最高連擊"</string>
@@ -219,7 +219,7 @@
     <string name="Tools_unable_delete_file">"錯誤: 無法刪除文件:\n"</string>
     <string name="Tools_usb_error">"\n您的手機可能處於USB模式"</string>
     <string name="Tools_window_error">"視窗切換錯誤 - 我還未能找出解決辦法 ; / (請把詳細資料電郵給我！)"</string>
-    <!-- From: file:/C:/Users/Elizabeth/Documents/GitHub/CSCE482/res/values-zh-rTW/settings_trans.xml -->
+    <!-- From: file:/Users/gus/git/CSCE482/res/values-zh-rTW/settings_trans.xml -->
     <eat-comment/>
     <string name="accuracyLevelDesc">"計分精確度"</string>
     <string name="accuracyLevelTitle">"評判嚴格度"</string>
