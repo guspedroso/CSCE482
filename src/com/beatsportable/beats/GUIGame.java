@@ -354,7 +354,8 @@ public class GUIGame extends Activity {
 
         //for logging breathrate
         seconds = 0;
-
+        String[] parts = songtitle.split("-");
+        songtitle = parts[0];
         //remove spaces from title for table name
         songtitle = songtitle.replaceAll("\\s+","");
         //timestamp for db name
@@ -416,7 +417,9 @@ public class GUIGame extends Activity {
         }
 
         songtitle += "splitme" + breathing;
-        songtitle.replaceAll("\\s+",""); //remove all spaces
+        songtitle.replaceAll("\\s",""); //remove all spaces
+        songtitle.replaceAll("-",""); //remove all spaces
+        songtitle.replaceAll("\u2014",""); //remove all spaces
         songtitle.replaceAll("[^a-zA-Z0-9]+",""); //remove all special char
 
         //add title to list of table names

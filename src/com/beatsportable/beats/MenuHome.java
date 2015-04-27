@@ -829,11 +829,12 @@ public class MenuHome extends Activity {
             }
 
             //timestamp for db name
-            DateFormat dateFormat = new SimpleDateFormat("yyyy.MM.dd--HH.mm.ss");
+            DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
             //get current date time with Date()
             Date date = new Date();
 
-            String dbName = SAMPLE_DB_NAME + "--" + userID.replaceAll("\\s+","") + "--" + dateFormat.format(date).replaceAll("\\s+","");
+            String dbName = SAMPLE_DB_NAME + userID + dateFormat.format(date);
+            dbName.replaceAll("\\s+","");
             File file = new File(exportDir, dbName + ".csv");
             try
             {
