@@ -363,8 +363,8 @@ public class GUIGame extends Activity {
         //get current date time with Date()
         Date date = new Date();
 
-        songtitle += "splitme" + dateFormat.format(date).replaceAll("\\s+",""); //name + timestamp + difficulty + goal
-        songtitle += "splitme" + dp.getNotesData().getDifficulty().toString();
+        songtitle += "yyy" + dateFormat.format(date).replaceAll("\\s+",""); //name + timestamp + difficulty + goal
+        songtitle += "yyy" + dp.getNotesData().getDifficulty().toString();
 
         String goal = "NA";
         switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
@@ -404,8 +404,8 @@ public class GUIGame extends Activity {
         else {
             inGameManipulation = "Disabled";
         }
-        songtitle += "splitme" + inGameManipulation;
-        songtitle += "splitme" + MenuHome.userID;
+        songtitle += "yyy" + inGameManipulation;
+        songtitle += "yyy" + MenuHome.userID;
 
         String breathing;
 
@@ -416,7 +416,7 @@ public class GUIGame extends Activity {
             breathing = "Disabled";
         }
 
-        songtitle += "splitme" + breathing;
+        songtitle += "yyy" + breathing;
         songtitle.replaceAll("\\s",""); //remove all spaces
         songtitle.replaceAll("-",""); //remove all spaces
         songtitle.replaceAll("\u2014",""); //remove all spaces

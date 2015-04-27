@@ -846,7 +846,7 @@ public class MenuHome extends Activity {
                 for (int i = 0; i < tableNames.size(); i++) {
                     Cursor curCSV = db.rawQuery("SELECT * FROM " + tableNames.get(i), null);
                     Toast.makeText(this, "exporting table " + tableNames.get(i), Toast.LENGTH_LONG).show();
-                    String[] parts = tableNames.get(i).split("splitme");
+                    String[] parts = tableNames.get(i).split("yyy");
 
                     csvWrite.writeNext("Song", "Timestamp","Difficulty","Goal","InGameManipulation", "Username", "BreathingBackground");
                     csvWrite.writeNext(parts[0], parts[1],parts[2],parts[3],parts[4],parts[5]);
