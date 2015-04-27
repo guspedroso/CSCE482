@@ -2,6 +2,7 @@
 <resources>
   <string name="App_description">"Beats is a music rhythm game where you tap to the beat of the music of installed song packs."</string>
   <string name="Menu_user">" user "</string>
+  <string name="saveButton">" save "</string>
   <string name="Menu_start">" start "</string>
   <string name="Menu_select_song">" select song "</string>
   <string name="Menu_download_songs">" statistics "</string>

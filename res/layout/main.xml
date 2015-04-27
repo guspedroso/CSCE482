@@ -46,7 +46,7 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_alignParentRight="true"
-				>
+                android:id="@+id/linearLayout2">
 				<ImageView
 					android:id="@+id/gameModePrev"
 					android:layout_width="wrap_content"
@@ -82,6 +82,24 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/savedName"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:id="@+id/saveButton"
+                android:layout_below="@+id/username"
+                android:layout_alignRight="@+id/linearLayout2"
+                android:layout_alignEnd="@+id/linearLayout2" />
         </RelativeLayout>
 		<!-- Body -->
 		<RelativeLayout
@@ -119,12 +137,6 @@
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:text="@string/Menu_select_song"
-					/>
-					<TextView
-						android:id="@+id/download_songs"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:text="@string/Menu_download_songs"
 					/>
 					<TextView
 						android:id="@+id/settings"

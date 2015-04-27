@@ -326,7 +326,8 @@ public class MenuHome extends Activity {
         formatMenuItem(((EditText) findViewById(R.id.username)), R.string.Menu_user);
 		formatMenuItem(((TextView) findViewById(R.id.start)), R.string.Menu_start);
 		formatMenuItem(((TextView) findViewById(R.id.select_song)), R.string.Menu_select_song);
-		formatMenuItem(((TextView) findViewById(R.id.download_songs)), R.string.Menu_download_songs);
+		//formatMenuItem(((TextView) findViewById(R.id.download_songs)), R.string.Menu_download_songs);
+        formatMenuItem(((TextView) findViewById(R.id.saveButton)), R.string.saveButton);
 		formatMenuItem(((TextView) findViewById(R.id.settings)), R.string.Menu_settings);
         formatMenuItem(((TextView) findViewById(R.id.export)), R.string.Menu_export);
 		formatMenuItem(((TextView) findViewById(R.id.exit)), R.string.Menu_exit);
@@ -715,15 +716,25 @@ public class MenuHome extends Activity {
 
         // Editable Username Box
         final EditText user = (EditText) findViewById(R.id.username);
+        final TextView savedName = (TextView) findViewById(R.id.savedName);
+
+
+        Button saveButton = (Button) findViewById(R.id.saveButton);
+        saveButton.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                vibrate();
+                //Get user ID when they click start
+                userID = user.getText().toString().trim();
+                user.setText(userID);
+                savedName.setText(userID);
+            }
+        });
 
 		// Start button
 		TextView start_b = (TextView) findViewById(R.id.start);
 		start_b.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				vibrate();
-                //Get user ID when they click start
-                userID = user.getText().toString().trim();
-                user.setText(userID);
 				new MenuStartGame(MenuHome.this, title).startGameCheck();
 			}
 		});
@@ -753,7 +764,7 @@ public class MenuHome extends Activity {
 		});
 		
 		// Download Songs button
-		TextView download_songs_b = (TextView) findViewById(R.id.download_songs);
+		/*TextView download_songs_b = (TextView) findViewById(R.id.download_songs);
 		download_songs_b.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				vibrate();
@@ -761,7 +772,7 @@ public class MenuHome extends Activity {
 				//	Tools.startWebsiteActivity(Tools.getString(R.string.Url_downloads));
 				//}
 			}
-		});
+		}); */
 
         // Export button
         TextView export_b = (TextView) findViewById(R.id.export);
@@ -794,7 +805,7 @@ public class MenuHome extends Activity {
         R.id.username,
 		R.id.start,
 		R.id.select_song,
-		R.id.download_songs,
+        R.id.saveButton,
 		R.id.settings,
         R.id.export,
 		R.id.exit,
