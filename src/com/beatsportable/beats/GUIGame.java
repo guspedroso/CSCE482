@@ -416,12 +416,13 @@ public class GUIGame extends Activity {
         }
 
         songtitle += "splitme" + breathing;
+        songtitle.replaceAll("\\s+",""); //remove all spaces
         songtitle.replaceAll("[^a-zA-Z0-9]+",""); //remove all special char
 
         //add title to list of table names
         MenuHome.tableNames.add(songtitle);
         // MenuHome.userID is the username, but not persistent -liz
-        Toast.makeText(this, "Adding table " + songtitle, Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "Adding table " + songtitle, Toast.LENGTH_LONG).show();
         //set up table for song and put in database
         MenuHome.sampleDB.execSQL("CREATE TABLE IF NOT EXISTS " +
                 songtitle +
