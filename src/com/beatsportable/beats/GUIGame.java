@@ -394,7 +394,7 @@ public class GUIGame extends Activity {
                 break;
         }
 
-        songtitle += "splitme" + goal; //need to add goal!!!!!!
+        songtitle += "yyy" + goal; //need to add goal!!!!!!
 
         String inGameManipulation;
 
