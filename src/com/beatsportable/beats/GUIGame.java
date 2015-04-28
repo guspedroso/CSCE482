@@ -98,6 +98,8 @@ public class GUIGame extends Activity {
     private int breathColor; //default 0 (none), 1 (red), 2 (green), 3 (blue)
     private int flag = 0;
 
+    String goal = "NA";
+
     /*--------------------------------------------------------------------*/
 
     /*-------these variables are needed for db updates -gp ----------*/
@@ -366,8 +368,8 @@ public class GUIGame extends Activity {
         songtitle += "gustavo" + dateFormat.format(date).replaceAll("\\s+",""); //name + timestamp + difficulty + goal
         songtitle += "gustavo" + dp.getNotesData().getDifficulty().toString();
 
-        String goal = "NA";
-        switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
+        //public String goal = "NA";
+       /* switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
             // GOAL: 6
             case 0:
                 goal = "6";
@@ -392,7 +394,7 @@ public class GUIGame extends Activity {
             case 4:
                 goal = "14";
                 break;
-        }
+        } */
 
         songtitle += "gustavo" + goal; //need to add goal!!!!!!
 
@@ -799,7 +801,7 @@ public class GUIGame extends Activity {
             if (respRate!= null) {
                 double resp = Double.parseDouble(respRate);
 
-                // Modify Speed Based on Breathing Rate
+                // Modify Color of Health Bar Based on Breathing Rate
                 switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
                     // GOAL: 6
                     case 0:
@@ -993,6 +995,7 @@ public class GUIGame extends Activity {
                         switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
                             // GOAL: 6
                             case 0:
+                                goal = "6";
                                 if (resp <= 6.0) {
                                     h.fallpix_per_ms = 1.5;
                                 } else if (resp > 6.0 && resp <= 8.0) {
@@ -1012,6 +1015,7 @@ public class GUIGame extends Activity {
 
                             // GOAL: 8
                             case 1:
+                                goal = "8";
                                 if (resp <= 8.0) {
                                     h.fallpix_per_ms = 1.5;
                                 } else if (resp > 8.0 && resp <= 10.0) {
@@ -1031,6 +1035,7 @@ public class GUIGame extends Activity {
 
                             // GOAL: 10
                             case 2:
+                                goal = "10";
                                 if (resp <= 10.0) {
                                     h.fallpix_per_ms = 1.5;
                                 } else if (resp > 10.0 && resp <= 12.0) {
@@ -1050,6 +1055,7 @@ public class GUIGame extends Activity {
 
                             // GOAL: 12
                             case 3:
+                                goal = "12";
                                 if (resp <= 12.0) {
                                     h.fallpix_per_ms = 1.5;
                                 } else if (resp > 12.0 && resp <= 14.0) {
@@ -1069,6 +1075,7 @@ public class GUIGame extends Activity {
 
                             // GOAL: 14
                             case 4:
+                                goal = "14";
                                 if (resp <= 14.0) {
                                     h.fallpix_per_ms = 1.5;
                                 } else if (resp > 14.0 && resp <= 16.0) {
@@ -1095,6 +1102,7 @@ public class GUIGame extends Activity {
 
                 // if not connected to device
                 else {
+                    goal = "NA";
                     respRate = "Not Connected";
                     h.fallpix_per_ms = 2;
                 }
