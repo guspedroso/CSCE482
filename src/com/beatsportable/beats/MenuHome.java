@@ -849,7 +849,7 @@ public class MenuHome extends Activity {
                     String[] parts = tableNames.get(i).split("gustavo");
 
                     csvWrite.writeNext("Song", "Timestamp","Difficulty","Goal","InGameManipulation", "Username", "BreathingBackground");
-                    csvWrite.writeNext(parts[0], parts[1],parts[2],parts[3],parts[4],parts[5]);
+                    csvWrite.writeNext(parts[0], parts[1],parts[2],parts[3],parts[4],parts[5],parts[6]);
                     csvWrite.writeNext(curCSV.getColumnNames());
                     while (curCSV.moveToNext()) {
                         //Which column you want to export
