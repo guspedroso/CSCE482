@@ -359,12 +359,12 @@ public class GUIGame extends Activity {
         //remove spaces from title for table name
         songtitle = songtitle.replaceAll("\\s+","");
         //timestamp for db name
-        DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+        DateFormat dateFormat = new SimpleDateFormat("mmss");
         //get current date time with Date()
         Date date = new Date();
 
-        songtitle += "yyy" + dateFormat.format(date).replaceAll("\\s+",""); //name + timestamp + difficulty + goal
-        songtitle += "yyy" + dp.getNotesData().getDifficulty().toString();
+        songtitle += "gustavo" + dateFormat.format(date).replaceAll("\\s+",""); //name + timestamp + difficulty + goal
+        songtitle += "gustavo" + dp.getNotesData().getDifficulty().toString();
 
         String goal = "NA";
         switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
@@ -394,29 +394,39 @@ public class GUIGame extends Activity {
                 break;
         }
 
-        songtitle += "yyy" + goal; //need to add goal!!!!!!
+        songtitle += "gustavo" + goal; //need to add goal!!!!!!
 
         String inGameManipulation;
 
         if (bioharnessToggle) {
-            inGameManipulation = "Enabled";
+            inGameManipulation = "Y";
         }
         else {
-            inGameManipulation = "Disabled";
+            inGameManipulation = "N";
         }
-        songtitle += "yyy" + inGameManipulation;
-        songtitle += "yyy" + MenuHome.userID;
+        songtitle += "gustavo" + inGameManipulation;
+
+        String nameIn;
+
+        if (MenuHome.userID == null) {
+            nameIn = "NA";
+        }
+        else {
+            nameIn = MenuHome.userID;
+        }
+
+        songtitle += "gustavo" + nameIn;
 
         String breathing;
 
         if (showBreath) {
-            breathing = "Enabled";
+            breathing = "Y";
         }
         else {
-            breathing = "Disabled";
+            breathing = "N";
         }
 
-        songtitle += "yyy" + breathing;
+        songtitle += "gustavo" + breathing;
         songtitle.replaceAll("\\s",""); //remove all spaces
         songtitle.replaceAll("-",""); //remove all spaces
         songtitle.replaceAll("\u2014",""); //remove all spaces
@@ -424,6 +434,10 @@ public class GUIGame extends Activity {
 
         //add title to list of table names
         MenuHome.tableNames.add(songtitle);
+
+        songtitle = "table";
+        songtitle += MenuHome.tableNames.size() - 1;
+
         // MenuHome.userID is the username, but not persistent -liz
         //Toast.makeText(this, "Adding table " + songtitle, Toast.LENGTH_LONG).show();
         //set up table for song and put in database

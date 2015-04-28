@@ -829,7 +829,7 @@ public class MenuHome extends Activity {
             }
 
             //timestamp for db name
-            DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+            DateFormat dateFormat = new SimpleDateFormat("mmss");
             //get current date time with Date()
             Date date = new Date();
 
@@ -844,9 +844,9 @@ public class MenuHome extends Activity {
                 SQLiteDatabase db =  this.openOrCreateDatabase(SAMPLE_DB_NAME, MODE_PRIVATE, null);
 
                 for (int i = 0; i < tableNames.size(); i++) {
-                    Cursor curCSV = db.rawQuery("SELECT * FROM " + tableNames.get(i), null);
-                    Toast.makeText(this, "exporting table " + tableNames.get(i), Toast.LENGTH_LONG).show();
-                    String[] parts = tableNames.get(i).split("yyy");
+                    Cursor curCSV = db.rawQuery("SELECT * FROM table" + i, null);
+                    Toast.makeText(this, "exporting table" + i, Toast.LENGTH_LONG).show();
+                    String[] parts = tableNames.get(i).split("gustavo");
 
                     csvWrite.writeNext("Song", "Timestamp","Difficulty","Goal","InGameManipulation", "Username", "BreathingBackground");
                     csvWrite.writeNext(parts[0], parts[1],parts[2],parts[3],parts[4],parts[5]);
