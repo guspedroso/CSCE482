@@ -361,7 +361,7 @@ public class GUIGame extends Activity {
         //remove spaces from title for table name
         songtitle = songtitle.replaceAll("\\s+","");
 
-        songtitle += "gustavo" + dp.getNotesData().getDifficulty().toString();
+        songtitle += "splitme" + dp.getNotesData().getDifficulty().toString();
 
          String goal = "NA";
         int iGoal = Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault));
@@ -376,7 +376,7 @@ public class GUIGame extends Activity {
         else if (iGoal == 4)
             goal = "14";
 
-        songtitle += "gustavo" + goal; //need to add goal!!!!!!
+        songtitle += "splitme" + goal; //need to add goal!!!!!!
 
         String inGameManipulation;
 
@@ -386,7 +386,7 @@ public class GUIGame extends Activity {
         else {
             inGameManipulation = "N";
         }
-        songtitle += "gustavo" + inGameManipulation;
+        songtitle += "splitme" + inGameManipulation;
 
         String nameIn;
 
@@ -397,7 +397,7 @@ public class GUIGame extends Activity {
             nameIn = MenuHome.userID;
         }
 
-        songtitle += "gustavo" + nameIn;
+        songtitle += "splitme" + nameIn;
 
         String breathing;
 
@@ -408,7 +408,7 @@ public class GUIGame extends Activity {
             breathing = "N";
         }
 
-        songtitle += "gustavo" + breathing;
+        songtitle += "splitme" + breathing;
         songtitle.replaceAll("\\s",""); //remove all spaces
         songtitle.replaceAll("-",""); //remove all spaces
         songtitle.replaceAll("\u2014",""); //remove all spaces
