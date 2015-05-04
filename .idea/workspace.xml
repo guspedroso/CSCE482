@@ -42,11 +42,11 @@
       <file leaf-file-name="GUIGame.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/GUIGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45454547" vertical-offset="5070" max-vertical-offset="22905">
-              <caret line="399" column="9" selection-start-line="399" selection-start-column="9" selection-end-line="399" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.5134474" vertical-offset="4695" max-vertical-offset="22830">
+              <caret line="367" column="23" selection-start-line="367" selection-start-column="23" selection-end-line="367" selection-end-column="23" />
               <folding>
-                <element signature="e#13163#13181#0" expanded="true" />
-                <element signature="e#13183#13208#0" expanded="true" />
+                <element signature="e#12866#12884#0" expanded="true" />
+                <element signature="e#12886#12911#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,8 +55,8 @@
       <file leaf-file-name="MenuHome.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/MenuHome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.0" vertical-offset="10615" max-vertical-offset="16710">
-              <caret line="860" column="17" selection-start-line="860" selection-start-column="17" selection-end-line="860" selection-end-column="17" />
+            <state vertical-scroll-proportion="-8.269231" vertical-offset="10840" max-vertical-offset="16710">
+              <caret line="846" column="77" selection-start-line="846" selection-start-column="77" selection-end-line="846" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -1161,7 +1161,7 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18245614" sideWeight="0.31518406" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3166227" sideWeight="0.8288288" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.03166227" sideWeight="0.81578946" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40633246" sideWeight="0.81578946" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1245,8 +1245,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="23392">
           <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
           <folding>
-            <element signature="e#13163#13181#0" expanded="true" />
-            <element signature="e#13183#13208#0" expanded="true" />
+            <element signature="e#12866#12884#0" expanded="true" />
+            <element signature="e#12886#12911#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1620,19 +1620,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/MenuHome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.0" vertical-offset="10615" max-vertical-offset="16710">
-          <caret line="860" column="17" selection-start-line="860" selection-start-column="17" selection-end-line="860" selection-end-column="17" />
+        <state vertical-scroll-proportion="-8.269231" vertical-offset="10840" max-vertical-offset="16710">
+          <caret line="846" column="77" selection-start-line="846" selection-start-column="77" selection-end-line="846" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/beatsportable/beats/GUIGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45454547" vertical-offset="5070" max-vertical-offset="23010">
-          <caret line="399" column="9" selection-start-line="399" selection-start-column="9" selection-end-line="399" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.5134474" vertical-offset="4695" max-vertical-offset="22830">
+          <caret line="367" column="23" selection-start-line="367" selection-start-column="23" selection-end-line="367" selection-end-column="23" />
           <folding>
-            <element signature="e#13163#13181#0" expanded="true" />
-            <element signature="e#13183#13208#0" expanded="true" />
+            <element signature="e#12866#12884#0" expanded="true" />
+            <element signature="e#12886#12911#0" expanded="true" />
           </folding>
         </state>
       </provider>

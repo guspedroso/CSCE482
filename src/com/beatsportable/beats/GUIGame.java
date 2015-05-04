@@ -360,12 +360,7 @@ public class GUIGame extends Activity {
         songtitle = parts[0];
         //remove spaces from title for table name
         songtitle = songtitle.replaceAll("\\s+","");
-        //timestamp for db name
-        DateFormat dateFormat = new SimpleDateFormat("yyyyMMddmmss");
-        //get current date time with Date()
-        Date date = new Date();
 
-        songtitle += "gustavo" + dateFormat.format(date).replaceAll("\\s+",""); //name + timestamp + difficulty + goal
         songtitle += "gustavo" + dp.getNotesData().getDifficulty().toString();
 
          String goal = "NA";
