@@ -879,6 +879,7 @@ public class MenuHome extends Activity {
 
         boolean result = this.deleteDatabase(SAMPLE_DB_NAME);
         if (result==true) {
+            tableNames.clear();
             Toast.makeText(this, "DB Deleted!", Toast.LENGTH_LONG).show();
         }
 
@@ -886,7 +887,7 @@ public class MenuHome extends Activity {
 
     private void createDB() {
         sampleDB =  this.openOrCreateDatabase(SAMPLE_DB_NAME, MODE_PRIVATE, null);
-        tableNames.clear();
+
         exported = false;
         //sampleDB.close();
         sampleDB.getPath();
