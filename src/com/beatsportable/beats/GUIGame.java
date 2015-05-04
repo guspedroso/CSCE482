@@ -98,7 +98,7 @@ public class GUIGame extends Activity {
     private int breathColor; //default 0 (none), 1 (red), 2 (green), 3 (blue)
     private int flag = 0;
 
-    String goal = "NA";
+    //String goal = "NA";
 
     /*--------------------------------------------------------------------*/
 
@@ -361,40 +361,25 @@ public class GUIGame extends Activity {
         //remove spaces from title for table name
         songtitle = songtitle.replaceAll("\\s+","");
         //timestamp for db name
-        DateFormat dateFormat = new SimpleDateFormat("mmss");
+        DateFormat dateFormat = new SimpleDateFormat("yyyyMMddmmss");
         //get current date time with Date()
         Date date = new Date();
 
         songtitle += "gustavo" + dateFormat.format(date).replaceAll("\\s+",""); //name + timestamp + difficulty + goal
         songtitle += "gustavo" + dp.getNotesData().getDifficulty().toString();
 
-        //public String goal = "NA";
-       /* switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
-            // GOAL: 6
-            case 0:
-                goal = "6";
-                break;
-
-            // GOAL: 8
-            case 1:
-                goal = "8";
-                break;
-
-            // GOAL: 10
-            case 2:
-                goal = "10";
-                break;
-
-            // GOAL: 12
-            case 3:
-                goal = "12";
-                break;
-
-            // GOAL: 14
-            case 4:
-                goal = "14";
-                break;
-        } */
+         String goal = "NA";
+        int iGoal = Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault));
+        if (iGoal == 0)
+            goal = "6";
+        else if (iGoal == 1)
+            goal = "8";
+        else if (iGoal == 2)
+            goal = "10";
+        else if (iGoal == 3)
+            goal = "12";
+        else if (iGoal == 4)
+            goal = "14";
 
         songtitle += "gustavo" + goal; //need to add goal!!!!!!
 
@@ -441,7 +426,7 @@ public class GUIGame extends Activity {
         songtitle += MenuHome.tableNames.size() - 1;
 
         // MenuHome.userID is the username, but not persistent -liz
-        //Toast.makeText(this, "Adding table " + songtitle, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Adding table " + songtitle, Toast.LENGTH_LONG).show();
         //set up table for song and put in database
         MenuHome.sampleDB.execSQL("CREATE TABLE IF NOT EXISTS " +
                 songtitle +
@@ -995,7 +980,6 @@ public class GUIGame extends Activity {
                         switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
                             // GOAL: 6
                             case 0:
-                                goal = "6";
                                 if (resp <= 6.0) {
                                     h.fallpix_per_ms = 1.5;
                                 } else if (resp > 6.0 && resp <= 8.0) {
@@ -1015,7 +999,6 @@ public class GUIGame extends Activity {
 
                             // GOAL: 8
                             case 1:
-                                goal = "8";
                                 if (resp <= 8.0) {
                                     h.fallpix_per_ms = 1.5;
                                 } else if (resp > 8.0 && resp <= 10.0) {
@@ -1035,7 +1018,6 @@ public class GUIGame extends Activity {
 
                             // GOAL: 10
                             case 2:
-                                goal = "10";
                                 if (resp <= 10.0) {
                                     h.fallpix_per_ms = 1.5;
                                 } else if (resp > 10.0 && resp <= 12.0) {
@@ -1055,7 +1037,6 @@ public class GUIGame extends Activity {
 
                             // GOAL: 12
                             case 3:
-                                goal = "12";
                                 if (resp <= 12.0) {
                                     h.fallpix_per_ms = 1.5;
                                 } else if (resp > 12.0 && resp <= 14.0) {
@@ -1075,7 +1056,6 @@ public class GUIGame extends Activity {
 
                             // GOAL: 14
                             case 4:
-                                goal = "14";
                                 if (resp <= 14.0) {
                                     h.fallpix_per_ms = 1.5;
                                 } else if (resp > 14.0 && resp <= 16.0) {
@@ -1102,7 +1082,6 @@ public class GUIGame extends Activity {
 
                 // if not connected to device
                 else {
-                    goal = "NA";
                     respRate = "Not Connected";
                     h.fallpix_per_ms = 2;
                 }
@@ -1243,14 +1222,13 @@ public class GUIGame extends Activity {
                     MenuHome.sampleDB.execSQL("INSERT INTO " +
                             songtitle +
                             " Values ('" + seconds + "','N/A');");
-                    Log.d("gusgus", "inserting into " + songtitle);
                 }
                 else {
                     MenuHome.sampleDB.execSQL("INSERT INTO " +
                             songtitle +
                             " Values ('" + seconds + "','" + respRate + "');");
                 }
-
+                Log.d("gusgus", "inserting " + seconds + " into " + songtitle);
             }
         }
 
@@ -1494,7 +1472,7 @@ public class GUIGame extends Activity {
 		}
 		h.pauseVibrator();
 	}
-	
+
 	private void takeScreenshot() {
 		Bitmap screenshot = Bitmap.createBitmap(Tools.screen_w, Tools.screen_h, Bitmap.Config.ARGB_8888);
 		Canvas canvas = new Canvas(screenshot);

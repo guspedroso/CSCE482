@@ -9,18 +9,18 @@
         <dex dex="/Users/gus/git/CSCE482/build/intermediates/pre-dexed/debug/BioHarnessBT-eb3a772126687d38e8b7508f99eaa36c310b6b7f.jar" />
     </item>
     <item
-        jar="/Users/gus/git/CSCE482/libs/UHL.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="9f6e2207f6a895076409cb18b608e82ea2a3e99b">
-        <dex dex="/Users/gus/git/CSCE482/build/intermediates/pre-dexed/debug/UHL-4addc07889c9a426736b73a5d2033be8d951c37f.jar" />
-    </item>
-    <item
         jar="/Users/gus/git/CSCE482/libs/opencsv-2.4.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="60597690a065746f9dd950e2e47e5f476b6c7367">
         <dex dex="/Users/gus/git/CSCE482/build/intermediates/pre-dexed/debug/opencsv-2.4-e9f84bce3dab10d1ff52bcf5566cf4b05cbf64e0.jar" />
+    </item>
+    <item
+        jar="/Users/gus/git/CSCE482/libs/UHL.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9f6e2207f6a895076409cb18b608e82ea2a3e99b">
+        <dex dex="/Users/gus/git/CSCE482/build/intermediates/pre-dexed/debug/UHL-4addc07889c9a426736b73a5d2033be8d951c37f.jar" />
     </item>
 
 </items>

@@ -829,7 +829,7 @@ public class MenuHome extends Activity {
             }
 
             //timestamp for db name
-            DateFormat dateFormat = new SimpleDateFormat("mmss");
+            DateFormat dateFormat = new SimpleDateFormat("yyyyMMddmmss");
             //get current date time with Date()
             Date date = new Date();
 
@@ -879,8 +879,8 @@ public class MenuHome extends Activity {
 
         boolean result = this.deleteDatabase(SAMPLE_DB_NAME);
         if (result==true) {
-            tableNames.clear();
             Toast.makeText(this, "DB Deleted!", Toast.LENGTH_LONG).show();
+            tableNames.clear();
         }
 
     }
