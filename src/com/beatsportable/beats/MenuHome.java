@@ -340,29 +340,8 @@ public class MenuHome extends Activity {
         updateGoal();
 
 		updateAutoPlay();
-		
-		// Game Mode
-		/*
-		if (Tools.gameMode == Tools.OSU_MOD) {
-			gameMode.setImageResource(R.drawable.icon_osu);
-		} else {
-			gameMode.setImageResource(R.drawable.icon_sm);
-		}
-		*/
+
 		updateGameMode();
-		
-		// Background data icon
-		/*
-		ConnectivityManager cm =
-			(ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
-		ImageView backgroundData = (ImageView) findViewById(R.id.backgroundData);
-		if (cm.getBackgroundDataSetting() &&
-			!Tools.getBooleanSetting(R.string.ignoreSyncWarning, R.string.ignoreSyncWarningDefault)) {
-			backgroundData.setVisibility(View.VISIBLE);
-		} else {
-			backgroundData.setVisibility(View.GONE);
-		}
-		*/
 		
 		// Background image
 		String backgroundPathNew = Tools.getBackgroundRes();
@@ -467,7 +446,7 @@ public class MenuHome extends Activity {
                 case RESPIRATION_RATE:
                     String RespirationRatetext = msg.getData().getString("RespirationRate");
                     tv = (TextView)findViewById(R.id.labelRespRate);
-                    if (tv != null)tv.setText(RespirationRatetext);
+                    if (tv != null) tv.setText(RespirationRatetext);
                     bpm = RespirationRatetext;
 
                     break;
@@ -561,7 +540,7 @@ public class MenuHome extends Activity {
 			}
 		});
 
-        //-------------------------------------- Goal button ------------------------------------------------------
+//-------------------------------------- Goal button ------------------------------------------------------
         final TextView goal = (TextView) findViewById(R.id.goal);
         goal.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
@@ -574,9 +553,6 @@ public class MenuHome extends Activity {
                 if (hasFocus) {
                     goal.setBackgroundColor(Color.BLACK);
                 } else {
-                    // Using the image increases the view's height and shifts the menu a bit,
-                    // so let's just forget about the background
-                    //difficulty.setBackgroundResource(R.drawable.difficulty_header);
                     goal.setBackgroundColor(Color.TRANSPARENT);
                 }
             }
@@ -590,66 +566,11 @@ public class MenuHome extends Activity {
 		autoPlay.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				vibrate();
-				//changeAutoPlay();
 				nextAutoPlay();
 			}
 		});
-		
-		// Game Mode
-		//ImageView gameModePrev = (ImageView) findViewById(R.id.gameModePrev);
-		//ImageView gameModeNext = (ImageView) findViewById(R.id.gameModeNext);
-		//final ImageView gameMode = (ImageView) findViewById(R.id.gameMode);
-		/*
-		int maxHeight = Tools.button_h * 2 / 3;
-		gameMode.setAdjustViewBounds(true);
-		gameMode.setMaxHeight(maxHeight);
-		gameModePrev.setAdjustViewBounds(true);
-		gameModePrev.setMaxHeight(maxHeight);
-		gameModeNext.setAdjustViewBounds(true);
-		gameModeNext.setMaxHeight(maxHeight);
-		
-		OnClickListener onGameModePrev = new OnClickListener() {
-			public void onClick(View v) {
-				vibrate();
-				nextGameMode(true);
-			}
-		};
-		gameModePrev.setOnClickListener(onGameModePrev);
-		
-		OnClickListener onGameModeNext = new OnClickListener() {
-			public void onClick(View v) {
-				vibrate();
-				nextGameMode(false);
-			}
-		};
-		gameMode.setOnClickListener(onGameModeNext);
-		gameModeNext.setOnClickListener(onGameModeNext);
-		
-		gameMode.setOnFocusChangeListener(new OnFocusChangeListener() {
-			public void onFocusChange(View v, boolean hasFocus) {
-				if (hasFocus) {
-					gameMode.setBackgroundColor(Color.BLACK);
-				} else {
-					gameMode.setBackgroundColor(Color.TRANSPARENT);
-				}
-			}
-		});	*/
-		
-		/*
-		// Background Data button
-		ImageView backgroundData = (ImageView) findViewById(R.id.backgroundData);
-		backgroundData.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				showBackgroundData();
-			}
-		});
-		*/
 
-
-
-
-
-// -----------------------------------------------------------------------------------------------------------------
+// ---------------------------------- BioHarness ---------------------------------------------------------
 
 
         TextView tv = (TextView) findViewById(R.id.labelStatusMsg);
@@ -779,8 +700,6 @@ public class MenuHome extends Activity {
         export_b.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 vibrate();
-                //backgroundDataUncheck();
-                //finish();
                 exportDB();
 
             }
@@ -791,7 +710,6 @@ public class MenuHome extends Activity {
 		exit_b.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				vibrate();
-				//backgroundDataUncheck();
                 deleteDB();
 				finish();
 			}
@@ -811,7 +729,6 @@ public class MenuHome extends Activity {
 		R.id.exit,
 		R.id.difficulty,
         R.id.goal
-		//R.id.gameMode
 	};
 
     // DB functions -gp
@@ -872,7 +789,6 @@ public class MenuHome extends Activity {
     }
 
     private void deleteDB(){
-        //sampleDB.close();
         if (!tableNames.isEmpty() && !exported) {
             Toast.makeText(this, "DB is not empty and you haven't exported.. Exporting!", Toast.LENGTH_LONG).show();
             exportDB();
@@ -888,9 +804,7 @@ public class MenuHome extends Activity {
 
     private void createDB() {
         sampleDB =  this.openOrCreateDatabase(SAMPLE_DB_NAME, MODE_PRIVATE, null);
-
         exported = false;
-        //sampleDB.close();
         sampleDB.getPath();
         Toast.makeText(this, "DB Created @ "+sampleDB.getPath(), Toast.LENGTH_LONG).show();
     }
@@ -1024,7 +938,6 @@ public class MenuHome extends Activity {
 		// AutoPlay header
 		TextView autoPlay = (TextView) findViewById(R.id.autoPlay);
 		if (largeText) {
-			//autoPlay.setTypeface(tf, Typeface.BOLD);
 			autoPlay.setTypeface(Typeface.SANS_SERIF, Typeface.BOLD);
 		} else {
 			autoPlay.setTypeface(tf);
@@ -1056,12 +969,10 @@ public class MenuHome extends Activity {
 		if (Tools.tablet) {
 			textSize += 20;
 		}
-		//textSize = Tools.scale(textSize);
 		
 		// Difficulty header
 		TextView difficulty = (TextView) findViewById(R.id.difficulty);
 		if (largeText) {
-			//difficulty.setTypeface(tf, Typeface.BOLD);
 			difficulty.setTypeface(Typeface.SANS_SERIF, Typeface.BOLD);
 		} else {
 			difficulty.setTypeface(tf);
@@ -1110,7 +1021,6 @@ public class MenuHome extends Activity {
         if (Tools.tablet) {
             textSize += 20;
         }
-        //textSize = Tools.scale(textSize);
 
         // Goal header
         TextView goal = (TextView) findViewById(R.id.goal);
