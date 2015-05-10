@@ -85,7 +85,7 @@ public class GUIGame extends Activity {
     boolean exitingGame;
 	private static final int ROTATABLE = 2;
 
-    /*-------these variables are needed for breath display -gp ----------*/
+    /*-------these variables are needed for breath display ----------*/
 
     private boolean showBreath; //default True to show
     private int increment = 0; //start at zero
@@ -97,16 +97,8 @@ public class GUIGame extends Activity {
     private int span; //default 10 sec
     private int breathColor; //default 0 (none), 1 (red), 2 (green), 3 (blue)
     private int flag = 0;
-
-    //String goal = "NA";
-
-    /*--------------------------------------------------------------------*/
-
-    /*-------these variables are needed for db updates -gp ----------*/
-
+    // Variable needed for db updates
     private int seconds;
-
-    /*--------------------------------------------------------------------*/
 
 	private GUIDrawingArea drawarea = new GUIDrawingArea() {
 		
@@ -234,8 +226,6 @@ public class GUIGame extends Activity {
             Tools.getSetting(R.string.breathColor, R.string.breathColorDefault));
         breathGoal = Integer.valueOf(
             Tools.getSetting(R.string.breathGoal, R.string.breathGoalDefault));
-// --------------------- ADDED -----------------------------------------
-        //showBPM = Tools.getBooleanSetting("showBPM", "1");
 		screenshotMode = Tools.getBooleanSetting(R.string.screenshotMode, R.string.screenshotModeDefault);
 		fullscreen = Tools.getBooleanSetting(R.string.fullscreen, R.string.fullscreenDefault);
 		debugTime = Tools.getBooleanSetting(R.string.debugTime, R.string.debugTimeDefault);
@@ -336,18 +326,8 @@ public class GUIGame extends Activity {
 		h.setupXY();
 		mView.getGameView().setupDraw();
 		if (orientation != ROTATABLE) setRequestedOrientation(orientation);
-		
-		//Preload commonly used bitmaps
-		/*for (int pitch=0; pitch<Tools.PITCHES; pitch++) {
-			Bitmap b;
-			for (Integer frac: new int[] {4, 8, 12, 16, 24, 32, 48, 64, 192}) {
-				b = drawarea.getBitmap(GUINoteImage.rsrc(pitch, frac, false));
-			}
-			b = drawarea.getBitmap(GUINoteImage.rsrc(pitch, 0, true));
-			b = drawarea.getBitmap(GUINoteImage.rsrc(pitch, 0, false));
-		}*/
 
-        //set up breath goal -gp
+        //set up breath pacing goal -gp
         if (breathGoal == 0) {
             inBreath = 4;
             outBreath = 6;
@@ -958,7 +938,8 @@ public class GUIGame extends Activity {
         //Java Timer class object declaration
         Timer timer = new Timer();
 
-        //self-made function to set fallpix_per_ms speed variable within Update()
+        // self-made function to set fallpix_per_ms speed variable within Update()
+        // This changes speed of falling notes when BPM increases or decreases
         class SpeedTask extends TimerTask {
             public void run() {
 
@@ -1122,7 +1103,6 @@ public class GUIGame extends Activity {
                     if (breathBase > 200)
                         breathBase = 200;
 
-                    //Log.d("gusgus", "incremented by " + colorIncrement + " with inCap at " + inCap);
                     if (breathColor == 0) {
                         bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase, breathBase, breathBase);
                     }
@@ -1170,7 +1150,6 @@ public class GUIGame extends Activity {
                     if (breathBase < 0)
                         breathBase = 0;
 
-                    //Log.d("gusgus", "decremented by " + colorIncrement + " with outCap at " + outCap);
                     if (breathColor == 0) {
                         bgSolidPaint.setARGB(Tools.MAX_OPA, breathBase, breathBase, breathBase);
                     }
@@ -1195,7 +1174,6 @@ public class GUIGame extends Activity {
 
                 }
 
-                //Log.d("gusgus", "opa is " + breathBase);
                 increment++;
             }
         }
@@ -1537,7 +1515,6 @@ public class GUIGame extends Activity {
 	
 	@Override
 	protected void onDestroy() {
-		//Log.d("GUIGame", "GUIGame destroyed.");
 		clearBitmaps();
         exitingGame = true;
 		exitGame();
