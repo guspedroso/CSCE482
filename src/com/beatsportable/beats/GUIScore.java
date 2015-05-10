@@ -105,31 +105,7 @@ public class GUIScore {
         }
     }
 
-    // Calculate letter score
-    // Based on the DDR Max 2 system: http://aaronin.jp/taren/scoring/ss7.html
-	/*
-	Each song has a certain number of "Dance Points" assigned to it. For regular arrows, this is 2 per arrow. For freeze arrows, it is 6 per arrow. When you add this all up, you get the maximum number of possible "Dance Points".
 
-	Your "Dance Points" are calculated as follows:
-
-	  A "Perfect" is worth 2 points
-	  A "Great" is worth 1 points
-	  A "Good" is worth 0 points
-	  A "Boo" will subtract 4 points
-	  A "Miss" will subtract 8 points
-	  An "OK" (Successful Freeze step) will add 6 points
-	  A "NG" (Unsuccessful Freeze step) is worth 0 points
-
-	Based on the percentage of your total "Dance Points" to the maximum possible number, the following rank is assigned:
-
-	  100% - AAA
-	  93 % - AA
-	  80 % - A
-	  65 % - B
-	  45 % - C
-	  Less - D
-	  Fail - E
-	*/
     public boolean scoreGood = false;
     //public boolean isScoreGood() {
     //return scoreGood;
@@ -165,6 +141,7 @@ public class GUIScore {
             if (this.showPercent) {
                 return percent + "%";
             } else {
+                // Took out letter scores
 				/*if (percent < 45) {
 					return Tools.getString(R.string.Letter_D);
 				} else if (percent < 65) {
@@ -289,7 +266,7 @@ public class GUIScore {
                 switch (Integer.parseInt(Tools.getSetting(R.string.goalLevel, R.string.goalLevelDefault))) {
                     case 0:
                         //GOAL: 6
-                        if (resp < 6.0) {
+                        if (resp <= 6.0) {
                             switch (accuracy) { // arbitrary multiplying factors
                                 case 0:
                                 case -1:
@@ -359,7 +336,7 @@ public class GUIScore {
 
                         //GOAL: 8
                     case 1:
-                        if (resp < 8.0) {
+                        if (resp <= 8.0) {
                             switch (accuracy) { // arbitrary multiplying factors
                                 case 0:
                                 case -1:
@@ -428,7 +405,7 @@ public class GUIScore {
 
                         //GOAL:10
                     case 2:
-                        if (resp < 10.0) {
+                        if (resp <= 10.0) {
                             switch (accuracy) { // arbitrary multiplying factors
                                 case 0:
                                 case -1:
@@ -497,7 +474,7 @@ public class GUIScore {
 
                         //GOAL: 12
                     case 3:
-                        if (resp < 12.0) {
+                        if (resp <= 12.0) {
                             switch (accuracy) { // arbitrary multiplying factors
                                 case 0:
                                 case -1:
@@ -566,7 +543,7 @@ public class GUIScore {
 
                         //GOAL: 14
                     case 4:
-                        if (resp < 14.0) {
+                        if (resp <= 14.0) {
                             switch (accuracy) { // arbitrary multiplying factors
                                 case 0:
                                 case -1:
